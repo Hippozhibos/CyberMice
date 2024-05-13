@@ -1,0 +1,11 @@
+<mujoco>
+  <actuator>
+    <motor name="neck_x" gear="4"  joint="neck_x" group="4"/>
+    <motor name="neck_y" gear="4"  joint="neck_y" group="4"/>
+    <motor name="neck_z" gear="4"  joint="neck_z" group="4"/>
+
+    <motor name="waist_x" gear="4"  joint="waist_x" group="4"/>
+    <motor name="waist_y" gear="4"  joint="waist_y" group="4"/>
+    <motor name="waist_z" gear="4"  joint="waist_z" group="4"/>
+  </actuator>
+</mujoco>

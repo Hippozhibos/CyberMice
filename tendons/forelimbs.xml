@@ -1,0 +1,391 @@
+<mujoco>  
+  <tendon>
+    <!--Right forelimb-->
+    <spatial name="RBicepsLongus_tendon" group="0">
+      <site site="RBicepsLongus_RBicepsLongus-P1"/>
+      <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RBicepsLongus_1_sidesite"/>
+      <site site="RBicepsLongus_RBicepsLongus-P2"/>
+      <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RBicepsLongus_2_sidesite"/>
+      <site site="RBicepsLongus_RBicepsLongus-P3"/>
+      <geom geom="RHumerus_Distal_cylinder" sidesite="RHumerus_Distal_cylinder_RBicepsLongus_3_sidesite"/>
+      <site site="RBicepsLongus_insertion"/>
+    </spatial>
+    <spatial name="RBicepsBrevis_tendon" group="0">
+      <site site="RBicepsBrevis_origin"/>
+      <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RBicepsBrevis_1_sidesite"/>
+      <site site="RBicepsBrevis_RBiceps-P2"/>
+      <geom geom="RHumerus_Distal_cylinder" sidesite="RHumerus_Distal_cylinder_RBicepsBrevis_2_sidesite"/>
+      <site site="RBicepsBrevis_insertion"/>
+    </spatial>
+    <spatial name="RTri_Long_tendon" group="0">
+      <site site="RTri_Long_origin"/>
+      <geom geom="RForearm_Proximal_cylinder" sidesite="RForearm_Proximal_cylinder_RTri_Long_1_sidesite"/>
+      <site site="RTri_Long_insertion"/>
+    </spatial>
+    <spatial name="RTri_Lateral_tendon" group="0">
+      <site site="RTri_Lateral_origin"/>
+      <site site="RTri_Lateral_insertion"/>
+    </spatial>
+    <spatial name="RTri_Medial_tendon" group="0">
+      <site site="RTri_Medial_origin"/>
+      <site site="RTri_Medial_insertion"/>
+    </spatial>
+    <spatial name="RBrachialis_tendon" group="0">
+      <site site="RBrachialis_origin"/>
+      <site site="RBrachialis_path_point_1"/>
+      <geom geom="RHumerus_Distal_cylinder" sidesite="RHumerus_Distal_cylinder_RBrachialis_2_sidesite"/>
+      <site site="RBrachialis_insertion"/>
+    </spatial>
+    <spatial name="RAnconeus_tendon" group="0">
+      <site site="RAnconeus_origin"/>
+      <site site="RAnconeus_insertion"/>
+    </spatial>
+    <spatial name="RCoracobrachialis_tendon" group="0">
+      <site site="RCoracobrachialis_origin"/>
+      <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RCoracobrachialis_1_sidesite"/>
+      <site site="RCoracobrachialis_RCoracobrachialis-P2_0"/>
+      <site site="RCoracobrachialis_insertion"/>
+    </spatial>
+    <spatial name="RDeltoideusSpinal_tendon" group="0">
+      <site site="RDeltoideusSpinal_origin"/>
+      <site site="RDeltoideusSpinal_insertion"/>
+    </spatial>
+    <spatial name="RDeltoideusAcromial_tendon" group="0">
+      <site site="RDeltoideusAcromial_origin"/>
+      <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RDeltoideusAcromial_1_sidesite"/>
+      <site site="RDeltoideusAcromial_insertion"/>
+    </spatial>
+    <spatial name="RDeltoideusClavicle_tendon" group="0">
+      <site site="RDeltoideusClavicle_origin"/>
+      <site site="RDeltoideusClavicle_insertion"/>
+    </spatial>
+    <spatial name="RInfraspinatus_tendon" group="0">
+      <site site="RInfraspinatus_origin"/>
+      <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RInfraspinatus_1_sidesite"/>
+      <site site="RInfraspinatus_insertion"/>
+    </spatial>
+    <spatial name="RSupraspinatus_tendon" group="0">
+      <site site="RSupraspinatus_origin"/>
+      <site site="RSupraspinatus_P1"/>
+      <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RSupraspinatus_1_sidesite"/>
+      <site site="RSupraspinatus_insertion"/>
+    </spatial>
+    <spatial name="RSubscapularis_tendon" group="0">
+      <site site="RSubscapularis_origin"/>
+      <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RSubscapularis_1_sidesite"/>
+      <site site="RSubscapularis_insertion"/>
+    </spatial>
+    <spatial name="RTeresMajor_tendon" group="0">
+      <site site="RTeresMajor_origin"/>
+      <site site="RTeresMajor_insertion"/>
+    </spatial>
+    <spatial name="RTeresMinor_tendon" group="0">
+      <site site="RTeresMinor_origin"/>
+      <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RTeresMinor_1_sidesite"/>
+      <site site="RTeresMinor_insertion"/>
+    </spatial>
+    <spatial name="RPronatorTeres_tendon" group="0">
+      <site site="RPronatorTeres_origin"/>
+      <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RPronatorTeres_1_sidesite"/>
+      <site site="RPronatorTeres_insertion"/>
+    </spatial>
+    <spatial name="RFlaxorCarpiUlnar_tendon" group="0">
+      <site site="RFlaxorCarpiUlnar_origin"/>
+      <geom geom="RWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar_1_sidesite"/>
+      <site site="RFlaxorCarpiUlnar_insertion"/>
+    </spatial>
+    <spatial name="RPalmarLongus_tendon" group="0">
+      <site site="RPalmarLongus_origin"/>
+      <site site="RPalmarLongus_insertion"/>
+    </spatial>
+    <spatial name="RFlaxorCarpiRadialis_tendon" group="0">
+      <site site="RFlaxorCarpiRadialis_origin"/>
+      <geom geom="RWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis" sidesite="RWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis_1_sidesite"/>
+      <site site="RFlaxorCarpiRadialis_RFlaxorCarpiRadialis-P2"/>
+      <site site="RFlaxorCarpiRadialis_RFlaxorCarpiRadialis-P3"/>
+      <site site="RFlaxorCarpiRadialis_insertion"/>
+    </spatial>
+    <spatial name="RFlexorDigitumProfundusHumerus_tendon" group="0">
+      <site site="RFlexorDigitumProfundusHumerus_origin"/>
+      <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P2"/>
+      <site site="RFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P3"/>
+      <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite"/>
+      <site site="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4"/>
+      <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite"/>
+      <site site="RFlexorDigitumProfundusHumerus_insertion"/>
+    </spatial>
+    <spatial name="RFlexorDigitumProfundusUlnar_tendon" group="0">
+      <site site="RFlexorDigitumProfundusUlnar_origin"/>
+      <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P2"/>
+      <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite"/>
+      <site site="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3"/>
+      <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite"/>
+      <site site="RFlexorDigitumProfundusUlnar_insertion"/>
+    </spatial>
+    <spatial name="RFlexorDigitumProfundusRadial_tendon" group="0">
+      <site site="RFlexorDigitumProfundusRadial_origin"/>
+      <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2"/>
+      <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite"/>
+      <site site="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3"/>
+      <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite"/>
+      <site site="RFlexorDigitumProfundusRadial_insertion"/>
+    </spatial>
+    <spatial name="RFlexorDigitumsSuperficial_tendon" group="0">
+      <site site="RFlexorDigitumsSuperficial_origin"/>
+      <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2"/>
+      <site site="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3"/>
+      <geom geom="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite"/>
+      <site site="RFlexorDigitumsSuperficial_insertion"/>
+    </spatial>
+    <spatial name="RExtensorCarpiRadialisLongus_tendon" group="0">
+      <site site="RExtensorCarpiRadialisLongus_origin"/>
+      <site site="RExtensorCarpiRadialisLongus_insertion"/>
+      <site site="RExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3"/>
+      <geom geom="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus" sidesite="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus_3_sidesite"/>
+      <site site="RExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3_0"/>
+    </spatial>
+    <spatial name="RExtensorCarpiRadialisBrevis_tendon" group="0">
+      <site site="RExtensorCarpiRadialisBrevis_origin"/>
+      <site site="RExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2"/>
+      <site site="RExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2_0"/>
+      <geom geom="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis" sidesite="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite"/>
+      <site site="RExtensorCarpiRadialisBrevis_insertion"/>
+    </spatial>
+    <spatial name="RExtensorDigitorumCommunis_tendon" group="0">
+      <site site="RExtensorDigitorumCommunis_origin"/>
+      <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2"/>
+      <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3"/>
+      <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite"/>
+      <site site="RExtensorDigitorumCommunis_insertion"/>
+    </spatial>
+    <spatial name="RExtensorDigitorumLateralis_tendon" group="0">
+      <site site="RExtensorDigitorumLateralis_origin"/>
+      <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P2"/>
+      <site site="RExtensorDigitorumLateralis_insertion"/>
+      <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite"/>
+      <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4"/>
+      <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite"/>
+      <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3"/>
+    </spatial>
+    <spatial name="RExtensorCarpiUlnar_tendon" group="0">
+      <site site="RExtensorCarpiUlnar_origin"/>
+      <geom geom="RWrist_Extensor_ellipsoid_RExtensorCarpiUlnar" sidesite="RWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite"/>
+      <site site="RExtensorCarpiUlnar_RExtensorCarpiUlnar-P2"/>
+      <site site="RExtensorCarpiUlnar_RExtensorCarpiUlnar-P2_0"/>
+      <site site="RExtensorCarpiUlnar_insertion"/>
+    </spatial>
+    <spatial name="RSupinator_tendon" group="0">
+      <site site="RSupinator_origin"/>
+      <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RSupinator_1_sidesite"/>
+      <site site="RSupinator_RSupinator-P2"/>
+      <site site="RSupinator_insertion"/>
+    </spatial>
+    <spatial name="RAbductorPollicisLongus_tendon" group="0">
+      <site site="RAbductorPollicisLongus_origin"/>
+      <geom geom="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus" sidesite="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite"/>
+      <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P2"/>
+      <site site="RAbductorPollicisLongus_insertion"/>
+      <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P4"/>
+      <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P4_0"/>
+      <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P3"/>
+    </spatial>
+    <spatial name="RPronatorQuadratus_tendon" group="0">
+      <site site="RPronatorQuadratus_origin"/>
+      <site site="RPronatorQuadratus_insertion"/>
+    </spatial>
+
+    <!--Left forelimb-->
+    <spatial name="LBicepsLongus_tendon" group="1">
+      <site site="LBicepsLongus_RBicepsLongus-P1"/>
+      <geom geom="LHumerus_Proximal_sphere" sidesite="LHumerus_Proximal_sphere_RBicepsLongus_1_sidesite"/>
+      <site site="LBicepsLongus_RBicepsLongus-P2"/>
+      <geom geom="LHumerus_Proximal_sphere" sidesite="LHumerus_Proximal_sphere_RBicepsLongus_2_sidesite"/>
+      <site site="LBicepsLongus_RBicepsLongus-P3"/>
+      <geom geom="LHumerus_Distal_cylinder" sidesite="LHumerus_Distal_cylinder_RBicepsLongus_3_sidesite"/>
+      <site site="LBicepsLongus_insertion"/>
+    </spatial>
+    <spatial name="LBicepsBrevis_tendon" group="1">
+      <site site="LBicepsBrevis_origin"/>
+      <geom geom="LHumerus_Proximal_sphere" sidesite="LHumerus_Proximal_sphere_RBicepsBrevis_1_sidesite"/>
+      <site site="LBicepsBrevis_RBiceps-P2"/>
+      <geom geom="LHumerus_Distal_cylinder" sidesite="LHumerus_Distal_cylinder_RBicepsBrevis_2_sidesite"/>
+      <site site="LBicepsBrevis_insertion"/>
+    </spatial>
+    <spatial name="LTri_Long_tendon" group="1">
+      <site site="LTri_Long_origin"/>
+      <geom geom="LForearm_Proximal_cylinder" sidesite="LForearm_Proximal_cylinder_RTri_Long_1_sidesite"/>
+      <site site="LTri_Long_insertion"/>
+    </spatial>
+    <spatial name="LTri_Lateral_tendon" group="1">
+      <site site="LTri_Lateral_origin"/>
+      <site site="LTri_Lateral_insertion"/>
+    </spatial>
+    <spatial name="LTri_Medial_tendon" group="1">
+      <site site="LTri_Medial_origin"/>
+      <site site="LTri_Medial_insertion"/>
+    </spatial>
+    <spatial name="LBrachialis_tendon" group="1">
+      <site site="LBrachialis_origin"/>
+      <site site="LBrachialis_path_point_1"/>
+      <geom geom="LHumerus_Distal_cylinder" sidesite="LHumerus_Distal_cylinder_RBrachialis_2_sidesite"/>
+      <site site="LBrachialis_insertion"/>
+    </spatial>
+    <spatial name="LAnconeus_tendon" group="1">
+      <site site="LAnconeus_origin"/>
+      <site site="LAnconeus_insertion"/>
+    </spatial>
+    <spatial name="LCoracobrachialis_tendon" group="1">
+      <site site="LCoracobrachialis_origin"/>
+      <geom geom="LHumerus_Proximal_sphere" sidesite="LHumerus_Proximal_sphere_RCoracobrachialis_1_sidesite"/>
+      <site site="LCoracobrachialis_RCoracobrachialis-P2_0"/>
+      <site site="LCoracobrachialis_insertion"/>
+    </spatial>
+    <spatial name="LDeltoideusSpinal_tendon" group="1">
+      <site site="LDeltoideusSpinal_origin"/>
+      <site site="LDeltoideusSpinal_insertion"/>
+    </spatial>
+    <spatial name="LDeltoideusAcromial_tendon" group="1">
+      <site site="LDeltoideusAcromial_origin"/>
+      <geom geom="LHumerus_Proximal_sphere" sidesite="LHumerus_Proximal_sphere_RDeltoideusAcromial_1_sidesite"/>
+      <site site="LDeltoideusAcromial_insertion"/>
+    </spatial>
+    <spatial name="LDeltoideusClavicle_tendon" group="1">
+      <site site="LDeltoideusClavicle_origin"/>
+      <site site="LDeltoideusClavicle_insertion"/>
+    </spatial>
+    <spatial name="LInfraspinatus_tendon" group="1">
+      <site site="LInfraspinatus_origin"/>
+      <geom geom="LHumerus_Proximal_sphere" sidesite="LHumerus_Proximal_sphere_RInfraspinatus_1_sidesite"/>
+      <site site="LInfraspinatus_insertion"/>
+    </spatial>
+    <spatial name="LSupraspinatus_tendon" group="1">
+      <site site="LSupraspinatus_origin"/>
+      <site site="LSupraspinatus_P1"/>
+      <geom geom="LHumerus_Proximal_sphere" sidesite="LHumerus_Proximal_sphere_RSupraspinatus_1_sidesite"/>
+      <site site="LSupraspinatus_insertion"/>
+    </spatial>
+    <spatial name="LSubscapularis_tendon" group="1">
+      <site site="LSubscapularis_origin"/>
+      <geom geom="LHumerus_Proximal_sphere" sidesite="LHumerus_Proximal_sphere_RSubscapularis_1_sidesite"/>
+      <site site="LSubscapularis_insertion"/>
+    </spatial>
+    <spatial name="LTeresMajor_tendon" group="1">
+      <site site="LTeresMajor_origin"/>
+      <site site="LTeresMajor_insertion"/>
+    </spatial>
+    <spatial name="LTeresMinor_tendon" group="1">
+      <site site="LTeresMinor_origin"/>
+      <geom geom="LHumerus_Proximal_sphere" sidesite="LHumerus_Proximal_sphere_RTeresMinor_1_sidesite"/>
+      <site site="LTeresMinor_insertion"/>
+    </spatial>
+    <spatial name="LPronatorTeres_tendon" group="1">
+      <site site="LPronatorTeres_origin"/>
+      <geom geom="LPronator_cylinder" sidesite="LPronator_cylinder_RPronatorTeres_1_sidesite"/>
+      <site site="LPronatorTeres_insertion"/>
+    </spatial>
+    <spatial name="LFlaxorCarpiUlnar_tendon" group="1">
+      <site site="LFlaxorCarpiUlnar_origin"/>
+      <geom geom="LWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar_1_sidesite"/>
+      <site site="LFlaxorCarpiUlnar_insertion"/>
+    </spatial>
+    <spatial name="LPalmarLongus_tendon" group="1">
+      <site site="LPalmarLongus_origin"/>
+      <site site="LPalmarLongus_insertion"/>
+    </spatial>
+    <spatial name="LFlaxorCarpiRadialis_tendon" group="1">
+      <site site="LFlaxorCarpiRadialis_origin"/>
+      <geom geom="LWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis" sidesite="LWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis_1_sidesite"/>
+      <site site="LFlaxorCarpiRadialis_RFlaxorCarpiRadialis-P2"/>
+      <site site="LFlaxorCarpiRadialis_RFlaxorCarpiRadialis-P3"/>
+      <site site="LFlaxorCarpiRadialis_insertion"/>
+    </spatial>
+    <spatial name="LFlexorDigitumProfundusHumerus_tendon" group="1">
+      <site site="LFlexorDigitumProfundusHumerus_origin"/>
+      <site site="LFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P2"/>
+      <site site="LFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P3"/>
+      <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite"/>
+      <site site="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4"/>
+      <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite"/>
+      <site site="LFlexorDigitumProfundusHumerus_insertion"/>
+    </spatial>
+    <spatial name="LFlexorDigitumProfundusUlnar_tendon" group="1">
+      <site site="LFlexorDigitumProfundusUlnar_origin"/>
+      <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P2"/>
+      <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite"/>
+      <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3"/>
+      <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite"/>
+      <site site="LFlexorDigitumProfundusUlnar_insertion"/>
+    </spatial>
+    <spatial name="LFlexorDigitumProfundusRadial_tendon" group="1">
+      <site site="LFlexorDigitumProfundusRadial_origin"/>
+      <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2"/>
+      <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite"/>
+      <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3"/>
+      <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite"/>
+      <site site="LFlexorDigitumProfundusRadial_insertion"/>
+    </spatial>
+    <spatial name="LFlexorDigitumsSuperficial_tendon" group="1">
+      <site site="LFlexorDigitumsSuperficial_origin"/>
+      <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2"/>
+      <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3"/>
+      <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite"/>
+      <site site="LFlexorDigitumsSuperficial_insertion"/>
+    </spatial>
+    <spatial name="LExtensorCarpiRadialisLongus_tendon" group="1">
+      <site site="LExtensorCarpiRadialisLongus_origin"/>
+      <site site="LExtensorCarpiRadialisLongus_insertion"/>
+      <site site="LExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3"/>
+      <geom geom="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus" sidesite="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus_3_sidesite"/>
+      <site site="LExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3_0"/>
+    </spatial>
+    <spatial name="LExtensorCarpiRadialisBrevis_tendon" group="1">
+      <site site="LExtensorCarpiRadialisBrevis_origin"/>
+      <site site="LExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2"/>
+      <site site="LExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2_0"/>
+      <geom geom="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis" sidesite="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite"/>
+      <site site="LExtensorCarpiRadialisBrevis_insertion"/>
+    </spatial>
+    <spatial name="LExtensorDigitorumCommunis_tendon" group="1">
+      <site site="LExtensorDigitorumCommunis_origin"/>
+      <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2"/>
+      <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3"/>
+      <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite"/>
+      <site site="LExtensorDigitorumCommunis_insertion"/>
+    </spatial>
+    <spatial name="LExtensorDigitorumLateralis_tendon" group="1">
+      <site site="LExtensorDigitorumLateralis_origin"/>
+      <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P2"/>
+      <site site="LExtensorDigitorumLateralis_insertion"/>
+      <geom geom="LPronator_cylinder" sidesite="LPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite"/>
+      <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4"/>
+      <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite"/>
+      <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3"/>
+    </spatial>
+    <spatial name="LExtensorCarpiUlnar_tendon" group="1">
+      <site site="LExtensorCarpiUlnar_origin"/>
+      <geom geom="LWrist_Extensor_ellipsoid_RExtensorCarpiUlnar" sidesite="LWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite"/>
+      <site site="LExtensorCarpiUlnar_RExtensorCarpiUlnar-P2"/>
+      <site site="LExtensorCarpiUlnar_RExtensorCarpiUlnar-P2_0"/>
+      <site site="LExtensorCarpiUlnar_insertion"/>
+    </spatial>
+    <spatial name="LSupinator_tendon" group="1">
+      <site site="LSupinator_origin"/>
+      <geom geom="LPronator_cylinder" sidesite="LPronator_cylinder_RSupinator_1_sidesite"/>
+      <site site="LSupinator_RSupinator-P2"/>
+      <site site="LSupinator_insertion"/>
+    </spatial>
+    <spatial name="LAbductorPollicisLongus_tendon" group="1">
+      <site site="LAbductorPollicisLongus_origin"/>
+      <geom geom="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus" sidesite="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite"/>
+      <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P2"/>
+      <site site="LAbductorPollicisLongus_insertion"/>
+      <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P4"/>
+      <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P4_0"/>
+      <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P3"/>
+    </spatial>
+    <spatial name="LPronatorQuadratus_tendon" group="1">
+      <site site="LPronatorQuadratus_origin"/>
+      <site site="LPronatorQuadratus_insertion"/>
+    </spatial>
+  </tendon>
+</mujoco>

@@ -1,0 +1,10 @@
+<mujoco>
+<!-- <geom name="AnotherTestHumerus" type="mesh" rgba="1 0 0 0.1" mesh="RHumerus"/> -->
+    <!-- <geom name="Throax_lumbar" pos="-0.012 0 0" euler="0 0 0" type="sphere" size="0.002" rgba="0.8 0.8 0.8 0.8"/> -->
+        <!-- <body name="Lumbar" pos="-0.012 0 0">
+            <geom type="capsule" size="0.003 0.003" pos="-0.008 0 0" euler="0 90 0" rgba="0.8 0.8 0.8 0.8" group="4"/>
+            <joint name="waist_x" pos="0 0 -0" axis="1 0 0" range="-10 10"/>
+            <joint name="waist_y" pos="0 0 -0" axis="0 1 0" range="-60 60"/>
+            <joint name="waist_z" pos="0 0 -0" axis="0 0 1" range="-90 90"/>
+        </body> -->
+</mujoco>

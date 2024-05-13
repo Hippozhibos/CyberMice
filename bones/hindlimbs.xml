@@ -1,0 +1,476 @@
+<mujoco>
+    <geom name="Throax_lumbar" pos="-0.012 0 0" euler="0 0 0" type="sphere" size="0.002" rgba="0.8 0.8 0.8 0.8"/>
+    <body name="RPelvis" pos="-0.012 0 0" gravcomp="0">
+        <!-- <inertial pos="0.0029 -0.0012 0.0024" quat="0.5 0.5 0.5 0.5" mass="0.001" diaginertia="0.001 0.001 0.001"/> -->
+        <!-- <joint name="PelvisBody_Ry" pos="0 0 0" axis="-0.00599881 0.999968 0.00524083" limited="false" range="-3.142 3.142"/>
+        <joint name="PelvisBody_Rz" pos="0 0 0" axis="-0.0216489 -0.00537074 0.999751" limited="false" range="-3.142 3.142"/>
+        <joint name="PelvisBody_Rx" pos="0 0 0" axis="0.999748 0.00588428 0.021681" limited="false" range="-3.142 3.142"/> -->
+        <geom type="capsule" size="0.003 0.003" pos="-0.008 0 0" euler="0 90 0" rgba="0.8 0.8 0.8 0.8"/>
+        <joint name="waist_x" pos="0 0 -0" axis="1 0 0" range="-10 10" group="2"/>
+        <joint name="waist_y" pos="0 0 -0" axis="0 1 0" range="-60 60" group="2"/>
+        <joint name="waist_z" pos="0 0 -0" axis="0 0 1" range="-90 90" group="2"/>
+
+        <geom name="RPelvis" pos="-0.013 -0.0028 0.002" euler="90 -5 5" type="mesh" rgba="1 1 1 1" mesh="RPelvis"/>
+        <geom name="LPelvis" pos="-0.013 0.0028 0.002" euler="90 5 5" type="mesh" rgba="1 1 1 1" mesh="LPelvis"/>
+
+        <geom name="RGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 -0.0015 -0.001" euler="95 0 0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2"/>
+        <geom name="RST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 -0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2"/>
+        <geom name="RCF_BFA_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0173 -0.00325 0.0015" rgba="0.19 0.83 0.78 0.2" group="2"/>
+        <geom name="ROE_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0169 -0.003 0.0015" rgba="0.19 0.83 0.78 0.2" group="2"/>
+        <geom name="RHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 -0.0025 0.0015" euler="85 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+        
+        <site name="RGA_at_Pelvis_sidesite" pos="-1.74690480e-02 -9.41424358e-04 -4.14452075e-03" size="0.0005"/>
+        <site name="RCF_BFA_at_Pelvis_sidesite" pos="-1.65346204e-02 -3.86699778e-03 -8.67257693e-05" size="0.0005"/>
+        <site name="ROE_at_Pelvis_sidesite" pos="-1.57157219e-02 -3.27722523e-03 -1.18206013e-05" size="0.0005"/>
+        <site name="RHip_flexors_at_pelvis_sidesite" pos="-1.13462187e-02 -2.95897147e-03  1.06590625e-04" size="0.0005"/>
+        <site name="RGM_dorsal_GM_dorsal-P1" pos="-0.00121088 -0.00349012  0.00315321" size="0.0005"/>
+        <site name="RGM_dorsal_GM_dorsal-P2" pos="-0.00708953 -0.00265458 0.00265456" size="0.0005"/>
+        <site name="RGM_mid_GM_mid-P1" pos="-1.77324580e-03 -4.72580437e-03  2.12987557e-03" size="0.0005"/>
+        <site name="RGM_mid_GM_mid-P2" pos="-6.15438951e-03 -2.96727078e-03  2.13615260e-03" size="0.0005"/>
+        <site name="RGM_ventral_GM_ventral-P1" pos="-1.84602043e-03 -3.76580857e-03  9.31705331e-04" size="0.0005"/>
+        <site name="RGM_ventral_GM_ventral-P2" pos="-5.59946420e-03 -2.84517108e-03  1.56121821e-03" size="0.0005"/>
+        <site name="ROE_OE-P1" pos="-1.73723008e-02 -2.36728226e-03 -1.36571557e-03" size="0.0005"/>
+        <site name="ROI_OI-P1" pos="-1.76571686e-02 -1.27831052e-03 -2.77408018e-03" size="0.0005"/>
+        <site name="RGEM_GEM-P1" pos="-1.49022162e-02 -2.75403603e-03  2.93806227e-03" size="0.0005"/>
+        <site name="RQF_QF-P1" pos="-1.75225711e-02 -8.88558345e-04 -2.88577953e-03" size="0.0005"/>
+        <site name="RAM_AM-P1" pos="-1.47968810e-02 -6.55230007e-04 -3.01060722e-04" size="0.0005"/>
+        <site name="RAL_AL-P1" pos="-1.43934816e-02 -7.30675671e-04 -2.65326867e-04" size="0.0005"/>
+        <site name="RAB_AB-P1" pos="-1.42781798e-02 -5.60075702e-04 -1.46158319e-04" size="0.0005"/>
+        <site name="RGP_GP-P1" pos="-1.70785883e-02 -2.12194741e-03 -1.48252234e-03" size="0.0005"/>
+        <site name="RGA_at_Pelvis_cylinder_GP_1_sidesite" pos="-1.88779132e-02  7.34804888e-04 -4.31926197e-03" size="0.0005"/>
+        <site name="RGA_GA-P1" pos="-1.69404757e-02 -4.47613371e-04 -1.27244989e-03" size="0.0005"/>
+        <site name="RGA_at_Pelvis_cylinder_GA_1_sidesite" pos="-1.68590885e-02  8.20247864e-04 -2.57538241e-03" size="0.0005"/>
+        <site name="RPMA_PMA-P1" pos="-2.46678589e-03 -7.30153709e-04  2.99259102e-03" size="0.0005"/>
+        <site name="RPMI_PMI-P1" pos="-4.76280248e-03 -4.08819906e-04  2.37846364e-03" size="0.0005"/>
+        <site name="RILI_ILI-P1" pos="-2.57531467e-03 -2.52753438e-03  4.87287796e-04" size="0.0005"/>
+        <site name="RPECT_PECT-P1" pos="-1.30256598e-02 -1.12137593e-03  1.78088148e-04" size="0.0005"/>
+        <site name="RCF_CF-P1" pos="-1.58869176e-02 -3.40067430e-03  2.60621564e-03" size="0.0005"/>
+        <site name="RSM_SM-P1" pos="-1.71251073e-02 -3.77418026e-03  1.41702290e-03" size="0.0005"/>
+        <site name="RST_ST-P1" pos="-1.86524054e-02 -3.57029160e-03  3.08650186e-04" size="0.0005"/>
+        <site name="RST_at_Pelvis_sphere_ST_1_sidesite" pos="-1.86391023e-02 -3.55782360e-03  2.57138491e-05" size="0.0005"/>
+        <site name="RBFA_BFA-P1" pos="-1.62694283e-02 -3.56797292e-03  2.66449710e-03" size="0.0005"/>
+        <site name="RBFP_cranial_BFP_cranial-P1" pos="-1.66702992e-02 -3.72362703e-03  2.36975262e-03" size="0.0005"/>
+        <site name="RBFP_mid_BFP_mid-P1" pos="-1.74516417e-02 -3.86607058e-03  1.83094496e-03" size="0.0005"/>
+        <site name="RBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 -3.79640821e-03  1.54006153e-03" size="0.0005"/>
+        <site name="RRF_RF-P1" pos="-1.08334314e-02 -3.27061975e-03  1.52989635e-03" size="0.0005"/>
+
+        <geom name="LGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 0.0015 -0.001" euler="-95 0 0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2"/>
+        <geom name="LST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2"/>
+        <geom name="LCF_BFA_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0173 0.00325 0.0015" rgba="0.19 0.83 0.78 0.2" group="2"/>
+        <geom name="LOE_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0169 0.003 0.0015" rgba="0.19 0.83 0.78 0.2" group="2"/>
+        <geom name="LHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 0.0025 0.0015" euler="-85 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+        
+        <site name="LGA_at_Pelvis_sidesite" pos="-1.74690480e-02 9.41424358e-04 -4.14452075e-03" size="0.0005"/>
+        <site name="LCF_BFA_at_Pelvis_sidesite" pos="-1.65346204e-02 3.86699778e-03 -8.67257693e-05" size="0.0005"/>
+        <site name="LOE_at_Pelvis_sidesite" pos="-1.57157219e-02 3.27722523e-03 -1.18206013e-05" size="0.0005"/>
+        <site name="LHip_flexors_at_pelvis_sidesite" pos="-1.13462187e-02 2.95897147e-03  1.06590625e-04" size="0.0005"/>
+        <site name="LGM_dorsal_GM_dorsal-P1" pos="-0.00121088 0.00349012  0.00315321" size="0.0005"/>
+        <site name="LGM_dorsal_GM_dorsal-P2" pos="-0.00708953 0.00265458 0.00265456" size="0.0005"/>
+        <site name="LGM_mid_GM_mid-P1" pos="-1.77324580e-03 4.72580437e-03  2.12987557e-03" size="0.0005"/>
+        <site name="LGM_mid_GM_mid-P2" pos="-6.15438951e-03 2.96727078e-03  2.13615260e-03" size="0.0005"/>
+        <site name="LGM_ventral_GM_ventral-P1" pos="-1.84602043e-03 3.76580857e-03  9.31705331e-04" size="0.0005"/>
+        <site name="LGM_ventral_GM_ventral-P2" pos="-5.59946420e-03 2.84517108e-03  1.56121821e-03" size="0.0005"/>
+        <site name="LOE_OE-P1" pos="-1.73723008e-02 2.36728226e-03 -1.36571557e-03" size="0.0005"/>
+        <site name="LOI_OI-P1" pos="-1.76571686e-02 1.27831052e-03 -2.77408018e-03" size="0.0005"/>
+        <site name="LGEM_GEM-P1" pos="-1.49022162e-02 2.75403603e-03  2.93806227e-03" size="0.0005"/>
+        <site name="LQF_QF-P1" pos="-1.75225711e-02 8.88558345e-04 -2.88577953e-03" size="0.0005"/>
+        <site name="LAM_AM-P1" pos="-1.47968810e-02 6.55230007e-04 -3.01060722e-04" size="0.0005"/>
+        <site name="LAL_AL-P1" pos="-1.43934816e-02 7.30675671e-04 -2.65326867e-04" size="0.0005"/>
+        <site name="LAB_AB-P1" pos="-1.42781798e-02 5.60075702e-04 -1.46158319e-04" size="0.0005"/>
+        <site name="LGP_GP-P1" pos="-1.70785883e-02 2.12194741e-03 -1.48252234e-03" size="0.0005"/>
+        <site name="LGA_at_Pelvis_cylinder_GP_1_sidesite" pos="-1.88779132e-02 -7.34804888e-04 -4.31926197e-03" size="0.0005"/>
+        <site name="LGA_GA-P1" pos="-1.69404757e-02 4.47613371e-04 -1.27244989e-03" size="0.0005"/>
+        <site name="LGA_at_Pelvis_cylinder_GA_1_sidesite" pos="-1.68590885e-02 -8.20247864e-04 -2.57538241e-03" size="0.0005"/>
+        <site name="LPMA_PMA-P1" pos="-2.46678589e-03 7.30153709e-04  2.99259102e-03" size="0.0005"/>
+        <site name="LPMI_PMI-P1" pos="-4.76280248e-03 4.08819906e-04  2.37846364e-03" size="0.0005"/>
+        <site name="LILI_ILI-P1" pos="-2.57531467e-03 2.52753438e-03  4.87287796e-04" size="0.0005"/>
+        <site name="LPECT_PECT-P1" pos="-1.30256598e-02 1.12137593e-03  1.78088148e-04" size="0.0005"/>
+        <site name="LCF_CF-P1" pos="-1.58869176e-02 3.40067430e-03  2.60621564e-03" size="0.0005"/>
+        <site name="LSM_SM-P1" pos="-1.71251073e-02 3.77418026e-03  1.41702290e-03" size="0.0005"/>
+        <site name="LST_ST-P1" pos="-1.86524054e-02 3.57029160e-03  3.08650186e-04" size="0.0005"/>
+        <site name="LST_at_Pelvis_sphere_ST_1_sidesite" pos="-1.86391023e-02 3.55782360e-03  2.57138491e-05" size="0.0005"/>
+        <site name="LBFA_BFA-P1" pos="-1.62694283e-02 3.56797292e-03  2.66449710e-03" size="0.0005"/>
+        <site name="LBFP_cranial_BFP_cranial-P1" pos="-1.66702992e-02 3.72362703e-03  2.36975262e-03" size="0.0005"/>
+        <site name="LBFP_mid_BFP_mid-P1" pos="-1.74516417e-02 3.86607058e-03  1.83094496e-03" size="0.0005"/>
+        <site name="LBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 3.79640821e-03  1.54006153e-03" size="0.0005"/>
+        <site name="LRF_RF-P1" pos="-1.08334314e-02 3.27061975e-03  1.52989635e-03" size="0.0005"/>
+
+        <body name="RFemur" pos="-0.013 -0.0028 0.002" gravcomp="0">
+          <!-- <inertial pos="-0.0028 -0.0072 0.0002" quat="0.5 0.5 -0.5 0.5" mass="0.001" diaginertia="0.001 0.001 0.001"/> -->
+          <joint name="RHip_rotation" pos="0 0 0" axis="0 0 1" range="-10 10" group="3"/>
+          <joint name="RHip_flexion" pos="0 0 0" axis="0 -1 0" range="-90 90" group="3"/>
+          <joint name="RHip_adduction" pos="0 0 0" axis="1 0 0" range="-60 30" group="3"/>
+
+          <geom name="RFemur" pos="0 0 0" euler="90 0 0" type="mesh" rgba="1 1 1 1" mesh="RFemur"/>
+
+          <geom name="RQuads_at_Femur_cylinder" size="0.001 0.0015" pos="-0.0009 -0.0002 -0.0137" euler="90 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RHip_Flexors_at_Quads_ellipsoid" size="0.001" pos="-0.0001 -0.0016 -0.0027"  group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RTFL_at_Quads_ellipsoid" size="0.0013" pos="-0.0004 -0.0014 -0.0078"  group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RAB_at_Quads_ellipsoid" size="0.001" pos="-0.0008 -0.0001 -0.007"  group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RQF_at_Femur_ellipsoid" size="0.0009" pos="-0.0011 -0.0014 -0.0054"  group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RCF_BFA_at_OE_cylinder" size="0.0005 0.00125" pos="-0.0027 0.0002 -0.0016" euler="0 45 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RQF_at_Thigh_cylinder" size="0.0018 0.00375" pos="-0.0039 -0.0017 -0.0053" euler="-5 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RCF_BFA_at_Femur_ellipsoid" size="0.001" pos="-0.001 -0.001 -0.0008" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="ROI_at_Femur_cylinder" size="0.0006 0.00125" pos="-0.0016 -0.0005 -0.0014" euler="80 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RPECT_at_Quads_ellipsoid" size="0.0006" pos="-0.0004 -0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RCF_BFA_at_Thigh_ellipsoid" size="0.0005" pos="-0.0019 -0.0015 -0.0055" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RAB_at_Quads_ellipsoid_AB" size="0.000754311" pos="-0.000956404 -0.000163831 -0.00703726" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RHip_Flexors_at_Quads_ellipsoid_ILI" size="0.001" pos="-0.0001 -0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RPECT_at_Quads_ellipsoid_PECT" size="0.0006" pos="-0.0004 -0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="RCF_BFA_at_Thigh_ellipsoid_BFA" size="0.000471177" pos="-0.00198958 -0.00146195 -0.00542555" group="2" rgba="0.19 0.83 0.78 0.8"/>
+          
+          <site name="RQuads_at_Femur_sidesite" pos="0.0006435 -0.0001653 -0.01497" size="0.0005"/>
+          <site name="RHip_Flexors_at_Quads_sidesite" pos="-2.985e-05 0.0003949 -0.002576" size="0.0005"/>
+          <site name="RQF_at_Femur_sidesite" pos="-0.002966 -0.00172 -0.005554" size="0.0005"/>
+          <site name="RCF_BFA_at_OE_sidesite" pos="-0.002917 -0.00128 -0.001494" size="0.0005"/>
+          <site name="RQF_at_Thigh_sidesite" pos="-0.001598 -0.0001132 -0.005449" size="0.0005"/>
+          <site name="RCF_BFA_at_Femur_sidesite" pos="-0.002864 -0.001612 -0.0004102" size="0.0005"/>
+          <site name="ROI_at_Femur_sidesite" pos="-0.002822 -6.888e-05 -0.0004616" size="0.0005"/>
+          <site name="RCF_BFA_at_Thigh_sidesite" pos="-0.003396 -0.00157 -0.00558" size="0.0005"/>
+          <site name="RGM_dorsal_GM_dorsal-P3" pos="-0.00036 -0.00247 0.00024" size="0.0005"/>
+          <site name="RGM_dorsal_GM_dorsal-P4" pos="-0.00123 -0.00211 -0.00146" size="0.0005"/>
+          <site name="RGM_mid_GM_mid-P3" pos="-0.00076 -0.00256 0.00016" size="0.0005"/>
+          <site name="RGM_mid_GM_mid-P4" pos="-0.00122 -0.0021 -0.00166" size="0.0005"/>
+          <site name="RGM_ventral_GM_ventral-P3" pos="-0.00064 -0.00257 -4e-05" size="0.0005"/>
+          <site name="RGM_ventral_GM_ventral-P4" pos="-0.00104 -0.00209 -0.00185" size="0.0005"/>
+          <site name="ROE_OE-P2" pos="-0.00196 -1e-05 -0.00104" size="0.0005"/>
+          <site name="ROI_OI-P2" pos="-0.00085 -0.00026 2e-05" size="0.0005"/>
+          <site name="ROI_at_Femur_cylinder_OI_1_sidesite" pos="-0.00202712 0.000823813 -0.00136503" size="0.0005"/>
+          <site name="RGEM_GEM-P2" pos="-0.00069 -0.00069 0.00041" size="0.0005"/>
+          <site name="RQF_QF-P2" pos="-0.00189 -0.00256 -0.00439" size="0.0005"/>
+          <site name="RQF_at_Thigh_cylinder_QF_1_sidesite" pos="-0.0018184 -0.0013802 -0.00755496" size="0.0005"/>
+          <site name="RAM_AM-P2" pos="-0.00167 -0.00176 -0.0124" size="0.0005"/>
+          <site name="RAL_AL-P2" pos="-0.00149 0.00117 -0.01349" size="0.0005"/>
+          <site name="RAB_AB-P2" pos="-0.00083 7e-05 -0.01045" size="0.0005"/>
+          <site name="RAB_at_Quads_ellipsoid_AB_1_sidesite" pos="-0.00113733 0.000197725 -0.00621457" size="0.0005"/>
+          <site name="RPMA_PMA-P2" pos="-0.00121 -0.00028 -0.00221" size="0.0005"/>
+          <site name="RPMI_PMI-P2" pos="-0.00124 -0.00022 -0.00204" size="0.0005"/>
+          <site name="RILI_ILI-P2" pos="-0.00114 -0.00037 -0.00234" size="0.0005"/>
+          <site name="RHip_Flexors_at_Quads_ellipsoid_ILI_1_sidesite" pos="0.0001189 -0.0001978 -0.002348" size="0.0005"/>
+          <site name="RPECT_PECT-P2" pos="-0.00091 -0.00062 -0.00561" size="0.0005"/>
+          <site name="RPECT_at_Quads_ellipsoid_PECT_1_sidesite" pos="-0.0007811 -0.0001111 -0.004763" size="0.0005"/>
+          <site name="RCF_CF-P2" pos="-0.00234 -0.00066 -0.00792" size="0.0005"/>
+          <site name="RCF_CF-P3" pos="-0.00194 0.00029 -0.0108" size="0.0005"/>
+          <site name="RCF_CF-P4" pos="-0.00145 0.001 -0.01321" size="0.0005"/>
+          <site name="RBFA_BFA-P2" pos="-0.00182 -0.00187 -0.01341" size="0.0005"/>
+          <site name="RBFA_BFA-P3" pos="-0.00193 -0.00149 -0.01416" size="0.0005"/>
+          <site name="RCF_BFA_at_Thigh_ellipsoid_BFA_1_sidesite" pos="-0.00225935 -0.00152944 -0.00593554" size="0.0005"/>
+          <site name="RVM_VM-P1" pos="-0.00029 -0.00119 -0.00053" size="0.0005"/>
+          <site name="RVL_VL-P1" pos="-0.00038 -0.00204 -0.00062" size="0.0005"/>
+          <site name="RVI_VI-P1" pos="-0.00036 -0.00146 -0.00149" size="0.0005"/>
+          <site name="RPOP_POP-P1" pos="-0.00198 -0.00122 -0.01312" size="0.0005"/>
+          <site name="RMG_MG-P1" pos="-0.00162 0.00078 -0.01279" size="0.0005"/>
+          <site name="RLG_LG-P1" pos="-0.00188 -0.00115 -0.01276" size="0.0005"/>
+          <site name="RPLANT_PLANT-P1" pos="-0.0017 -0.00022 -0.01247" size="0.0005"/>
+
+          <body name="R_Leg" pos="-0.001 0 -0.0135" gravcomp="0">
+            <!-- <inertial pos="-0.0008 -0.0072 0" quat="0.5 0.5 -0.5 0.5" mass="0.001" diaginertia="0.001 0.001 0.001"/> -->
+            <joint name="R_Knee_flexion" pos="0 0 0" axis="0 1 0" range="0 120" group="3"/>
+
+            <geom name="R_Leg_geom_1" pos="0 0 0" euler="90 0 0" type="mesh" rgba="1 1 1 1" mesh="RTibfib"/>
+            <geom name="R_Leg_geom_2" pos="0 0 0" euler="90 0 0" type="mesh" rgba="1 1 1 1" mesh="RPatella"/>
+            
+            <geom name="RPlantarflexors_at_Tibia_cylinder" size="0.001 0.0015" pos="-0.0011 0 -0.0029" euler="266.789 2.970 -0.650" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+            <geom name="RHip_Ext_at_Gastroc_ellipsoid" size="0.002" pos="-0.0007 -0.0002 -0.0064" euler="97.425 -1.340 175.955" group="2" rgba="0.19 0.83 0.78 0.2"/>
+            <geom name="RAnkle_Everters_at_Lat_Malleolus_cylinder" size="0.0008 0.00075" pos="-0.0008 0 -0.0177" euler="261.669 4.760 4.040" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+            <geom name="RPOP_at_Tibia_cylinder" size="0.001 0.002" pos="-0.0007 0 -0.0019" euler="-268.250 -9.311 -8.932" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+            <geom name="RBFPC_at_Leg_ellipsoid" size="0.0012" pos="-0.0013 0.0005 -0.0057" euler="-85.250 11.001 -10.720" group="2" rgba="0.19 0.83 0.78 0.8"/>
+            
+            <site name="RPlantarflexors_at_Tibia_sidesite" pos="-3.094e-03 -1.022e-04 -3.013e-03" size="0.0005"/>
+            <site name="RAnkle_Everters_at_Lat_Malleolus_sidesite" pos="-2.575e-03 -1.658e-04 -1.795e-02" size="0.0005"/>
+            <site name="RPOP_at_Tibia_sidesite" pos="-2.673e-03  3.100e-04 -1.789e-03" size="0.0005"/>
+            <site name="RBFPC_at_Leg_sidesite" pos="-8.802e-04 -1.622e-03 -6.102e-03" size="0.0005"/>
+            <site name="RGP_GP-P2" pos="1.100e-04  1.790e-03 -4.720e-03" size="0.0005"/>
+            <site name="RGA_GA-P2" pos="1.900e-04  1.730e-03 -4.500e-03" size="0.0005"/>
+            <site name="RSM_SM-P2" pos="-9.000e-05  1.650e-03 -4.050e-03" size="0.0005"/>
+            <site name="RST_ST-P2" pos="1.500e-04  1.720e-03 -6.070e-03" size="0.0005"/>
+            <site name="RBFP_cranial_BFP_cranial-P2" pos="-1.040e-03 -1.200e-03 -1.570e-03" size="0.0005"/>
+            <site name="RBFP_mid_BFP_mid-P2" pos="-1.870e-03 -1.420e-03 -2.820e-03" size="0.0005"/>
+            <site name="RBFP_caudal_BFP_caudal-P2" pos="-2.700e-04 -1.330e-03 -5.500e-03" size="0.0005"/>
+            <site name="RRF_RF-P2" pos="1.460e-03 -1.600e-04  7.200e-04" size="0.0005"/>
+            <site name="RVM_VM-P2" pos="1.280e-03  2.000e-05  7.600e-04" size="0.0005"/>
+            <site name="RVL_VL-P2" pos="1.280e-03 -4.000e-04  7.000e-04" size="0.0005"/>
+            <site name="RVI_VI-P2" pos="1.190e-03 -1.500e-04  7.300e-04" size="0.0005"/>
+            <site name="RPOP_POP-P2" pos="-8.500e-04  1.100e-03 -3.040e-03" size="0.0005"/>
+            <site name="RTA_TA-P1" pos="7.100e-04  5.000e-05 -2.500e-03" size="0.0005"/>
+            <site name="RTA_TA-P2" pos="1.570e-03  7.600e-04 -7.610e-03" size="0.0005"/>
+            <site name="RTA_TA-P3" pos="2.900e-04  4.200e-04 -1.152e-02" size="0.0005"/>
+            <site name="RTA_TA-P4" pos="-4.100e-04  8.200e-04 -1.582e-02" size="0.0005"/>
+            <site name="RTA_TA-P5" pos="-4.300e-04  9.800e-04 -1.771e-02" size="0.0005"/>
+            <site name="REDL_EDL-P1" pos="-5.300e-04 -1.600e-03 -2.950e-03" size="0.0005"/>
+            <site name="REDL_EDL-P2" pos="-1.220e-03 -4.700e-04 -1.622e-02" size="0.0005"/>
+            <site name="REDL_EDL-P3" pos="-8.500e-04 -2.600e-04 -1.821e-02" size="0.0005"/>
+            <site name="REHL_EHL-P1" pos="4.500e-04  4.200e-04 -4.180e-03" size="0.0005"/>
+            <site name="REHL_EHL-P2" pos="-2.600e-04  7.000e-05 -1.301e-02" size="0.0005"/>
+            <site name="REHL_EHL-P3" pos="-8.000e-04  2.800e-04 -1.652e-02" size="0.0005"/>
+            <site name="REHL_EHL-P4" pos="-6.700e-04  3.100e-04 -1.770e-02" size="0.0005"/>
+            <site name="RPlantarflexors_at_Tibia_cylinder_MG_1_sidesite" pos="-3.088e-03 -1.034e-04 -2.711e-03" size="0.0005"/>
+            <site name="RPlantarflexors_at_Tibia_cylinder_LG_1_sidesite" pos="-1.973e-03 -7.922e-04 -2.758e-03" size="0.0005"/>
+            <site name="RSOL_SOL-P1" pos="-1.990e-03  3.000e-04 -8.130e-03" size="0.0005"/>
+            <site name="RPlantarflexors_at_Tibia_cylinder_PLANT_1_sidesite" pos="-2.839e-03 -8.492e-04 -2.397e-03" size="0.0005"/>
+            <site name="RFDL_FDL-P1" pos="-1.600e-03  2.500e-04 -1.950e-03" size="0.0005"/>
+            <site name="RFDL_FDL-P2" pos="-1.770e-03  1.150e-03 -1.914e-02" size="0.0005"/>
+            <site name="RTP_TP-P1" pos="-1.490e-03  6.900e-04 -2.130e-03" size="0.0005"/>
+            <site name="RTP_TP-P2" pos="-5.900e-04  3.200e-04 -3.490e-03" size="0.0005"/>
+            <site name="RTP_TP-P3" pos="-1.690e-03  1.220e-03 -1.905e-02" size="0.0005"/>
+            <site name="RPL_PL-P1" pos="-1.480e-03 -1.610e-03 -3.460e-03" size="0.0005"/>
+            <site name="RPL_PL-P2" pos="-1.890e-03 -9.700e-04 -4.760e-03" size="0.0005"/>
+            <site name="RPL_PL-P3" pos="-1.250e-03 -3.600e-04 -1.624e-02" size="0.0005"/>
+            <site name="RPT_PT-P1" pos="-1.930e-03 -7.400e-04 -5.020e-03" size="0.0005"/>
+            <site name="RPT_PT-P2" pos="-1.390e-03 -2.100e-04 -1.627e-02" size="0.0005"/>
+            <site name="RPB_PB-P1" pos="-1.770e-03  1.000e-05 -8.790e-03" size="0.0005"/>
+            <site name="RPDQA_PDQA-P1" pos="-2.030e-03 -6.000e-04 -5.410e-03" size="0.0005"/>
+            <site name="RPDQA_PDQA-P2" pos="-1.230e-03  7.000e-05 -1.182e-02" size="0.0005"/>
+            <site name="RPDQI_PDQI-P1" pos="-2.090e-03 -2.200e-04 -7.340e-03" size="0.0005"/>
+
+            <body name="R_Pedal" pos="-0.001 0.00125 -0.0184" gravcomp="0">
+              <!-- <inertial pos="0.0045 -0.0002 0.0001" quat="0.5 0.5 0.5 0.5" mass="0.001" diaginertia="0.001 0.001 0.001"/> -->
+              <joint name="R_Ankle_adduction" pos="0 0 0" axis="0 0 1" range="-60 60" group="3"/>
+              <joint name="R_Ankle_flexion" pos="0 0 0" axis="0 -1 0"  range="-60 60" group="3"/>
+              <joint name="R_Ankle_inversion" pos="0 0 0" axis="1 0 0" range="-20 20" group="3"/>
+              
+              <geom name="RFoot" pos="0 0 0" euler="90 0 0" type="mesh" rgba="1 1 1 1" mesh="RFoot"/>
+              <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="228.191 81.360 -80.386" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+              
+              <site name="RPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03  7.89500000e-04" size="0.0005"/>
+              <site name="RTA_TA-P6" pos="8.40000000e-04  6.40000000e-04  1.00000000e-05" size="0.0005"/>
+              <site name="REDL_EDL-P4" pos="1.34000000e-03 -2.70000000e-04 -7.00000000e-05" size="0.0005"/>
+              <site name="REDL_EDL-P5" pos="5.23000000e-03  6.88338275e-20  3.10000000e-04" size="0.0005"/>
+              <site name="REDL_EDL-P6" pos="7.95000000e-03  6.00000000e-05  9.10000000e-04" size="0.0005"/>
+              <site name="REDL_EDL-P7" pos="9.49000000e-03  1.20000000e-04  1.09000000e-03" size="0.0005"/>
+              <site name="REDL_EDL-P8" pos="1.13400000e-02  1.70000000e-04  4.50000000e-04" size="0.0005"/>
+              <site name="REDL_EDL-P9" pos="1.26100000e-02  1.00000000e-04 -9.00000000e-05" size="0.0005"/>
+              <site name="REDL_EDL-P10" pos="1.32100000e-02  1.20000000e-04 -1.14000000e-03" size="0.0005"/>
+              <site name="REDL_EDL-P11" pos="1.33700000e-02  1.50000000e-04 -1.72000000e-03" size="0.0005"/>
+              <site name="REDL_EDL-P12" pos="1.35200000e-02  1.30000000e-04 -1.93000000e-03" size="0.0005"/>
+              <site name="REHL_EHL-P5" pos="1.13000000e-03  2.90000000e-04  1.40000000e-04" size="0.0005"/>
+              <site name="REHL_EHL-P6" pos="2.56000000e-03  1.06000000e-03 -5.10000000e-04" size="0.0005"/>
+              <site name="REHL_EHL-P7" pos="5.04000000e-03  1.39000000e-03 -2.70000000e-04" size="0.0005"/>
+              <site name="REHL_EHL-P8" pos="7.30000000e-03  1.82000000e-03  2.30000000e-04" size="0.0005"/>
+              <site name="REHL_EHL-P9" pos="8.67000000e-03  1.54000000e-03 -6.70000000e-04" size="0.0005"/>
+              <site name="REHL_EHL-P10" pos="9.28000000e-03  1.19000000e-03 -1.16000000e-03" size="0.0005"/>
+              <site name="RMG_MG-P2" pos="-2.05000000e-03 -2.80000000e-04  3.00000000e-05" size="0.0005"/>
+              <site name="RLG_LG-P2" pos="-2.00000000e-03 -6.90000000e-04  1.00000000e-04" size="0.0005"/>
+              <site name="RSOL_SOL-P2" pos="-1.83000000e-03 -4.70000000e-04  2.10000000e-04" size="0.0005"/>
+              <site name="RPLANT_PLANT-P2" pos="-2.02000000e-03 -4.70000000e-04  1.50000000e-04" size="0.0005"/>
+              <site name="RFDL_FDL-P3" pos="7.40000000e-04  3.10000000e-04 -1.08000000e-03" size="0.0005"/>
+              <site name="RFDL_FDL-P4" pos="3.05000000e-03  8.00000000e-05 -8.20000000e-04" size="0.0005"/>
+              <site name="RFDL_FDL-P5" pos="6.60000000e-03  7.00000000e-05  8.00000000e-05" size="0.0005"/>
+              <site name="RFDL_FDL-P6" pos="9.79000000e-03  1.70000000e-04  2.90000000e-04" size="0.0005"/>
+              <site name="RFDL_FDL-P7" pos="1.20800000e-02  5.00000000e-05 -2.20000000e-04" size="0.0005"/>
+              <site name="RFDL_FDL-P8" pos="1.27500000e-02  1.20000000e-04 -1.38000000e-03" size="0.0005"/>
+              <site name="RFDL_FDL-P9" pos="1.32500000e-02  1.20000000e-04 -2.04000000e-03" size="0.0005"/>
+              <site name="RTP_TP-P4" pos="6.50000000e-04  9.60000000e-04 -8.80000000e-04" size="0.0005"/>
+              <site name="RPL_PL-P4" pos="8.10000000e-04 -9.40000000e-04 -9.10000000e-04" size="0.0005"/>
+              <site name="RPL_PL-P5" pos="1.34000000e-03 -2.80000000e-04 -9.90000000e-04" size="0.0005"/>
+              <site name="RPT_PT-P3" pos="-1.10000000e-04 -8.90000000e-04  1.60000000e-04" size="0.0005"/>
+              <site name="RPT_PT-P4" pos="6.00000000e-04 -9.50000000e-04 -1.70000000e-04" size="0.0005"/>
+              <site name="RPB_PB-P2" pos="-7.00000000e-05 -8.50000000e-04  2.80000000e-04" size="0.0005"/>
+              <site name="RPB_PB-P3" pos="2.13000000e-03 -1.01000000e-03 -6.80000000e-04" size="0.0005"/>
+              <site name="RPDQA_PDQA-P3" pos="1.70000000e-04 -7.60000000e-04  2.30000000e-04" size="0.0005"/>
+              <site name="RPDQA_PDQA-P4" pos="3.23000000e-03 -8.00000000e-04 -1.20000000e-04" size="0.0005"/>
+              <site name="RPDQA_PDQA-P5" pos="7.48000000e-03 -1.02000000e-03  5.80000000e-04" size="0.0005"/>
+              <site name="RPDQA_PDQA-P6" pos="9.28000000e-03 -1.17000000e-03  7.70000000e-04" size="0.0005"/>
+              <site name="RPDQA_PDQA-P7" pos="1.21100000e-02 -9.60000000e-04  6.00000000e-04" size="0.0005"/>
+              <site name="RPDQA_PDQA-P8" pos="1.37700000e-02 -7.20000000e-04 -9.20000000e-04" size="0.0005"/>
+              <site name="RPDQI_PDQI-P2" pos="6.70000000e-04 -7.60000000e-04 -5.00000000e-05" size="0.0005"/>
+              <site name="RPDQI_PDQI-P3" pos="2.23000000e-03 -1.16000000e-03 -6.30000000e-04" size="0.0005"/>
+              <site name="RPDQI_PDQI-P4" pos="4.21000000e-03 -1.07000000e-03 -2.90000000e-04" size="0.0005"/>
+              <site name="RPDQI_PDQI-P5" pos="7.20000000e-03 -1.48000000e-03 -2.00000000e-04" size="0.0005"/>
+              <site name="RPDQI_PDQI-P6" pos="1.04700000e-02 -1.11000000e-03 -4.90000000e-04" size="0.0005"/>
+              <site name="RPDQI_PDQI-P7" pos="1.15900000e-02 -6.80000000e-04 -1.24000000e-03" size="0.0005"/>
+            </body>
+
+          </body>
+        </body>
+
+        <body name="LFemur" pos="-0.013 0.0028 0.002" gravcomp="0">
+          <!-- <inertial pos="-0.0028 -0.0072 0.0002" quat="0.5 0.5 -0.5 0.5" mass="0.001" diaginertia="0.001 0.001 0.001"/> -->
+          <joint name="LHip_rotation" pos="0 0 0" axis="0 0 -1" range="-10 10" group="4"/>
+          <joint name="LHip_flexion" pos="0 0 0" axis="0 -1 0" range="-90 90" group="4"/>
+          <joint name="LHip_adduction" pos="0 0 0" axis="-1 0 0" range="-60 30" group="4"/>
+
+          <geom name="LFemur" pos="0 0 0" euler="90 0 0" type="mesh" rgba="1 1 1 1" mesh="LFemur"/>
+
+          <geom name="LQuads_at_Femur_cylinder" size="0.001 0.0015" pos="-0.0009 0.0002 -0.0137" euler="-90 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LHip_Flexors_at_Quads_ellipsoid" size="0.001" pos="-0.0001 0.0016 -0.0027"  group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LTFL_at_Quads_ellipsoid" size="0.0013" pos="-0.0004 0.0014 -0.0078"  group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LAB_at_Quads_ellipsoid" size="0.001" pos="-0.0008 0.0001 -0.007"  group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LQF_at_Femur_ellipsoid" size="0.0009" pos="-0.0011 0.0014 -0.0054"  group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LCF_BFA_at_OE_cylinder" size="0.0005 0.00125" pos="-0.0027 -0.0002 -0.0016" euler="0 45 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LQF_at_Thigh_cylinder" size="0.0018 0.00375" pos="-0.0039 0.0017 -0.0053" euler="5 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LCF_BFA_at_Femur_ellipsoid" size="0.001" pos="-0.001 0.001 -0.0008" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LOI_at_Femur_cylinder" size="0.0006 0.00125" pos="-0.0016 0.0005 -0.0014" euler="-80 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LPECT_at_Quads_ellipsoid" size="0.0006" pos="-0.0004 0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LCF_BFA_at_Thigh_ellipsoid" size="0.0005" pos="-0.0019 0.0015 -0.0055" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LAB_at_Quads_ellipsoid_AB" size="0.000754311" pos="-0.000956404 0.000163831 -0.00703726" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LHip_Flexors_at_Quads_ellipsoid_ILI" size="0.001" pos="-0.0001 0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LPECT_at_Quads_ellipsoid_PECT" size="0.0006" pos="-0.0004 0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2"/>
+          <geom name="LCF_BFA_at_Thigh_ellipsoid_BFA" size="0.000471177" pos="-0.00198958 0.00146195 -0.00542555" group="2" rgba="0.19 0.83 0.78 0.8"/>
+          
+          <site name="LQuads_at_Femur_sidesite" pos="0.0006435 0.0001653 -0.01497" size="0.0005"/>
+          <site name="LHip_Flexors_at_Quads_sidesite" pos="-2.985e-05 -0.0003949 -0.002576" size="0.0005"/>
+          <site name="LQF_at_Femur_sidesite" pos="-0.002966 0.00172 -0.005554" size="0.0005"/>
+          <site name="LCF_BFA_at_OE_sidesite" pos="-0.002917 0.00128 -0.001494" size="0.0005"/>
+          <site name="LQF_at_Thigh_sidesite" pos="-0.001598 0.0001132 -0.005449" size="0.0005"/>
+          <site name="LCF_BFA_at_Femur_sidesite" pos="-0.002864 0.001612 -0.0004102" size="0.0005"/>
+          <site name="LOI_at_Femur_sidesite" pos="-0.002822 6.888e-05 -0.0004616" size="0.0005"/>
+          <site name="LCF_BFA_at_Thigh_sidesite" pos="-0.003396 0.00157 -0.00558" size="0.0005"/>
+          <site name="LGM_dorsal_GM_dorsal-P3" pos="-0.00036 0.00247 0.00024" size="0.0005"/>
+          <site name="LGM_dorsal_GM_dorsal-P4" pos="-0.00123 0.00211 -0.00146" size="0.0005"/>
+          <site name="LGM_mid_GM_mid-P3" pos="-0.00076 0.00256 0.00016" size="0.0005"/>
+          <site name="LGM_mid_GM_mid-P4" pos="-0.00122 0.0021 -0.00166" size="0.0005"/>
+          <site name="LGM_ventral_GM_ventral-P3" pos="-0.00064 0.00257 -4e-05" size="0.0005"/>
+          <site name="LGM_ventral_GM_ventral-P4" pos="-0.00104 0.00209 -0.00185" size="0.0005"/>
+          <site name="LOE_OE-P2" pos="-0.00196 1e-05 -0.00104" size="0.0005"/>
+          <site name="LOI_OI-P2" pos="-0.00085 0.00026 2e-05" size="0.0005"/>
+          <site name="LOI_at_Femur_cylinder_OI_1_sidesite" pos="-0.00202712 -0.000823813 -0.00136503" size="0.0005"/>
+          <site name="LGEM_GEM-P2" pos="-0.00069 0.00069 0.00041" size="0.0005"/>
+          <site name="LQF_QF-P2" pos="-0.00189 0.00256 -0.00439" size="0.0005"/>
+          <site name="LQF_at_Thigh_cylinder_QF_1_sidesite" pos="-0.0018184 0.0013802 -0.00755496" size="0.0005"/>
+          <site name="LAM_AM-P2" pos="-0.00167 0.00176 -0.0124" size="0.0005"/>
+          <site name="LAL_AL-P2" pos="-0.00149 -0.00117 -0.01349" size="0.0005"/>
+          <site name="LAB_AB-P2" pos="-0.00083 -7e-05 -0.01045" size="0.0005"/>
+          <site name="LAB_at_Quads_ellipsoid_AB_1_sidesite" pos="-0.00113733 -0.000197725 -0.00621457" size="0.0005"/>
+          <site name="LPMA_PMA-P2" pos="-0.00121 0.00028 -0.00221" size="0.0005"/>
+          <site name="LPMI_PMI-P2" pos="-0.00124 0.00022 -0.00204" size="0.0005"/>
+          <site name="LILI_ILI-P2" pos="-0.00114 0.00037 -0.00234" size="0.0005"/>
+          <site name="LHip_Flexors_at_Quads_ellipsoid_ILI_1_sidesite" pos="0.0001189 0.0001978 -0.002348" size="0.0005"/>
+          <site name="LPECT_PECT-P2" pos="-0.00091 0.00062 -0.00561" size="0.0005"/>
+          <site name="LPECT_at_Quads_ellipsoid_PECT_1_sidesite" pos="-0.0007811 0.0001111 -0.004763" size="0.0005"/>
+          <site name="LCF_CF-P2" pos="-0.00234 0.00066 -0.00792" size="0.0005"/>
+          <site name="LCF_CF-P3" pos="-0.00194 -0.00029 -0.0108" size="0.0005"/>
+          <site name="LCF_CF-P4" pos="-0.00145 -0.001 -0.01321" size="0.0005"/>
+          <site name="LBFA_BFA-P2" pos="-0.00182 0.00187 -0.01341" size="0.0005"/>
+          <site name="LBFA_BFA-P3" pos="-0.00193 0.00149 -0.01416" size="0.0005"/>
+          <site name="LCF_BFA_at_Thigh_ellipsoid_BFA_1_sidesite" pos="-0.00225935 0.00152944 -0.00593554" size="0.0005"/>
+          <site name="LVM_VM-P1" pos="-0.00029 0.00119 -0.00053" size="0.0005"/>
+          <site name="LVL_VL-P1" pos="-0.00038 0.00204 -0.00062" size="0.0005"/>
+          <site name="LVI_VI-P1" pos="-0.00036 0.00146 -0.00149" size="0.0005"/>
+          <site name="LPOP_POP-P1" pos="-0.00198 0.00122 -0.01312" size="0.0005"/>
+          <site name="LMG_MG-P1" pos="-0.00162 -0.00078 -0.01279" size="0.0005"/>
+          <site name="LLG_LG-P1" pos="-0.00188 0.00115 -0.01276" size="0.0005"/>
+          <site name="LPLANT_PLANT-P1" pos="-0.0017 0.00022 -0.01247" size="0.0005"/>
+
+          <body name="LLeg" pos="-0.001 0 -0.0135" gravcomp="0">
+            <!-- <inertial pos="-0.0008 -0.0072 0" quat="0.5 0.5 -0.5 0.5" mass="0.001" diaginertia="0.001 0.001 0.001"/> -->
+            <joint name="L_Knee_flexion" pos="0 0 0" axis="0 1 0" range="0 120" group="4"/>
+
+            <geom name="LLeg_geom_1" pos="0 0 0" euler="90 0 0" type="mesh" rgba="1 1 1 1" mesh="LTibfib"/>
+            <geom name="LLeg_geom_2" pos="0 0 0" euler="90 0 0" type="mesh" rgba="1 1 1 1" mesh="LPatella"/>
+            
+            <geom name="LPlantarflexors_at_Tibia_cylinder" size="0.001 0.0015" pos="-0.0011 0 -0.0029" euler="-266.789 2.970 -0.650" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+            <geom name="LHip_Ext_at_Gastroc_ellipsoid" size="0.002" pos="-0.0007 0.0002 -0.0064" euler="-97.425 -1.340 175.955" group="2" rgba="0.19 0.83 0.78 0.2"/>
+            <geom name="LAnkle_Everters_at_Lat_Malleolus_cylinder" size="0.0008 0.00075" pos="-0.0008 0 -0.0177" euler="-261.669 4.760 4.040" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+            <geom name="LPOP_at_Tibia_cylinder" size="0.001 0.002" pos="-0.0007 0 -0.0019" euler="268.250 -9.311 -8.932" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+            <geom name="LBFPC_at_Leg_ellipsoid" size="0.0012" pos="-0.0013 -0.0005 -0.0057" euler="85.250 11.001 -10.720" group="2" rgba="0.19 0.83 0.78 0.8"/>
+            
+            <site name="LPlantarflexors_at_Tibia_sidesite" pos="-3.094e-03 1.022e-04 -3.013e-03" size="0.0005"/>
+            <site name="LAnkle_Everters_at_Lat_Malleolus_sidesite" pos="-2.575e-03 1.658e-04 -1.795e-02" size="0.0005"/>
+            <site name="LPOP_at_Tibia_sidesite" pos="-2.673e-03  -3.100e-04 -1.789e-03" size="0.0005"/>
+            <site name="LBFPC_at_Leg_sidesite" pos="-8.802e-04 1.622e-03 -6.102e-03" size="0.0005"/>
+            <site name="LGP_GP-P2" pos="1.100e-04  -1.790e-03 -4.720e-03" size="0.0005"/>
+            <site name="LGA_GA-P2" pos="1.900e-04  -1.730e-03 -4.500e-03" size="0.0005"/>
+            <site name="LSM_SM-P2" pos="-9.000e-05  -1.650e-03 -4.050e-03" size="0.0005"/>
+            <site name="LST_ST-P2" pos="1.500e-04  -1.720e-03 -6.070e-03" size="0.0005"/>
+            <site name="LBFP_cranial_BFP_cranial-P2" pos="-1.040e-03 1.200e-03 -1.570e-03" size="0.0005"/>
+            <site name="LBFP_mid_BFP_mid-P2" pos="-1.870e-03 1.420e-03 -2.820e-03" size="0.0005"/>
+            <site name="LBFP_caudal_BFP_caudal-P2" pos="-2.700e-04 1.330e-03 -5.500e-03" size="0.0005"/>
+            <site name="LRF_RF-P2" pos="1.460e-03 1.600e-04  7.200e-04" size="0.0005"/>
+            <site name="LVM_VM-P2" pos="1.280e-03  -2.000e-05  7.600e-04" size="0.0005"/>
+            <site name="LVL_VL-P2" pos="1.280e-03 4.000e-04  7.000e-04" size="0.0005"/>
+            <site name="LVI_VI-P2" pos="1.190e-03 1.500e-04  7.300e-04" size="0.0005"/>
+            <site name="LPOP_POP-P2" pos="-8.500e-04  -1.100e-03 -3.040e-03" size="0.0005"/>
+            <site name="LTA_TA-P1" pos="7.100e-04  -5.000e-05 -2.500e-03" size="0.0005"/>
+            <site name="LTA_TA-P2" pos="1.570e-03  -7.600e-04 -7.610e-03" size="0.0005"/>
+            <site name="LTA_TA-P3" pos="2.900e-04  -4.200e-04 -1.152e-02" size="0.0005"/>
+            <site name="LTA_TA-P4" pos="-4.100e-04  -8.200e-04 -1.582e-02" size="0.0005"/>
+            <site name="LTA_TA-P5" pos="-4.300e-04  -9.800e-04 -1.771e-02" size="0.0005"/>
+            <site name="LEDL_EDL-P1" pos="-5.300e-04 1.600e-03 -2.950e-03" size="0.0005"/>
+            <site name="LEDL_EDL-P2" pos="-1.220e-03 4.700e-04 -1.622e-02" size="0.0005"/>
+            <site name="LEDL_EDL-P3" pos="-8.500e-04 2.600e-04 -1.821e-02" size="0.0005"/>
+            <site name="LEHL_EHL-P1" pos="4.500e-04  -4.200e-04 -4.180e-03" size="0.0005"/>
+            <site name="LEHL_EHL-P2" pos="-2.600e-04  -7.000e-05 -1.301e-02" size="0.0005"/>
+            <site name="LEHL_EHL-P3" pos="-8.000e-04  -2.800e-04 -1.652e-02" size="0.0005"/>
+            <site name="LEHL_EHL-P4" pos="-6.700e-04  -3.100e-04 -1.770e-02" size="0.0005"/>
+            <site name="LPlantarflexors_at_Tibia_cylinder_MG_1_sidesite" pos="-3.088e-03 1.034e-04 -2.711e-03" size="0.0005"/>
+            <site name="LPlantarflexors_at_Tibia_cylinder_LG_1_sidesite" pos="-1.973e-03 7.922e-04 -2.758e-03" size="0.0005"/>
+            <site name="LSOL_SOL-P1" pos="-1.990e-03  -3.000e-04 -8.130e-03" size="0.0005"/>
+            <site name="LPlantarflexors_at_Tibia_cylinder_PLANT_1_sidesite" pos="-2.839e-03 8.492e-04 -2.397e-03" size="0.0005"/>
+            <site name="LFDL_FDL-P1" pos="-1.600e-03  -2.500e-04 -1.950e-03" size="0.0005"/>
+            <site name="LFDL_FDL-P2" pos="-1.770e-03  -1.150e-03 -1.914e-02" size="0.0005"/>
+            <site name="LTP_TP-P1" pos="-1.490e-03  -6.900e-04 -2.130e-03" size="0.0005"/>
+            <site name="LTP_TP-P2" pos="-5.900e-04  -3.200e-04 -3.490e-03" size="0.0005"/>
+            <site name="LTP_TP-P3" pos="-1.690e-03  -1.220e-03 -1.905e-02" size="0.0005"/>
+            <site name="LPL_PL-P1" pos="-1.480e-03 1.610e-03 -3.460e-03" size="0.0005"/>
+            <site name="LPL_PL-P2" pos="-1.890e-03 9.700e-04 -4.760e-03" size="0.0005"/>
+            <site name="LPL_PL-P3" pos="-1.250e-03 3.600e-04 -1.624e-02" size="0.0005"/>
+            <site name="LPT_PT-P1" pos="-1.930e-03 7.400e-04 -5.020e-03" size="0.0005"/>
+            <site name="LPT_PT-P2" pos="-1.390e-03 2.100e-04 -1.627e-02" size="0.0005"/>
+            <site name="LPB_PB-P1" pos="-1.770e-03  -1.000e-05 -8.790e-03" size="0.0005"/>
+            <site name="LPDQA_PDQA-P1" pos="-2.030e-03 6.000e-04 -5.410e-03" size="0.0005"/>
+            <site name="LPDQA_PDQA-P2" pos="-1.230e-03  -7.000e-05 -1.182e-02" size="0.0005"/>
+            <site name="LPDQI_PDQI-P1" pos="-2.090e-03 2.200e-04 -7.340e-03" size="0.0005"/>
+
+            <body name="LPedal" pos="-0.001 -0.00125 -0.0184" gravcomp="0">
+              <!-- <inertial pos="0.0045 -0.0002 0.0001" quat="0.5 0.5 0.5 0.5" mass="0.001" diaginertia="0.001 0.001 0.001"/> -->
+              <joint name="LAnkle_adduction" pos="0 0 0" axis="0 0 -1" range="-60 60" group="4"/>
+              <joint name="LAnkle_flexion" pos="0 0 0" axis="0 -1 0"  range="-60 60" group="4"/>
+              <joint name="LAnkle_inversion" pos="0 0 0" axis="-1 0 0" range="-20 20" group="4"/>
+              
+              <geom name="LFoot" pos="0 0 0" euler="90 0 0" type="mesh" rgba="1 1 1 1" mesh="LFoot"/>
+              <geom name="LPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 0.0009 -0.0003" euler="-228.191 81.360 -80.386" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+              
+              <site name="LPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03  7.89500000e-04" size="0.0005"/>
+              <site name="LTA_TA-P6" pos="8.40000000e-04  6.40000000e-04  1.00000000e-05" size="0.0005"/>
+              <site name="LEDL_EDL-P4" pos="1.34000000e-03 -2.70000000e-04 -7.00000000e-05" size="0.0005"/>
+              <site name="LEDL_EDL-P5" pos="5.23000000e-03  6.88338275e-20  3.10000000e-04" size="0.0005"/>
+              <site name="LEDL_EDL-P6" pos="7.95000000e-03  6.00000000e-05  9.10000000e-04" size="0.0005"/>
+              <site name="LEDL_EDL-P7" pos="9.49000000e-03  1.20000000e-04  1.09000000e-03" size="0.0005"/>
+              <site name="LEDL_EDL-P8" pos="1.13400000e-02  1.70000000e-04  4.50000000e-04" size="0.0005"/>
+              <site name="LEDL_EDL-P9" pos="1.26100000e-02  1.00000000e-04 -9.00000000e-05" size="0.0005"/>
+              <site name="LEDL_EDL-P10" pos="1.32100000e-02  1.20000000e-04 -1.14000000e-03" size="0.0005"/>
+              <site name="LEDL_EDL-P11" pos="1.33700000e-02  1.50000000e-04 -1.72000000e-03" size="0.0005"/>
+              <site name="LEDL_EDL-P12" pos="1.35200000e-02  1.30000000e-04 -1.93000000e-03" size="0.0005"/>
+              <site name="LEHL_EHL-P5" pos="1.13000000e-03  2.90000000e-04  1.40000000e-04" size="0.0005"/>
+              <site name="LEHL_EHL-P6" pos="2.56000000e-03  1.06000000e-03 -5.10000000e-04" size="0.0005"/>
+              <site name="LEHL_EHL-P7" pos="5.04000000e-03  1.39000000e-03 -2.70000000e-04" size="0.0005"/>
+              <site name="LEHL_EHL-P8" pos="7.30000000e-03  1.82000000e-03  2.30000000e-04" size="0.0005"/>
+              <site name="LEHL_EHL-P9" pos="8.67000000e-03  1.54000000e-03 -6.70000000e-04" size="0.0005"/>
+              <site name="LEHL_EHL-P10" pos="9.28000000e-03  1.19000000e-03 -1.16000000e-03" size="0.0005"/>
+              <site name="LMG_MG-P2" pos="-2.05000000e-03 -2.80000000e-04  3.00000000e-05" size="0.0005"/>
+              <site name="LLG_LG-P2" pos="-2.00000000e-03 -6.90000000e-04  1.00000000e-04" size="0.0005"/>
+              <site name="LSOL_SOL-P2" pos="-1.83000000e-03 -4.70000000e-04  2.10000000e-04" size="0.0005"/>
+              <site name="LPLANT_PLANT-P2" pos="-2.02000000e-03 -4.70000000e-04  1.50000000e-04" size="0.0005"/>
+              <site name="LFDL_FDL-P3" pos="7.40000000e-04  3.10000000e-04 -1.08000000e-03" size="0.0005"/>
+              <site name="LFDL_FDL-P4" pos="3.05000000e-03  8.00000000e-05 -8.20000000e-04" size="0.0005"/>
+              <site name="LFDL_FDL-P5" pos="6.60000000e-03  7.00000000e-05  8.00000000e-05" size="0.0005"/>
+              <site name="LFDL_FDL-P6" pos="9.79000000e-03  1.70000000e-04  2.90000000e-04" size="0.0005"/>
+              <site name="LFDL_FDL-P7" pos="1.20800000e-02  5.00000000e-05 -2.20000000e-04" size="0.0005"/>
+              <site name="LFDL_FDL-P8" pos="1.27500000e-02  1.20000000e-04 -1.38000000e-03" size="0.0005"/>
+              <site name="LFDL_FDL-P9" pos="1.32500000e-02  1.20000000e-04 -2.04000000e-03" size="0.0005"/>
+              <site name="LTP_TP-P4" pos="6.50000000e-04  9.60000000e-04 -8.80000000e-04" size="0.0005"/>
+              <site name="LPL_PL-P4" pos="8.10000000e-04 -9.40000000e-04 -9.10000000e-04" size="0.0005"/>
+              <site name="LPL_PL-P5" pos="1.34000000e-03 -2.80000000e-04 -9.90000000e-04" size="0.0005"/>
+              <site name="LPT_PT-P3" pos="-1.10000000e-04 -8.90000000e-04  1.60000000e-04" size="0.0005"/>
+              <site name="LPT_PT-P4" pos="6.00000000e-04 -9.50000000e-04 -1.70000000e-04" size="0.0005"/>
+              <site name="LPB_PB-P2" pos="-7.00000000e-05 -8.50000000e-04  2.80000000e-04" size="0.0005"/>
+              <site name="LPB_PB-P3" pos="2.13000000e-03 -1.01000000e-03 -6.80000000e-04" size="0.0005"/>
+              <site name="LPDQA_PDQA-P3" pos="1.70000000e-04 -7.60000000e-04  2.30000000e-04" size="0.0005"/>
+              <site name="LPDQA_PDQA-P4" pos="3.23000000e-03 -8.00000000e-04 -1.20000000e-04" size="0.0005"/>
+              <site name="LPDQA_PDQA-P5" pos="7.48000000e-03 -1.02000000e-03  5.80000000e-04" size="0.0005"/>
+              <site name="LPDQA_PDQA-P6" pos="9.28000000e-03 -1.17000000e-03  7.70000000e-04" size="0.0005"/>
+              <site name="LPDQA_PDQA-P7" pos="1.21100000e-02 -9.60000000e-04  6.00000000e-04" size="0.0005"/>
+              <site name="LPDQA_PDQA-P8" pos="1.37700000e-02 -7.20000000e-04 -9.20000000e-04" size="0.0005"/>
+              <site name="LPDQI_PDQI-P2" pos="6.70000000e-04 -7.60000000e-04 -5.00000000e-05" size="0.0005"/>
+              <site name="LPDQI_PDQI-P3" pos="2.23000000e-03 -1.16000000e-03 -6.30000000e-04" size="0.0005"/>
+              <site name="LPDQI_PDQI-P4" pos="4.21000000e-03 -1.07000000e-03 -2.90000000e-04" size="0.0005"/>
+              <site name="LPDQI_PDQI-P5" pos="7.20000000e-03 -1.48000000e-03 -2.00000000e-04" size="0.0005"/>
+              <site name="LPDQI_PDQI-P6" pos="1.04700000e-02 -1.11000000e-03 -4.90000000e-04" size="0.0005"/>
+              <site name="LPDQI_PDQI-P7" pos="1.15900000e-02 -6.80000000e-04 -1.24000000e-03" size="0.0005"/>
+            </body>
+
+          </body>
+        </body>
+    </body>
+</mujoco>

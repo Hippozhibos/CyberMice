@@ -1,0 +1,13 @@
+<mujoco>
+    <geom name="Head_Throax" pos="0.012 0 0" euler="0 0 0" type="sphere" size="0.002" rgba="0.8 0.8 0.8 0.8" density="1311"/>
+        <body name="Head" pos="0.012 0 0">
+            <!-- <inertial pos="0.0065 -0.006 -0.001" mass="0.0001" diaginertia="1 1 1"/> -->
+            <geom type="capsule" pos="0.008 0 0" euler="0 90 0" size="0.003 0.003"  rgba="0.8 0.8 0.8 1" density="1311"/>
+            <geom type="cylinder" pos="0.0055 0.003 0.002" euler="0 90 0" size="0.002 0.0001" rgba="0 0 0 0.8" density="1056"/>
+            <geom type="cylinder" pos="0.0055 -0.003 0.002" euler="0 90 0" size="0.002 0.0001" rgba="0 0 0 0.8" density="1056"/>
+            <geom type="sphere" pos="0.0125 0 0.0025" euler="0 0 0" size="0.001" rgba="0 0 0 0.8"/>
+            <joint name="neck_x" pos="0.00 0 0.00" axis="1 0 0" range="-30 30" group="2"/>
+            <joint name="neck_y" pos="0.00 -0.00 0.00" axis="0 1 0" range="-90 90" group="2"/>
+            <joint name="neck_z" pos="0.00 -0.00 0.00" axis="0 0 1" range="-90 90" group="2"/>
+        </body>
+</mujoco>
