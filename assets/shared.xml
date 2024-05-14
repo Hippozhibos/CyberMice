@@ -1,6 +1,7 @@
 <mujoco>
     <compiler meshdir="meshes" balanceinertia="true" angle="degree" eulerseq="xyz"/>
-    <option timestep="0.002" collision="all"/>
+    <!-- <option timestep="0.002" collision="all"/> -->
+    <option timestep="0.002"/>
     <size njmax="1000" nconmax="400" nkey="1" nuser_jnt="1"/>
     <statistic extent="1"/>
     <visual>

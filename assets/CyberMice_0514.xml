@@ -1,0 +1,59 @@
+<mujoco model="CyberMice">
+    <include file="shared.xml"/>
+    <include file="bones/assets.xml"/>
+
+    <!-- X: Red M2L(right side) -->
+    <!-- Y: Green P2A -->
+    <!-- Z: Blue V2D -->
+
+    <worldbody>
+        <geom name="floor" type="plane" conaffinity="1" size="50 50 0.2" material="grid" pos="0 0 0" zaxis="0 0 1"/>
+
+        <body name="CyberMice" pos="0 0 0.035">
+            <camera name="side" mode="trackcom" pos="0 -3.5 1" euler="-5 0 0"/>
+            <camera name="back" mode="trackcom" pos="-3.5 0 1.3" xyaxes="0 -1 0 1 0 3"/>
+            <light name="top" mode="trackcom" exponent="10" cutoff="45" ambient="0 0 0" pos="0 0 5" directional="false"/>
+
+            <joint name="root_x" type="slide" pos="0 0 0" axis="1 0 0" limited="false" stiffness="0" group="0"/>
+            <joint name="root_y" type="slide" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0"/>
+            <joint name="root_z" type="slide" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0"/>
+            <joint name="root_rot_x" pos="0 0 0" axis="1 0 0" limited="false" stiffness="0" group="0"/>
+            <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0"/>
+            <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0"/>
+
+            <include file="bones/forelimbs.xml"/>
+            <include file="bones/hindlimbs.xml"/>
+            <include file="bones/head.xml"/>
+        </body>
+    </worldbody>
+
+    <include file="tendons/forelimbs.xml"/>
+    <include file="tendons/hindlimbs.xml"/>
+    <!-- <include file="tendons/torso.xml"/> -->
+    <include file="actuators/forelimbs.xml"/>
+    <include file="actuators/hindlimbs.xml"/>
+    <include file="actuators/head.xml"/>
+
+    <equality>
+        <weld name="RGlenohumeral Joint" active="true" body1="RScapula" body2="RClavicle" anchor="0.0015 -0.0065 0.0055" torquescale="1"/>
+        <weld name="LGlenohumeral Joint" active="true" body1="LScapula" body2="LClavicle" anchor="0.0015 0.0065 0.0055" torquescale="1"/>
+    </equality>
+
+    <contact>
+        <exclude body1="RScapula" body2="RClavicle"/>
+        <exclude body1="RHumerus" body2="RClavicle"/>
+        <exclude body1="RHumerus" body2="RRadius"/>
+        <exclude body1="RUlna" body2="RCarpi"/>
+        <exclude body1="RCarpi" body2="RFinger"/>
+        <exclude body1="LScapula" body2="LClavicle"/>
+        <exclude body1="LHumerus" body2="LClavicle"/>
+        <exclude body1="LHumerus" body2="LRadius"/>
+        <exclude body1="LUlna" body2="LCarpi"/>
+        <exclude body1="LCarpi" body2="LFinger"/>
+    </contact>
+
+    <sensor>
+        <subtreelinvel name="torso_subtreelinvel" body="CyberMice"/>
+        <subtreecom name="body_com" body="CyberMice"/>
+    </sensor>
+</mujoco>

@@ -12,7 +12,7 @@ from dm_control.mujoco import wrapper as mj_wrapper
 import numpy as np
 
 _XML_PATH = os.path.join(os.path.dirname(__file__),
-                         'assets/CyberMice.xml')
+                         'CyberMice.xml')
 
 _MICE_MOCAP_JOINTS = [
     'root_x', 'root_y', 'root_z', 
@@ -91,7 +91,7 @@ class Mice(legacy_base.Walker):
     @composer.cached_property
     def root_body(self):
         """Return the body."""
-        return self._mjcf_root.find('body', 'SpineRibs')
+        return self._mjcf_root.find('body', 'CyberMice')
 
     @composer.cached_property
     def pelvis_body(self):
@@ -117,11 +117,11 @@ class Mice(legacy_base.Walker):
     def ground_contact_geoms(self):
         """Return ground contact geoms."""
         return tuple(
-            self._mjcf_root.find('body', 'foot_L').find_all('geom') +
-            self._mjcf_root.find('body', 'foot_R').find_all('geom') +
-            self._mjcf_root.find('body', 'hand_L').find_all('geom') +
-            self._mjcf_root.find('body', 'hand_R').find_all('geom') +
-            self._mjcf_root.find('body', 'vertebra_C1').find_all('geom')
+            self._mjcf_root.find('body', 'L_Pedal').find_all('geom') +
+            self._mjcf_root.find('body', 'R_Pedal').find_all('geom') +
+            self._mjcf_root.find('body', 'LFinger').find_all('geom') +
+            self._mjcf_root.find('body', 'RFinger').find_all('geom') +
+            self._mjcf_root.find('body', 'CyberMice').find_all('geom')
             )
 
     @composer.cached_property
@@ -132,10 +132,10 @@ class Mice(legacy_base.Walker):
     @composer.cached_property
     def end_effectors(self):
         """Return end effectors."""
-        return (self._mjcf_root.find('body', 'lower_arm_R'),
-            self._mjcf_root.find('body', 'lower_arm_L'),
-            self._mjcf_root.find('body', 'foot_R'),
-            self._mjcf_root.find('body', 'foot_L'))
+        return (self._mjcf_root.find('body', 'RFinger'),
+                self._mjcf_root.find('body', 'LFinger'),
+                self._mjcf_root.find('body', 'R_Pedal'),
+                self._mjcf_root.find('body', 'L_Pedal'))
 
     @composer.cached_property
     def observable_joints(self):
@@ -150,7 +150,7 @@ class Mice(legacy_base.Walker):
     @composer.cached_property
     def mocap_joints(self):
         return tuple(
-            self._mjcf_root.find('joint', name) for name in _RAT_MOCAP_JOINTS)
+            self._mjcf_root.find('joint', name) for name in _MICE_MOCAP_JOINTS)
 
     @composer.cached_property
     def mocap_joint_order(self):
@@ -165,19 +165,19 @@ class Mice(legacy_base.Walker):
     def mocap_tracking_bodies(self):
         """Return bodies for mocap comparison."""
         return tuple(body for body in self._mjcf_root.find_all('body')
-                 if not re.match(r'(vertebra|hand|toe)', body.name))
+                 if not re.match(r'(CyberMice|Finger|Pedal)', body.name))
 
     @composer.cached_property
     def primary_joints(self):
         """Return primary (non-vertebra) joints."""
         return tuple(jnt for jnt in self._mjcf_root.find_all('joint')
-                    if 'vertebra' not in jnt.name)
+                    if 'CyberMice' not in jnt.name)
 
     @composer.cached_property
     def vertebra_joints(self):
         """Return vertebra joints."""
         return tuple(jnt for jnt in self._mjcf_root.find_all('joint')
-                 if 'vertebra' in jnt.name)
+                 if 'CyberMice' in jnt.name)
 
     @composer.cached_property
     def primary_joint_order(self):
@@ -201,6 +201,7 @@ class Mice(legacy_base.Walker):
     def egocentric_camera(self):
         """Return the egocentric camera."""
         return self._mjcf_root.find('camera', 'egocentric')
+        # pass
 
     @property
     def _xml_path(self):
@@ -242,7 +243,7 @@ class Mice(legacy_base.Walker):
         return actuator_order
 
     def _build_observables(self):
-        return RodentObservables(self)
+        return MiceObservables(self)
 
 
 class MiceObservables(legacy_base.WalkerObservables):
@@ -298,14 +299,15 @@ class MiceObservables(legacy_base.WalkerObservables):
         self.joints_pos, self.joints_vel,
         self.tendons_pos, self.tendons_vel,
         self.actuator_activation,
-        self.body_height, self.end_effectors_pos, self.appendages_pos,
+        self.body_height, 
+        self.end_effectors_pos, 
+        self.appendages_pos,
         self.world_zaxis
     ] + self._collect_from_attachments('proprioception')
 
   @composer.observable
   def egocentric_camera(self):
     """Observable of the egocentric camera."""
-
     if not hasattr(self, '_scene_options'):
       # Don't render this walker's geoms.
       self._scene_options = mj_wrapper.MjvOption()

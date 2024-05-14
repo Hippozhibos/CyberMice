@@ -1,37 +1,37 @@
 <mujoco>
     <asset>
         <material name="bone" reflectance="1" shininess="0" specular="0" rgba="0.68 0.64 0.57 1"/>
-        <mesh name="RSpineRibs" file="RSpine And Ribs.stl"/>
-        <mesh name="RScapula" file="RScapula.stl"/>
-        <mesh name="RHumerus" file="RHumerus.stl"/>
-        <mesh name="RUlna" file="RUlna.stl"/>
-        <mesh name="RRadius" file="RRadius.stl"/>
-        <mesh name="RCarpi" file="RCarpi.stl"/>
-        <mesh name="RFinger" file="RFinger.stl"/>
-        <mesh name="RClavicle" file="RClavicle.stl"/>
-        <mesh name="LSpineRibs" file="LSpine And Ribs.stl"/>
-        <mesh name="LScapula" file="LScapula.stl"/>
-        <mesh name="LHumerus" file="LHumerus.stl"/>
-        <mesh name="LUlna" file="LUlna.stl"/>
-        <mesh name="LRadius" file="LRadius.stl"/>
-        <mesh name="LCarpi" file="LCarpi.stl"/>
-        <mesh name="LFinger" file="LFinger.stl"/>
-        <mesh name="LClavicle" file="LClavicle.stl"/>
-        <mesh name="RBicep" file="RBicep.stl"/>
-        <mesh name="RBrachialis" file="RBrachialis.stl"/>
-        <mesh name="RTricep_long" file="RTriceps brachii-long head.stl"/>
-        <mesh name="RSupraspinatus" file="RSupraspinatus Muscle.stl"/>
-        <mesh name="RSubscapularis" file="RSubscapularis Muscle.stl"/>
-        <mesh name="LSubscapularis" file="LSubscapularisMuscle.stl"/>
-        <mesh name="RPelvis" file="RPelvis.stl"/>
-        <mesh name="RFemur" file="RFemur.stl"/>
-        <mesh name="RTibfib" file="RTibfib.stl"/>
-        <mesh name="RPatella" file="RPatella.stl"/>
-        <mesh name="RFoot" file="RFoot.stl"/>
-        <mesh name="LPelvis" file="LPelvis.stl"/>
-        <mesh name="LFemur" file="LFemur.stl"/>
-        <mesh name="LTibfib" file="LTibfib.stl"/>
-        <mesh name="LPatella" file="LPatella.stl"/>
-        <mesh name="LFoot" file="LFoot.stl"/>
+        <mesh name="RSpineRibs" file="meshes/RSpine And Ribs.stl"/>
+        <mesh name="RScapula" file="meshes/RScapula.stl"/>
+        <mesh name="RHumerus" file="meshes/RHumerus.stl"/>
+        <mesh name="RUlna" file="meshes/RUlna.stl"/>
+        <mesh name="RRadius" file="meshes/RRadius.stl"/>
+        <mesh name="RCarpi" file="meshes/RCarpi.stl"/>
+        <mesh name="RFinger" file="meshes/RFinger.stl"/>
+        <mesh name="RClavicle" file="meshes/RClavicle.stl"/>
+        <mesh name="LSpineRibs" file="meshes/LSpine And Ribs.stl"/>
+        <mesh name="LScapula" file="meshes/LScapula.stl"/>
+        <mesh name="LHumerus" file="meshes/LHumerus.stl"/>
+        <mesh name="LUlna" file="meshes/LUlna.stl"/>
+        <mesh name="LRadius" file="meshes/LRadius.stl"/>
+        <mesh name="LCarpi" file="meshes/LCarpi.stl"/>
+        <mesh name="LFinger" file="meshes/LFinger.stl"/>
+        <mesh name="LClavicle" file="meshes/LClavicle.stl"/>
+        <mesh name="RBicep" file="meshes/RBicep.stl"/>
+        <mesh name="RBrachialis" file="meshes/RBrachialis.stl"/>
+        <mesh name="RTricep_long" file="meshes/RTriceps brachii-long head.stl"/>
+        <mesh name="RSupraspinatus" file="meshes/RSupraspinatus Muscle.stl"/>
+        <mesh name="RSubscapularis" file="meshes/RSubscapularis Muscle.stl"/>
+        <mesh name="LSubscapularis" file="meshes/LSubscapularisMuscle.stl"/>
+        <mesh name="RPelvis" file="meshes/RPelvis.stl"/>
+        <mesh name="RFemur" file="meshes/RFemur.stl"/>
+        <mesh name="RTibfib" file="meshes/RTibfib.stl"/>
+        <mesh name="RPatella" file="meshes/RPatella.stl"/>
+        <mesh name="RFoot" file="meshes/RFoot.stl"/>
+        <mesh name="LPelvis" file="meshes/LPelvis.stl"/>
+        <mesh name="LFemur" file="meshes/LFemur.stl"/>
+        <mesh name="LTibfib" file="meshes/LTibfib.stl"/>
+        <mesh name="LPatella" file="meshes/LPatella.stl"/>
+        <mesh name="LFoot" file="meshes/LFoot.stl"/>
     </asset>
 </mujoco> 
