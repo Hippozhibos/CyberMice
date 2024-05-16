@@ -6,190 +6,312 @@ import re
 from dm_control import composer
 from dm_control import mjcf
 from dm_control.composer.observation import observable
-from dm_control.composer import variation
-from dm_control.composer import Arena
-from dm_control.composer.variation import distributions
-from dm_control.composer.variation import noises
-from dm_control.locomotion.arenas import floors
-from dm_control.locomotion.arenas import bowl
-
-from dm_control.locomotion.arenas import corridors as corridor_arenas
-from dm_control.locomotion.tasks import corridors as corridor_tasks
-from dm_control import suite
 from dm_control.locomotion.walkers import base
 from dm_control.locomotion.walkers import legacy_base
 from dm_control.mujoco import wrapper as mj_wrapper
 import numpy as np
 
-import copy
-import os
-import itertools
-from IPython.display import clear_output
-import numpy as np
-
-# Graphics-related
-import matplotlib
-import matplotlib.animation as animation
-import matplotlib.pyplot as plt
-from IPython.display import HTML
-import PIL.Image
-
-# Use svg backend for figure rendering
-# %config InlineBackend.figure_format = 'svg'
-
-# Font sizes
-SMALL_SIZE = 8
-MEDIUM_SIZE = 10
-BIGGER_SIZE = 12
-plt.rc('font', size=SMALL_SIZE)          # controls default text sizes
-plt.rc('axes', titlesize=SMALL_SIZE)     # fontsize of the axes title
-plt.rc('axes', labelsize=MEDIUM_SIZE)    # fontsize of the x and y labels
-plt.rc('xtick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
-plt.rc('ytick', labelsize=SMALL_SIZE)    # fontsize of the tick labels
-plt.rc('legend', fontsize=SMALL_SIZE)    # legend fontsize
-plt.rc('figure', titlesize=BIGGER_SIZE)  # fontsize of the figure title
-
-# Inline video helper function
-if os.environ.get('COLAB_NOTEBOOK_TEST', False):
-  # We skip video generation during tests, as it is quite expensive.
-  display_video = lambda *args, **kwargs: None
-else:
-  def display_video(frames, framerate=30):
-    height, width, _ = frames[0].shape
-    dpi = 70
-    orig_backend = matplotlib.get_backend()
-    matplotlib.use('Agg')  # Switch to headless 'Agg' to inhibit figure rendering.
-    fig, ax = plt.subplots(1, 1, figsize=(width / dpi, height / dpi), dpi=dpi)
-    matplotlib.use(orig_backend)  # Switch back to the original backend.
-    ax.set_axis_off()
-    ax.set_aspect('equal')
-    ax.set_position([0, 0, 1, 1])
-    im = ax.imshow(frames[0])
-    def update(frame):
-      im.set_data(frame)
-      return [im]
-    interval = 1000/framerate
-    anim = animation.FuncAnimation(fig=fig, func=update, frames=frames,
-                                   interval=interval, blit=True, repeat=False)
-    return HTML(anim.to_html5_video())
-
-# Seed numpy's global RNG so that cell outputs are deterministic. We also try to
-# use RandomState instances that are local to a single cell wherever possible.
-np.random.seed(42)
-
-
 _XML_PATH = os.path.join(os.path.dirname(__file__),
                          'CyberMice.xml')
-class Mice(composer.Entity):
+
+_MICE_MOCAP_JOINTS = [
+    'root_x', 'root_y', 'root_z', 
+    'root_rot_x', 'root_rot_y', 'root_rot_z',
+    'RScapula_r1', 'RScapula_r2', 'RScapula_r3', 'RScapula_r4',
+    'RShoulder_flexion','RShoulder_adduction', 'RShoulder_rotation', 
+    'RElbow_flexion',
+    'RRadius_rotation', 'RWrist_adduction', 'RWrist_flexion', 
+    'RClavicle_r1', 'RClavicle_r2',
+    'LScapula_r1', 'LScapula_r2', 'LScapula_r3', 'LScapula_r4',
+    'LShoulder_flexion','LShoulder_adduction', 'LShoulder_rotation', 
+    'LElbow_flexion',
+    'LRadius_rotation', 'LWrist_adduction', 'LWrist_flexion', 
+    'LClavicle_r1', 'LClavicle_r2',
+    'waist_x','waist_y','waist_z',
+    'RHip_rotation','RHip_flexion','RHip_adduction', 
+    'RKnee_flexion', 
+    'RAnkle_adduction', 'RAnkle_flexion', 'RAnkle_rotation',
+    'LHip_rotation','LHip_flexion','LHip_adduction', 
+    'LKnee_flexion', 
+    'LAnkle_adduction', 'LAnkle_flexion', 'LAnkle_rotation',
+    'neck_x', 'neck_y', 'neck_z',]
+
+_UPRIGHT_POS = (0.0, 0.0, 0.0)
+_UPRIGHT_QUAT = (1., 0., 0., 0.)
+_TORQUE_THRESHOLD = 60
+
+class Mice(legacy_base.Walker):
     """A muscle-controlled mice with control range scaled to [0.1, 1]."""
 
-    def _build(self):
-        self._mjcf_model = mjcf.from_path(_XML_PATH)     
+    def _build(self,
+               params=None,
+               name='walker',
+               torque_actuators=False,
+               initializer=None):
+        self.params = params
+        self._mjcf_root = mjcf.from_path(_XML_PATH)
+        if name:
+            self._mjcf_root.model = name
+
+        self.body_sites = []
+        super()._build(initializer=initializer)
+
+        # modify actuators
+        if torque_actuators:
+            for actuator in self._mjcf_root.find_all('actuator'):
+                actuator.gainprm = [actuator.forcerange[1]]
+                del actuator.biastype
+                del actuator.biasprm
+
+
+    @property
+    def upright_pose(self):
+        """Reset pose to upright position."""
+        return base.WalkerPose(xpos=_UPRIGHT_POS, xquat=_UPRIGHT_QUAT)
+        
 
     @property
     def mjcf_model(self):
         """Return the model root."""
-        return self._mjcf_model
+        return self._mjcf_root
 
 
-    @property
+    @composer.cached_property
     def actuators(self):
         """Return all actuators."""
-        return tuple(self._mjcf_model.find_all('actuator'))
+        return tuple(self._mjcf_root.find_all('actuator'))
+
+
+    @composer.cached_property
+    def root_body(self):
+        """Return the body."""
+        return self._mjcf_root.find('body', 'CyberMice')
+
+    @composer.cached_property
+    def pelvis_body(self):
+        """Return the body."""
+        return self._mjcf_root.find('body', 'RPelvis')
+
+    @composer.cached_property
+    def head(self):
+        """Return the head."""
+        return self._mjcf_root.find('body', 'Head')
+
+    @composer.cached_property
+    def left_arm_root(self):
+        """Return the left arm."""
+        return self._mjcf_root.find('body', 'LScapula')
+
+    @composer.cached_property
+    def right_arm_root(self):
+        """Return the right arm."""
+        return self._mjcf_root.find('body', 'RScapula')
+
+    @composer.cached_property
+    def ground_contact_geoms(self):
+        """Return ground contact geoms."""
+        return tuple(
+            self._mjcf_root.find('body', 'L_Pedal').find_all('geom') +
+            self._mjcf_root.find('body', 'R_Pedal').find_all('geom') +
+            self._mjcf_root.find('body', 'LFinger').find_all('geom') +
+            self._mjcf_root.find('body', 'RFinger').find_all('geom') +
+            self._mjcf_root.find('body', 'CyberMice').find_all('geom')
+            )
+
+    @composer.cached_property
+    def standing_height(self):
+        """Return standing height."""
+        return self.params['_STAND_HEIGHT']
+
+
+    @composer.cached_property
+    def end_effectors(self):
+        """Return end effectors."""
+        return (self._mjcf_root.find('body', 'RFinger'),
+                self._mjcf_root.find('body', 'LFinger'),
+                self._mjcf_root.find('body', 'RPedal'),
+                self._mjcf_root.find('body', 'LPedal'))
+
+    @composer.cached_property
+    def observable_joints(self):
+        return tuple(actuator.joint
+                 for actuator in self.actuators  #  This lint is mistaken; pylint: disable=not-an-iterable
+                 if actuator.joint is not None)
+
+    @composer.cached_property
+    def observable_tendons(self):
+        return self._mjcf_root.find_all('tendon')
+
+    @composer.cached_property
+    def mocap_joints(self):
+        return tuple(
+            self._mjcf_root.find('joint', name) for name in _MICE_MOCAP_JOINTS)
+
+    @composer.cached_property
+    def mocap_joint_order(self):
+        return tuple([jnt.name for jnt in self.mocap_joints])  #  This lint is mistaken; pylint: disable=not-an-iterable
+
+    @composer.cached_property
+    def bodies(self):
+        """Return all bodies."""
+        return tuple(self._mjcf_root.find_all('body'))
+
+    @composer.cached_property
+    def mocap_tracking_bodies(self):
+        """Return bodies for mocap comparison."""
+        return tuple(body for body in self._mjcf_root.find_all('body')
+                 if not re.match(r'(CyberMice|Finger|Pedal)', body.name))
+
+    @composer.cached_property
+    def primary_joints(self):
+        """Return primary (non-vertebra) joints."""
+        return tuple(jnt for jnt in self._mjcf_root.find_all('joint')
+                    if 'CyberMice' not in jnt.name)
+
+    @composer.cached_property
+    def vertebra_joints(self):
+        """Return vertebra joints."""
+        return tuple(jnt for jnt in self._mjcf_root.find_all('joint')
+                 if 'CyberMice' in jnt.name)
+
+    @composer.cached_property
+    def primary_joint_order(self):
+        joint_names = self.mocap_joint_order
+        primary_names = tuple([jnt.name for jnt in self.primary_joints])  # pylint: disable=not-an-iterable
+        primary_order = []
+        for nm in primary_names:
+            primary_order.append(joint_names.index(nm))
+        return primary_order
+
+    @composer.cached_property
+    def vertebra_joint_order(self):
+        joint_names = self.mocap_joint_order
+        vertebra_names = tuple([jnt.name for jnt in self.vertebra_joints])  # pylint: disable=not-an-iterable
+        vertebra_order = []
+        for nm in vertebra_names:
+            vertebra_order.append(joint_names.index(nm))
+        return vertebra_order
+
+    @composer.cached_property
+    def egocentric_camera(self):
+        """Return the egocentric camera."""
+        return self._mjcf_root.find('camera', 'egocentric')
+        # pass
+
+    @property
+    def _xml_path(self):
+        """Return the path to th model .xml file."""
+        return self.params['_XML_PATH']
+
+    @composer.cached_property
+    def joint_actuators(self):
+        """Return all joint actuators."""
+        return tuple([act for act in self._mjcf_root.find_all('actuator')
+                    if act.joint])
+
+    @composer.cached_property
+    def joint_actuators_range(self):
+        act_joint_range = []
+        for act in self.joint_actuators:  #  This lint is mistaken; pylint: disable=not-an-iterable
+            associated_joint = self._mjcf_root.find('joint', act.name)
+            act_range = associated_joint.dclass.joint.range
+            act_joint_range.append(act_range)
+        return act_joint_range
+
+    def pose_to_actuation(self, pose):
+        # holds for joint actuators, find desired torque = 0
+        # u_ref = [2 q_ref - (r_low + r_up) ]/(r_up - r_low)
+        r_lower = np.array([ajr[0] for ajr in self.joint_actuators_range])  #  This lint is mistaken; pylint: disable=not-an-iterable
+        r_upper = np.array([ajr[1] for ajr in self.joint_actuators_range])  #  This lint is mistaken; pylint: disable=not-an-iterable
+        num_tendon_actuators = len(self.actuators) - len(self.joint_actuators)
+        tendon_actions = np.zeros(num_tendon_actuators)
+        return np.hstack([tendon_actions, (2*pose[self.joint_actuator_order]-
+                                        (r_lower+r_upper))/(r_upper-r_lower)])
+
+    @composer.cached_property
+    def joint_actuator_order(self):
+        joint_names = self.mocap_joint_order
+        joint_actuator_names = tuple([act.name for act in self.joint_actuators])  #  This lint is mistaken; pylint: disable=not-an-iterable
+        actuator_order = []
+        for nm in joint_actuator_names:
+            actuator_order.append(joint_names.index(nm))
+        return actuator_order
 
     def _build_observables(self):
         return MiceObservables(self)
 
-NUM_SUBSTEPS = 25  # The number of physics substeps per control timestep.
 
-class MiceObservables(composer.Observables):
+class MiceObservables(legacy_base.WalkerObservables):
   """Observables for the Mice."""
+
   @composer.observable
-  def joint_positions(self):
-     all_joints = self._entity.mjcf_model.find_all('actuator')
-     return observable.MJCFFeature('ctrl', all_joints)
-  
-class PressWithSpecificForce(composer.Task):
-  def __init__(self, creature):
-    self._creature = creature
-    self._arena = floors.Floor()
-    self._arena.add_free_entity(self._creature)
-    self._arena.mjcf_model.worldbody.add('light', pos=(0, 0, 4))
+  def head_height(self):
+    """Observe the head height."""
+    return observable.MJCFFeature('xpos', self._entity.head)[2]
 
-    # Configure initial poses
-    self._creature_initial_pose = (0, 0, 0.15)
+  @composer.observable
+  def sensors_torque(self):
+    """Observe the torque sensors."""
+    return observable.MJCFFeature(
+        'sensordata',
+        self._entity.mjcf_model.sensor.torque,
+        corruptor=lambda v, random_state: np.tanh(2 * v / _TORQUE_THRESHOLD)
+        )
 
-    # Configure variators
-    self._mjcf_variator = variation.MJCFVariator()
-    self._physics_variator = variation.PhysicsVariator()
+  @composer.observable
+  def tendons_pos(self):
+    return observable.MJCFFeature('length', self._entity.observable_tendons)
 
-    # Configure and enable observables
-    self._creature.observables.joint_positions.enabled = True
+  @composer.observable
+  def tendons_vel(self):
+    return observable.MJCFFeature('velocity', self._entity.observable_tendons)
 
-    self.control_timestep = NUM_SUBSTEPS * self.physics_timestep
-    self._task_observables = {}
+  @composer.observable
+  def actuator_activation(self):
+    """Observe the actuator activation."""
+    model = self._entity.mjcf_model
+    return observable.MJCFFeature('act', model.find_all('actuator'))
 
-    # Adjust offscreen framebuffer width
-    self._adjust_offscreen_framebuffer_width(1600)  # Set to desired width
+  @composer.observable
+  def appendages_pos(self):
+    """Equivalent to `end_effectors_pos` with head's position appended."""
 
-    # Adjust camera settings
-    self._adjust_camera_distance(0.3)  # Set to desired distance
+    def relative_pos_in_egocentric_frame(physics):
+      end_effectors_with_head = (
+          self._entity.end_effectors + (self._entity.head,))
+      end_effector = physics.bind(end_effectors_with_head).xpos
+      torso = physics.bind(self._entity.root_body).xpos
+      xmat = \
+          np.reshape(physics.bind(self._entity.root_body).xmat, (3, 3))
+      return np.reshape(np.dot(end_effector - torso, xmat), -1)
+
+    return observable.Generic(relative_pos_in_egocentric_frame)
 
   @property
-  def root_entity(self):
-    return self._arena
+  def proprioception(self):
+    """Return proprioceptive information."""
+    return [
+        self.joints_pos, self.joints_vel,
+        self.tendons_pos, self.tendons_vel,
+        self.actuator_activation,
+        self.body_height, 
+        self.end_effectors_pos, 
+        self.appendages_pos,
+        self.world_zaxis
+    ] + self._collect_from_attachments('proprioception')
 
-  @property
-  def task_observables(self):
-    return self._task_observables
+  @composer.observable
+  def egocentric_camera(self):
+    """Observable of the egocentric camera."""
+    if not hasattr(self, '_scene_options'):
+      # Don't render this walker's geoms.
+      self._scene_options = mj_wrapper.MjvOption()
+      collision_geom_group = 2
+      self._scene_options.geomgroup[collision_geom_group] = 0
+      cosmetic_geom_group = 1
+      self._scene_options.geomgroup[cosmetic_geom_group] = 0
 
-  def initialize_episode_mjcf(self, random_state):
-    self._mjcf_variator.apply_variations(random_state)
-
-  def initialize_episode(self, physics, random_state):
-    self._physics_variator.apply_variations(physics, random_state)
-
-  def get_reward(self, physics):
-    return 0.0
-  
-  def _adjust_offscreen_framebuffer_width(self, width):
-    body_element = self._arena.mjcf_model.find('body', 'root')
-    if body_element is not None:
-        worldbody_element = body_element.find('worldbody')
-        if worldbody_element is None:
-            worldbody_element = mjcf.element.Element('worldbody')
-            body_element.add(worldbody_element)
-        visual_element = worldbody_element.find('visual')
-        if visual_element is None:
-            visual_element = mjcf.element.Element('visual')
-            worldbody_element.add(visual_element)
-        global_element = visual_element.find('global')
-        if global_element is None:
-            global_element = mjcf.element.Element('global')
-            visual_element.add(global_element)
-        global_element.set_attrib('offwidth', str(width))
-
-  def _adjust_camera_distance(self, distance):
-    camera_element = self._arena.mjcf_model.find('camera', 'camera')
-    if camera_element is not None:
-        camera_element.set_attrib('distance', str(distance))
-
-         # Find the position of your model (assuming it's named 'your_model_name')
-        model_position = self._creature.mjcf_model.find('body', 'CyberMice').pos
-        
-        # Set camera lookat to the position of your model
-        camera_element.set_attrib('lookat', ' '.join(map(str, model_position)))
-
-
-
-
-creature = Mice()
-task = PressWithSpecificForce(creature)
-env = composer.Environment(task, random_state=np.random.RandomState(42))
-
-env.reset()
-
-# PIL.Image.fromarray(env.physics.render())
-image = PIL.Image.fromarray(env.physics.render())
-
-image.save("output_image.png")
+    return observable.MJCFCamera(self._entity.egocentric_camera,
+                                 width=64, height=64,
+                                 scene_option=self._scene_options
+                                )
