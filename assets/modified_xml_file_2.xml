@@ -1,5 +1,5 @@
 <mujoco model="CyberMice">
-    <compiler meshdir="meshes" balanceinertia="true" eulerseq="xyz" />
+    <compiler meshdir="meshes" balanceinertia="true" angle="radian" eulerseq="xyz" />
     
     <option timestep="0.002" />
     <size njmax="1000" nconmax="400" nkey="1" nuser_jnt="1" />
@@ -66,8 +66,13 @@
         <mesh name="LFoot" file="LFoot.stl" />
     </asset>
 
+    
+    
+    
+
     <worldbody>
         
+
         <body name="CyberMice" pos="0 0 0.035">
             <camera name="side" mode="trackcom" pos="0 -3.5 1" euler="-5 0 0" />
             <camera name="back" mode="trackcom" pos="-3.5 0 1.3" xyaxes="0 -1 0 1 0 3" />
@@ -80,15 +85,16 @@
             <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
             <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" />
 
-            <geom type="capsule" name="SpineRibs" pos="0 0 0" euler="0.0 1.5707963267948966 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" density="1311" />
-
+            <geom type="capsule" name="SpineRibs" pos="0 1 0" euler="0.0 0.0 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" density="1311" />
+            <!-- <geom type="capsule" name="SpineRibs" pos="0 0 0" euler="0.0 1.5707963267948966 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" density="1311" /> -->
+            
             <body name="RScapula" pos="0 0 0" euler="0 0 0" gravcomp="0">
-            <!-- <geom name="RScapula" pos="0.005 -0.00875 -0.002" euler="-0.006092348395734171 -0.027415567780803774 -0.004569261296800628" type="mesh" rgba="1 1 1 0.8" mesh="RScapula" density="1908" /> -->
-            <geom name="RScapula" pos="0.005 -0.00875 -0.002" euler="0 0 0" type="mesh" rgba="1 1 1 0.8" mesh="RScapula" density="1908" />
-            <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-5 5" group="0" />
-            <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-5 5" group="0" />
-            <joint name="RScapula_r3" pos="0.005 -0.006 0.0055" axis="1 -0.1 -0.5" range="-5 5" group="0" />
-            <joint name="RScapula_r4" pos="0.005 -0.006 0.0055" axis="0 -1 1" range="-5 5" group="0" />
+            
+            <geom name="RScapula" pos="0.005 -0.00875 -0.002" euler="-0.006092348395734171 0.027415567780803774 -0.004569261296800628" type="mesh" rgba="1 1 1 0.8" mesh="RScapula" density="1908" />
+            <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.0015230870989335428 0.0015230870989335428" group="0" />
+            <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.0015230870989335428 0.0015230870989335428" group="0" />
+            <joint name="RScapula_r3" pos="0.005 -0.006 0.0055" axis="1 -0.1 -0.5" range="-0.0015230870989335428 0.0015230870989335428" group="0" />
+            <joint name="RScapula_r4" pos="0.005 -0.006 0.0055" axis="0 -1 1" range="-0.0015230870989335428 0.0015230870989335428" group="0" />
             <site name="RBicepsLongus_RBicepsLongus-P1" pos="1.00490300e-02 -5.41164926e-03  2.71665878e-03" size="0.0005" />
             <site name="RBicepsBrevis_origin" pos="1.02369300e-02 -4.75999359e-03  1.90260437e-03" size="0.0005" />
             <site name="RTri_Long_origin" pos="8.21030000e-03 -6.22938947e-03  2.78360180e-03" size="0.0005" />
@@ -103,9 +109,9 @@
             <site name="RTeresMinor_origin" pos="4.41866600e-03 -6.75461590e-03  3.62145298e-03" size="0.0005" />
             <body name="RHumerus" pos="0.01 -0.006 0.0015" euler="0 0 0" gravcomp="0">
                 
-                <joint name="RShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-70 70" group="0" />
-                <joint name="RShoulder_adduction" pos="0 0 0" axis="1 0 0" range="-60 45" group="0" />
-                <joint name="RShoulder_rotation" pos="0 0 0" axis="0 0 1" range="-10 90" group="0" />
+                <joint name="RShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-0.0003721603853945451 0.0003721603853945451" group="0" />
+                <joint name="RShoulder_adduction" pos="0 0 0" axis="1 0 0" range="-0.00031899461605246725 0.00023924596203935046" group="0" />
+                <joint name="RShoulder_rotation" pos="0 0 0" axis="0 0 1" range="-5.3165769342077875e-05 0.0004784919240787009" group="0" />
                 <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="2.6582884671038937e-05 0.00023924596203935046 -2.6582884671038937e-05" type="mesh" rgba="1 1 1 0.5" mesh="RHumerus" density="1908" />
                 <geom name="RHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" quat="0.559627 0.471367 -0.439124 0.521346" group="2" rgba="0.19 0.83 0.78 0.1" />
                 <geom name="RHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 -0.0009 -0.00975" quat="0.671212 0.565354 -0.308854 0.366685" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" />
@@ -151,7 +157,7 @@
                 <site name="RExtensorDigitorumLateralis_origin" pos="9.57187076e-04 -2.41146383e-03 -9.39008694e-03" size="0.0005" />
                 <body name="RUlna" pos="0.001 -0.001 -0.01" euler="0 0 0" gravcomp="0">
                 
-                <joint name="RElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0 90" group="0" />
+                <joint name="RElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 8.351259519376067e-06" group="0" />
                 <geom name="RUlna" pos="0.003 0.0015 0.0015" euler="-4.639588621875592e-07 1.2990848141251657e-05 -4.639588621875592e-07" type="mesh" rgba="1 1 1 1" mesh="RUlna" density="1908" />
                 <geom name="RForearm_Proximal_cylinder" size="0.0007 0.0005" pos="-0.0011 0.00025 0.0018" euler="-8.351259519376067e-06 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
                 <site name="RForearm_Proximal_sidesite" pos="-1.21121904e-03  2.56772155e-04  3.57839572e-03" size="0.0005" />
@@ -175,7 +181,7 @@
                 <site name="RPronatorQuadratus_insertion" pos="1.63249514e-04  6.80348315e-04 -1.02911769e-02" size="0.0005" />
                 <body name="RRadius" pos="0 0 -0.0075" gravcomp="0">
                     
-                    <joint name="RRadius_rotation" pos="0.0007 -0.0003 0" axis="-0.1 -0.075 1" range="-90 90" group="0" />
+                    <joint name="RRadius_rotation" pos="0.0007 -0.0003 0" axis="-0.1 -0.075 1" range="-1.4575697530163154e-07 1.4575697530163154e-07" group="0" />
                     <geom name="RRadius" pos="0.003 0.0015 0.009" euler="-8.097609738979529e-09 2.2673307269142682e-07 -8.097609738979529e-09" type="mesh" rgba="1 1 1 1" mesh="RRadius" density="1908" />
                     <geom name="RPronator_cylinder" size="0.0005 0.0035" pos="0.0001 -0.00025 0.0025" euler="8.097609738979529e-09 2.75318731125304e-07 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                     <site name="RBicepsLongus_insertion" pos="-1.46450578e-04 -1.59235303e-06  6.53072842e-03" size="0.0005" />
@@ -204,8 +210,8 @@
                     <site name="RPronatorQuadratus_origin" pos="3.58995558e-04  2.30108196e-07  1.66069051e-04" size="0.0005" />
                     <body name="RCarpi" pos="0 0 -0.0035" gravcomp="0">
                     
-                    <joint name="RWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-45 45" group="0" />
-                    <joint name="RWrist_flexion" pos="0 0 0" axis="1 0 0" range="-90 90" group="0" />
+                    <joint name="RWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-1.2719695633807627e-09 1.2719695633807627e-09" group="0" />
+                    <joint name="RWrist_flexion" pos="0 0 0" axis="1 0 0" range="-2.5439391267615253e-09 2.5439391267615253e-09" group="0" />
                     <geom name="RCarpi" pos="0.003 -0.000 0.0124" euler="0.0 3.957238641629039e-09 -1.4132995148675138e-10" type="mesh" rgba="1 1 1 1" mesh="RCarpi" density="1908" />
                     <geom name="RWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" />
                     <geom name="RWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -269,18 +275,18 @@
             <body name="RClavicle" pos="0.0095 0 -0.003" gravcomp="0">
             
             <geom name="RClavicle" pos="0.0065 -0.006 -0.001" euler="-0.006092348395734171 0.0 0.007615435494667715" type="mesh" rgba="1 1 1 1" mesh="RClavicle" density="1908" />
-            <joint name="RClavicle_r1" pos="0 0 0" axis="1 0 0" range="-10 10" group="0" />
-            <joint name="RClavicle_r2" pos="0 0 0" axis="0 0 1" range="-10 10" group="0" />
+            <joint name="RClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.0030461741978670856 0.0030461741978670856" group="0" />
+            <joint name="RClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.0030461741978670856 0.0030461741978670856" group="0" />
             <site name="RDeltoideusClavicle_origin" pos="0.00205504 -0.0040589   0.00439547" size="0.0005" />
             </body>
 
             <body name="LScapula" pos="0 0 0" gravcomp="0">
             
             <geom name="LScapula" pos="0.005 0.00875 -0.002" euler="0.006092348395734171 0.027415567780803774 0.004569261296800628" type="mesh" rgba="1 1 1 0.8" mesh="LScapula" density="1908" />
-            <joint name="LScapula_r1" pos="0.005 0 0" axis="-1 0 0" range="-5 5" group="1" />
-            <joint name="LScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-5 5" group="1" />
-            <joint name="LScapula_r3" pos="0.005 0.006 0.0055" axis="-1 -0.1 0.5" range="-5 5" group="1" />
-            <joint name="LScapula_r4" pos="0.005 0.006 0.0055" axis="0 -1 -1" range="-5 5" group="1" />
+            <joint name="LScapula_r1" pos="0.005 0 0" axis="-1 0 0" range="-0.0015230870989335428 0.0015230870989335428" group="1" />
+            <joint name="LScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.0015230870989335428 0.0015230870989335428" group="1" />
+            <joint name="LScapula_r3" pos="0.005 0.006 0.0055" axis="-1 -0.1 0.5" range="-0.0015230870989335428 0.0015230870989335428" group="1" />
+            <joint name="LScapula_r4" pos="0.005 0.006 0.0055" axis="0 -1 -1" range="-0.0015230870989335428 0.0015230870989335428" group="1" />
             <site name="LBicepsLongus_RBicepsLongus-P1" pos="1.00490300e-02 5.41164926e-03  2.71665878e-03" size="0.0005" />
             <site name="LBicepsBrevis_origin" pos="1.02369300e-02 4.75999359e-03  1.90260437e-03" size="0.0005" />
             <site name="LTri_Long_origin" pos="8.21030000e-03 6.22938947e-03  2.78360180e-03" size="0.0005" />
@@ -295,9 +301,9 @@
             <site name="LTeresMinor_origin" pos="4.41866600e-03 6.75461590e-03  3.62145298e-03" size="0.0005" />
             <body name="LHumerus" pos="0.01 0.006 0.0015" euler="0 0 0" gravcomp="0">
                 
-                <joint name="LShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-70 70" group="1" />
-                <joint name="LShoulder_adduction" pos="0 0 0" axis="-1 0 0" range="-60 45" group="1" />
-                <joint name="LShoulder_rotation" pos="0 0 0" axis="0 0 -1" range="-10 90" group="1" />
+                <joint name="LShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-0.0003721603853945451 0.0003721603853945451" group="1" />
+                <joint name="LShoulder_adduction" pos="0 0 0" axis="-1 0 0" range="-0.00031899461605246725 0.00023924596203935046" group="1" />
+                <joint name="LShoulder_rotation" pos="0 0 0" axis="0 0 -1" range="-5.3165769342077875e-05 0.0004784919240787009" group="1" />
                 <geom name="LHumerus" pos="-0.0005 0.000 -0.0065" euler="2.6582884671038937e-05 0.00023924596203935046 -2.6582884671038937e-05" type="mesh" rgba="1 1 1 0.8" mesh="LHumerus" density="1908" />
                 <geom name="LHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" euler="-0.000425326154736623 0.0 0.0004572256163418698" group="2" rgba="0.19 0.83 0.78 0.5" density="0" />
                 <geom name="LHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 0.0009 -0.00975" euler="-0.000425326154736623 0.0 0.0003030448852498439" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" density="0" />
@@ -343,7 +349,7 @@
                 <site name="LExtensorDigitorumLateralis_origin" pos="9.57187076e-04 2.41146383e-03 -9.39008694e-03" size="0.0005" />
                 <body name="LUlna" pos="0.001 0.001 -0.01" euler="0 0 0" gravcomp="0">
                 
-                <joint name="LElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0 90" group="1" />
+                <joint name="LElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 8.351259519376067e-06" group="1" />
                 <geom name="LUlna" pos="0.003 -0.0015 0.0015" euler="4.639588621875592e-07 1.2990848141251657e-05 4.639588621875592e-07" type="mesh" rgba="1 1 1 1" mesh="LUlna" density="1908" />
                 <geom name="LForearm_Proximal_cylinder" size="0.0007 0.0005" pos="-0.0011 -0.00025 0.0018" euler="-8.351259519376067e-06 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" density="0" group="2" />
                 <site name="LForearm_Proximal_sidesite" pos="-1.21121904e-03  -2.56772155e-04  3.57839572e-03" size="0.0005" />
@@ -367,7 +373,7 @@
                 <site name="LPronatorQuadratus_insertion" pos="1.63249514e-04  -6.80348315e-04 -1.02911769e-02" size="0.0005" />
                 <body name="LRadius" pos="0 0 -0.0075" gravcomp="0">
                     
-                    <joint name="LRadius_rotation" pos="0.0007 0.0003 0" axis="0.1 -0.075 -1" range="-90 90" group="1" />
+                    <joint name="LRadius_rotation" pos="0.0007 0.0003 0" axis="0.1 -0.075 -1" range="-1.4575697530163154e-07 1.4575697530163154e-07" group="1" />
                     <geom name="LRadius" pos="0.003 -0.0015 0.009" euler="8.097609738979529e-09 2.2673307269142682e-07 8.097609738979529e-09" type="mesh" rgba="1 1 1 1" mesh="LRadius" density="1908" />
                     <geom name="LPronator_cylinder" size="0.0005 0.0035" pos="0.0001 0.00025 0.0025" euler="-8.097609738979529e-09 2.75318731125304e-07 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" density="0" />
                     <site name="LBicepsLongus_insertion" pos="-1.46450578e-04 1.59235303e-06  6.53072842e-03" size="0.0005" />
@@ -396,8 +402,8 @@
                     <site name="LPronatorQuadratus_origin" pos="3.58995558e-04  -2.30108196e-07  1.66069051e-04" size="0.0005" />
                     <body name="LCarpi" pos="0 0 -0.0035" gravcomp="0">
                     
-                    <joint name="LWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-45 45" group="1" />
-                    <joint name="LWrist_flexion" pos="0 0 0" axis="-1 0 0" range="-90 90" group="1" />
+                    <joint name="LWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-1.2719695633807627e-09 1.2719695633807627e-09" group="1" />
+                    <joint name="LWrist_flexion" pos="0 0 0" axis="-1 0 0" range="-2.5439391267615253e-09 2.5439391267615253e-09" group="1" />
                     <geom name="LCarpi" pos="0.003 0.00 0.0124" euler="0.0 3.957238641629039e-09 1.4132995148675138e-10" type="mesh" rgba="1 1 1 1" mesh="LCarpi" density="1908" />
                     <geom name="LWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" />
                     <geom name="LWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -461,8 +467,8 @@
             <body name="LClavicle" pos="0.0095 0 -0.003" euler="0 0 0" gravcomp="0">
             
             <geom name="LClavicle" pos="0.0065 0.006 -0.001" euler="0.006092348395734171 0.0 -0.007615435494667715" type="mesh" rgba="1 1 1 1" mesh="LClavicle" />
-            <joint name="LClavicle_r1" pos="0 0 0" axis="1 0 0" range="-10 10" group="1" />
-            <joint name="LClavicle_r2" pos="0 0 0" axis="0 0 1" range="-10 10" group="1" />
+            <joint name="LClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.0030461741978670856 0.0030461741978670856" group="1" />
+            <joint name="LClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.0030461741978670856 0.0030461741978670856" group="1" />
             <site name="LDeltoideusClavicle_origin" pos="0.00205504 0.0040589 0.00439547" size="0.0005" />
             </body>
             
@@ -471,9 +477,9 @@
                 
                 
                 <geom type="capsule" size="0.003 0.003" pos="-0.008 0 0" euler="0.0 0.027415567780803774 0.0" rgba="0.8 0.8 0.8 0.8" />
-                <joint name="waist_x" pos="0 0 -0" axis="1 0 0" range="-10 10" group="2" />
-                <joint name="waist_y" pos="0 0 -0" axis="0 1 0" range="-60 60" group="2" />
-                <joint name="waist_z" pos="0 0 -0" axis="0 0 1" range="-90 90" group="2" />
+                <joint name="waist_x" pos="0 0 -0" axis="1 0 0" range="-0.0030461741978670856 0.0030461741978670856" group="2" />
+                <joint name="waist_y" pos="0 0 -0" axis="0 1 0" range="-0.018277045187202513 0.018277045187202513" group="2" />
+                <joint name="waist_z" pos="0 0 -0" axis="0 0 1" range="-0.027415567780803774 0.027415567780803774" group="2" />
 
                 <geom name="RPelvis" pos="-0.013 -0.0028 0.002" euler="0.027415567780803774 -0.0015230870989335428 0.0015230870989335428" type="mesh" rgba="1 1 1 1" mesh="RPelvis" />
                 <geom name="LPelvis" pos="-0.013 0.0028 0.002" euler="0.027415567780803774 0.0015230870989335428 0.0015230870989335428" type="mesh" rgba="1 1 1 1" mesh="LPelvis" />
@@ -562,9 +568,9 @@
 
                 <body name="RFemur" pos="-0.013 -0.0028 0.002" gravcomp="0">
                 
-                <joint name="RHip_rotation" pos="0 0 0" axis="0 0 1" range="-10 10" group="3" />
-                <joint name="RHip_flexion" pos="0 0 0" axis="0 -1 0" range="-90 90" group="3" />
-                <joint name="RHip_adduction" pos="0 0 0" axis="1 0 0" range="-60 30" group="3" />
+                <joint name="RHip_rotation" pos="0 0 0" axis="0 0 1" range="-5.3165769342077875e-05 5.3165769342077875e-05" group="3" />
+                <joint name="RHip_flexion" pos="0 0 0" axis="0 -1 0" range="-0.0004784919240787009 0.0004784919240787009" group="3" />
+                <joint name="RHip_adduction" pos="0 0 0" axis="1 0 0" range="-0.00031899461605246725 0.00015949730802623362" group="3" />
 
                 <geom name="RFemur" pos="0 0 0" euler="0.0004784919240787009 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFemur" />
 
@@ -630,7 +636,7 @@
 
                 <body name="R_Leg" pos="-0.001 0 -0.0135" gravcomp="0">
                     
-                    <joint name="RKnee_flexion" pos="0 0 0" axis="0 1 0" range="0 120" group="3" />
+                    <joint name="RKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 1.113501269250142e-05" group="3" />
 
                     <geom name="R_Leg_geom_1" pos="0 0 0" euler="8.351259519376067e-06 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTibfib" />
                     <geom name="R_Leg_geom_2" pos="0 0 0" euler="8.351259519376067e-06 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPatella" />
@@ -690,9 +696,9 @@
 
                     <body name="RPedal" pos="-0.001 0.00125 -0.0184" gravcomp="0">
                     
-                    <joint name="RAnkle_adduction" pos="0 0 0" axis="0 0 1" range="-60 60" group="3" />
-                    <joint name="RAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-60 60" group="3" />
-                    <joint name="RAnkle_rotation" pos="0 0 0" axis="1 0 0" range="-20 20" group="3" />
+                    <joint name="RAnkle_adduction" pos="0 0 0" axis="0 0 1" range="-9.717131686775435e-08 9.717131686775435e-08" group="3" />
+                    <joint name="RAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-9.717131686775435e-08 9.717131686775435e-08" group="3" />
+                    <joint name="RAnkle_rotation" pos="0 0 0" axis="1 0 0" range="-3.2390438955918114e-08 3.2390438955918114e-08" group="3" />
                     
                     <geom name="RFoot" pos="0 0 0" euler="1.4575697530163154e-07 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFoot" />
                     <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="3.6956033278949556e-07 1.317643056726749e-07 -1.3018689129552167e-07" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -751,9 +757,9 @@
 
                 <body name="LFemur" pos="-0.013 0.0028 0.002" gravcomp="0">
                 
-                <joint name="LHip_rotation" pos="0 0 0" axis="0 0 -1" range="-10 10" group="4" />
-                <joint name="LHip_flexion" pos="0 0 0" axis="0 -1 0" range="-90 90" group="4" />
-                <joint name="LHip_adduction" pos="0 0 0" axis="-1 0 0" range="-60 30" group="4" />
+                <joint name="LHip_rotation" pos="0 0 0" axis="0 0 -1" range="-5.3165769342077875e-05 5.3165769342077875e-05" group="4" />
+                <joint name="LHip_flexion" pos="0 0 0" axis="0 -1 0" range="-0.0004784919240787009 0.0004784919240787009" group="4" />
+                <joint name="LHip_adduction" pos="0 0 0" axis="-1 0 0" range="-0.00031899461605246725 0.00015949730802623362" group="4" />
 
                 <geom name="LFemur" pos="0 0 0" euler="0.0004784919240787009 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFemur" />
 
@@ -819,7 +825,7 @@
 
                 <body name="LLeg" pos="-0.001 0 -0.0135" gravcomp="0">
                     
-                    <joint name="LKnee_flexion" pos="0 0 0" axis="0 1 0" range="0 120" group="4" />
+                    <joint name="LKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 1.113501269250142e-05" group="4" />
 
                     <geom name="LLeg_geom_1" pos="0 0 0" euler="8.351259519376067e-06 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LTibfib" />
                     <geom name="LLeg_geom_2" pos="0 0 0" euler="8.351259519376067e-06 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPatella" />
@@ -879,9 +885,9 @@
 
                     <body name="LPedal" pos="-0.001 -0.00125 -0.0184" gravcomp="0">
                     
-                    <joint name="LAnkle_adduction" pos="0 0 0" axis="0 0 -1" range="-60 60" group="4" />
-                    <joint name="LAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-60 60" group="4" />
-                    <joint name="LAnkle_rotation" pos="0 0 0" axis="-1 0 0" range="-20 20" group="4" />
+                    <joint name="LAnkle_adduction" pos="0 0 0" axis="0 0 -1" range="-9.717131686775435e-08 9.717131686775435e-08" group="4" />
+                    <joint name="LAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-9.717131686775435e-08 9.717131686775435e-08" group="4" />
+                    <joint name="LAnkle_rotation" pos="0 0 0" axis="-1 0 0" range="-3.2390438955918114e-08 3.2390438955918114e-08" group="4" />
                     
                     <geom name="LFoot" pos="0 0 0" euler="1.4575697530163154e-07 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFoot" />
                     <geom name="LPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 0.0009 -0.0003" euler="-3.6956033278949556e-07 1.317643056726749e-07 -1.3018689129552167e-07" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -947,9 +953,9 @@
                     <geom type="cylinder" pos="0.0055 -0.003 0.002" euler="0.0 0.027415567780803774 0.0" size="0.002 0.0001" rgba="0 0 0 0.8" density="1056" />
                     <geom type="sphere" pos="0.0125 0 0.0025" euler="0.0 0.0 0.0" size="0.001" rgba="0 0 0 0.8" />
                     <camera name="egocentric" fovy="80.0" pos="0.0125 0 0.0025" euler="0 0 0" />
-                    <joint name="neck_x" pos="0.00 0 0.00" axis="1 0 0" range="-30 30" group="2" />
-                    <joint name="neck_y" pos="0.00 -0.00 0.00" axis="0 1 0" range="-90 90" group="2" />
-                    <joint name="neck_z" pos="0.00 -0.00 0.00" axis="0 0 1" range="-90 90" group="2" />
+                    <joint name="neck_x" pos="0.00 0 0.00" axis="1 0 0" range="-0.009138522593601256 0.009138522593601256" group="2" />
+                    <joint name="neck_y" pos="0.00 -0.00 0.00" axis="0 1 0" range="-0.027415567780803774 0.027415567780803774" group="2" />
+                    <joint name="neck_z" pos="0.00 -0.00 0.00" axis="0 0 1" range="-0.027415567780803774 0.027415567780803774" group="2" />
                 </body>
         </body>
     </worldbody>

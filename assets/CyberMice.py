@@ -12,7 +12,7 @@ from dm_control.mujoco import wrapper as mj_wrapper
 import numpy as np
 
 _XML_PATH = os.path.join(os.path.dirname(__file__),
-                         'modified_xml_file.xml')
+                         'CyberMice.xml')
 
 _MICE_MOCAP_JOINTS = [
     'root_x', 'root_y', 'root_z', 
