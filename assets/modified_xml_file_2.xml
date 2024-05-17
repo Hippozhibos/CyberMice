@@ -85,16 +85,15 @@
             <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
             <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" />
 
-            <geom type="capsule" name="SpineRibs" pos="0 1 0" euler="0.0 0.0 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" density="1311" />
-            <!-- <geom type="capsule" name="SpineRibs" pos="0 0 0" euler="0.0 1.5707963267948966 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" density="1311" /> -->
+            <geom type="capsule" name="SpineRibs" pos="0 0 0" euler="0.0 1.5707963267948966 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" density="1311" />
             
             <body name="RScapula" pos="0 0 0" euler="0 0 0" gravcomp="0">
             
-            <geom name="RScapula" pos="0.005 -0.00875 -0.002" euler="-0.006092348395734171 0.027415567780803774 -0.004569261296800628" type="mesh" rgba="1 1 1 0.8" mesh="RScapula" density="1908" />
-            <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.0015230870989335428 0.0015230870989335428" group="0" />
-            <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.0015230870989335428 0.0015230870989335428" group="0" />
-            <joint name="RScapula_r3" pos="0.005 -0.006 0.0055" axis="1 -0.1 -0.5" range="-0.0015230870989335428 0.0015230870989335428" group="0" />
-            <joint name="RScapula_r4" pos="0.005 -0.006 0.0055" axis="0 -1 1" range="-0.0015230870989335428 0.0015230870989335428" group="0" />
+            <geom name="RScapula" pos="0.005 -0.00875 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 0.8" mesh="RScapula" density="1908" />
+            <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
+            <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
+            <joint name="RScapula_r3" pos="0.005 -0.006 0.0055" axis="1 -0.1 -0.5" range="-0.08726646259971647 0.08726646259971647" group="0" />
+            <joint name="RScapula_r4" pos="0.005 -0.006 0.0055" axis="0 -1 1" range="-0.08726646259971647 0.08726646259971647" group="0" />
             <site name="RBicepsLongus_RBicepsLongus-P1" pos="1.00490300e-02 -5.41164926e-03  2.71665878e-03" size="0.0005" />
             <site name="RBicepsBrevis_origin" pos="1.02369300e-02 -4.75999359e-03  1.90260437e-03" size="0.0005" />
             <site name="RTri_Long_origin" pos="8.21030000e-03 -6.22938947e-03  2.78360180e-03" size="0.0005" />
@@ -109,10 +108,10 @@
             <site name="RTeresMinor_origin" pos="4.41866600e-03 -6.75461590e-03  3.62145298e-03" size="0.0005" />
             <body name="RHumerus" pos="0.01 -0.006 0.0015" euler="0 0 0" gravcomp="0">
                 
-                <joint name="RShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-0.0003721603853945451 0.0003721603853945451" group="0" />
-                <joint name="RShoulder_adduction" pos="0 0 0" axis="1 0 0" range="-0.00031899461605246725 0.00023924596203935046" group="0" />
-                <joint name="RShoulder_rotation" pos="0 0 0" axis="0 0 1" range="-5.3165769342077875e-05 0.0004784919240787009" group="0" />
-                <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="2.6582884671038937e-05 0.00023924596203935046 -2.6582884671038937e-05" type="mesh" rgba="1 1 1 0.5" mesh="RHumerus" density="1908" />
+                <joint name="RShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-1.2217304763960306 1.2217304763960306" group="0" />
+                <joint name="RShoulder_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.7853981633974483" group="0" />
+                <joint name="RShoulder_rotation" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 1.5707963267948966" group="0" />
+                <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 0.5" mesh="RHumerus" density="1908" />
                 <geom name="RHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" quat="0.559627 0.471367 -0.439124 0.521346" group="2" rgba="0.19 0.83 0.78 0.1" />
                 <geom name="RHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 -0.0009 -0.00975" quat="0.671212 0.565354 -0.308854 0.366685" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" />
                 <site name="RHumerus_Distal_sidesite" pos="2.65606317e-03 -6.74797612e-04 -9.57142412e-03" size="0.0005" />
@@ -157,9 +156,9 @@
                 <site name="RExtensorDigitorumLateralis_origin" pos="9.57187076e-04 -2.41146383e-03 -9.39008694e-03" size="0.0005" />
                 <body name="RUlna" pos="0.001 -0.001 -0.01" euler="0 0 0" gravcomp="0">
                 
-                <joint name="RElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 8.351259519376067e-06" group="0" />
-                <geom name="RUlna" pos="0.003 0.0015 0.0015" euler="-4.639588621875592e-07 1.2990848141251657e-05 -4.639588621875592e-07" type="mesh" rgba="1 1 1 1" mesh="RUlna" density="1908" />
-                <geom name="RForearm_Proximal_cylinder" size="0.0007 0.0005" pos="-0.0011 0.00025 0.0018" euler="-8.351259519376067e-06 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
+                <joint name="RElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 1.5707963267948966" group="0" />
+                <geom name="RUlna" pos="0.003 0.0015 0.0015" euler="-0.08726646259971647 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RUlna" density="1908" />
+                <geom name="RForearm_Proximal_cylinder" size="0.0007 0.0005" pos="-0.0011 0.00025 0.0018" euler="-1.5707963267948966 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
                 <site name="RForearm_Proximal_sidesite" pos="-1.21121904e-03  2.56772155e-04  3.57839572e-03" size="0.0005" />
                 <site name="RBrachialis_insertion" pos="-7.08316028e-04  1.04213950e-04 -6.17341662e-04" size="0.0005" />
                 <site name="RTri_Long_insertion" pos="-1.28298531e-03  3.55956089e-04  2.59502057e-03" size="0.0005" />
@@ -181,9 +180,9 @@
                 <site name="RPronatorQuadratus_insertion" pos="1.63249514e-04  6.80348315e-04 -1.02911769e-02" size="0.0005" />
                 <body name="RRadius" pos="0 0 -0.0075" gravcomp="0">
                     
-                    <joint name="RRadius_rotation" pos="0.0007 -0.0003 0" axis="-0.1 -0.075 1" range="-1.4575697530163154e-07 1.4575697530163154e-07" group="0" />
-                    <geom name="RRadius" pos="0.003 0.0015 0.009" euler="-8.097609738979529e-09 2.2673307269142682e-07 -8.097609738979529e-09" type="mesh" rgba="1 1 1 1" mesh="RRadius" density="1908" />
-                    <geom name="RPronator_cylinder" size="0.0005 0.0035" pos="0.0001 -0.00025 0.0025" euler="8.097609738979529e-09 2.75318731125304e-07 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <joint name="RRadius_rotation" pos="0.0007 -0.0003 0" axis="-0.1 -0.075 1" range="-1.5707963267948966 1.5707963267948966" group="0" />
+                    <geom name="RRadius" pos="0.003 0.0015 0.009" euler="-0.08726646259971647 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RRadius" density="1908" />
+                    <geom name="RPronator_cylinder" size="0.0005 0.0035" pos="0.0001 -0.00025 0.0025" euler="0.08726646259971647 2.9670597283903604 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                     <site name="RBicepsLongus_insertion" pos="-1.46450578e-04 -1.59235303e-06  6.53072842e-03" size="0.0005" />
                     <site name="RBicepsBrevis_insertion" pos="-1.59941705e-04 -9.25345857e-06  6.53366064e-03" size="0.0005" />
                     <site name="RPronatorTeres_insertion" pos="1.05259638e-03 -6.81224402e-05  2.44470168e-03" size="0.0005" />
@@ -210,9 +209,9 @@
                     <site name="RPronatorQuadratus_origin" pos="3.58995558e-04  2.30108196e-07  1.66069051e-04" size="0.0005" />
                     <body name="RCarpi" pos="0 0 -0.0035" gravcomp="0">
                     
-                    <joint name="RWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-1.2719695633807627e-09 1.2719695633807627e-09" group="0" />
-                    <joint name="RWrist_flexion" pos="0 0 0" axis="1 0 0" range="-2.5439391267615253e-09 2.5439391267615253e-09" group="0" />
-                    <geom name="RCarpi" pos="0.003 -0.000 0.0124" euler="0.0 3.957238641629039e-09 -1.4132995148675138e-10" type="mesh" rgba="1 1 1 1" mesh="RCarpi" density="1908" />
+                    <joint name="RWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-0.7853981633974483 0.7853981633974483" group="0" />
+                    <joint name="RWrist_flexion" pos="0 0 0" axis="1 0 0" range="-1.5707963267948966 1.5707963267948966" group="0" />
+                    <geom name="RCarpi" pos="0.003 -0.000 0.0124" euler="0.0 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RCarpi" density="1908" />
                     <geom name="RWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" />
                     <geom name="RWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
                     <geom name="RWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar" size="0.000449646" pos="0.00021952  0.0004214  -0.00052225" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -258,7 +257,7 @@
                     <site name="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  8.80950408e-04 -4.62098941e-04" size="0.0005" />
                     <body name="RFinger" pos="0 0 0" gravcomp="0">
                         
-                        <geom name="RFinger" pos="0.003 -0.000 0.0124" euler="0.0 6.906684358357468e-11 -2.4666729851276667e-12" type="mesh" rgba="1 1 1 1" mesh="RFinger" density="1908" />
+                        <geom name="RFinger" pos="0.003 -0.000 0.0124" euler="0.0 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RFinger" density="1908" />
                         <site name="RFlexorDigitumProfundusHumerus_insertion" pos="-7.14972542e-05  2.16902108e-03 -3.71123283e-03" size="0.0005" />
                         <site name="RFlexorDigitumProfundusUlnar_insertion" pos="-4.55924778e-04  7.33065129e-04 -1.36120631e-03" size="0.0005" />
                         <site name="RFlexorDigitumProfundusRadial_insertion" pos="-2.70886598e-04  7.29933150e-04 -1.89909906e-03" size="0.0005" />
@@ -274,19 +273,19 @@
             </body>
             <body name="RClavicle" pos="0.0095 0 -0.003" gravcomp="0">
             
-            <geom name="RClavicle" pos="0.0065 -0.006 -0.001" euler="-0.006092348395734171 0.0 0.007615435494667715" type="mesh" rgba="1 1 1 1" mesh="RClavicle" density="1908" />
-            <joint name="RClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.0030461741978670856 0.0030461741978670856" group="0" />
-            <joint name="RClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.0030461741978670856 0.0030461741978670856" group="0" />
+            <geom name="RClavicle" pos="0.0065 -0.006 -0.001" euler="-0.3490658503988659 0.0 0.4363323129985824" type="mesh" rgba="1 1 1 1" mesh="RClavicle" density="1908" />
+            <joint name="RClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="0" />
+            <joint name="RClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="0" />
             <site name="RDeltoideusClavicle_origin" pos="0.00205504 -0.0040589   0.00439547" size="0.0005" />
             </body>
 
             <body name="LScapula" pos="0 0 0" gravcomp="0">
             
-            <geom name="LScapula" pos="0.005 0.00875 -0.002" euler="0.006092348395734171 0.027415567780803774 0.004569261296800628" type="mesh" rgba="1 1 1 0.8" mesh="LScapula" density="1908" />
-            <joint name="LScapula_r1" pos="0.005 0 0" axis="-1 0 0" range="-0.0015230870989335428 0.0015230870989335428" group="1" />
-            <joint name="LScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.0015230870989335428 0.0015230870989335428" group="1" />
-            <joint name="LScapula_r3" pos="0.005 0.006 0.0055" axis="-1 -0.1 0.5" range="-0.0015230870989335428 0.0015230870989335428" group="1" />
-            <joint name="LScapula_r4" pos="0.005 0.006 0.0055" axis="0 -1 -1" range="-0.0015230870989335428 0.0015230870989335428" group="1" />
+            <geom name="LScapula" pos="0.005 0.00875 -0.002" euler="0.3490658503988659 1.5707963267948966 0.2617993877991494" type="mesh" rgba="1 1 1 0.8" mesh="LScapula" density="1908" />
+            <joint name="LScapula_r1" pos="0.005 0 0" axis="-1 0 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
+            <joint name="LScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
+            <joint name="LScapula_r3" pos="0.005 0.006 0.0055" axis="-1 -0.1 0.5" range="-0.08726646259971647 0.08726646259971647" group="1" />
+            <joint name="LScapula_r4" pos="0.005 0.006 0.0055" axis="0 -1 -1" range="-0.08726646259971647 0.08726646259971647" group="1" />
             <site name="LBicepsLongus_RBicepsLongus-P1" pos="1.00490300e-02 5.41164926e-03  2.71665878e-03" size="0.0005" />
             <site name="LBicepsBrevis_origin" pos="1.02369300e-02 4.75999359e-03  1.90260437e-03" size="0.0005" />
             <site name="LTri_Long_origin" pos="8.21030000e-03 6.22938947e-03  2.78360180e-03" size="0.0005" />
@@ -301,12 +300,12 @@
             <site name="LTeresMinor_origin" pos="4.41866600e-03 6.75461590e-03  3.62145298e-03" size="0.0005" />
             <body name="LHumerus" pos="0.01 0.006 0.0015" euler="0 0 0" gravcomp="0">
                 
-                <joint name="LShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-0.0003721603853945451 0.0003721603853945451" group="1" />
-                <joint name="LShoulder_adduction" pos="0 0 0" axis="-1 0 0" range="-0.00031899461605246725 0.00023924596203935046" group="1" />
-                <joint name="LShoulder_rotation" pos="0 0 0" axis="0 0 -1" range="-5.3165769342077875e-05 0.0004784919240787009" group="1" />
-                <geom name="LHumerus" pos="-0.0005 0.000 -0.0065" euler="2.6582884671038937e-05 0.00023924596203935046 -2.6582884671038937e-05" type="mesh" rgba="1 1 1 0.8" mesh="LHumerus" density="1908" />
-                <geom name="LHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" euler="-0.000425326154736623 0.0 0.0004572256163418698" group="2" rgba="0.19 0.83 0.78 0.5" density="0" />
-                <geom name="LHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 0.0009 -0.00975" euler="-0.000425326154736623 0.0 0.0003030448852498439" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" density="0" />
+                <joint name="LShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-1.2217304763960306 1.2217304763960306" group="1" />
+                <joint name="LShoulder_adduction" pos="0 0 0" axis="-1 0 0" range="-1.0471975511965976 0.7853981633974483" group="1" />
+                <joint name="LShoulder_rotation" pos="0 0 0" axis="0 0 -1" range="-0.17453292519943295 1.5707963267948966" group="1" />
+                <geom name="LHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 0.8" mesh="LHumerus" density="1908" />
+                <geom name="LHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" euler="-1.3962634015954636 0.0 1.5009831567151235" group="2" rgba="0.19 0.83 0.78 0.5" density="0" />
+                <geom name="LHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 0.0009 -0.00975" euler="-1.3962634015954636 0.0 0.9948376736367679" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" density="0" />
                 <site name="LHumerus_Distal_sidesite" pos="2.65606317e-03 6.74797612e-04 -9.57142412e-03" size="0.0005" />
                 <site name="LBicepsLongus_RBicepsLongus-P2" pos="2.33176664e-04  -6.83361903e-04  1.27178559e-03" size="0.0005" />
                 <site name="LBicepsLongus_RBicepsLongus-P3" pos="9.07165153e-04  -4.91352988e-04 -7.12475112e-04" size="0.0005" />
@@ -349,9 +348,9 @@
                 <site name="LExtensorDigitorumLateralis_origin" pos="9.57187076e-04 2.41146383e-03 -9.39008694e-03" size="0.0005" />
                 <body name="LUlna" pos="0.001 0.001 -0.01" euler="0 0 0" gravcomp="0">
                 
-                <joint name="LElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 8.351259519376067e-06" group="1" />
-                <geom name="LUlna" pos="0.003 -0.0015 0.0015" euler="4.639588621875592e-07 1.2990848141251657e-05 4.639588621875592e-07" type="mesh" rgba="1 1 1 1" mesh="LUlna" density="1908" />
-                <geom name="LForearm_Proximal_cylinder" size="0.0007 0.0005" pos="-0.0011 -0.00025 0.0018" euler="-8.351259519376067e-06 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" density="0" group="2" />
+                <joint name="LElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 1.5707963267948966" group="1" />
+                <geom name="LUlna" pos="0.003 -0.0015 0.0015" euler="0.08726646259971647 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LUlna" density="1908" />
+                <geom name="LForearm_Proximal_cylinder" size="0.0007 0.0005" pos="-0.0011 -0.00025 0.0018" euler="-1.5707963267948966 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" density="0" group="2" />
                 <site name="LForearm_Proximal_sidesite" pos="-1.21121904e-03  -2.56772155e-04  3.57839572e-03" size="0.0005" />
                 <site name="LBrachialis_insertion" pos="-7.08316028e-04  -1.04213950e-04 -6.17341662e-04" size="0.0005" />
                 <site name="LTri_Long_insertion" pos="-1.28298531e-03  -3.55956089e-04  2.59502057e-03" size="0.0005" />
@@ -373,9 +372,9 @@
                 <site name="LPronatorQuadratus_insertion" pos="1.63249514e-04  -6.80348315e-04 -1.02911769e-02" size="0.0005" />
                 <body name="LRadius" pos="0 0 -0.0075" gravcomp="0">
                     
-                    <joint name="LRadius_rotation" pos="0.0007 0.0003 0" axis="0.1 -0.075 -1" range="-1.4575697530163154e-07 1.4575697530163154e-07" group="1" />
-                    <geom name="LRadius" pos="0.003 -0.0015 0.009" euler="8.097609738979529e-09 2.2673307269142682e-07 8.097609738979529e-09" type="mesh" rgba="1 1 1 1" mesh="LRadius" density="1908" />
-                    <geom name="LPronator_cylinder" size="0.0005 0.0035" pos="0.0001 0.00025 0.0025" euler="-8.097609738979529e-09 2.75318731125304e-07 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" density="0" />
+                    <joint name="LRadius_rotation" pos="0.0007 0.0003 0" axis="0.1 -0.075 -1" range="-1.5707963267948966 1.5707963267948966" group="1" />
+                    <geom name="LRadius" pos="0.003 -0.0015 0.009" euler="0.08726646259971647 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LRadius" density="1908" />
+                    <geom name="LPronator_cylinder" size="0.0005 0.0035" pos="0.0001 0.00025 0.0025" euler="-0.08726646259971647 2.9670597283903604 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" density="0" />
                     <site name="LBicepsLongus_insertion" pos="-1.46450578e-04 1.59235303e-06  6.53072842e-03" size="0.0005" />
                     <site name="LBicepsBrevis_insertion" pos="-1.59941705e-04 9.25345857e-06  6.53366064e-03" size="0.0005" />
                     <site name="LPronatorTeres_insertion" pos="1.05259638e-03 6.81224402e-05  2.44470168e-03" size="0.0005" />
@@ -402,9 +401,9 @@
                     <site name="LPronatorQuadratus_origin" pos="3.58995558e-04  -2.30108196e-07  1.66069051e-04" size="0.0005" />
                     <body name="LCarpi" pos="0 0 -0.0035" gravcomp="0">
                     
-                    <joint name="LWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-1.2719695633807627e-09 1.2719695633807627e-09" group="1" />
-                    <joint name="LWrist_flexion" pos="0 0 0" axis="-1 0 0" range="-2.5439391267615253e-09 2.5439391267615253e-09" group="1" />
-                    <geom name="LCarpi" pos="0.003 0.00 0.0124" euler="0.0 3.957238641629039e-09 1.4132995148675138e-10" type="mesh" rgba="1 1 1 1" mesh="LCarpi" density="1908" />
+                    <joint name="LWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-0.7853981633974483 0.7853981633974483" group="1" />
+                    <joint name="LWrist_flexion" pos="0 0 0" axis="-1 0 0" range="-1.5707963267948966 1.5707963267948966" group="1" />
+                    <geom name="LCarpi" pos="0.003 0.00 0.0124" euler="0.0 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LCarpi" density="1908" />
                     <geom name="LWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" />
                     <geom name="LWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
                     <geom name="LWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar" size="0.000449646" pos="0.00021952  -0.0004214  -0.00052225" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -450,7 +449,7 @@
                     <site name="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  -8.80950408e-04 -4.62098941e-04" size="0.0005" />
                     <body name="LFinger" pos="0 0 0" gravcomp="0">
                         
-                        <geom name="LFinger" pos="0.003 0.00 0.0124" euler="0.0 6.906684358357468e-11 2.4666729851276667e-12" type="mesh" rgba="1 1 1 1" mesh="LFinger" />
+                        <geom name="LFinger" pos="0.003 0.00 0.0124" euler="0.0 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LFinger" />
                         <site name="LFlexorDigitumProfundusHumerus_insertion" pos="-7.14972542e-05  -2.16902108e-03 -3.71123283e-03" size="0.0005" />
                         <site name="LFlexorDigitumProfundusUlnar_insertion" pos="-4.55924778e-04  -7.33065129e-04 -1.36120631e-03" size="0.0005" />
                         <site name="LFlexorDigitumProfundusRadial_insertion" pos="-2.70886598e-04  -7.29933150e-04 -1.89909906e-03" size="0.0005" />
@@ -466,9 +465,9 @@
             </body>
             <body name="LClavicle" pos="0.0095 0 -0.003" euler="0 0 0" gravcomp="0">
             
-            <geom name="LClavicle" pos="0.0065 0.006 -0.001" euler="0.006092348395734171 0.0 -0.007615435494667715" type="mesh" rgba="1 1 1 1" mesh="LClavicle" />
-            <joint name="LClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.0030461741978670856 0.0030461741978670856" group="1" />
-            <joint name="LClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.0030461741978670856 0.0030461741978670856" group="1" />
+            <geom name="LClavicle" pos="0.0065 0.006 -0.001" euler="0.3490658503988659 0.0 -0.4363323129985824" type="mesh" rgba="1 1 1 1" mesh="LClavicle" />
+            <joint name="LClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="1" />
+            <joint name="LClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="1" />
             <site name="LDeltoideusClavicle_origin" pos="0.00205504 0.0040589 0.00439547" size="0.0005" />
             </body>
             
@@ -476,19 +475,19 @@
             <body name="RPelvis" pos="-0.012 0 0" gravcomp="0">
                 
                 
-                <geom type="capsule" size="0.003 0.003" pos="-0.008 0 0" euler="0.0 0.027415567780803774 0.0" rgba="0.8 0.8 0.8 0.8" />
-                <joint name="waist_x" pos="0 0 -0" axis="1 0 0" range="-0.0030461741978670856 0.0030461741978670856" group="2" />
-                <joint name="waist_y" pos="0 0 -0" axis="0 1 0" range="-0.018277045187202513 0.018277045187202513" group="2" />
-                <joint name="waist_z" pos="0 0 -0" axis="0 0 1" range="-0.027415567780803774 0.027415567780803774" group="2" />
+                <geom type="capsule" size="0.003 0.003" pos="-0.008 0 0" euler="0.0 1.5707963267948966 0.0" rgba="0.8 0.8 0.8 0.8" />
+                <joint name="waist_x" pos="0 0 -0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="2" />
+                <joint name="waist_y" pos="0 0 -0" axis="0 1 0" range="-1.0471975511965976 1.0471975511965976" group="2" />
+                <joint name="waist_z" pos="0 0 -0" axis="0 0 1" range="-1.5707963267948966 1.5707963267948966" group="2" />
 
-                <geom name="RPelvis" pos="-0.013 -0.0028 0.002" euler="0.027415567780803774 -0.0015230870989335428 0.0015230870989335428" type="mesh" rgba="1 1 1 1" mesh="RPelvis" />
-                <geom name="LPelvis" pos="-0.013 0.0028 0.002" euler="0.027415567780803774 0.0015230870989335428 0.0015230870989335428" type="mesh" rgba="1 1 1 1" mesh="LPelvis" />
+                <geom name="RPelvis" pos="-0.013 -0.0028 0.002" euler="1.5707963267948966 -0.08726646259971647 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RPelvis" />
+                <geom name="LPelvis" pos="-0.013 0.0028 0.002" euler="1.5707963267948966 0.08726646259971647 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LPelvis" />
 
-                <geom name="RGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 -0.0015 -0.001" euler="0.02893865487973732 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
+                <geom name="RGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 -0.0015 -0.001" euler="1.6580627893946132 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
                 <geom name="RST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 -0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2" />
                 <geom name="RCF_BFA_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0173 -0.00325 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
                 <geom name="ROE_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0169 -0.003 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
-                <geom name="RHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 -0.0025 0.0015" euler="0.025892480681870233 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="RHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 -0.0025 0.0015" euler="1.4835298641951802 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                 
                 <site name="RGA_at_Pelvis_sidesite" pos="-1.74690480e-02 -9.41424358e-04 -4.14452075e-03" size="0.0005" />
                 <site name="RCF_BFA_at_Pelvis_sidesite" pos="-1.65346204e-02 -3.86699778e-03 -8.67257693e-05" size="0.0005" />
@@ -525,11 +524,11 @@
                 <site name="RBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 -3.79640821e-03  1.54006153e-03" size="0.0005" />
                 <site name="RRF_RF-P1" pos="-1.08334314e-02 -3.27061975e-03  1.52989635e-03" size="0.0005" />
 
-                <geom name="LGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 0.0015 -0.001" euler="-0.02893865487973732 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
+                <geom name="LGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 0.0015 -0.001" euler="-1.6580627893946132 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
                 <geom name="LST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2" />
                 <geom name="LCF_BFA_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0173 0.00325 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
                 <geom name="LOE_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0169 0.003 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
-                <geom name="LHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 0.0025 0.0015" euler="-0.025892480681870233 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="LHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 0.0025 0.0015" euler="-1.4835298641951802 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                 
                 <site name="LGA_at_Pelvis_sidesite" pos="-1.74690480e-02 9.41424358e-04 -4.14452075e-03" size="0.0005" />
                 <site name="LCF_BFA_at_Pelvis_sidesite" pos="-1.65346204e-02 3.86699778e-03 -8.67257693e-05" size="0.0005" />
@@ -568,21 +567,21 @@
 
                 <body name="RFemur" pos="-0.013 -0.0028 0.002" gravcomp="0">
                 
-                <joint name="RHip_rotation" pos="0 0 0" axis="0 0 1" range="-5.3165769342077875e-05 5.3165769342077875e-05" group="3" />
-                <joint name="RHip_flexion" pos="0 0 0" axis="0 -1 0" range="-0.0004784919240787009 0.0004784919240787009" group="3" />
-                <joint name="RHip_adduction" pos="0 0 0" axis="1 0 0" range="-0.00031899461605246725 0.00015949730802623362" group="3" />
+                <joint name="RHip_rotation" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="3" />
+                <joint name="RHip_flexion" pos="0 0 0" axis="0 -1 0" range="-1.5707963267948966 1.5707963267948966" group="3" />
+                <joint name="RHip_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.5235987755982988" group="3" />
 
-                <geom name="RFemur" pos="0 0 0" euler="0.0004784919240787009 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFemur" />
+                <geom name="RFemur" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFemur" />
 
-                <geom name="RQuads_at_Femur_cylinder" size="0.001 0.0015" pos="-0.0009 -0.0002 -0.0137" euler="0.0004784919240787009 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="RQuads_at_Femur_cylinder" size="0.001 0.0015" pos="-0.0009 -0.0002 -0.0137" euler="1.5707963267948966 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="RHip_Flexors_at_Quads_ellipsoid" size="0.001" pos="-0.0001 -0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="RTFL_at_Quads_ellipsoid" size="0.0013" pos="-0.0004 -0.0014 -0.0078" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="RAB_at_Quads_ellipsoid" size="0.001" pos="-0.0008 -0.0001 -0.007" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="RQF_at_Femur_ellipsoid" size="0.0009" pos="-0.0011 -0.0014 -0.0054" group="2" rgba="0.19 0.83 0.78 0.2" />
-                <geom name="RCF_BFA_at_OE_cylinder" size="0.0005 0.00125" pos="-0.0027 0.0002 -0.0016" euler="0.0 0.00023924596203935046 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
-                <geom name="RQF_at_Thigh_cylinder" size="0.0018 0.00375" pos="-0.0039 -0.0017 -0.0053" euler="-2.6582884671038937e-05 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="RCF_BFA_at_OE_cylinder" size="0.0005 0.00125" pos="-0.0027 0.0002 -0.0016" euler="0.0 0.7853981633974483 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="RQF_at_Thigh_cylinder" size="0.0018 0.00375" pos="-0.0039 -0.0017 -0.0053" euler="-0.08726646259971647 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="RCF_BFA_at_Femur_ellipsoid" size="0.001" pos="-0.001 -0.001 -0.0008" group="2" rgba="0.19 0.83 0.78 0.2" />
-                <geom name="ROI_at_Femur_cylinder" size="0.0006 0.00125" pos="-0.0016 -0.0005 -0.0014" euler="0.000425326154736623 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="ROI_at_Femur_cylinder" size="0.0006 0.00125" pos="-0.0016 -0.0005 -0.0014" euler="1.3962634015954636 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="RPECT_at_Quads_ellipsoid" size="0.0006" pos="-0.0004 -0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="RCF_BFA_at_Thigh_ellipsoid" size="0.0005" pos="-0.0019 -0.0015 -0.0055" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="RAB_at_Quads_ellipsoid_AB" size="0.000754311" pos="-0.000956404 -0.000163831 -0.00703726" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -636,16 +635,16 @@
 
                 <body name="R_Leg" pos="-0.001 0 -0.0135" gravcomp="0">
                     
-                    <joint name="RKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 1.113501269250142e-05" group="3" />
+                    <joint name="RKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 2.0943951023931953" group="3" />
 
-                    <geom name="R_Leg_geom_1" pos="0 0 0" euler="8.351259519376067e-06 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTibfib" />
-                    <geom name="R_Leg_geom_2" pos="0 0 0" euler="8.351259519376067e-06 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPatella" />
+                    <geom name="R_Leg_geom_1" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTibfib" />
+                    <geom name="R_Leg_geom_2" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPatella" />
                     
-                    <geom name="RPlantarflexors_at_Tibia_cylinder" size="0.001 0.0015" pos="-0.0011 0 -0.0029" euler="2.4755824176831348e-05 2.755915641394102e-07 -6.03146520843827e-08" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
-                    <geom name="RHip_Ext_at_Gastroc_ellipsoid" size="0.002" pos="-0.0007 -0.0002 -0.0064" euler="9.04023842972459e-06 -1.2434097506626588e-07 1.6327176319242397e-05" group="2" rgba="0.19 0.83 0.78 0.2" />
-                    <geom name="RAnkle_Everters_at_Lat_Malleolus_cylinder" size="0.0008 0.00075" pos="-0.0008 0 -0.0177" euler="2.4280730301951282e-05 4.4168883680255635e-07 3.7487876064754783e-07" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
-                    <geom name="RPOP_at_Tibia_cylinder" size="0.001 0.002" pos="-0.0007 0 -0.0019" euler="-2.489139295636255e-05 -8.639841931656727e-07 -8.288161114118558e-07" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
-                    <geom name="RBFPC_at_Leg_ellipsoid" size="0.0012" pos="-0.0013 0.0005 -0.0057" euler="-7.910498600297884e-06 1.0208022885850678e-06 -9.94727800530127e-07" group="2" rgba="0.19 0.83 0.78 0.8" />
+                    <geom name="RPlantarflexors_at_Tibia_cylinder" size="0.001 0.0015" pos="-0.0011 0 -0.0029" euler="4.656346458103152 0.05183627878423159 -0.011344640137963142" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="RHip_Ext_at_Gastroc_ellipsoid" size="0.002" pos="-0.0007 -0.0002 -0.0064" euler="1.7003870237554755 -0.023387411976724018 3.070994085346623" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="RAnkle_Everters_at_Lat_Malleolus_cylinder" size="0.0008 0.00075" pos="-0.0008 0 -0.0177" euler="4.566985600401042 0.08307767239493008 0.07051130178057091" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="RPOP_at_Tibia_cylinder" size="0.001 0.002" pos="-0.0007 0 -0.0019" euler="-4.681845718474789 -0.16250760665319203 -0.15589280878813352" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="RBFPC_at_Leg_ellipsoid" size="0.0012" pos="-0.0013 0.0005 -0.0057" euler="-1.487893187325166 0.1920036710118962 -0.18709929581379214" group="2" rgba="0.19 0.83 0.78 0.8" />
                     
                     <site name="RPlantarflexors_at_Tibia_sidesite" pos="-3.094e-03 -1.022e-04 -3.013e-03" size="0.0005" />
                     <site name="RAnkle_Everters_at_Lat_Malleolus_sidesite" pos="-2.575e-03 -1.658e-04 -1.795e-02" size="0.0005" />
@@ -696,12 +695,12 @@
 
                     <body name="RPedal" pos="-0.001 0.00125 -0.0184" gravcomp="0">
                     
-                    <joint name="RAnkle_adduction" pos="0 0 0" axis="0 0 1" range="-9.717131686775435e-08 9.717131686775435e-08" group="3" />
-                    <joint name="RAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-9.717131686775435e-08 9.717131686775435e-08" group="3" />
-                    <joint name="RAnkle_rotation" pos="0 0 0" axis="1 0 0" range="-3.2390438955918114e-08 3.2390438955918114e-08" group="3" />
+                    <joint name="RAnkle_adduction" pos="0 0 0" axis="0 0 1" range="-1.0471975511965976 1.0471975511965976" group="3" />
+                    <joint name="RAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-1.0471975511965976 1.0471975511965976" group="3" />
+                    <joint name="RAnkle_rotation" pos="0 0 0" axis="1 0 0" range="-0.3490658503988659 0.3490658503988659" group="3" />
                     
-                    <geom name="RFoot" pos="0 0 0" euler="1.4575697530163154e-07 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFoot" />
-                    <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="3.6956033278949556e-07 1.317643056726749e-07 -1.3018689129552167e-07" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="RFoot" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFoot" />
+                    <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                     
                     <site name="RPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03  7.89500000e-04" size="0.0005" />
                     <site name="RTA_TA-P6" pos="8.40000000e-04  6.40000000e-04  1.00000000e-05" size="0.0005" />
@@ -757,21 +756,21 @@
 
                 <body name="LFemur" pos="-0.013 0.0028 0.002" gravcomp="0">
                 
-                <joint name="LHip_rotation" pos="0 0 0" axis="0 0 -1" range="-5.3165769342077875e-05 5.3165769342077875e-05" group="4" />
-                <joint name="LHip_flexion" pos="0 0 0" axis="0 -1 0" range="-0.0004784919240787009 0.0004784919240787009" group="4" />
-                <joint name="LHip_adduction" pos="0 0 0" axis="-1 0 0" range="-0.00031899461605246725 0.00015949730802623362" group="4" />
+                <joint name="LHip_rotation" pos="0 0 0" axis="0 0 -1" range="-0.17453292519943295 0.17453292519943295" group="4" />
+                <joint name="LHip_flexion" pos="0 0 0" axis="0 -1 0" range="-1.5707963267948966 1.5707963267948966" group="4" />
+                <joint name="LHip_adduction" pos="0 0 0" axis="-1 0 0" range="-1.0471975511965976 0.5235987755982988" group="4" />
 
-                <geom name="LFemur" pos="0 0 0" euler="0.0004784919240787009 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFemur" />
+                <geom name="LFemur" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFemur" />
 
-                <geom name="LQuads_at_Femur_cylinder" size="0.001 0.0015" pos="-0.0009 0.0002 -0.0137" euler="-0.0004784919240787009 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="LQuads_at_Femur_cylinder" size="0.001 0.0015" pos="-0.0009 0.0002 -0.0137" euler="-1.5707963267948966 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="LHip_Flexors_at_Quads_ellipsoid" size="0.001" pos="-0.0001 0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="LTFL_at_Quads_ellipsoid" size="0.0013" pos="-0.0004 0.0014 -0.0078" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="LAB_at_Quads_ellipsoid" size="0.001" pos="-0.0008 0.0001 -0.007" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="LQF_at_Femur_ellipsoid" size="0.0009" pos="-0.0011 0.0014 -0.0054" group="2" rgba="0.19 0.83 0.78 0.2" />
-                <geom name="LCF_BFA_at_OE_cylinder" size="0.0005 0.00125" pos="-0.0027 -0.0002 -0.0016" euler="0.0 0.00023924596203935046 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
-                <geom name="LQF_at_Thigh_cylinder" size="0.0018 0.00375" pos="-0.0039 0.0017 -0.0053" euler="2.6582884671038937e-05 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="LCF_BFA_at_OE_cylinder" size="0.0005 0.00125" pos="-0.0027 -0.0002 -0.0016" euler="0.0 0.7853981633974483 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="LQF_at_Thigh_cylinder" size="0.0018 0.00375" pos="-0.0039 0.0017 -0.0053" euler="0.08726646259971647 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="LCF_BFA_at_Femur_ellipsoid" size="0.001" pos="-0.001 0.001 -0.0008" group="2" rgba="0.19 0.83 0.78 0.2" />
-                <geom name="LOI_at_Femur_cylinder" size="0.0006 0.00125" pos="-0.0016 0.0005 -0.0014" euler="-0.000425326154736623 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                <geom name="LOI_at_Femur_cylinder" size="0.0006 0.00125" pos="-0.0016 0.0005 -0.0014" euler="-1.3962634015954636 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="LPECT_at_Quads_ellipsoid" size="0.0006" pos="-0.0004 0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="LCF_BFA_at_Thigh_ellipsoid" size="0.0005" pos="-0.0019 0.0015 -0.0055" group="2" rgba="0.19 0.83 0.78 0.2" />
                 <geom name="LAB_at_Quads_ellipsoid_AB" size="0.000754311" pos="-0.000956404 0.000163831 -0.00703726" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -825,16 +824,16 @@
 
                 <body name="LLeg" pos="-0.001 0 -0.0135" gravcomp="0">
                     
-                    <joint name="LKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 1.113501269250142e-05" group="4" />
+                    <joint name="LKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 2.0943951023931953" group="4" />
 
-                    <geom name="LLeg_geom_1" pos="0 0 0" euler="8.351259519376067e-06 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LTibfib" />
-                    <geom name="LLeg_geom_2" pos="0 0 0" euler="8.351259519376067e-06 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPatella" />
+                    <geom name="LLeg_geom_1" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LTibfib" />
+                    <geom name="LLeg_geom_2" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPatella" />
                     
-                    <geom name="LPlantarflexors_at_Tibia_cylinder" size="0.001 0.0015" pos="-0.0011 0 -0.0029" euler="-2.4755824176831348e-05 2.755915641394102e-07 -6.03146520843827e-08" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
-                    <geom name="LHip_Ext_at_Gastroc_ellipsoid" size="0.002" pos="-0.0007 0.0002 -0.0064" euler="-9.04023842972459e-06 -1.2434097506626588e-07 1.6327176319242397e-05" group="2" rgba="0.19 0.83 0.78 0.2" />
-                    <geom name="LAnkle_Everters_at_Lat_Malleolus_cylinder" size="0.0008 0.00075" pos="-0.0008 0 -0.0177" euler="-2.4280730301951282e-05 4.4168883680255635e-07 3.7487876064754783e-07" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
-                    <geom name="LPOP_at_Tibia_cylinder" size="0.001 0.002" pos="-0.0007 0 -0.0019" euler="2.489139295636255e-05 -8.639841931656727e-07 -8.288161114118558e-07" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
-                    <geom name="LBFPC_at_Leg_ellipsoid" size="0.0012" pos="-0.0013 -0.0005 -0.0057" euler="7.910498600297884e-06 1.0208022885850678e-06 -9.94727800530127e-07" group="2" rgba="0.19 0.83 0.78 0.8" />
+                    <geom name="LPlantarflexors_at_Tibia_cylinder" size="0.001 0.0015" pos="-0.0011 0 -0.0029" euler="-4.656346458103152 0.05183627878423159 -0.011344640137963142" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="LHip_Ext_at_Gastroc_ellipsoid" size="0.002" pos="-0.0007 0.0002 -0.0064" euler="-1.7003870237554755 -0.023387411976724018 3.070994085346623" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="LAnkle_Everters_at_Lat_Malleolus_cylinder" size="0.0008 0.00075" pos="-0.0008 0 -0.0177" euler="-4.566985600401042 0.08307767239493008 0.07051130178057091" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="LPOP_at_Tibia_cylinder" size="0.001 0.002" pos="-0.0007 0 -0.0019" euler="4.681845718474789 -0.16250760665319203 -0.15589280878813352" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="LBFPC_at_Leg_ellipsoid" size="0.0012" pos="-0.0013 -0.0005 -0.0057" euler="1.487893187325166 0.1920036710118962 -0.18709929581379214" group="2" rgba="0.19 0.83 0.78 0.8" />
                     
                     <site name="LPlantarflexors_at_Tibia_sidesite" pos="-3.094e-03 1.022e-04 -3.013e-03" size="0.0005" />
                     <site name="LAnkle_Everters_at_Lat_Malleolus_sidesite" pos="-2.575e-03 1.658e-04 -1.795e-02" size="0.0005" />
@@ -885,12 +884,12 @@
 
                     <body name="LPedal" pos="-0.001 -0.00125 -0.0184" gravcomp="0">
                     
-                    <joint name="LAnkle_adduction" pos="0 0 0" axis="0 0 -1" range="-9.717131686775435e-08 9.717131686775435e-08" group="4" />
-                    <joint name="LAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-9.717131686775435e-08 9.717131686775435e-08" group="4" />
-                    <joint name="LAnkle_rotation" pos="0 0 0" axis="-1 0 0" range="-3.2390438955918114e-08 3.2390438955918114e-08" group="4" />
+                    <joint name="LAnkle_adduction" pos="0 0 0" axis="0 0 -1" range="-1.0471975511965976 1.0471975511965976" group="4" />
+                    <joint name="LAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-1.0471975511965976 1.0471975511965976" group="4" />
+                    <joint name="LAnkle_rotation" pos="0 0 0" axis="-1 0 0" range="-0.3490658503988659 0.3490658503988659" group="4" />
                     
-                    <geom name="LFoot" pos="0 0 0" euler="1.4575697530163154e-07 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFoot" />
-                    <geom name="LPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 0.0009 -0.0003" euler="-3.6956033278949556e-07 1.317643056726749e-07 -1.3018689129552167e-07" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    <geom name="LFoot" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFoot" />
+                    <geom name="LPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 0.0009 -0.0003" euler="-3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                     
                     <site name="LPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03  7.89500000e-04" size="0.0005" />
                     <site name="LTA_TA-P6" pos="8.40000000e-04  6.40000000e-04  1.00000000e-05" size="0.0005" />
@@ -948,14 +947,14 @@
             <geom name="Head_Throax" pos="0.012 0 0" euler="0.0 0.0 0.0" type="sphere" size="0.002" rgba="0.8 0.8 0.8 0.8" density="1311" />
                 <body name="Head" pos="0.012 0 0">
                     
-                    <geom type="capsule" pos="0.008 0 0" euler="0.0 0.027415567780803774 0.0" size="0.003 0.003" rgba="0.8 0.8 0.8 1" density="1311" />
-                    <geom type="cylinder" pos="0.0055 0.003 0.002" euler="0.0 0.027415567780803774 0.0" size="0.002 0.0001" rgba="0 0 0 0.8" density="1056" />
-                    <geom type="cylinder" pos="0.0055 -0.003 0.002" euler="0.0 0.027415567780803774 0.0" size="0.002 0.0001" rgba="0 0 0 0.8" density="1056" />
+                    <geom type="capsule" pos="0.008 0 0" euler="0.0 1.5707963267948966 0.0" size="0.003 0.003" rgba="0.8 0.8 0.8 1" density="1311" />
+                    <geom type="cylinder" pos="0.0055 0.003 0.002" euler="0.0 1.5707963267948966 0.0" size="0.002 0.0001" rgba="0 0 0 0.8" density="1056" />
+                    <geom type="cylinder" pos="0.0055 -0.003 0.002" euler="0.0 1.5707963267948966 0.0" size="0.002 0.0001" rgba="0 0 0 0.8" density="1056" />
                     <geom type="sphere" pos="0.0125 0 0.0025" euler="0.0 0.0 0.0" size="0.001" rgba="0 0 0 0.8" />
                     <camera name="egocentric" fovy="80.0" pos="0.0125 0 0.0025" euler="0 0 0" />
-                    <joint name="neck_x" pos="0.00 0 0.00" axis="1 0 0" range="-0.009138522593601256 0.009138522593601256" group="2" />
-                    <joint name="neck_y" pos="0.00 -0.00 0.00" axis="0 1 0" range="-0.027415567780803774 0.027415567780803774" group="2" />
-                    <joint name="neck_z" pos="0.00 -0.00 0.00" axis="0 0 1" range="-0.027415567780803774 0.027415567780803774" group="2" />
+                    <joint name="neck_x" pos="0.00 0 0.00" axis="1 0 0" range="-0.5235987755982988 0.5235987755982988" group="2" />
+                    <joint name="neck_y" pos="0.00 -0.00 0.00" axis="0 1 0" range="-1.5707963267948966 1.5707963267948966" group="2" />
+                    <joint name="neck_z" pos="0.00 -0.00 0.00" axis="0 0 1" range="-1.5707963267948966 1.5707963267948966" group="2" />
                 </body>
         </body>
     </worldbody>
