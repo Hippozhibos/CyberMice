@@ -12,7 +12,7 @@ from dm_control.mujoco import wrapper as mj_wrapper
 import numpy as np
 
 _XML_PATH = os.path.join(os.path.dirname(__file__),
-                         'CyberMice.xml')
+                         'modified_xml_file.xml')
 
 _MICE_MOCAP_JOINTS = [
     'root_x', 'root_y', 'root_z', 
@@ -111,8 +111,8 @@ class Mice(legacy_base.Walker):
     def ground_contact_geoms(self):
         """Return ground contact geoms."""
         return tuple(
-            self._mjcf_root.find('body', 'L_Pedal').find_all('geom') +
-            self._mjcf_root.find('body', 'R_Pedal').find_all('geom') +
+            self._mjcf_root.find('body', 'LPedal').find_all('geom') +
+            self._mjcf_root.find('body', 'RPedal').find_all('geom') +
             self._mjcf_root.find('body', 'LFinger').find_all('geom') +
             self._mjcf_root.find('body', 'RFinger').find_all('geom') +
             self._mjcf_root.find('body', 'CyberMice').find_all('geom')
