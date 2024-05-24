@@ -1,0 +1,148 @@
+<mujoco model="CyberMice">
+    <compiler meshdir="meshes" balanceinertia="true" angle="radian" eulerseq="xyz"/>
+    <!-- <option timestep="0.002" collision="all"/> -->
+    <option timestep="0.002"/>
+    <size njmax="1000" nconmax="400" nkey="1" nuser_jnt="1"/>
+    <statistic extent="1"/>
+    <!-- <visual>
+        <scale forcewidth="0.01" contactwidth="0.03" contactheight="0.1" connect="0.002" framelength="5" com="0.1" selectpoint="0.05"
+            framewidth="0.01" light="0.03" jointlength="2" jointwidth="0.02" constraint="0.05"/>
+        <map stiffness="100" stiffnessrot="500" force="0.005" zfar="30" znear="1e-5"/>
+        <rgba haze="0.15 0.25 0.35 1"/>
+        <global offwidth="2560" offheight="1440" elevation="-20" azimuth="120"/>
+        <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1"/>
+    </visual> -->
+    <default class="main">
+        <joint limited="true" stiffness=".0" armature="1e-05" damping=".00001"/>
+        <!-- <geom margin="0.001" rgba="0.8 0.6 0.4 1"/> -->
+        <site rgba="0 0 0.8 1" size="0.0001 0.0001 0.0001"/>
+        <tendon limited="false" width="0.0001" rgba="0.95 0.3 0.3 1"/>
+        <default class="forelimbs">
+            <geom type="mesh" contype="3" conaffinity="2" friction="0.7" solref="0.015 1" solimp="0.95 0.99 0.003" material="bone"/>
+        </default>
+        <default class="muscle">
+            <general ctrllimited="true" ctrlrange="0 1" dyntype="muscle" gaintype="muscle" biastype="muscle" dynprm="0.01 0.04 0 0 0 0 0 0 0 0" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0"/>
+        </default>
+        <default class="motor">
+            <general gainprm="5 0 0 0 0 0 0 0 0 0"/>
+        </default>
+        <default class="sensor">
+            <site group="4"/>
+        </default>
+    </default>
+    <default class="collision">
+      <geom contype="1" conaffinity="1" condim="1" group="2"/>
+      <default class="collision_primitive">
+        <geom type="capsule" group="2" rgba="0 0.5 0.5 0.5" density="500.0"/>
+        <default class="collision_primitive_paw">
+          <geom condim="3" priority="1" rgba="0 0.6 0.7 1" friction="1.5 0.005 0.0001"/>
+        </default>
+        <default class="nonself_collision_primitive">
+          <geom conaffinity="0" rgba="0 0.8 0.8 0.5"/>
+        </default>
+      </default>
+    </default>
+    <asset>
+        <texture name="skybox" type="skybox" builtin="gradient" rgb1="0.4 0.6 0.8" rgb2="0 0 0" mark="random" markrgb="1 1 1" width="800" height="800"/>
+        <texture name="plane" type="2d" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.3 0.4 0.5" width="10" height="10"/>
+        <material name="plane" texture="plane" texrepeat="5 5" reflectance="0.2"/>
+        <texture name="grid" type="2d" builtin="checker" rgb1="0.1 0.2 0.3" rgb2="0.2 0.3 0.4" mark="edge" markrgb="0.2 0.3 0.4" width="300" height="300"/>
+        <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance="0.2"/>
+    </asset>
+    <asset>
+        <material name="bone" reflectance="1" shininess="0" specular="0" rgba="0.68 0.64 0.57 1"/>
+        <mesh name="RSpineRibs" file="RSpine And Ribs.stl"/>
+        <mesh name="RScapula" file="RScapula.stl"/>
+        <mesh name="RHumerus" file="RHumerus.stl"/>
+        <mesh name="RUlna" file="RUlna.stl"/>
+        <mesh name="RRadius" file="RRadius.stl"/>
+        <mesh name="RCarpi" file="RCarpi.stl"/>
+        <mesh name="RFinger" file="RFinger.stl"/>
+        <mesh name="RClavicle" file="RClavicle.stl"/>
+        <mesh name="LSpineRibs" file="LSpine And Ribs.stl"/>
+        <mesh name="LScapula" file="LScapula.stl"/>
+        <mesh name="LHumerus" file="LHumerus.stl"/>
+        <mesh name="LUlna" file="LUlna.stl"/>
+        <mesh name="LRadius" file="LRadius.stl"/>
+        <mesh name="LCarpi" file="LCarpi.stl"/>
+        <mesh name="LFinger" file="LFinger.stl"/>
+        <mesh name="LClavicle" file="LClavicle.stl"/>
+        <mesh name="RBicep" file="RBicep.stl"/>
+        <mesh name="RBrachialis" file="RBrachialis.stl"/>
+        <mesh name="RTricep_long" file="RTriceps brachii-long head.stl"/>
+        <mesh name="RSupraspinatus" file="RSupraspinatus Muscle.stl"/>
+        <mesh name="RSubscapularis" file="RSubscapularis Muscle.stl"/>
+        <mesh name="LSubscapularis" file="LSubscapularisMuscle.stl"/>
+        <mesh name="RPelvis" file="RPelvis.stl"/>
+        <mesh name="RFemur" file="RFemur.stl"/>
+        <mesh name="RTibfib" file="RTibfib.stl"/>
+        <mesh name="RPatella" file="RPatella.stl"/>
+        <mesh name="RFoot" file="RFoot.stl"/>
+        <mesh name="LPelvis" file="LPelvis.stl"/>
+        <mesh name="LFemur" file="LFemur.stl"/>
+        <mesh name="LTibfib" file="LTibfib.stl"/>
+        <mesh name="LPatella" file="LPatella.stl"/>
+        <mesh name="LFoot" file="LFoot.stl"/>
+        <mesh name="WholeBody" file="Mus_whole_decimated_scaled.stl"/>
+    </asset>
+
+    <!-- X: Red M2L(right side) -->
+    <!-- Y: Green P2A -->
+    <!-- Z: Blue V2D -->
+
+    <worldbody>
+        <!-- <geom name="floor" type="plane" conaffinity="1" size="50 50 0.2" material="grid" pos="0 0 0" zaxis="0 0 1"/> -->
+
+        <body name="CyberMice" pos="0 0 0">
+            <camera name="side" mode="trackcom" pos="0 -3.5 1" euler="-5 0 0"/>
+            <camera name="back" mode="trackcom" pos="-3.5 0 1.3" xyaxes="0 -1 0 1 0 3"/>
+            <light name="top" mode="trackcom" exponent="10" cutoff="45" ambient="0 0 0" pos="0 0 5" directional="false"/>
+
+            <joint name="root_x" type="slide" pos="0 0 0" axis="1 0 0" limited="false" stiffness="0" group="0"/>
+            <joint name="root_y" type="slide" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0"/>
+            <joint name="root_z" type="slide" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0"/>
+            <joint name="root_rot_x" pos="0 0 0" axis="1 0 0" limited="false" stiffness="0" group="0"/>
+            <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0"/>
+            <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0"/>
+
+            <geom name="WholeBody" pos="0 0 0" euler="-1.57 0 0" type="mesh" rgba="1 1 1 1" mesh="WholeBody" density="1908" group="0"/>
+            <geom name="RScapula_reference" pos="-0.003 -0.03 0.01" euler="2 -0.2 -1.75" type="mesh" rgba="1 0.5 0.5 1" mesh="RScapula" density="1908" group="2"/>
+            <geom name="collision_torso" class="nonself_collision_primitive" type="ellipsoid" size="0.0125 0.009 0.008" density="1908" pos="-0.0015 -0.02 0.0035" euler="0.785 0 1.57" group="1"/>
+            
+            <body name="RScapula" pos="0 0 0">
+                <geom name="scapula_R_collision" class="nonself_collision_primitive" type="ellipsoid" size="0.001 0.0045 0.0075" pos="-0.006 -0.0325 0.0055" euler="-0.75 0.05 0.4" density="1311" group="1"/>
+                <site name="RBicepsLongus_RBicepsLongus-P1" pos="-0.005 -0.037 0.002" size="0.0005"/>
+                <body name="RHumeras" pos="0 0 0">
+                    <geom name="humerus_R_collision" class="collision_primitive" size="0.00175 0.005" pos="-0.007 -0.0325 -0.001" euler="1.25 0.4 0.2" group="1"/>
+                    <site name="RBicepsLongus_RBicepsLongus-P2" pos="-0.0044 -0.037 0.001" size="0.0005"/>
+                    <site name="RBicepsLongus_RBicepsLongus-P3" pos="-0.0045 -0.0365 -0.00025" size="0.0005"/>
+                    <body name="RForearm" pos="0 0 0">
+                        <joint name="RElbow_flexion" pos="-0.0085 -0.0275 -0.003" axis="-1 0 0" range="-1.57 0.7" group="0"/>
+                        <geom name="radius_R_collision" class="collision_primitive" size="0.00075 0.0045" pos="-0.007 -0.0322 -0.0072" euler="2.35 0.4 0.2" group="1"/>
+                        <geom name="ulna_R_collision" class="collision_primitive" size="0.00075 0.0065" pos="-0.007 -0.03 -0.007" euler="2.35 0.4 0.2" group="1"/>
+                        <site name="RBicepsLongus_insertion" pos="-0.0085 -0.029 -0.004" size="0.0005"/>
+                    </body>
+                </body>
+            </body>
+        </body>
+
+    </worldbody>
+
+    <tendon>
+        <spatial name="RBicepsLongus_tendon" group="0">
+        <site site="RBicepsLongus_RBicepsLongus-P1"/>
+        <site site="RBicepsLongus_RBicepsLongus-P2"/>   
+        <site site="RBicepsLongus_RBicepsLongus-P3"/>
+        <site site="RBicepsLongus_insertion"/>
+        </spatial>
+    </tendon>
+
+    <equality>
+    </equality>
+
+    <contact>
+    </contact>
+
+    <sensor>
+    </sensor>
+</mujoco>
