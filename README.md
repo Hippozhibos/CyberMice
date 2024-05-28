@@ -1,2 +1,2 @@
-Personal Project
+Personal Project /n
 Ultimate goal is to control a muscle-driven mouse model behave in virtual environment.
