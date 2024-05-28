@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 import math
 
 # Parse the XML file
-tree = ET.parse(r'D:\Mujoco\CyberMice\assets\CyberMice.xml')
+tree = ET.parse(r'D:\Mujoco\CyberMice\assets\CyberMiceJointActuated.xml')
 root = tree.getroot()
 
 # Find the 'CyberMice' body
@@ -25,7 +25,7 @@ for joint in cybermice_body.findall('.//joint'):
         joint.attrib['range'] = ' '.join(range_values_in_radians)
 
 # Save the modified XML file
-tree.write('modified_xml_file_2.xml')
+tree.write('CyberMiceJointActuated_2.xml')
 
 # Now load the modified XML file into dm_control
 # Your dm_control loading code goes here

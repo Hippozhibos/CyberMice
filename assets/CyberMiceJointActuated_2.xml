@@ -1,0 +1,332 @@
+<mujoco model="CyberMice">
+    <compiler meshdir="meshes" balanceinertia="true" angle="radian" eulerseq="xyz" />
+    
+    <option timestep="0.002" />
+    <size njmax="1000" nconmax="400" nkey="1" nuser_jnt="1" />
+    <statistic extent="1" />
+    <visual>
+        <scale forcewidth="0.01" contactwidth="0.03" contactheight="0.1" connect="0.002" framelength="5" com="0.1" selectpoint="0.05" framewidth="0.01" light="0.03" jointlength="2" jointwidth="0.02" constraint="0.05" />
+        <map stiffness="100" stiffnessrot="500" force="0.005" zfar="30" znear="1e-5" />
+        <rgba haze="0.15 0.25 0.35 1" />
+        <global offwidth="2560" offheight="1440" elevation="-20" azimuth="120" />
+        <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1" />
+    </visual>
+    <default class="main">
+        <joint limited="true" stiffness=".0" armature="1e-05" damping=".00001" />
+        
+        <site rgba="0 0 0.8 1" size="0.0001 0.0001 0.0001" />
+        <tendon limited="false" width="0.0001" rgba="0.95 0.3 0.3 1" />
+        <default class="forelimbs">
+            <geom type="mesh" contype="3" conaffinity="2" friction="0.7" solref="0.015 1" solimp="0.95 0.99 0.003" material="bone" />
+        </default>
+        <default class="muscle">
+            <general ctrllimited="true" ctrlrange="0 1" dyntype="muscle" gaintype="muscle" biastype="muscle" dynprm="0.01 0.04 0 0 0 0 0 0 0 0" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        </default>
+        <default class="motor">
+            <general gainprm="5 0 0 0 0 0 0 0 0 0" />
+        </default>
+        <default class="sensor">
+            <site group="4" />
+        </default>
+    </default>
+    <asset>
+        <texture name="skybox" type="skybox" builtin="gradient" rgb1="0.4 0.6 0.8" rgb2="0 0 0" mark="random" markrgb="1 1 1" width="800" height="800" />
+        <texture name="plane" type="2d" builtin="checker" rgb1="0.2 0.3 0.4" rgb2="0.3 0.4 0.5" width="10" height="10" />
+        <material name="plane" texture="plane" texrepeat="5 5" reflectance="0.2" />
+        <texture name="grid" type="2d" builtin="checker" rgb1="0.1 0.2 0.3" rgb2="0.2 0.3 0.4" mark="edge" markrgb="0.2 0.3 0.4" width="300" height="300" />
+        <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance="0.2" />
+    </asset>
+    <asset>
+        <material name="bone" reflectance="1" shininess="0" specular="0" rgba="0.68 0.64 0.57 1" />
+        <mesh name="RSpineRibs" file="RSpine And Ribs.stl" />
+        <mesh name="RScapula" file="RScapula.stl" />
+        <mesh name="RHumerus" file="RHumerus.stl" />
+        <mesh name="RUlna" file="RUlna.stl" />
+        <mesh name="RRadius" file="RRadius.stl" />
+        <mesh name="RCarpi" file="RCarpi.stl" />
+        <mesh name="RFinger" file="RFinger.stl" />
+        <mesh name="RClavicle" file="RClavicle.stl" />
+        <mesh name="LSpineRibs" file="LSpine And Ribs.stl" />
+        <mesh name="LScapula" file="LScapula.stl" />
+        <mesh name="LHumerus" file="LHumerus.stl" />
+        <mesh name="LUlna" file="LUlna.stl" />
+        <mesh name="LRadius" file="LRadius.stl" />
+        <mesh name="LCarpi" file="LCarpi.stl" />
+        <mesh name="LFinger" file="LFinger.stl" />
+        <mesh name="LClavicle" file="LClavicle.stl" />
+        <mesh name="RBicep" file="RBicep.stl" />
+        <mesh name="RBrachialis" file="RBrachialis.stl" />
+        <mesh name="RTricep_long" file="RTriceps brachii-long head.stl" />
+        <mesh name="RSupraspinatus" file="RSupraspinatus Muscle.stl" />
+        <mesh name="RSubscapularis" file="RSubscapularis Muscle.stl" />
+        <mesh name="LSubscapularis" file="LSubscapularisMuscle.stl" />
+        <mesh name="RPelvis" file="RPelvis.stl" />
+        <mesh name="RFemur" file="RFemur.stl" />
+        <mesh name="RTibfib" file="RTibfib.stl" />
+        <mesh name="RPatella" file="RPatella.stl" />
+        <mesh name="RFoot" file="RFoot.stl" />
+        <mesh name="LPelvis" file="LPelvis.stl" />
+        <mesh name="LFemur" file="LFemur.stl" />
+        <mesh name="LTibfib" file="LTibfib.stl" />
+        <mesh name="LPatella" file="LPatella.stl" />
+        <mesh name="LFoot" file="LFoot.stl" />
+    </asset>
+
+    
+    
+    
+
+    <worldbody>
+    <geom name="floor" type="plane" conaffinity="1" size="50 50 0.2" material="grid" pos="0 0 0" zaxis="0 0 1"/>
+        <body name="CyberMice" pos="0 0 0.035">
+            <camera name="side" mode="trackcom" pos="0 -3.5 1" euler="-5 0 0" />
+            <camera name="back" mode="trackcom" pos="-3.5 0 1.3" xyaxes="0 -1 0 1 0 3" />
+            <light name="top" mode="trackcom" exponent="10" cutoff="45" ambient="0 0 0" pos="0 0 5" directional="false" />
+
+            <joint name="root_x" type="slide" pos="0 0 0" axis="1 0 0" limited="false" stiffness="0" group="0" />
+            <joint name="root_y" type="slide" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
+            <joint name="root_z" type="slide" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" />
+            <joint name="root_rot_x" pos="0 0 0" axis="1 0 0" limited="false" stiffness="0" group="0" />
+            <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
+            <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" />
+
+            <geom type="capsule" name="SpineRibs" pos="0 0 0" euler="0.0 1.5707963267948966 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" density="1311" />
+            <body name="RScapula" pos="0 0 0" euler="0 0 0" gravcomp="0">
+            <geom name="RScapula" pos="0.005 -0.00875 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 0.8" mesh="RScapula" density="1908" />
+            <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
+            <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
+            <joint name="RScapula_r3" pos="0.005 -0.006 0.0055" axis="1 -0.1 -0.5" range="-0.08726646259971647 0.08726646259971647" group="0" />
+            <joint name="RScapula_r4" pos="0.005 -0.006 0.0055" axis="0 -1 1" range="-0.08726646259971647 0.08726646259971647" group="0" />
+
+
+            <body name="RHumerus" pos="0.01 -0.006 0.0015" euler="0 0 0" gravcomp="0">
+                <joint name="RShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-1.2217304763960306 1.2217304763960306" group="0" />
+                <joint name="RShoulder_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.7853981633974483" group="0" />
+                <joint name="RShoulder_rotation" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 1.5707963267948966" group="0" />
+                <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 0.5" mesh="RHumerus" density="1908" />
+                    <body name="RUlna" pos="0.001 -0.001 -0.01" euler="0 0 0" gravcomp="0">
+                    <joint name="RElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 1.5707963267948966" group="0" />
+                    <geom name="RUlna" pos="0.003 0.0015 0.0015" euler="-0.08726646259971647 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RUlna" density="1908" />
+                        <body name="RRadius" pos="0 0 -0.0075" gravcomp="0">
+                            <joint name="RRadius_rotation" pos="0.0007 -0.0003 0" axis="-0.1 -0.075 1" range="-1.5707963267948966 1.5707963267948966" group="0" />
+                            <geom name="RRadius" pos="0.003 0.0015 0.009" euler="-0.08726646259971647 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RRadius" density="1908" />
+                            
+                            <body name="RCarpi" pos="0 0 -0.0035" gravcomp="0">
+                            <joint name="RWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-0.7853981633974483 0.7853981633974483" group="0" />
+                            <joint name="RWrist_flexion" pos="0 0 0" axis="1 0 0" range="-1.5707963267948966 1.5707963267948966" group="0" />
+                            <geom name="RCarpi" pos="0.003 -0.000 0.0124" euler="0.0 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RCarpi" density="1908" />
+                            <geom name="RFinger" pos="0.003 -0.000 0.0124" euler="0.0 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RFinger" density="1908" />
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+
+            <body name="RClavicle" pos="0.0095 0 -0.003" gravcomp="0">
+            <geom name="RClavicle" pos="0.0065 -0.006 -0.001" euler="-0.3490658503988659 0.0 0.4363323129985824" type="mesh" rgba="1 1 1 1" mesh="RClavicle" density="1908" />
+            <joint name="RClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="0" />
+            <joint name="RClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="0" />
+            </body>
+
+            <body name="LScapula" pos="0 0 0" gravcomp="0">
+            <geom name="LScapula" pos="0.005 0.00875 -0.002" euler="0.3490658503988659 1.5707963267948966 0.2617993877991494" type="mesh" rgba="1 1 1 0.8" mesh="LScapula" density="1908" />
+            <joint name="LScapula_r1" pos="0.005 0 0" axis="-1 0 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
+            <joint name="LScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
+            <joint name="LScapula_r3" pos="0.005 0.006 0.0055" axis="-1 -0.1 0.5" range="-0.08726646259971647 0.08726646259971647" group="1" />
+            <joint name="LScapula_r4" pos="0.005 0.006 0.0055" axis="0 -1 -1" range="-0.08726646259971647 0.08726646259971647" group="1" />
+            
+            <body name="LHumerus" pos="0.01 0.006 0.0015" euler="0 0 0" gravcomp="0">
+                <joint name="LShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-1.2217304763960306 1.2217304763960306" group="1" />
+                <joint name="LShoulder_adduction" pos="0 0 0" axis="-1 0 0" range="-1.0471975511965976 0.7853981633974483" group="1" />
+                <joint name="LShoulder_rotation" pos="0 0 0" axis="0 0 -1" range="-0.17453292519943295 1.5707963267948966" group="1" />
+                <geom name="LHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 0.8" mesh="LHumerus" density="1908" />
+
+                    <body name="LUlna" pos="0.001 0.001 -0.01" euler="0 0 0" gravcomp="0">
+                    <joint name="LElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 1.5707963267948966" group="1" />
+                    <geom name="LUlna" pos="0.003 -0.0015 0.0015" euler="0.08726646259971647 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LUlna" density="1908" />
+              
+                        <body name="LRadius" pos="0 0 -0.0075" gravcomp="0">
+                        <joint name="LRadius_rotation" pos="0.0007 0.0003 0" axis="0.1 -0.075 -1" range="-1.5707963267948966 1.5707963267948966" group="1" />
+                        <geom name="LRadius" pos="0.003 -0.0015 0.009" euler="0.08726646259971647 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LRadius" density="1908" />
+                    
+                            <body name="LCarpi" pos="0 0 -0.0035" gravcomp="0">
+                            <joint name="LWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-0.7853981633974483 0.7853981633974483" group="1" />
+                            <joint name="LWrist_flexion" pos="0 0 0" axis="-1 0 0" range="-1.5707963267948966 1.5707963267948966" group="1" />
+                            <geom name="LCarpi" pos="0.003 0.00 0.0124" euler="0.0 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LCarpi" density="1908" />
+                            <geom name="LFinger" pos="0.003 0.00 0.0124" euler="0.0 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LFinger" />
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+
+            <body name="LClavicle" pos="0.0095 0 -0.003" euler="0 0 0" gravcomp="0">
+            <geom name="LClavicle" pos="0.0065 0.006 -0.001" euler="0.3490658503988659 0.0 -0.4363323129985824" type="mesh" rgba="1 1 1 1" mesh="LClavicle" />
+            <joint name="LClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="1" />
+            <joint name="LClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="1" />
+
+            </body>
+            
+            <geom name="Throax_lumbar" pos="-0.012 0 0" euler="0.0 0.0 0.0" type="sphere" size="0.002" rgba="0.8 0.8 0.8 0.8" />
+            <body name="RPelvis" pos="-0.012 0 0" gravcomp="0">
+                <geom type="capsule" size="0.003 0.003" pos="-0.008 0 0" euler="0.0 1.5707963267948966 0.0" rgba="0.8 0.8 0.8 0.8" />
+
+                <joint name="waist_x" pos="0 0 -0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="2" />
+                <joint name="waist_y" pos="0 0 -0" axis="0 1 0" range="-1.0471975511965976 1.0471975511965976" group="2" />
+                <joint name="waist_z" pos="0 0 -0" axis="0 0 1" range="-1.5707963267948966 1.5707963267948966" group="2" />
+
+                <geom name="RPelvis" pos="-0.013 -0.0028 0.002" euler="1.5707963267948966 -0.08726646259971647 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RPelvis" />
+                <geom name="LPelvis" pos="-0.013 0.0028 0.002" euler="1.5707963267948966 0.08726646259971647 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LPelvis" />
+
+                <body name="RFemur" pos="-0.013 -0.0028 0.002" gravcomp="0">
+                <joint name="RHip_rotation" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="3" />
+                <joint name="RHip_flexion" pos="0 0 0" axis="0 -1 0" range="-1.5707963267948966 1.5707963267948966" group="3" />
+                <joint name="RHip_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.5235987755982988" group="3" />
+
+                <geom name="RFemur" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFemur" />
+
+                <body name="R_Leg" pos="-0.001 0 -0.0135" gravcomp="0">
+                    <joint name="RKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 2.0943951023931953" group="3" />
+
+                    <geom name="R_Leg_geom_1" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTibfib" />
+                    <geom name="R_Leg_geom_2" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPatella" />
+                    
+                    <body name="RPedal" pos="-0.001 0.00125 -0.0184" gravcomp="0">
+                    <joint name="RAnkle_adduction" pos="0 0 0" axis="0 0 1" range="-1.0471975511965976 1.0471975511965976" group="3" />
+                    <joint name="RAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-1.0471975511965976 1.0471975511965976" group="3" />
+                    <joint name="RAnkle_rotation" pos="0 0 0" axis="1 0 0" range="-0.3490658503988659 0.3490658503988659" group="3" />
+                    
+                    <geom name="RFoot" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFoot" />
+                    <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    </body>
+
+                </body>
+                </body>
+
+                <body name="LFemur" pos="-0.013 0.0028 0.002" gravcomp="0">
+                <joint name="LHip_rotation" pos="0 0 0" axis="0 0 -1" range="-0.17453292519943295 0.17453292519943295" group="4" />
+                <joint name="LHip_flexion" pos="0 0 0" axis="0 -1 0" range="-1.5707963267948966 1.5707963267948966" group="4" />
+                <joint name="LHip_adduction" pos="0 0 0" axis="-1 0 0" range="-1.0471975511965976 0.5235987755982988" group="4" />
+
+                <geom name="LFemur" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFemur" />
+
+                <body name="LLeg" pos="-0.001 0 -0.0135" gravcomp="0">
+                    <joint name="LKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 2.0943951023931953" group="4" />
+
+                    <geom name="LLeg_geom_1" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LTibfib" />
+                    <geom name="LLeg_geom_2" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPatella" />
+
+                    <body name="LPedal" pos="-0.001 -0.00125 -0.0184" gravcomp="0">
+                    <joint name="LAnkle_adduction" pos="0 0 0" axis="0 0 -1" range="-1.0471975511965976 1.0471975511965976" group="4" />
+                    <joint name="LAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-1.0471975511965976 1.0471975511965976" group="4" />
+                    <joint name="LAnkle_rotation" pos="0 0 0" axis="-1 0 0" range="-0.3490658503988659 0.3490658503988659" group="4" />
+                    
+                    <geom name="LFoot" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFoot" />
+                    <geom name="LPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 0.0009 -0.0003" euler="-3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                    </body>
+
+                </body>
+                </body>
+            </body>
+
+            <geom name="Head_Throax" pos="0.012 0 0" euler="0.0 0.0 0.0" type="sphere" size="0.002" rgba="0.8 0.8 0.8 0.8" density="1311" />
+                <body name="Head" pos="0.012 0 0">
+                    <geom type="capsule" pos="0.008 0 0" euler="0.0 1.5707963267948966 0.0" size="0.003 0.003" rgba="0.8 0.8 0.8 1" density="1311" />
+                    <geom type="cylinder" pos="0.0055 0.003 0.002" euler="0.0 1.5707963267948966 0.0" size="0.002 0.0001" rgba="0 0 0 0.8" density="1056" />
+                    <geom type="cylinder" pos="0.0055 -0.003 0.002" euler="0.0 1.5707963267948966 0.0" size="0.002 0.0001" rgba="0 0 0 0.8" density="1056" />
+                    <geom type="sphere" pos="0.0125 0 0.0025" euler="0.0 0.0 0.0" size="0.001" rgba="0 0 0 0.8" />
+                    <camera name="egocentric" fovy="80.0" pos="0.0125 0 0.0025" euler="0 0 0" />
+                    <joint name="neck_x" pos="0.00 0 0.00" axis="1 0 0" range="-0.5235987755982988 0.5235987755982988" group="2" />
+                    <joint name="neck_y" pos="0.00 -0.00 0.00" axis="0 1 0" range="-1.5707963267948966 1.5707963267948966" group="2" />
+                    <joint name="neck_z" pos="0.00 -0.00 0.00" axis="0 0 1" range="-1.5707963267948966 1.5707963267948966" group="2" />
+                </body>
+        </body>
+    </worldbody>
+    
+    <actuator>
+        <motor name="RScapula_r1" gear="4" joint="RScapula_r1" />
+        <motor name="RScapula_r2" gear="4" joint="RScapula_r2" />
+        <motor name="RScapula_r3" gear="4" joint="RScapula_r3" />
+        <motor name="RScapula_r4" gear="4" joint="RScapula_r4" />
+
+        <motor name="RShoulder_flexion" gear="4" joint="RShoulder_flexion" />
+        <motor name="RShoulder_adduction" gear="4" joint="RShoulder_adduction" />
+        <motor name="RShoulder_rotation" gear="4" joint="RShoulder_rotation" />
+        <motor name="RElbow_flexion" gear="4" joint="RElbow_flexion" />
+
+        <motor name="RRadius_rotation" gear="4" joint="RRadius_rotation" />
+        <motor name="RWrist_adduction" gear="4" joint="RWrist_adduction" />
+        <motor name="RWrist_flexion" gear="4" joint="RWrist_flexion" />
+
+        <motor name="RClavicle_r1" gear="4" joint="RClavicle_r1" />
+        <motor name="RClavicle_r2" gear="4" joint="RClavicle_r2" />
+
+        <motor name="LScapula_r1" gear="4" joint="LScapula_r1" />
+        <motor name="LScapula_r2" gear="4" joint="LScapula_r2" />
+        <motor name="LScapula_r3" gear="4" joint="LScapula_r3" />
+        <motor name="LScapula_r4" gear="4" joint="LScapula_r4" />
+
+        <motor name="LShoulder_flexion" gear="4" joint="LShoulder_flexion" />
+        <motor name="LShoulder_adduction" gear="4" joint="LShoulder_adduction" />
+        <motor name="LShoulder_rotation" gear="4" joint="LShoulder_rotation" />
+        <motor name="LElbow_flexion" gear="4" joint="LElbow_flexion" />
+
+        <motor name="LRadius_rotation" gear="4" joint="LRadius_rotation" />
+        <motor name="LWrist_adduction" gear="4" joint="LWrist_adduction" />
+        <motor name="LWrist_flexion" gear="4" joint="LWrist_flexion" />
+
+        <motor name="LClavicle_r1" gear="4" joint="LClavicle_r1" />
+        <motor name="LClavicle_r2" gear="4" joint="LClavicle_r2" />
+
+        <motor name="RHip_rotation" gear="4" joint="RHip_rotation" />
+        <motor name="RHip_flexion" gear="4" joint="RHip_flexion" />
+        <motor name="RHip_adduction" gear="4" joint="RHip_adduction" />
+
+        <motor name="RKnee_flexion" gear="4" joint="RKnee_flexion" />
+
+        <motor name="RAnkle_adduction" gear="4" joint="RAnkle_adduction" />
+        <motor name="RAnkle_flexion" gear="4" joint="RAnkle_flexion" />
+        <motor name="RAnkle_rotation" gear="4" joint="RAnkle_rotation" />
+
+        <motor name="LHip_rotation" gear="4" joint="LHip_rotation" />
+        <motor name="LHip_flexion" gear="4" joint="LHip_flexion" />
+        <motor name="LHip_adduction" gear="4" joint="LHip_adduction" />
+
+        <motor name="LKnee_flexion" gear="4" joint="LKnee_flexion" />
+
+        <motor name="LAnkle_adduction" gear="4" joint="LAnkle_adduction" />
+        <motor name="LAnkle_flexion" gear="4" joint="LAnkle_flexion" />
+        <motor name="LAnkle_rotation" gear="4" joint="LAnkle_rotation" />
+
+        <motor name="neck_x" gear="4" joint="neck_x" />
+        <motor name="neck_y" gear="4" joint="neck_y" />
+        <motor name="neck_z" gear="4" joint="neck_z" />
+
+        <motor name="waist_x" gear="4" joint="waist_x" />
+        <motor name="waist_y" gear="4" joint="waist_y" />
+        <motor name="waist_z" gear="4" joint="waist_z" />
+    </actuator>
+
+    <equality>
+        <weld name="RGlenohumeral Joint" active="true" body1="RScapula" body2="RClavicle" anchor="0.0015 -0.0065 0.0055" torquescale="1" />
+        <weld name="LGlenohumeral Joint" active="true" body1="LScapula" body2="LClavicle" anchor="0.0015 0.0065 0.0055" torquescale="1" />
+    </equality>
+
+    <contact>
+        <exclude body1="RScapula" body2="RClavicle" />
+        <exclude body1="RHumerus" body2="RClavicle" />
+        <exclude body1="RHumerus" body2="RRadius" />
+        <exclude body1="RUlna" body2="RCarpi" />
+        <exclude body1="RCarpi" body2="RFinger" />
+        <exclude body1="LScapula" body2="LClavicle" />
+        <exclude body1="LHumerus" body2="LClavicle" />
+        <exclude body1="LHumerus" body2="LRadius" />
+        <exclude body1="LUlna" body2="LCarpi" />
+        <exclude body1="LCarpi" body2="LFinger" />
+    </contact>
+
+    <sensor>
+        <subtreelinvel name="torso_subtreelinvel" body="CyberMice" />
+        <subtreecom name="body_com" body="CyberMice" />
+    </sensor>
+</mujoco>
