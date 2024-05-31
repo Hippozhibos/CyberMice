@@ -12,7 +12,7 @@ from dm_control.mujoco import wrapper as mj_wrapper
 import numpy as np
 
 _XML_PATH = os.path.join(os.path.dirname(__file__),
-                         'modified_xml_file_2.xml')
+                         'CyberMiceJointActuated_2.xml')
 
 _MICE_MOCAP_JOINTS = [
     'root_x', 'root_y', 'root_z', 
@@ -113,8 +113,8 @@ class Mice(legacy_base.Walker):
         return tuple(
             self._mjcf_root.find('body', 'LPedal').find_all('geom') +
             self._mjcf_root.find('body', 'RPedal').find_all('geom') +
-            self._mjcf_root.find('body', 'LFinger').find_all('geom') +
-            self._mjcf_root.find('body', 'RFinger').find_all('geom') +
+            self._mjcf_root.find('body', 'LCarpi').find_all('geom') +
+            self._mjcf_root.find('body', 'RCarpi').find_all('geom') +
             self._mjcf_root.find('body', 'CyberMice').find_all('geom')
             )
 
@@ -127,8 +127,8 @@ class Mice(legacy_base.Walker):
     @composer.cached_property
     def end_effectors(self):
         """Return end effectors."""
-        return (self._mjcf_root.find('body', 'RFinger'),
-                self._mjcf_root.find('body', 'LFinger'),
+        return (self._mjcf_root.find('body', 'RCarpi'),
+                self._mjcf_root.find('body', 'LCarpi'),
                 self._mjcf_root.find('body', 'RPedal'),
                 self._mjcf_root.find('body', 'LPedal'))
 
@@ -160,7 +160,7 @@ class Mice(legacy_base.Walker):
     def mocap_tracking_bodies(self):
         """Return bodies for mocap comparison."""
         return tuple(body for body in self._mjcf_root.find_all('body')
-                 if not re.match(r'(CyberMice|Finger|Pedal)', body.name))
+                 if not re.match(r'(CyberMice|Carpi|Pedal)', body.name))
 
     @composer.cached_property
     def primary_joints(self):
