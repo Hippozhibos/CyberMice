@@ -4,13 +4,7 @@
     <option timestep="0.002" />
     <size njmax="1000" nconmax="400" nkey="1" nuser_jnt="1" />
     <statistic extent="1" />
-    <!-- <visual>
-        <scale forcewidth="0.01" contactwidth="0.03" contactheight="0.1" connect="0.002" framelength="5" com="0.1" selectpoint="0.05" framewidth="0.01" light="0.03" jointlength="2" jointwidth="0.02" constraint="0.05" />
-        <map stiffness="100" stiffnessrot="500" force="0.005" zfar="30" znear="1e-5" />
-        <rgba haze="0.15 0.25 0.35 1" />
-        <global offwidth="2560" offheight="1440" elevation="-20" azimuth="120" />
-        <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8" specular="0.1 0.1 0.1" />
-    </visual> -->
+
     <default class="main">
         <joint limited="true" stiffness=".0" armature="1e-05" damping=".00001" />
         
@@ -72,10 +66,6 @@
         <mesh name="LFoot" file="LFoot.stl" />
     </asset>
 
-    
-    
-    
-
     <worldbody>
         <!-- <geom name="floor" type="plane" conaffinity="1" size="50 50 0.2" material="grid" pos="0 0 0" zaxis="0 0 1"/> -->
         <body name="CyberMice" pos="0 0 0.035">
@@ -90,7 +80,9 @@
             <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
             <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" />
 
-            <geom type="capsule" name="SpineRibs" pos="0 0 0" euler="0.0 1.5707963267948966 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" density="1311" />
+            <!-- <geom type="capsule" name="SpineRibs" pos="0 0 0" euler="0.0 1.5707963267948966 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" density="1311" /> -->
+            <geom type="capsule" name="SpineRibs" pos="0 0 0" euler="0.0 1.5707963267948966 0.0" size="0.005 0.005" rgba="0.8 0.8 0.8 0.8" mass="1" />
+            
             <body name="RScapula" pos="0 0 0" euler="0 0 0" gravcomp="0">
             <geom name="RScapula" pos="0.005 -0.00875 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 0.8" mesh="RScapula" density="1908" />
             <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.08726646259971647 0.08726646259971647" group="0" />

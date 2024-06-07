@@ -47,9 +47,12 @@ class Mice(legacy_base.Walker):
                params=None,
                name='walker',
                torque_actuators=False,
+               physics_timestep: float = 1e-4,
+               control_timestep: float = 2e-3,
                initializer=None):
         self.params = params
         self._mjcf_root = mjcf.from_path(_XML_PATH)
+        self._buffer_size = int(round(control_timestep / physics_timestep))
         if name:
             self._mjcf_root.model = name
 
