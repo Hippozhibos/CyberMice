@@ -248,6 +248,16 @@ class MiceObservables(legacy_base.WalkerObservables):
   """Observables for the Mice."""
 
   @composer.observable
+  def joint_positions(self):
+    all_joints = self._entity.mjcf_model.find_all('joint')
+    return observable.MJCFFeature('qpos', all_joints)
+  
+  @composer.observable
+  def joint_velocities(self):
+    all_joints = self._entity.mjcf_model.find_all('joint')
+    return observable.MJCFFeature('qvel', all_joints)
+
+  @composer.observable
   def head_height(self):
     """Observe the head height."""
     return observable.MJCFFeature('xpos', self._entity.head)[2]

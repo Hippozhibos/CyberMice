@@ -1,10 +1,8 @@
-"""Define reward function for imitation tasks."""
+'''Revised from the code of flybody'''
 
 from typing import Dict
 import numpy as np
-
-import quaternions
-
+from tasks import quaternions
 
 def compute_diffs(walker_features: Dict[str, np.ndarray],
                   reference_features: Dict[str, np.ndarray],

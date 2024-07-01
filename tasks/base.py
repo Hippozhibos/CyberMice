@@ -8,7 +8,7 @@ from dm_control import composer
 from dm_control import mjcf
 from dm_control.composer.observation import observable
 
-from quaternions import get_dquat_local
+from tasks.quaternions import get_dquat_local
 from tasks.task_utils import make_ghost_fly
 from tasks.constants import (_FLY_PHYSICS_TIMESTEP,
                                      _FLY_CONTROL_TIMESTEP, _BODY_PITCH_ANGLE,

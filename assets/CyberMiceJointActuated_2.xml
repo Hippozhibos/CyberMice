@@ -209,67 +209,67 @@
     </worldbody>
     
     <actuator>
-        <motor name="RScapula_r1" gear="4" joint="RScapula_r1" />
-        <motor name="RScapula_r2" gear="4" joint="RScapula_r2" />
-        <motor name="RScapula_r3" gear="4" joint="RScapula_r3" />
-        <motor name="RScapula_r4" gear="4" joint="RScapula_r4" />
+        <motor name="RScapula_r1" gear="4" joint="RScapula_r1" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RScapula_r2" gear="4" joint="RScapula_r2" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RScapula_r3" gear="4" joint="RScapula_r3" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RScapula_r4" gear="4" joint="RScapula_r4" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="RShoulder_flexion" gear="4" joint="RShoulder_flexion" />
-        <motor name="RShoulder_adduction" gear="4" joint="RShoulder_adduction" />
-        <motor name="RShoulder_rotation" gear="4" joint="RShoulder_rotation" />
-        <motor name="RElbow_flexion" gear="4" joint="RElbow_flexion" />
+        <motor name="RShoulder_flexion" gear="4" joint="RShoulder_flexion" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RShoulder_adduction" gear="4" joint="RShoulder_adduction" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RShoulder_rotation" gear="4" joint="RShoulder_rotation" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RElbow_flexion" gear="4" joint="RElbow_flexion" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="RRadius_rotation" gear="4" joint="RRadius_rotation" />
-        <motor name="RWrist_adduction" gear="4" joint="RWrist_adduction" />
-        <motor name="RWrist_flexion" gear="4" joint="RWrist_flexion" />
+        <motor name="RRadius_rotation" gear="4" joint="RRadius_rotation" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RWrist_adduction" gear="4" joint="RWrist_adduction" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RWrist_flexion" gear="4" joint="RWrist_flexion" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="RClavicle_r1" gear="4" joint="RClavicle_r1" />
-        <motor name="RClavicle_r2" gear="4" joint="RClavicle_r2" />
+        <motor name="RClavicle_r1" gear="4" joint="RClavicle_r1" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RClavicle_r2" gear="4" joint="RClavicle_r2" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="LScapula_r1" gear="4" joint="LScapula_r1" />
-        <motor name="LScapula_r2" gear="4" joint="LScapula_r2" />
-        <motor name="LScapula_r3" gear="4" joint="LScapula_r3" />
-        <motor name="LScapula_r4" gear="4" joint="LScapula_r4" />
+        <motor name="LScapula_r1" gear="4" joint="LScapula_r1" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LScapula_r2" gear="4" joint="LScapula_r2" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LScapula_r3" gear="4" joint="LScapula_r3" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LScapula_r4" gear="4" joint="LScapula_r4" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="LShoulder_flexion" gear="4" joint="LShoulder_flexion" />
-        <motor name="LShoulder_adduction" gear="4" joint="LShoulder_adduction" />
-        <motor name="LShoulder_rotation" gear="4" joint="LShoulder_rotation" />
-        <motor name="LElbow_flexion" gear="4" joint="LElbow_flexion" />
+        <motor name="LShoulder_flexion" gear="4" joint="LShoulder_flexion" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LShoulder_adduction" gear="4" joint="LShoulder_adduction" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LShoulder_rotation" gear="4" joint="LShoulder_rotation" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LElbow_flexion" gear="4" joint="LElbow_flexion" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="LRadius_rotation" gear="4" joint="LRadius_rotation" />
-        <motor name="LWrist_adduction" gear="4" joint="LWrist_adduction" />
-        <motor name="LWrist_flexion" gear="4" joint="LWrist_flexion" />
+        <motor name="LRadius_rotation" gear="4" joint="LRadius_rotation" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LWrist_adduction" gear="4" joint="LWrist_adduction" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LWrist_flexion" gear="4" joint="LWrist_flexion" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="LClavicle_r1" gear="4" joint="LClavicle_r1" />
-        <motor name="LClavicle_r2" gear="4" joint="LClavicle_r2" />
+        <motor name="LClavicle_r1" gear="4" joint="LClavicle_r1" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LClavicle_r2" gear="4" joint="LClavicle_r2" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="RHip_rotation" gear="4" joint="RHip_rotation" />
-        <motor name="RHip_flexion" gear="4" joint="RHip_flexion" />
-        <motor name="RHip_adduction" gear="4" joint="RHip_adduction" />
+        <motor name="RHip_rotation" gear="4" joint="RHip_rotation" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RHip_flexion" gear="4" joint="RHip_flexion" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RHip_adduction" gear="4" joint="RHip_adduction" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="RKnee_flexion" gear="4" joint="RKnee_flexion" />
+        <motor name="RKnee_flexion" gear="4" joint="RKnee_flexion" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="RAnkle_adduction" gear="4" joint="RAnkle_adduction" />
-        <motor name="RAnkle_flexion" gear="4" joint="RAnkle_flexion" />
-        <motor name="RAnkle_rotation" gear="4" joint="RAnkle_rotation" />
+        <motor name="RAnkle_adduction" gear="4" joint="RAnkle_adduction" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RAnkle_flexion" gear="4" joint="RAnkle_flexion" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="RAnkle_rotation" gear="4" joint="RAnkle_rotation" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="LHip_rotation" gear="4" joint="LHip_rotation" />
-        <motor name="LHip_flexion" gear="4" joint="LHip_flexion" />
-        <motor name="LHip_adduction" gear="4" joint="LHip_adduction" />
+        <motor name="LHip_rotation" gear="4" joint="LHip_rotation" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LHip_flexion" gear="4" joint="LHip_flexion" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LHip_adduction" gear="4" joint="LHip_adduction" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="LKnee_flexion" gear="4" joint="LKnee_flexion" />
+        <motor name="LKnee_flexion" gear="4" joint="LKnee_flexion" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="LAnkle_adduction" gear="4" joint="LAnkle_adduction" />
-        <motor name="LAnkle_flexion" gear="4" joint="LAnkle_flexion" />
-        <motor name="LAnkle_rotation" gear="4" joint="LAnkle_rotation" />
+        <motor name="LAnkle_adduction" gear="4" joint="LAnkle_adduction" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LAnkle_flexion" gear="4" joint="LAnkle_flexion" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="LAnkle_rotation" gear="4" joint="LAnkle_rotation" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="neck_x" gear="4" joint="neck_x" />
-        <motor name="neck_y" gear="4" joint="neck_y" />
-        <motor name="neck_z" gear="4" joint="neck_z" />
+        <motor name="neck_x" gear="4" joint="neck_x" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="neck_y" gear="4" joint="neck_y" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="neck_z" gear="4" joint="neck_z" ctrllimited="true" ctrlrange="-1 1"/>
 
-        <motor name="waist_x" gear="4" joint="waist_x" />
-        <motor name="waist_y" gear="4" joint="waist_y" />
-        <motor name="waist_z" gear="4" joint="waist_z" />
+        <motor name="waist_x" gear="4" joint="waist_x" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="waist_y" gear="4" joint="waist_y" ctrllimited="true" ctrlrange="-1 1"/>
+        <motor name="waist_z" gear="4" joint="waist_z" ctrllimited="true" ctrlrange="-1 1"/>
     </actuator>
 
     <equality>

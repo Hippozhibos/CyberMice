@@ -4,7 +4,7 @@
 from typing import Sequence, Callable, Any
 import numpy as np
 
-from quaternions import rotate_vec_with_quat
+from tasks.quaternions import rotate_vec_with_quat
 
 
 def get_random_policy(action_spec: 'dm_env.specs.BoundedArray',

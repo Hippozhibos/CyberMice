@@ -18,7 +18,7 @@ from tasks.rewards import (get_reference_features, get_walker_features,
 from tasks.trajectory_loaders import HDF5WalkingTrajectoryLoader
 from tasks.task_utils import (add_trajectory_sites,
                                       update_trajectory_sites, retract_wings)
-from quaternions import rotate_vec_with_quat
+from tasks.quaternions import rotate_vec_with_quat
 
 
 class WalkImitation(Walking):
