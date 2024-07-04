@@ -39,6 +39,7 @@
         <mesh name="RRadius" file="RRadius.stl" />
         <mesh name="RCarpi" file="RCarpi.stl" />
         <mesh name="RFinger" file="RFinger.stl" />
+        <mesh name="RHand" file="RHand.stl" />
         <mesh name="RClavicle" file="RClavicle.stl" />
         <mesh name="LSpineRibs" file="LSpine And Ribs.stl" />
         <mesh name="LScapula" file="LScapula.stl" />
@@ -47,6 +48,7 @@
         <mesh name="LRadius" file="LRadius.stl" />
         <mesh name="LCarpi" file="LCarpi.stl" />
         <mesh name="LFinger" file="LFinger.stl" />
+        <mesh name="LHand" file="LHand.stl" />
         <mesh name="LClavicle" file="LClavicle.stl" />
         <mesh name="RBicep" file="RBicep.stl" />
         <mesh name="RBrachialis" file="RBrachialis.stl" />
@@ -65,15 +67,25 @@
         <mesh name="LPatella" file="LPatella.stl" />
         <mesh name="LFoot" file="LFoot.stl" />
         <mesh name="Head" file="Head.stl"/>
-        <mesh name="Chest" file="WholeChest.stl"/>
-        <mesh name="ShoulderReference" file="ShoulderReference.stl"/>
-        <mesh name="WholeBody" file="Mus_whole_decimated_scaled.stl"/>
+        <mesh name="Chest" file="Chest.stl"/>
+        <mesh name="WholeBody" file="FullSkeletonRef.stl"/>
+        <mesh name="C1" file="C1.stl"/>
+        <mesh name="C2" file="C2.stl"/>
+        <mesh name="C3" file="C3.stl"/>
+        <mesh name="C4" file="C4.stl"/>
+        <mesh name="C5" file="C5.stl"/>
+        <mesh name="C6" file="C6.stl"/>
+        <mesh name="C7" file="C7.stl"/>
+        <mesh name="L1" file="L1.stl"/>
+        <mesh name="L2" file="L2.stl"/>
+        <mesh name="L3" file="L3.stl"/>
+        <mesh name="L4" file="L4.stl"/>
+        <mesh name="L5" file="L5.stl"/>
+        <mesh name="L6" file="L6.stl"/>
+        <mesh name="Sacral" file="S1-4.stl"/>
     </asset>
 
     
-    
-    
-
     <worldbody>
         <body name="CyberMice" pos="0 0 0.0">
             <camera name="side" mode="trackcom" pos="0 -3.5 1" euler="-5 0 0" />
@@ -87,19 +99,26 @@
             <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
             <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" />
 
-            <geom name="Chest" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="Chest" />
-            <!-- <geom name="ShoulderReference" pos="0.0154 0 0.0015" euler="0.0 0.0 0.0" type="mesh" rgba="1 0.5 0.5 0.5" mesh="ShoulderReference"/> -->
-            <!-- <geom name="WholeBodyReference" pos="-0.0175 0.00475 -0.0025" euler="-1.75 -1.4 0" type="mesh" rgba="0.5 0.5 1 0.5" mesh="WholeBody"/> -->
+            <geom name="Chest" pos="0 0 0" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="Chest" />
+            <!-- <geom name="WholeBodyReference" pos="0 0 0" euler="0 0 0" type="mesh" rgba="0.5 0.5 1 0.5" mesh="WholeBody"/> -->
 
-            <body name="Head" pos="0.032 0 0">
+            <body name="Head" pos="0 0 0">
                 <geom name="Head" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="Head" />
+                <geom name="C1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C1" />
+                <geom name="C2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C2" />
+                <geom name="C3" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C3" />
+                <geom name="C4" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C4" />
+                <geom name="C5" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C5" />
+                <geom name="C6" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C6" />
+                <geom name="C7" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
+
                 <camera name="egocentric" fovy="80.0" pos="0.0125 0 0.0025" euler="0 0 0" />
                 <joint name="neck_x" pos="-0.01 0 0.00" axis="1 0 0" range="-0.5235987755982988 0.5235987755982988" group="2" />
                 <joint name="neck_y" pos="-0.01 -0.00 0.00" axis="0 1 0" range="-1.5707963267948966 1.5707963267948966" group="2" />
                 <joint name="neck_z" pos="-0.01 -0.00 0.00" axis="0 0 1" range="-1.5707963267948966 1.5707963267948966" group="2" />
             </body>
             
-            <body name="RScapula" pos="0.0085 0 0" euler="0 0 0" gravcomp="0">
+            <body name="RScapula" pos="-0.007 0.0005 -0.001" gravcomp="0">
                 <geom name="RScapula" pos="0.005 -0.00875 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 0.8" mesh="RScapula" density="1908" />
                 <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
                 <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
@@ -121,7 +140,7 @@
                     <joint name="RShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-1.2217304763960306 1.2217304763960306" group="0" />
                     <joint name="RShoulder_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.7853981633974483" group="0" />
                     <joint name="RShoulder_rotation" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 1.5707963267948966" group="0" />
-                    <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 0.5" mesh="RHumerus" density="1908" />
+                    <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RHumerus" density="1908" />
                     <geom name="RHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" quat="0.559627 0.471367 -0.439124 0.521346" group="2" rgba="0.19 0.83 0.78 0.1" />
                     <geom name="RHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 -0.0009 -0.00975" quat="0.671212 0.565354 -0.308854 0.366685" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" />
                     <site name="RHumerus_Distal_sidesite" pos="2.65606317e-03 -6.74797612e-04 -9.57142412e-03" size="0.0005" />
@@ -278,14 +297,14 @@
                 </body>
             </body>
 
-            <body name="RClavicle" pos="0.01625 -0.001 -0.003" gravcomp="0">
-                <geom name="RClavicle" pos="0.0065 -0.006 -0.001" euler="-0.3490658503988659 0.0 0.4363323129985824" type="mesh" rgba="1 1 1 1" mesh="RClavicle" density="1908" />
+            <body name="RClavicle" pos="0.00 -0.0015 -0.005" gravcomp="0">
+                <geom name="RClavicle" pos="-0.002 -0.007 0.002" euler="-0.6 1.57 0" type="mesh" rgba="1 1 1 0.8" mesh="RClavicle" density="1908" />
                 <joint name="RClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="0" />
                 <joint name="RClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="0" />
-                <site name="RDeltoideusClavicle_origin" pos="0.00205504 -0.0040589   0.00439547" size="0.0005" />
+                <site name="RDeltoideusClavicle_origin" pos="0.0035 -0.0025 0.0035" size="0.0005" rgba="0 0 1 1"/>
             </body>
 
-            <body name="LScapula" pos="0.0085 0 0" gravcomp="0">
+            <body name="LScapula" pos="-0.007 -0.0005 -0.001" gravcomp="0">
                 <geom name="LScapula" pos="0.005 0.00875 -0.002" euler="0.3490658503988659 1.5707963267948966 0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="LScapula" density="1908" />
                 <joint name="LScapula_r1" pos="0.005 0 0" axis="-1 0 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
                 <joint name="LScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
@@ -464,20 +483,25 @@
                 </body>
             </body>
 
-            <body name="LClavicle" pos="0.01625 -0.001 -0.003" euler="0 0 0" gravcomp="0">
-                <geom name="LClavicle" pos="0.0065 0.006 -0.001" euler="0.3490658503988659 0.0 -0.4363323129985824" type="mesh" rgba="1 1 1 1" mesh="LClavicle" />
+            <body name="LClavicle" pos="0.00 0.0015 -0.005" gravcomp="0">
+                <geom name="LClavicle" pos="-0.002 0.007 0.002" euler="0.6 1.57 0" type="mesh" rgba="1 1 1 1" mesh="LClavicle" />
                 <joint name="LClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="1" />
                 <joint name="LClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="1" />
-                <site name="LDeltoideusClavicle_origin" pos="0.00205504 0.0040589 0.00439547" size="0.0005" />
+                <site name="LDeltoideusClavicle_origin" pos="0.0035 0.0025 0.0035" size="0.0005" rgba="0 0 1 1"/>
             </body>
-            
-            <body name="RPelvis" pos="-0.0175 0 0.005" gravcomp="0">
+
+            <body name="Lumbar">
+            </body>
+
+            <body name="Pelvis" pos="-0.035 0.00 0.005" gravcomp="0">
+
+                <geom name="Sacral" pos="0.0 0.0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="Sacral" />
+                <geom name="RPelvis" pos="-0.013 -0.003 0.002" euler="1.5707963267948966 -0.08726646259971647 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RPelvis" />
+                <geom name="LPelvis" pos="-0.013 0.003 0.002" euler="1.5707963267948966 0.08726646259971647 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LPelvis" />
+
                 <joint name="waist_x" pos="0 0 -0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="2" />
                 <joint name="waist_y" pos="0 0 -0" axis="0 1 0" range="-1.0471975511965976 1.0471975511965976" group="2" />
                 <joint name="waist_z" pos="0 0 -0" axis="0 0 1" range="-1.5707963267948966 1.5707963267948966" group="2" />
-
-                <geom name="RPelvis" pos="-0.013 -0.003 0.002" euler="1.5707963267948966 -0.08726646259971647 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RPelvis" />
-                <geom name="LPelvis" pos="-0.013 0.003 0.002" euler="1.5707963267948966 0.08726646259971647 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LPelvis" />
 
                 <geom name="RGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 -0.0015 -0.001" euler="1.6580627893946132 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
                 <geom name="RST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 -0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2" />
