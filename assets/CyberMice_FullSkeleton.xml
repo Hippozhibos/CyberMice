@@ -1317,6 +1317,66 @@
             <joint joint="L6_S1_z" coef="0.148"/>
         </fixed>
 
+        <fixed name="Caudal_y" class="Caudal_y">
+            <joint joint="S4_CA1_y" coef="0.038"/>
+            <joint joint="CA1_CA2_y" coef="0.037"/>
+            <joint joint="CA2_CA3_y" coef="0.037"/>
+            <joint joint="CA3_CA4_y" coef="0.037"/>
+            <joint joint="CA4_CA5_y" coef="0.037"/>
+            <joint joint="CA5_CA6_y" coef="0.037"/>
+            <joint joint="CA6_CA7_y" coef="0.037"/>
+            <joint joint="CA7_CA8_y" coef="0.037"/>
+            <joint joint="CA8_CA9_y" coef="0.037"/>
+            <joint joint="CA9_CA10_y" coef="0.037"/>
+            <joint joint="CA10_CA11_y" coef="0.037"/>
+            <joint joint="CA11_CA12_y" coef="0.037"/>
+            <joint joint="CA12_CA13_y" coef="0.037"/>
+            <joint joint="CA13_CA14_y" coef="0.037"/>
+            <joint joint="CA14_CA15_y" coef="0.037"/>
+            <joint joint="CA15_CA16_y" coef="0.037"/>
+            <joint joint="CA16_CA17_y" coef="0.037"/>
+            <joint joint="CA17_CA18_y" coef="0.037"/>
+            <joint joint="CA18_CA19_y" coef="0.037"/>
+            <joint joint="CA19_CA20_y" coef="0.037"/>
+            <joint joint="CA20_CA21_y" coef="0.037"/>
+            <joint joint="CA21_CA22_y" coef="0.037"/>
+            <joint joint="CA22_CA23_y" coef="0.037"/>
+            <joint joint="CA23_CA24_y" coef="0.037"/>
+            <joint joint="CA24_CA25_y" coef="0.037"/>
+            <joint joint="CA25_CA26_y" coef="0.037"/>
+            <joint joint="CA26_CA27_y" coef="0.037"/>
+        </fixed>
+
+        <fixed name="Caudal_z" class="Caudal_z">
+            <joint joint="S4_CA1_z" coef="0.038"/>
+            <joint joint="CA1_CA2_z" coef="0.037"/>
+            <joint joint="CA2_CA3_z" coef="0.037"/>
+            <joint joint="CA3_CA4_z" coef="0.037"/>
+            <joint joint="CA4_CA5_z" coef="0.037"/>
+            <joint joint="CA5_CA6_z" coef="0.037"/>
+            <joint joint="CA6_CA7_z" coef="0.037"/>
+            <joint joint="CA7_CA8_z" coef="0.037"/>
+            <joint joint="CA8_CA9_z" coef="0.037"/>
+            <joint joint="CA9_CA10_z" coef="0.037"/>
+            <joint joint="CA10_CA11_z" coef="0.037"/>
+            <joint joint="CA11_CA12_z" coef="0.037"/>
+            <joint joint="CA12_CA13_z" coef="0.037"/>
+            <joint joint="CA13_CA14_z" coef="0.037"/>
+            <joint joint="CA14_CA15_z" coef="0.037"/>
+            <joint joint="CA15_CA16_z" coef="0.037"/>
+            <joint joint="CA16_CA17_z" coef="0.037"/>
+            <joint joint="CA17_CA18_z" coef="0.037"/>
+            <joint joint="CA18_CA19_z" coef="0.037"/>
+            <joint joint="CA19_CA20_z" coef="0.037"/>
+            <joint joint="CA20_CA21_z" coef="0.037"/>
+            <joint joint="CA21_CA22_z" coef="0.037"/>
+            <joint joint="CA22_CA23_z" coef="0.037"/>
+            <joint joint="CA23_CA24_z" coef="0.037"/>
+            <joint joint="CA24_CA25_z" coef="0.037"/>
+            <joint joint="CA25_CA26_z" coef="0.037"/>
+            <joint joint="CA26_CA27_z" coef="0.037"/>
+        </fixed>
+
         
         <spatial name="RBicepsLongus_tendon" group="0">
             <site site="RBicepsLongus_RBicepsLongus-P1" />
