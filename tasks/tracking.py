@@ -72,9 +72,6 @@ class DotsTracking(composer.Task, metaclass=abc.ABCMeta):
 
         # Load the mocap data
         self.mocap_data = self._load_mocap_data(self._ref_path)
-        
-        # Load the mocap joints in mjcf model 
-        self._mocap_joints = Mice.mocap_joints
 
         # Define reward-related variables  
         self._reward_fn = rewards.get_reward(reward_type)
@@ -84,7 +81,7 @@ class DotsTracking(composer.Task, metaclass=abc.ABCMeta):
         with h5py.File(file_path, 'r') as f:
             qpos = f['qpos'][:]
             qvel = f['qvel'][:]
-        return {'qpos': qpos, 'qvel': qvel}
+        return {'qpos_ref': qpos, 'qvel_ref': qvel}
 
     def initialize_episode_mjcf(self, random_state):
         """Modifies the MJCF model of this task before the next episode begins.
@@ -104,15 +101,18 @@ class DotsTracking(composer.Task, metaclass=abc.ABCMeta):
         """
         # Implement any task-specific physics initialization
         # Randomly select a frame
-        num_frames = self.mocap_data['qpos'].shape[0]
+        num_frames = self.mocap_data['qpos_ref'].shape[0]
         frame_idx = random_state.randint(num_frames)
 
         # Set the initial qpos and qvel
-        qpos = self.mocap_data['qpos'][frame_idx]
-        qvel = self.mocap_data['qvel'][frame_idx]
+        qpos_ref = self.mocap_data['qpos_ref'][frame_idx]
+        qvel_ref = self.mocap_data['qvel_ref'][frame_idx]
 
-        physics.data.qpos[7:] = qpos
-        physics.data.qvel[6:] = qvel
+        # physics.data.qpos[7:] = qpos
+        print(qvel_ref.shape)
+        physics.data.qpos[1:-6] = qpos_ref[6:]
+        physics.data.qpos[-6:] = qpos_ref[:6]
+        physics.data.qvel[:] = qvel_ref
 
     def before_step(self, physics, action, random_state):
         """A callback which is executed before an agent control step.
@@ -189,5 +189,5 @@ class DotsTracking(composer.Task, metaclass=abc.ABCMeta):
         return self._arena
     
     @property
-    def task_observables(self):
-        return self._task_observables
+    def walker(self):
+        return self._walker

@@ -51,10 +51,14 @@ class Mice(legacy_base.Walker):
                control_timestep: float = 2e-3,
                initializer=None):
         self.params = params
-        self._mjcf_root = mjcf.from_path(_XML_PATH)
         self._buffer_size = int(round(control_timestep / physics_timestep))
+        root = mjcf.from_path(_XML_PATH)
+        self._mjcf_root = root
         if name:
             self._mjcf_root.model = name
+
+        # Remove freejoint.
+        root.find('joint', 'free').remove()
 
         self.body_sites = []
         super()._build(initializer=initializer)
