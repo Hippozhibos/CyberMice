@@ -175,6 +175,7 @@
         <mesh name="CA27" file="CA27_28.stl"/>
         <mesh name="CA28" file="CA28.stl"/>
         <mesh name="Segment_16" file="Segment_16.stl"/>
+        <mesh name="RLatissimusDorsi" file="RLatissimusDorsi.stl"/>
     </asset>
 
     
@@ -193,8 +194,53 @@
 
             <geom name="Chest" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="Chest" />
 
-            <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 0.5" mesh="WholeBody"/> -->
+            <site name="T13_SpinousProcess" pos="0.0005 0 0.0025" size="0.0005" group="5"/>
+            <site name="T12_SpinousProcess" pos="0.0025 0 0.0025" size="0.0005" group="5"/>
+            <site name="T11_SpinousProcess" pos="0.005 0 0.002" size="0.0005" group="5"/>
+            <site name="T10_SpinousProcess" pos="0.0065 0 0.0015" size="0.0005" group="5"/>
+            <site name="T9_SpinousProcess" pos="0.008 0 0.001" size="0.0005" group="5"/>
+            <site name="T8_SpinousProcess" pos="0.00975 0 0" size="0.0005" group="5"/>
+            <site name="T7_SpinousProcess" pos="0.0112 0 -0.001" size="0.0005" group="5"/>
+            <site name="T6_SpinousProcess" pos="0.0126 0 -0.002" size="0.0005" group="5"/>
+            <site name="T5_SpinousProcess" pos="0.014 0 -0.0035" size="0.0005" group="5"/>
+            <site name="T4_SpinousProcess" pos="0.0155 0 -0.005" size="0.0005" group="5"/>
+            <site name="T3_SpinousProcess" pos="0.0165 0 -0.006" size="0.0005" group="5"/>
+            <site name="T2_SpinousProcess" pos="0.01825 0 -0.006" size="0.0005" group="5"/>
+            <site name="T1_SpinousProcess" pos="0.0195 0 -0.007" size="0.0005" group="5"/>
+
+            <site name="T13_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T12_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T11_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T10_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T9_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T8_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T7_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T6_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T5_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T4_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T3_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T2_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T1_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+
+            <site name="T13_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T12_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T11_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T10_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T9_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T8_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T7_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T6_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T5_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T4_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T3_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T2_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+            <site name="T1_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+
+            <site name="RLatissimusDorsi_3" pos="0.0015 -0.01 -0.01" size="0.0005" group="5"/>
+
+            <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/>
             <!-- <geom name="Segment_16" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="Segment_16"/> -->
+            <geom name="RLatissimusDorsi" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 1" mesh="RLatissimusDorsi" group="5"/>
 
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
@@ -264,11 +310,12 @@
                 <site name="RSubscapularis_origin" pos="2.94133000e-03 -3.07928342e-03  7.62716341e-03" size="0.0005" />
                 <site name="RTeresMajor_origin" pos="-4.17450000e-04 -7.79901805e-03  3.07864101e-03" size="0.0005" />
                 <site name="RTeresMinor_origin" pos="4.41866600e-03 -6.75461590e-03  3.62145298e-03" size="0.0005" />
+                <site name="RLatissimusDorsi_2" pos="0.0015 0 0" size="0.0005" group="5"/>
                 <body name="RHumerus" pos="0.01 -0.006 0.0015" euler="0 0 0" gravcomp="0">
                     <joint name="RShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-1.2217304763960306 1.2217304763960306" group="0" />
                     <joint name="RShoulder_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.7853981633974483" group="0" />
                     <joint name="RShoulder_rotation" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 1.5707963267948966" group="0" />
-                    <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RHumerus" density="1908" />
+                    <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 0.8" mesh="RHumerus" density="1908" />
                     <geom name="RHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" quat="0.559627 0.471367 -0.439124 0.521346" group="2" rgba="0.19 0.83 0.78 0.1" />
                     <geom name="RHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 -0.0009 -0.00975" quat="0.671212 0.565354 -0.308854 0.366685" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" />
                     <site name="RHumerus_Distal_sidesite" pos="2.65606317e-03 -6.74797612e-04 -9.57142412e-03" size="0.0005" />
@@ -311,6 +358,7 @@
                     <site name="RExtensorCarpiRadialisBrevis_origin" pos="6.19029536e-04 -2.44040551e-03 -9.06773786e-03" size="0.0005" />
                     <site name="RExtensorDigitorumCommunis_origin" pos="8.55625110e-04 -2.42963755e-03 -9.18865749e-03" size="0.0005" />
                     <site name="RExtensorDigitorumLateralis_origin" pos="9.57187076e-04 -2.41146383e-03 -9.39008694e-03" size="0.0005" />
+                    <site name="RLatissimusDorsi_1" pos="0.0015 0 0" size="0.0005" group="5"/>
                     <body name="RUlna" pos="0.001 -0.001 -0.01" euler="0 0 0" gravcomp="0">
                         <joint name="RElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 2.5" group="0" />
                         <geom name="RUlna" pos="0.003 0.0015 0.0015" euler="-0.08726646259971647 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RUlna" density="1908" />
@@ -623,31 +671,55 @@
                 <joint name="T_L1_x" class="Lumbar_x" pos="0 0 0.001" axis="0.9848 0 0.1736"/>
                 <joint name="T_L1_y" class="Lumbar_y" pos="0 0 0.001" axis="0 1 0"/>
                 <joint name="T_L1_z" class="Lumbar_z" pos="0 0 0.001" axis="-0.1736 0 0.9848"/>
+                <site name="L1_SpinousProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                <site name="L1_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                <site name="L1_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+
                 <body name="L2" pos="-0.004 0 -0.00015" gravcomp="0">
                     <geom name="L2" pos="0.024 0 -0.00735" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="L2" />
                     <joint name="L1_L2_x" class="Lumbar_x" pos="0 0 0" axis="0.9848 0 0.1736"/>
                     <joint name="L1_L2_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                     <joint name="L1_L2_z" class="Lumbar_z" pos="0 0 0" axis="-0.1736 0 0.9848"/>
+                    <site name="L2_SpinousProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                    <site name="L2_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                    <site name="L2_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+
                     <body name="L3" pos="-0.00225 0 -0.00075" gravcomp="0">
                         <geom name="L3" pos="0.02625 0 -0.0066" euler="0.2 0.0 0.09" type="mesh" rgba="1 1 1 1" mesh="L3" />
                         <joint name="L2_L3_x" class="Lumbar_x" pos="0 0 0" axis="0.9848 0 0.1736"/>
                         <joint name="L2_L3_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                         <joint name="L2_L3_z" class="Lumbar_z" pos="0 0 0" axis="-0.1736 0 0.9848"/>
+                        <site name="L3_SpinousProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                        <site name="L3_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                        <site name="L3_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+
                         <body name="L4" pos="-0.00275 0 -0.0006" gravcomp="0">
                             <geom name="L4" pos="0.029 -0.001 -0.006" euler="0.2 0.0 0.05" type="mesh" rgba="1 1 1 1" mesh="L4" />
                             <joint name="L3_L4_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0"/>
                             <joint name="L3_L4_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                             <joint name="L3_L4_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1"/>
+                            <site name="L4_SpinousProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                            <site name="L4_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                            <site name="L4_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+
                             <body name="L5" pos="-0.0035 0 -0.000" gravcomp="0">
                                 <geom name="L5" pos="0.0325 -0.0025 -0.006" euler="0.2 0.0 0" type="mesh" rgba="1 1 1 1" mesh="L5" />
                                 <joint name="L4_L5_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0"/>
                                 <joint name="L4_L5_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                                 <joint name="L4_L5_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1"/>
+                                <site name="L5_SpinousProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                                <site name="L5_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                                <site name="L5_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+
                                 <body name="L6" pos="-0.003 0 -0.000" gravcomp="0">
                                     <geom name="L6" pos="0.0355 -0.00225 -0.006" euler="0.2 0.0 0" type="mesh" rgba="1 1 1 1" mesh="L6" />
                                     <joint name="L5_L6_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0"/>
                                     <joint name="L5_L6_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                                     <joint name="L5_L6_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1"/>
+                                    <site name="L6_SpinousProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                                    <site name="L6_RTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+                                    <site name="L6_LTransverseProcess" pos="0.0015 0 0" size="0.0005" group="5"/>
+
                                     <body name="Pelvis" pos="0.0025 0.00 -0.00175" gravcomp="0">
                                         <geom name="Sacral" pos="0.0325 -0.007 0.0025" euler="0.18 -0.2 -0.1" type="mesh" rgba="1 1 1 1" mesh="Sacral" />
                                         <geom name="RPelvis" pos="-0.013 -0.00325 0.002" euler="1.5707963267948966 -0.15 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RPelvis" />
@@ -1377,6 +1449,21 @@
             <joint joint="CA26_CA27_z" coef="0.037"/>
         </fixed>
 
+        <spatial name="RLatissimusDorsi_tendon" group="4">
+            <site site="RLatissimusDorsi_1" />
+            <site site="RLatissimusDorsi_2" />
+            <site site="RLatissimusDorsi_3" />
+            <pulley divisor="3"/>
+            <site site="RLatissimusDorsi_3" />
+            <site site="T11_SpinousProcess" />
+            <pulley divisor="3"/>
+            <site site="RLatissimusDorsi_3" />
+            <site site="T12_SpinousProcess" />
+            <pulley divisor="3"/>
+            <site site="RLatissimusDorsi_3" />
+            <site site="T13_SpinousProcess" />
+        </spatial>
+
         
         <spatial name="RBicepsLongus_tendon" group="0">
             <site site="RBicepsLongus_RBicepsLongus-P1" />
@@ -1424,8 +1511,8 @@
             <site site="RCoracobrachialis_insertion" />
         </spatial>
         <spatial name="RDeltoideusSpinal_tendon" group="0">
-        <site site="RDeltoideusSpinal_origin" />
-        <site site="RDeltoideusSpinal_insertion" />
+            <site site="RDeltoideusSpinal_origin" />
+            <site site="RDeltoideusSpinal_insertion" />
         </spatial>
         <spatial name="RDeltoideusAcromial_tendon" group="0">
         <site site="RDeltoideusAcromial_origin" />
