@@ -181,10 +181,11 @@
         <mesh name="RPectoralisMinor" file="RPectoralisMinor.stl"/>
         <mesh name="RPectoralisMinimus" file="RPectoralisMinimus.stl"/>
         <mesh name="RScalenus" file="RScalenus.stl"/>
-        <mesh name="LPectoralisMajor" file="LPectoralisMajor.stl"/>
-        <mesh name="LPectoralisMinor" file="LPectoralisMinor.stl"/>
-        <mesh name="LPectoralisMinimus" file="LPectoralisMinimus.stl"/>
-        <mesh name="LScalenus" file="LScalenus.stl"/>
+        <mesh name="RRectusCapitisPosteriorMajor_ObliquusCaptisInferior" file="RRectusCapitisPosteriorMajor_ObliquusCaptisInferior.stl"/>
+        <mesh name="RSemispinalisCapitis_ObliquusCapitisSuperior" file="RSemispinalisCapitis_ObliquusCapitisSuperior.stl"/>
+        <mesh name="RCleidomastoideus" file="RCleidomastoideus.stl"/>
+        <mesh name="RCleidocephalicus" file="RCleidocephalicus.stl"/>
+        <mesh name="RSternomastoideus" file="RSternomastoideus.stl"/>
     </asset>
 
     
@@ -296,9 +297,13 @@
             <site name="RScalenusPosterior_1" pos="0.01125 -0.00625 -0.011" size="0.0005" group="5" />
             <site name="RScalenusPosterior_2" pos="0.01475 -0.005 -0.01" size="0.0005" group="5" />
 
+            <site name="RSemispinalisCapitisMedial_2" pos="0.02 -0.00225 -0.0045" size="0.0005" group="5" />
+
+            <site name="RSternomastoideus_2" pos="0.022 -0.001 -0.012" size="0.0005" group="5" />
+
             <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/> -->
             
-
+            
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
                 <joint name="T_C7_x" class="Cervical_x" pos="0 0 0" axis="1 0 0"/>
@@ -335,7 +340,7 @@
                             <site name="C4_RTransverseProcess" pos="0.0009 -0.002 -0.0006" size="0.0005" group="5"/>
                             <site name="C4_LTransverseProcess" pos="0.0009 0.002 -0.0006" size="0.0005" group="5"/>
 
-                            <body name="C3" pos="0.001 0 0.0005" gravcomp="0">
+                            <body name="C3" pos="0.001 0 0.0005" euler="0.35 -0.075 -0.00" gravcomp="0">
                                 <geom name="C3" pos="-0.002 0.00065 -0.00075" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C3" />
                                 <joint name="C4_C3_x" class="Cervical_x" pos="0 0 0" axis="0.9397 0 0.3420"/>
                                 <joint name="C4_C3_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
@@ -368,6 +373,19 @@
                                             <joint name="C1_head_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
                                             <joint name="C1_head_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
                                             <joint name="C1_head_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063"/>
+                                        
+                                            <site name="RRectusCapitisPosteriorMajor" pos="0.001 -0.003 0.00175" size="0.0005" group="5" />
+                                            <site name="RRectusCapitisPosteriorMinor" pos="0.001 -0.0015 0.00225" size="0.0005" group="5" />
+                                            <site name="RObliquusCapitisSuperior" pos="0.0015 -0.004 0.001" size="0.0005" group="5" />
+                                            
+                                            <site name="RSemispinalisCapitisMedial_1" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
+                                            
+                                            <site name="RSemispinalisCapitisLateral_1" pos="0.0017 -0.0035 0.00175" size="0.0005" group="5" />
+                                            <site name="RSemispinalisCapitisLateral_2" pos="0.00075 -0.00325 0.00125" size="0.0005" group="5" />
+                                        
+                                            <site name="RCleidomastoideus_1" pos="0.00225 -0.00475 -0.00175" size="0.0005" group="5"/>
+                                            <site name="RCleidocephalicus_1" pos="0.0035 -0.005 0.001" size="0.0005" group="5"/>
+
                                         </body>
                                     </body>
                                 </body>
@@ -570,7 +588,9 @@
                 <geom name="RClavicle" pos="-0.00235 -0.0085 0.00075" euler="-0.5 1.57 0" type="mesh" rgba="1 1 1 1" mesh="RClavicle" density="1908" />
                 <joint name="RClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="0" />
                 <joint name="RClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="0" />
+                
                 <site name="RDeltoideusClavicle_origin" pos="0.0031 -0.00375 0.0031" size="0.0005" rgba="0 0 1 1"/>
+                <site name="RCleidomastoideus_2" pos="0.00225 -0.00275 0.00175" size="0.0005" group="5"/>
             </body>
 
             <body name="LScapula" pos="0.0135 0.0 -0.009" gravcomp="0">
@@ -1710,7 +1730,74 @@
             <site site="C7_RTransverseProcess" />
         </spatial>
 
+        <spatial name="RRectusCapitisPosteriorMajor" group="4">
+            <site site="RRectusCapitisPosteriorMajor"/>
+            <site site="C2_SpinousProcess"/>
+        </spatial>
 
+        <spatial name="RRectusCapitisPosteriorMinor" group="4">
+            <site site="RRectusCapitisPosteriorMinor"/>
+            <site site="C1_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="RObliquusCapitisSuperior" group="4">
+            <site site="RObliquusCapitisSuperior"/>
+            <site site="C1_RTransverseProcess"/>
+        </spatial>
+
+        <spatial name="RObliquusCapitisInferior" group="4">
+            <site site="C1_RTransverseProcess"/>
+            <site site="C2_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="RSemispinalisCapitisMedial" group="4">
+            <site site="RSemispinalisCapitisMedial_1"/>
+            <site site="RSemispinalisCapitisMedial_2"/>
+            <pulley divisor="2"/>
+            <site site="RSemispinalisCapitisMedial_2"/>
+            <site site="T4_RTransverseProcess"/>
+            <pulley divisor="2"/>
+            <site site="RSemispinalisCapitisMedial_2"/>
+            <site site="T5_RTransverseProcess"/>
+        </spatial>
+
+        <spatial name="RSemispinalisCapitisLateral" group="4">
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C3_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C4_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C5_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C6_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="C7_RTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="RSemispinalisCapitisLateral_2"/>
+            <site site="T1_RTransverseProcess"/>
+        </spatial>
+
+        <spatial name="RCleidomastoideus" group="4">
+            <site site="RCleidomastoideus_1"/>
+            <site site="RCleidomastoideus_2"/>
+        </spatial>
+
+        <spatial name="RCleidoRCleidocephalicus" group="4">
+            <site site="RCleidocephalicus_1"/>
+            <site site="RCleidomastoideus_2"/>
+        </spatial>
+
+        <spatial name="RSternomastoideus" group="4">
+            <site site="RCleidomastoideus_1"/>
+            <site site="RSternomastoideus_2"/>
+        </spatial>
 
         <spatial name="RBicepsLongus_tendon" group="0">
             <site site="RBicepsLongus_RBicepsLongus-P1" />
