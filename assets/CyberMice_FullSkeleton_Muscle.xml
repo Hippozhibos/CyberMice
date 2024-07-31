@@ -186,6 +186,9 @@
         <mesh name="RCleidomastoideus" file="RCleidomastoideus.stl"/>
         <mesh name="RCleidocephalicus" file="RCleidocephalicus.stl"/>
         <mesh name="RSternomastoideus" file="RSternomastoideus.stl"/>
+        <mesh name="RLongissimusCapitis" file="RLongissimusCapitis.stl"/>
+        <mesh name="RSpleniusCapitis" file="RSpleniusCapitis.stl"/>
+
     </asset>
 
     
@@ -301,9 +304,12 @@
 
             <site name="RSternomastoideus_2" pos="0.022 -0.001 -0.012" size="0.0005" group="5" />
 
+            <site name="RSpleniusCapitis_3" pos="0.02 -0.0025 -0.004" size="0.0005" group="5" rgba="1 0 0 1"/>
+           
             <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/> -->
-            
-            
+            <geom name="RSpleniusCapitis" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RSpleniusCapitis" group="5"/>
+
+
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
                 <joint name="T_C7_x" class="Cervical_x" pos="0 0 0" axis="1 0 0"/>
@@ -383,8 +389,14 @@
                                             <site name="RSemispinalisCapitisLateral_1" pos="0.0017 -0.0035 0.00175" size="0.0005" group="5" />
                                             <site name="RSemispinalisCapitisLateral_2" pos="0.00075 -0.00325 0.00125" size="0.0005" group="5" />
                                         
-                                            <site name="RCleidomastoideus_1" pos="0.00225 -0.00475 -0.00175" size="0.0005" group="5"/>
+                                            <site name="RMastoidProcess" pos="0.00225 -0.00475 -0.00175" size="0.0005" group="5" />
                                             <site name="RCleidocephalicus_1" pos="0.0035 -0.005 0.001" size="0.0005" group="5"/>
+
+                                            <site name="RLongissimusCapitis_1" pos="0.001 -0.0045 -0.001" size="0.0005" group="5"/>
+
+                                            <site name="RSpleniusCapitis_1" pos="0.001 -0.0045 -0.0" size="0.0005" group="5" rgba="1 0 0 1"/>
+                                            <site name="RSpleniusCapitis_2_1" pos="0.003 -0.0015 0.0035" size="0.0005" group="5" rgba="1 0 0 1"/>
+                                            <site name="RSpleniusCapitis_2_2" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" rgba="1 0 0 1"/>
 
                                         </body>
                                     </body>
@@ -1785,7 +1797,7 @@
         </spatial>
 
         <spatial name="RCleidomastoideus" group="4">
-            <site site="RCleidomastoideus_1"/>
+            <site site="RMastoidProcess"/>
             <site site="RCleidomastoideus_2"/>
         </spatial>
 
@@ -1795,9 +1807,61 @@
         </spatial>
 
         <spatial name="RSternomastoideus" group="4">
-            <site site="RCleidomastoideus_1"/>
+            <site site="RMastoidProcess"/>
             <site site="RSternomastoideus_2"/>
         </spatial>
+
+        <spatial name="RLongissimusCapitis" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C5_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C6_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C7_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T1_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T2_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T3_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="T4_RTransverseProcess"/>
+        </spatial>
+
+        <spatial name="RSpleniusCapitis" group="4">
+            <site site="RSpleniusCapitis_2_1"/>
+            <site site="RSpleniusCapitis_2_2"/>
+            <site site="RSpleniusCapitis_3"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="C7_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="T1_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="T2_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="T3_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="RSpleniusCapitis_3"/>
+            <site site="RSpleniusCapitis_1"/>
+            <site site="RMastoidProcess"/>
+        </spatial>
+
+
+
+
 
         <spatial name="RBicepsLongus_tendon" group="0">
             <site site="RBicepsLongus_RBicepsLongus-P1" />
