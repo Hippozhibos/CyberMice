@@ -188,6 +188,13 @@
         <mesh name="RSternomastoideus" file="RSternomastoideus.stl"/>
         <mesh name="RLongissimusCapitis" file="RLongissimusCapitis.stl"/>
         <mesh name="RSpleniusCapitis" file="RSpleniusCapitis.stl"/>
+        <mesh name="RRhomboideusThoracis" file="RRhomboideusThoracis.stl"/>
+        <mesh name="RRhomboideusCervicis" file="RRhomboideusCervicis.stl"/>
+        <mesh name="RRhomboideusCapitis" file="RRhomboideusCapitis.stl"/>
+        <mesh name="ROmotransversarius" file="ROmotransversarius.stl"/>
+        <mesh name="RSubclavius" file="RSubclavius.stl"/>
+        <mesh name="RTrapezius" file="RTrapezius.stl"/>
+        <mesh name="RLongusColliCapitis" file="RLongusColliCapitis.stl"/>
 
     </asset>
 
@@ -304,11 +311,12 @@
 
             <site name="RSternomastoideus_2" pos="0.022 -0.001 -0.012" size="0.0005" group="5" />
 
-            <site name="RSpleniusCapitis_3" pos="0.02 -0.0025 -0.004" size="0.0005" group="5" rgba="1 0 0 1"/>
+            <site name="RSpleniusCapitis_3" pos="0.02 -0.0025 -0.004" size="0.0005" group="5" />
+
+            <site name="RSubclavius_2" pos="0.0189 -0.0019 -0.0125" size="0.0005" group="5"/>
            
             <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/> -->
-            <geom name="RSpleniusCapitis" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RSpleniusCapitis" group="5"/>
-
+            <geom name="RLongusColliCapitis" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RLongusColliCapitis" group="5"/>
 
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
@@ -346,7 +354,8 @@
                             <site name="C4_RTransverseProcess" pos="0.0009 -0.002 -0.0006" size="0.0005" group="5"/>
                             <site name="C4_LTransverseProcess" pos="0.0009 0.002 -0.0006" size="0.0005" group="5"/>
 
-                            <body name="C3" pos="0.001 0 0.0005" euler="0.35 -0.075 -0.00" gravcomp="0">
+                            <!-- <body name="C3" pos="0.001 0 0.0005" euler="0.35 -0.075 -0.00" gravcomp="0"> -->
+                            <body name="C3" pos="0.001 0 0.0005" euler="0 -0.0 -0.00" gravcomp="0">
                                 <geom name="C3" pos="-0.002 0.00065 -0.00075" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C3" />
                                 <joint name="C4_C3_x" class="Cervical_x" pos="0 0 0" axis="0.9397 0 0.3420"/>
                                 <joint name="C4_C3_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
@@ -372,6 +381,7 @@
                                         <site name="C1_SpinousProcess" pos="-0.001 0.0 0.001" size="0.0005" group="5"/>
                                         <site name="C1_RTransverseProcess" pos="0.00025 -0.003 -0.001" size="0.0005" group="5"/>
                                         <site name="C1_LTransverseProcess" pos="0.00025 0.003 -0.001" size="0.0005" group="5"/>
+                                        <site name="C1_VentralTubercle" pos="0.00225 0.0 -0.0025" size="0.0005" group="5" />
 
                                         <body name="Head" pos="0.001 0 0.001" gravcomp="0">
                                             <geom name="Head" pos="-0.005 0.0009 -0.004" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="Head" />
@@ -394,9 +404,15 @@
 
                                             <site name="RLongissimusCapitis_1" pos="0.001 -0.0045 -0.001" size="0.0005" group="5"/>
 
-                                            <site name="RSpleniusCapitis_1" pos="0.001 -0.0045 -0.0" size="0.0005" group="5" rgba="1 0 0 1"/>
-                                            <site name="RSpleniusCapitis_2_1" pos="0.003 -0.0015 0.0035" size="0.0005" group="5" rgba="1 0 0 1"/>
-                                            <site name="RSpleniusCapitis_2_2" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" rgba="1 0 0 1"/>
+                                            <site name="RSpleniusCapitis_1" pos="0.001 -0.0045 -0.0" size="0.0005" group="5" />
+                                            <site name="RSpleniusCapitis_2_1" pos="0.003 -0.0015 0.0035" size="0.0005" group="5" />
+                                            <site name="RSpleniusCapitis_2_2" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
+
+                                            <site name="RTrapezius_head_1" pos="0.0025 -0.0005 0.00375" size="0.0005" group="5" />
+                                            <site name="RTrapezius_head_2" pos="0.0015 -0.0005 0.00375" size="0.0005" group="5" />
+
+                                            <site name="Basioccipital" pos="0.0025 0.00 -0.0035" size="0.0005" group="5" />
+                                            <site name="RLongusCapitis_1" pos="0.001 -0.0005 -0.0035" size="0.0005" group="5" />
 
                                         </body>
                                     </body>
@@ -407,8 +423,8 @@
                 </body>
             </body>
             
-            <body name="RScapula" pos="0.0135 0.0 -0.009" gravcomp="0">
-                <geom name="RScapula" pos="0.005 -0.0085 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 0.5" mesh="RScapula" density="1908" />
+            <body name="RScapula" pos="0.0135 0.0 -0.009" euler="0 0.0 0" gravcomp="0">
+                <geom name="RScapula" pos="0.005 -0.0085 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="RScapula" density="1908" />
                 <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
                 <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
                 <joint name="RScapula_r3" pos="0.005 -0.006 0.0055" axis="1 -0.1 -0.5" range="-0.08726646259971647 0.08726646259971647" group="0" />
@@ -425,16 +441,28 @@
                 <site name="RSubscapularis_origin" pos="2.94133000e-03 -3.07928342e-03  7.62716341e-03" size="0.0005" />
                 <site name="RTeresMajor_origin" pos="-4.17450000e-04 -7.79901805e-03  3.07864101e-03" size="0.0005" />
                 <site name="RTeresMinor_origin" pos="4.41866600e-03 -6.75461590e-03  3.62145298e-03" size="0.0005" />
-                <site name="RSerratusVentralisThoracis_scapula_1" pos="-0.001 -0.0065  0.005" size="0.0005" />
-                <site name="RSerratusVentralisThoracis_scapula_2" pos="-0.0011 -0.007  0.004" size="0.0005" />
-                <site name="RSerratusVentralisCervicis_scapula_1" pos="0.0012 -0.0045 0.00675" size="0.0005" />
+                <site name="RSerratusVentralisThoracis_scapula_1" pos="-0.001 -0.0065  0.005" size="0.0005" group="5"/>
+                <site name="RSerratusVentralisThoracis_scapula_2" pos="-0.0011 -0.007  0.004" size="0.0005" group="5"/>
+                <site name="RSerratusVentralisCervicis_scapula_1" pos="0.0012 -0.0045 0.00675" size="0.0005" group="5"/>
                 <site name="RPectoralisMinor_coraco_1" pos="1.00961300e-02 -4.60999181e-03  2.23503656e-03" size="0.0005" group="5"/>
+                <site name="RRhomboideusCapitis_1" pos="1.35908000e-03 -4.25962054e-03  7.62681373e-03" size="0.0005" group="5"/>
+                <site name="RRhomboideusCapitis_2" pos="0.005 -0.005  0.007" size="0.0005" group="5"/>
+                <site name="RRhomboideusCervicis_1" pos="-0.001 -0.00625  0.0045" size="0.0005" group="5" />
+                <site name="RRhomboideusCervicis_2" pos="2.94133000e-03 -3.07928342e-03  0.00625" size="0.0005" group="5" />
+                <site name="RRhomboideusCervicis_3" pos="0.005 -0.00275  0.0065" size="0.0005" group="5" />
+                <site name="RRhomboideusThoracis_1" pos="-0.001 -0.006  0.0055" size="0.0005" group="5" />
+                <site name="RRhomboideusThoracis_2" pos="0.0012 -0.00375 0.00675" size="0.0005" group="5" />
+                <site name="ROmotransversarius_2" pos="0.011 -0.007  0.003" size="0.0005" group="5" />
+                <site name="RTrapezius_1" pos="0.004 -0.006 0.00675" size="0.0005" group="5" />
+                <site name="RTrapezius_2" pos="0.01 -0.007  0.003" size="0.0005" group="5" />
+                <site name="RTrapezius_3" pos="0.004 -0.00275  0.0075" size="0.0005" group="5" />
+                <site name="RTrapezius_4" pos="-0.001 -0.00575  0.007" size="0.0005" group="5" />
 
                 <body name="RHumerus" pos="0.01 -0.006 0.0015" euler="0 0 0" gravcomp="0">
                     <joint name="RShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-1.2217304763960306 1.2217304763960306" group="0" />
                     <joint name="RShoulder_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.7853981633974483" group="0" />
                     <joint name="RShoulder_rotation" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 1.5707963267948966" group="0" />
-                    <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 0.8" mesh="RHumerus" density="1908" />
+                    <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 0.5" mesh="RHumerus" density="1908" />
                     <geom name="RHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" quat="0.559627 0.471367 -0.439124 0.521346" group="2" rgba="0.19 0.83 0.78 0.1" />
                     <geom name="RHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 -0.0009 -0.00975" quat="0.671212 0.565354 -0.308854 0.366685" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" />
                     <site name="RHumerus_Distal_sidesite" pos="2.65606317e-03 -6.74797612e-04 -9.57142412e-03" size="0.0005" />
@@ -603,6 +631,9 @@
                 
                 <site name="RDeltoideusClavicle_origin" pos="0.0031 -0.00375 0.0031" size="0.0005" rgba="0 0 1 1"/>
                 <site name="RCleidomastoideus_2" pos="0.00225 -0.00275 0.00175" size="0.0005" group="5"/>
+                <site name="ROmotransversarius_1" pos="0.00425 -0.00575 0.005" size="0.0005" group="5" />
+                <site name="RSubclavius_1" pos="0.00375 -0.005 0.00475" size="0.0005" group="5"/>
+
             </body>
 
             <body name="LScapula" pos="0.0135 0.0 -0.009" gravcomp="0">
@@ -1574,7 +1605,7 @@
             <joint joint="CA26_CA27_z" coef="0.037"/>
         </fixed>
 
-        <spatial name="RLatissimusDorsi_tendon" group="4">
+        <spatial name="RLatissimusDorsi" group="4">
             <site site="RLatissimusDorsi_1" />
             <site site="RLatissimusDorsi_2" />
             <site site="RLatissimusDorsi_3" />
@@ -1859,7 +1890,104 @@
             <site site="RMastoidProcess"/>
         </spatial>
 
+        <spatial name="RRhomboideusCapitis" group="4">
+            <site site="RRhomboideusCapitis_1"/>
+            <site site="RRhomboideusCapitis_2"/>
+            <pulley divisor="2"/>
+            <site site="RRhomboideusCapitis_2"/>
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <pulley divisor="2"/>
+            <site site="RRhomboideusCapitis_2"/>
+            <site site="RMastoidProcess"/>
+        </spatial>
 
+        <spatial name="RRhomboideusCervicis" group="4">
+            <site site="RRhomboideusCervicis_1"/>
+            <site site="RRhomboideusCervicis_2"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <site site="RSpleniusCapitis_2_1"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <site site="RSemispinalisCapitisLateral_1"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusCervicis_3"/>
+            <site site="RMastoidProcess"/>
+        </spatial>
+
+        <spatial name="RRhomboideusThoracis" group="4">
+            <site site="RRhomboideusThoracis_1"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <site site="C7_SpinousProcess"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <site site="T1_SpinousProcess"/>
+            <pulley divisor="3"/>
+            <site site="RRhomboideusThoracis_2"/>
+            <site site="T2_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="ROmotransversarius" group="4">
+            <site site="C1_VentralTubercle"/>
+            <site site="ROmotransversarius_1"/>
+            <site site="ROmotransversarius_2"/>
+        </spatial>
+
+        <spatial name="RSubclavius" group="4">
+            <site site="RSubclavius_1"/>
+            <site site="RSubclavius_2"/>
+        </spatial>
+
+        <spatial name="RTrapeziusCervical" group="4">
+            <site site="RTrapezius_head_1"/>
+            <site site="RTrapezius_head_2"/>
+            <pulley divisor="3"/>
+            <site site="RTrapezius_head_2"/>
+            <site site="RTrapezius_1"/>
+            <pulley divisor="3"/>
+            <site site="RTrapezius_head_2"/>
+            <site site="RTrapezius_2"/>
+            <pulley divisor="3"/>
+            <site site="RTrapezius_head_2"/>
+            <site site="RTrapezius_3"/>
+        </spatial>
+
+        <spatial name="RTrapeziusThoracic" group="4">
+            <site site="RTrapezius_1"/>
+            <site site="RTrapezius_4"/>
+            <pulley divisor="4"/>
+            <site site="RTrapezius_4" />
+            <site site="T9_SpinousProcess"/>
+            <pulley divisor="4"/>
+            <site site="RTrapezius_4"/>
+            <site site="T10_SpinousProcess"/>
+            <pulley divisor="4"/>
+            <site site="RTrapezius_4"/>
+            <site site="T11_SpinousProcess"/>
+            <pulley divisor="4"/>
+            <site site="RTrapezius_4"/>
+            <site site="T12_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="RLongusCapitis" group="4">
+            <site site="Basioccipital"/>
+            <site site="RLongusCapitis_1"/>
+            <pulley divisor="4"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C3_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C4_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C5_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="RLongusCapitis_1"/>
+            <site site="C6_RTransverseProcess"/>
+        </spatial>
 
 
 
