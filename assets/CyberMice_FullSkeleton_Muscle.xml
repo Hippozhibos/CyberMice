@@ -195,6 +195,8 @@
         <mesh name="RSubclavius" file="RSubclavius.stl"/>
         <mesh name="RTrapezius" file="RTrapezius.stl"/>
         <mesh name="RLongusColliCapitis" file="RLongusColliCapitis.stl"/>
+        <mesh name="RIliocostalisCervicis" file="RIliocostalisCervicis.stl"/>
+        <mesh name="RIliocostalisThoracis" file="RIliocostalisThoracis.stl"/>
 
     </asset>
 
@@ -272,6 +274,31 @@
             <site name="T2_LArticularProcess" pos="0.0175 0.0015 -0.0075" size="0.0005" group="5" rgba="1 1 0 1"/>
             <site name="T1_LArticularProcess" pos="0.0185 0.0015 -0.0075" size="0.0005" group="5" rgba="1 1 0 1"/> -->
 
+            <site name="T12_RRibAngle" pos="0.0025 -0.00425 0.0006" size="0.0005" group="4"/>
+            <site name="T11_RRibAngle" pos="0.00375 -0.00525 0.0" size="0.0005" group="4"/>
+            <site name="T10_RRibAngle" pos="0.00575 -0.00525 -0.0004" size="0.0005" group="4"/>
+            <site name="T9_RRibAngle" pos="0.00775 -0.005 -0.0007" size="0.0005" group="4"/>
+            <site name="T8_RRibAngle" pos="0.0095 -0.00475 -0.0015" size="0.0005" group="4"/>
+            <site name="T7_RRibAngle" pos="0.011 -0.0045 -0.00225" size="0.0005" group="4"/>
+            <site name="T6_RRibAngle" pos="0.0126 -0.00425 -0.0035" size="0.0005" group="4"/>
+            <site name="T5_RRibAngle" pos="0.014 -0.004 -0.00475" size="0.0005" group="4"/>
+            <site name="T4_RRibAngle" pos="0.015 -0.00375 -0.006" size="0.0005" group="4"/>
+            <site name="T3_RRibAngle" pos="0.016 -0.0035 -0.007" size="0.0005" group="4"/>
+            <site name="T2_RRibAngle" pos="0.0175 -0.00325 -0.0085" size="0.0005" group="4"/>
+            <site name="T1_RRibAngle" pos="0.0185 -0.003 -0.009" size="0.0005" group="4"/>
+
+            <site name="T12_LRibAngle" pos="0.0025 0.00425 0.0006" size="0.0005" group="4"/>
+            <site name="T11_LRibAngle" pos="0.00375 0.00525 0.0" size="0.0005" group="4"/>
+            <site name="T10_LRibAngle" pos="0.00575 0.00525 -0.0004" size="0.0005" group="4"/>
+            <site name="T9_LRibAngle" pos="0.00775 0.005 -0.0007" size="0.0005" group="4"/>
+            <site name="T8_LRibAngle" pos="0.0095 0.00475 -0.0015" size="0.0005" group="4"/>
+            <site name="T7_LRibAngle" pos="0.011 0.0045 -0.00225" size="0.0005" group="4"/>
+            <site name="T6_LRibAngle" pos="0.0126 0.00425 -0.0035" size="0.0005" group="4"/>
+            <site name="T5_LRibAngle" pos="0.014 0.004 -0.00475" size="0.0005" group="4"/>
+            <site name="T4_LRibAngle" pos="0.015 0.00375 -0.006" size="0.0005" group="4"/>
+            <site name="T3_LRibAngle" pos="0.016 0.0035 -0.007" size="0.0005" group="4"/>
+            <site name="T2_LRibAngle" pos="0.0175 0.00325 -0.0085" size="0.0005" group="4"/>
+            <site name="T1_LRibAngle" pos="0.0185 0.003 -0.009" size="0.0005" group="4"/>
 
             <site name="RLatissimusDorsi_2" pos="0.019 -0.0055 -0.00925" size="0.0005" group="5"/>
             <site name="RLatissimusDorsi_3" pos="0.013 -0.00775 -0.0065" size="0.0005" group="5"/>
@@ -333,7 +360,8 @@
             <site name="RSubclavius_2" pos="0.0189 -0.0019 -0.0125" size="0.0005" group="5"/>
            
             <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/> -->
-            <geom name="RLongusColliCapitis" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RLongusColliCapitis" group="5"/>
+            <!-- <geom name="RIliocostalisCervicis" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RIliocostalisCervicis" group="5"/> -->
+            <geom name="RIliocostalisThoracis" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RIliocostalisThoracis" group="5"/>
 
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
@@ -392,7 +420,6 @@
                             <site name="C4_RArticularProcess" pos="0.0003 -0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
                             <site name="C4_LArticularProcess" pos="0.0003 0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
 
-                            <!-- <body name="C3" pos="0.001 0 0.0005" euler="0.35 -0.075 -0.00" gravcomp="0"> -->
                             <body name="C3" pos="0.001 0 0.0005" euler="0 0 0" gravcomp="0">
                                 <geom name="C3" pos="-0.002 0.00065 -0.00075" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C3" />
                                 <joint name="C4_C3_x" class="Cervical_x" pos="0 0 0" axis="0.9397 0 0.3420"/>
@@ -931,6 +958,19 @@
 
                                     <body name="Pelvis" pos="0.0025 0.00 -0.00175" gravcomp="0">
                                         <geom name="Sacral" pos="0.0325 -0.007 0.0025" euler="0.18 -0.2 -0.1" type="mesh" rgba="1 1 1 1" mesh="Sacral" />
+                                        <site name="S1_RTransverseProcess" pos="-0.0055 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S2_RTransverseProcess" pos="-0.009 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S3_RTransverseProcess" pos="-0.012 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S4_RTransverseProcess" pos="-0.015 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        
+                                        <site name="S1_LTransverseProcess" pos="-0.0055 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S2_LTransverseProcess" pos="-0.009 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S3_LTransverseProcess" pos="-0.012 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S4_LTransverseProcess" pos="-0.015 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                        <site name="RIliacCrest" pos="-0.001 -0.005 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="LIliacCrest" pos="-0.001 0.005 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                         <geom name="RPelvis" pos="-0.013 -0.00325 0.002" euler="1.5707963267948966 -0.15 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RPelvis" />
                                         <geom name="LPelvis" pos="-0.013 0.00325 0.002" euler="1.5707963267948966 0.15 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LPelvis" />
 
@@ -1895,32 +1935,6 @@
             <site site="RSternomastoideus_2"/>
         </spatial>
 
-        <spatial name="RLongissimusCapitis" group="4">
-            <site site="RMastoidProcess"/>
-            <site site="RLongissimusCapitis_1"/>
-            <pulley divisor="7"/>
-            <site site="RLongissimusCapitis_1"/>
-            <site site="C5_RTransverseProcess"/>
-            <pulley divisor="7"/>
-            <site site="RLongissimusCapitis_1"/>
-            <site site="C6_RTransverseProcess"/>
-            <pulley divisor="7"/>
-            <site site="RLongissimusCapitis_1"/>
-            <site site="C7_RTransverseProcess"/>
-            <pulley divisor="7"/>
-            <site site="RLongissimusCapitis_1"/>
-            <site site="T1_RTransverseProcess"/>
-            <pulley divisor="7"/>
-            <site site="RLongissimusCapitis_1"/>
-            <site site="T2_RTransverseProcess"/>
-            <pulley divisor="7"/>
-            <site site="RLongissimusCapitis_1"/>
-            <site site="T3_RTransverseProcess"/>
-            <pulley divisor="7"/>
-            <site site="RLongissimusCapitis_1"/>
-            <site site="T4_RTransverseProcess"/>
-        </spatial>
-
         <spatial name="RSpleniusCapitis" group="4">
             <site site="RSpleniusCapitis_2_1"/>
             <site site="RSpleniusCapitis_2_2"/>
@@ -2117,46 +2131,258 @@
             <site site="T1_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RMultifidusCervicis" group="5">
-            <site site="C2_SpinousProcess"/>
-            <site site="C3_SpinousProcess"/>
-            <pulley divisor="2"/>
-            <site site="C3_SpinousProcess"/>
-            <site site="C4_RArticularProcess"/>
-            <pulley divisor="2"/>
-            <site site="C3_SpinousProcess"/>
-            <site site="C4_SpinousProcess"/>
-            <pulley divisor="2"/>
-            <site site="C4_SpinousProcess"/>
-            <site site="C5_RArticularProcess"/>
-            <pulley divisor="2"/>
-            <site site="C4_SpinousProcess"/>
-            <site site="C5_SpinousProcess"/>
-            <pulley divisor="2"/>
-            <site site="C5_SpinousProcess"/>
-            <site site="C6_RArticularProcess"/>
-            <pulley divisor="2"/>
-            <site site="C5_SpinousProcess"/>
-            <site site="C6_SpinousProcess"/>
-            <pulley divisor="2"/>
-            <site site="C6_SpinousProcess"/>
-            <site site="C7_RArticularProcess"/>
-            <pulley divisor="2"/>
-            <site site="C6_SpinousProcess"/>
-            <site site="C7_SpinousProcess"/>
-            <pulley divisor="4"/>
-            <site site="C7_SpinousProcess"/>
+        <spatial name="RLongissimusCapitis" group="4">
+            <site site="RMastoidProcess"/>
+            <site site="RLongissimusCapitis_1"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C5_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C6_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
+            <site site="C7_RTransverseProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
             <site site="T1_RTransverseProcess"/>
-            <pulley divisor="4"/>
-            <site site="C7_SpinousProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
             <site site="T2_RTransverseProcess"/>
-            <pulley divisor="4"/>
-            <site site="C7_SpinousProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
             <site site="T3_RTransverseProcess"/>
-            <pulley divisor="4"/>
-            <site site="C7_SpinousProcess"/>
+            <pulley divisor="7"/>
+            <site site="RLongissimusCapitis_1"/>
             <site site="T4_RTransverseProcess"/>
         </spatial>
+
+        <spatial name="RLongissimusThoracis" group="5">
+            <site site="T1_RTransverseProcess"/>
+            <site site="T2_RTransverseProcess"/>
+            <site site="T3_RTransverseProcess"/>
+            <site site="T4_RTransverseProcess"/>
+            <site site="T5_RTransverseProcess"/>
+            <site site="T6_RTransverseProcess"/>
+            <site site="T7_RTransverseProcess"/>
+            <site site="T8_RTransverseProcess"/>
+            <site site="T9_RTransverseProcess"/>
+            <site site="T10_RTransverseProcess"/>
+            <site site="T11_RTransverseProcess"/>
+            <site site="T12_RTransverseProcess"/>
+            <site site="T13_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+        </spatial>
+
+        <spatial name="RLongissimusLumborum" group="5">
+            <site site="T7_RTransverseProcess"/>
+            <site site="T8_RTransverseProcess"/>
+            <site site="T9_RTransverseProcess"/>
+            <site site="T10_RTransverseProcess"/>
+            <site site="T11_RTransverseProcess"/>
+            <site site="T12_RTransverseProcess"/>
+            <site site="T13_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L4_RTransverseProcess"/>
+                <site site="L5_RTransverseProcess"/>
+                <site site="L6_RTransverseProcess"/>
+                <site site="S1_RTransverseProcess"/>
+                <site site="S2_RTransverseProcess"/>
+                <site site="S3_RTransverseProcess"/>
+                <site site="S4_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L4_RTransverseProcess"/>
+                <site site="RIliacCrest"/>
+        </spatial>
+
+        <spatial name="RMultifidusCervicis" group="5">
+            <site site="C6_SpinousProcess"/>
+            <site site="C6_RArticularProcess"/>
+            <pulley divisor="4"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C2_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="C2_SpinousProcess"/>
+                <site site="C4_RArticularProcess"/>
+                <pulley divisor="2"/>
+                <site site="C2_SpinousProcess"/>
+                <site site="C5_RArticularProcess"/>
+                <site site="C5_SpinousProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C5_SpinousProcess"/>
+                    <site site="C7_RArticularProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C5_SpinousProcess"/>
+                    <site site="T1_RTransverseProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C5_SpinousProcess"/>
+                    <site site="T2_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C3_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="C3_SpinousProcess"/>
+                <site site="C5_RArticularProcess"/>
+                <pulley divisor="2"/>
+                <site site="C3_SpinousProcess"/>
+                <site site="C7_RArticularProcess"/>
+                <site site="C7_SpinousProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C7_SpinousProcess"/>
+                    <site site="T2_RTransverseProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C7_SpinousProcess"/>
+                    <site site="T3_RTransverseProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="C7_SpinousProcess"/>
+                    <site site="T4_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C4_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="C4_SpinousProcess"/>
+                <site site="C7_RArticularProcess"/>
+                <pulley divisor="2"/>
+                <site site="C4_SpinousProcess"/>
+                <site site="T1_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="C6_RArticularProcess"/>
+            <site site="C6_SpinousProcess"/>
+                <pulley divisor="3"/>
+                <site site="C6_SpinousProcess"/>
+                <site site="T1_RTransverseProcess"/>
+                <pulley divisor="3"/>
+                <site site="C6_SpinousProcess"/>
+                <site site="T2_RTransverseProcess"/>
+                <pulley divisor="3"/>
+                <site site="C6_SpinousProcess"/>
+                <site site="T3_RTransverseProcess"/>
+
+        </spatial>
+
+        <spatial name="RMultifidusLumborum" group="5">
+            <site site="L3_SpinousProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="T12_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L1_RTransverseProcess"/>
+                    <pulley divisor="2"/>
+                    <site site="L1_RTransverseProcess"/>
+                    <site site="T11_SpinousProcess"/>
+                    <site site="L2_RTransverseProcess"/>
+                    <pulley divisor="2"/>
+                    <site site="L1_RTransverseProcess"/>
+                    <site site="T10_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="T12_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                <site site="L2_SpinousProcess"/>
+                    <pulley divisor="3"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L4_RTransverseProcess"/>
+                    <site site="L4_SpinousProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="L6_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="S1_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="S2_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L4_SpinousProcess"/>
+                        <site site="RIliacCrest"/>
+                    <pulley divisor="3"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L5_RTransverseProcess"/>
+                    <site site="L5_SpinousProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="S1_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="S2_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="S3_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L5_SpinousProcess"/>
+                        <site site="RIliacCrest"/>
+                    <pulley divisor="3"/>
+                    <site site="L2_SpinousProcess"/>
+                    <site site="L6_RTransverseProcess"/>
+                    <site site="L6_SpinousProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="S2_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="S3_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="S4_RTransverseProcess"/>
+                        <pulley divisor="4"/>
+                        <site site="L6_SpinousProcess"/>
+                        <site site="RIliacCrest"/>
+            <pulley divisor="4"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="T13_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="T13_SpinousProcess"/>
+                <site site="L2_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="T13_SpinousProcess"/>
+                <site site="L4_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L1_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="L1_SpinousProcess"/>
+                <site site="L4_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L1_SpinousProcess"/>
+                <site site="L5_RTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L3_SpinousProcess"/>
+                <pulley divisor="2"/>
+                <site site="L3_SpinousProcess"/>
+                <site site="L5_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L3_SpinousProcess"/>
+                <site site="L6_RTransverseProcess"/>
+                <pulley divisor="3"/>
+                <site site="L3_SpinousProcess"/>
+                <site site="S1_RTransverseProcess"/>
+
+        </spatial>
+
+        <spatial name="RIliocostalisThoracis" group="5">
+            <site site="C7_RTransverseProcess"/>
+            <site site="T1_RRibAngle"/>
+            <site site="T2_RRibAngle"/>
+            <site site="T3_RRibAngle"/>
+            <site site="T4_RRibAngle"/>
+            <site site="T5_RRibAngle"/>
+            <site site="T6_RRibAngle"/>
+            <site site="T7_RRibAngle"/>
+            <site site="T8_RRibAngle"/>
+            <site site="T9_RRibAngle"/>
+            <site site="T10_RRibAngle"/>
+            <site site="T11_RRibAngle"/>
+            <site site="T12_RRibAngle"/>
+        </spatial>
+
 
 
         <spatial name="RBicepsLongus_tendon" group="0">
@@ -2209,18 +2435,18 @@
             <site site="RDeltoideusSpinal_insertion" />
         </spatial>
         <spatial name="RDeltoideusAcromial_tendon" group="0">
-        <site site="RDeltoideusAcromial_origin" />
-        <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RDeltoideusAcromial_1_sidesite" />
-        <site site="RDeltoideusAcromial_insertion" />
+            <site site="RDeltoideusAcromial_origin" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RDeltoideusAcromial_1_sidesite" />
+            <site site="RDeltoideusAcromial_insertion" />
         </spatial>
         <spatial name="RDeltoideusClavicle_tendon" group="0">
-        <site site="RDeltoideusClavicle_origin" />
-        <site site="RDeltoideusClavicle_insertion" />
+            <site site="RDeltoideusClavicle_origin" />
+            <site site="RDeltoideusClavicle_insertion" />
         </spatial>
         <spatial name="RInfraspinatus_tendon" group="0">
-        <site site="RInfraspinatus_origin" />
-        <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RInfraspinatus_1_sidesite" />
-        <site site="RInfraspinatus_insertion" />
+            <site site="RInfraspinatus_origin" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RInfraspinatus_1_sidesite" />
+            <site site="RInfraspinatus_insertion" />
         </spatial>
         <spatial name="RSupraspinatus_tendon" group="0">
         <site site="RSupraspinatus_origin" />
