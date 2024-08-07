@@ -197,6 +197,11 @@
         <mesh name="RLongusColliCapitis" file="RLongusColliCapitis.stl"/>
         <mesh name="RIliocostalisCervicis" file="RIliocostalisCervicis.stl"/>
         <mesh name="RIliocostalisThoracis" file="RIliocostalisThoracis.stl"/>
+        <mesh name="RQuadratusLumborum" file="RQuadratusLumborum_1.stl"/>
+        <mesh name="RPsoasMajor" file="RPsoasMajor.stl"/>
+        <mesh name="RPsoasMinor" file="RPsoasMinor.stl"/>
+        <mesh name="RIliacus" file="RIliacus.stl"/>
+        
 
     </asset>
 
@@ -262,18 +267,7 @@
             <site name="T2_VentralSurface" pos="0.017 0 -0.009" size="0.0005" group="5" rgba="1 1 0 1"/>
             <site name="T1_VentralSurface" pos="0.018 0 -0.0095" size="0.0005" group="5" rgba="1 1 0 1"/>
 
-            <!-- <site name="T5_RArticularProcess" pos="0.014 -0.0015 -0.004" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T4_RArticularProcess" pos="0.0155 -0.0015 -0.0055" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T3_RArticularProcess" pos="0.0165 -0.0015 -0.0065" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T2_RArticularProcess" pos="0.0175 -0.0015 -0.0075" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T1_RArticularProcess" pos="0.0185 -0.0015 -0.0075" size="0.0005" group="5" rgba="1 1 0 1"/>
-
-            <site name="T5_LArticularProcess" pos="0.014 0.0015 -0.004" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T4_LArticularProcess" pos="0.0155 0.0015 -0.0055" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T3_LArticularProcess" pos="0.0165 0.0015 -0.0065" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T2_LArticularProcess" pos="0.0175 0.0015 -0.0075" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T1_LArticularProcess" pos="0.0185 0.0015 -0.0075" size="0.0005" group="5" rgba="1 1 0 1"/> -->
-
+            <site name="T13_RRibAngle" pos="0.00125 -0.0035 0.0008" size="0.0005" group="4"/>
             <site name="T12_RRibAngle" pos="0.0025 -0.00425 0.0006" size="0.0005" group="4"/>
             <site name="T11_RRibAngle" pos="0.00375 -0.00525 0.0" size="0.0005" group="4"/>
             <site name="T10_RRibAngle" pos="0.00575 -0.00525 -0.0004" size="0.0005" group="4"/>
@@ -287,6 +281,7 @@
             <site name="T2_RRibAngle" pos="0.0175 -0.00325 -0.0085" size="0.0005" group="4"/>
             <site name="T1_RRibAngle" pos="0.0185 -0.003 -0.009" size="0.0005" group="4"/>
 
+            <site name="T13_LRibAngle" pos="0.00125 0.0035 0.0008" size="0.0005" group="4"/>
             <site name="T12_LRibAngle" pos="0.0025 0.00425 0.0006" size="0.0005" group="4"/>
             <site name="T11_LRibAngle" pos="0.00375 0.00525 0.0" size="0.0005" group="4"/>
             <site name="T10_LRibAngle" pos="0.00575 0.00525 -0.0004" size="0.0005" group="4"/>
@@ -361,7 +356,9 @@
            
             <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/> -->
             <!-- <geom name="RIliocostalisCervicis" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RIliocostalisCervicis" group="5"/> -->
-            <geom name="RIliocostalisThoracis" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RIliocostalisThoracis" group="5"/>
+            <geom name="RPsoasMajor" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RPsoasMajor" group="5"/>
+            <geom name="RPsoasMinor" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RPsoasMinor" group="5"/>
+
 
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
@@ -920,7 +917,7 @@
                     <site name="L2_RTransverseProcess" pos="-0.00 -0.00175 -0.00075" size="0.0005" group="5"/>
                     <site name="L2_LTransverseProcess" pos="-0.00 0.00175 -0.00075" size="0.0005" group="5"/>
 
-                    <body name="L3" pos="-0.00225 0 -0.00075" gravcomp="0">
+                    <body name="L3" pos="-0.00225 0 -0.00075" euler="0 0 0" gravcomp="0">
                         <geom name="L3" pos="0.02625 0 -0.0066" euler="0.2 0.0 0.09" type="mesh" rgba="1 1 1 1" mesh="L3" />
                         <joint name="L2_L3_x" class="Lumbar_x" pos="0 0 0" axis="0.9848 0 0.1736"/>
                         <joint name="L2_L3_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
@@ -929,7 +926,7 @@
                         <site name="L3_RTransverseProcess" pos="-0.00 -0.00175 -0.00075" size="0.0005" group="5"/>
                         <site name="L3_LTransverseProcess" pos="-0.00 0.00175 -0.00075" size="0.0005" group="5"/>
 
-                        <body name="L4" pos="-0.00275 0 -0.0006" gravcomp="0">
+                        <body name="L4" pos="-0.00275 0 -0.0006" euler="0 0 0" gravcomp="0">
                             <geom name="L4" pos="0.029 -0.001 -0.006" euler="0.2 0.0 0.05" type="mesh" rgba="1 1 1 1" mesh="L4" />
                             <joint name="L3_L4_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0"/>
                             <joint name="L3_L4_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
@@ -1007,7 +1004,7 @@
                                         <site name="RGA_at_Pelvis_cylinder_GA_1_sidesite" pos="-1.68590885e-02  8.20247864e-04 -2.57538241e-03" size="0.0005" />
                                         <site name="RPMA_PMA-P1" pos="-2.46678589e-03 -7.30153709e-04  2.99259102e-03" size="0.0005" />
                                         <site name="RPMI_PMI-P1" pos="-4.76280248e-03 -4.08819906e-04  2.37846364e-03" size="0.0005" />
-                                        <site name="RILI_ILI-P1" pos="-2.57531467e-03 -2.52753438e-03  4.87287796e-04" size="0.0005" />
+                                        <site name="RILI_ILI-P1" pos="-2.57531467e-03 -3.52753438e-03  4.87287796e-04" size="0.0005" />
                                         <site name="RPECT_PECT-P1" pos="-1.30256598e-02 -1.12137593e-03  1.78088148e-04" size="0.0005" />
                                         <site name="RCF_CF-P1" pos="-1.58869176e-02 -3.40067430e-03  2.60621564e-03" size="0.0005" />
                                         <site name="RSM_SM-P1" pos="-1.71251073e-02 -3.77418026e-03  1.41702290e-03" size="0.0005" />
@@ -1048,7 +1045,7 @@
                                         <site name="LGA_at_Pelvis_cylinder_GA_1_sidesite" pos="-1.68590885e-02 -8.20247864e-04 -2.57538241e-03" size="0.0005" />
                                         <site name="LPMA_PMA-P1" pos="-2.46678589e-03 7.30153709e-04  2.99259102e-03" size="0.0005" />
                                         <site name="LPMI_PMI-P1" pos="-4.76280248e-03 4.08819906e-04  2.37846364e-03" size="0.0005" />
-                                        <site name="LILI_ILI-P1" pos="-2.57531467e-03 2.52753438e-03  4.87287796e-04" size="0.0005" />
+                                        <site name="LILI_ILI-P1" pos="-2.57531467e-03 3.52753438e-03  4.87287796e-04" size="0.0005" />
                                         <site name="LPECT_PECT-P1" pos="-1.30256598e-02 1.12137593e-03  1.78088148e-04" size="0.0005" />
                                         <site name="LCF_CF-P1" pos="-1.58869176e-02 3.40067430e-03  2.60621564e-03" size="0.0005" />
                                         <site name="LSM_SM-P1" pos="-1.71251073e-02 3.77418026e-03  1.41702290e-03" size="0.0005" />
@@ -2383,6 +2380,22 @@
             <site site="T12_RRibAngle"/>
         </spatial>
 
+        <spatial name="RQuadratusLumborum" group="5">
+            <site site="RIliacCrest"/>
+            <site site="L5_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L1_RTransverseProcess"/>
+                <site site="T13_RTransverseProcess"/>
+                <pulley divisor="2"/>
+                <site site="L1_RTransverseProcess"/>
+                <site site="T13_RRibAngle"/>
+                
+        </spatial>
+
 
 
         <spatial name="RBicepsLongus_tendon" group="0">
@@ -2833,12 +2846,25 @@
         <site site="RGA_GA-P2" />
         </spatial>
         <spatial name="RPMA_tendon" group="2">
-        <site site="RPMA_PMA-P1" />
-        <site site="RPMA_PMA-P2" />
+            <site site="L6_RTransverseProcess" />
+            <site site="RPMA_PMA-P2" />
+                <pulley divisor="3"/>
+                <site site="RPMA_PMA-P2" />
+                <site site="L5_RTransverseProcess" />
+                <pulley divisor="3"/>
+                <site site="RPMA_PMA-P2" />
+                <site site="L4_RTransverseProcess" />
+                <pulley divisor="3"/>
+                <site site="RPMA_PMA-P2" />
+                <site site="L3_RTransverseProcess" />
         </spatial>
         <spatial name="RPMI_tendon" group="2">
-        <site site="RPMI_PMI-P1" />
-        <site site="RPMI_PMI-P2" />
+            <site site="T13_RTransverseProcess"/>
+            <site site="L1_RTransverseProcess"/>
+            <site site="L2_RTransverseProcess"/>
+            <site site="L3_RTransverseProcess"/>
+            <site site="L4_RTransverseProcess"/>
+            <site site="RPMI_PMI-P2" />
         </spatial>
         <spatial name="RILI_tendon" group="2">
         <site site="RILI_ILI-P1" />
