@@ -955,6 +955,12 @@
 
                                     <body name="Pelvis" pos="0.0025 0.00 -0.00175" gravcomp="0">
                                         <geom name="Sacral" pos="0.0325 -0.007 0.0025" euler="0.18 -0.2 -0.1" type="mesh" rgba="1 1 1 1" mesh="Sacral" />
+                                        
+                                        <site name="S1_SpinousProcess" pos="-0.0065 0.0 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S2_SpinousProcess" pos="-0.01 0.00 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S3_SpinousProcess" pos="-0.013 0.00 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S4_SpinousProcess" pos="-0.016 0.00 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        
                                         <site name="S1_RTransverseProcess" pos="-0.0055 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="S2_RTransverseProcess" pos="-0.009 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="S3_RTransverseProcess" pos="-0.012 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
@@ -980,6 +986,7 @@
                                         <geom name="RCF_BFA_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0173 -0.00325 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
                                         <geom name="ROE_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0169 -0.003 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
                                         <geom name="RHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 -0.0025 0.0015" euler="1.4835298641951802 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                                        <geom name="RTensorFasciaeLatae_cylinder" size="0.003 0.0075" pos="-0.009 -0.0028 0.001" euler="0.0 1.57 0.0" type="cylinder" group="1" rgba="0.19 0.83 0.78 0.2" />
                                         
                                         <site name="RGA_at_Pelvis_sidesite" pos="-1.74690480e-02 -9.41424358e-04 -4.14452075e-03" size="0.0005" />
                                         <site name="RCF_BFA_at_Pelvis_sidesite" pos="-1.65346204e-02 -3.86699778e-03 -8.67257693e-05" size="0.0005" />
@@ -1015,6 +1022,8 @@
                                         <site name="RBFP_mid_BFP_mid-P1" pos="-1.74516417e-02 -3.86607058e-03  1.83094496e-03" size="0.0005" />
                                         <site name="RBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 -3.79640821e-03  1.54006153e-03" size="0.0005" />
                                         <site name="RRF_RF-P1" pos="-1.08334314e-02 -3.27061975e-03  1.52989635e-03" size="0.0005" />
+
+                                        <site name="RTensorFasciaeLatae_3" pos="-0.009 -0.005 0.005" size="0.0005" rgba="1 0 0 1" group="4"/>
 
                                         <geom name="LGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 0.0015 -0.001" euler="-1.6580627893946132 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
                                         <geom name="LST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2" />
@@ -1056,7 +1065,7 @@
                                         <site name="LBFP_mid_BFP_mid-P1" pos="-1.74516417e-02 3.86607058e-03  1.83094496e-03" size="0.0005" />
                                         <site name="LBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 3.79640821e-03  1.54006153e-03" size="0.0005" />
                                         <site name="LRF_RF-P1" pos="-1.08334314e-02 3.27061975e-03  1.52989635e-03" size="0.0005" />
-
+                                
                                         <body name="RFemur" pos="-0.013 -0.0028 0.002" gravcomp="0">
                                             <joint name="RHip_rotation" pos="0 0 0" axis="0 0 1" range="-0.5 0.5" group="3" />
                                             <joint name="RHip_flexion" pos="0 0 0" axis="0 -1 0" range="-1.5707963267948966 1.5707963267948966" group="3" />
@@ -1079,7 +1088,7 @@
                                             <geom name="RHip_Flexors_at_Quads_ellipsoid_ILI" size="0.001" pos="-0.0001 -0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2" />
                                             <geom name="RPECT_at_Quads_ellipsoid_PECT" size="0.0006" pos="-0.0004 -0.0006 -0.0047" group="2" rgba="0.19 0.83 0.78 0.2" />
                                             <geom name="RCF_BFA_at_Thigh_ellipsoid_BFA" size="0.000471177" pos="-0.00198958 -0.00146195 -0.00542555" group="2" rgba="0.19 0.83 0.78 0.8" />
-                                            
+        
                                             <site name="RQuads_at_Femur_sidesite" pos="0.0006435 -0.0001653 -0.01497" size="0.0005" />
                                             <site name="RHip_Flexors_at_Quads_sidesite" pos="-2.985e-05 0.0003949 -0.002576" size="0.0005" />
                                             <site name="RQF_at_Femur_sidesite" pos="-0.002966 -0.00172 -0.005554" size="0.0005" />
@@ -1123,6 +1132,9 @@
                                             <site name="RMG_MG-P1" pos="-0.00162 0.00078 -0.01279" size="0.0005" />
                                             <site name="RLG_LG-P1" pos="-0.00188 -0.00115 -0.01276" size="0.0005" />
                                             <site name="RPLANT_PLANT-P1" pos="-0.0017 -0.00022 -0.01247" size="0.0005" />
+                                            
+                                            <site name="RTensorFasciaeLatae_2" pos="-0.00125 -0.0025 -0.005" size="0.0005" rgba="1 0 0 1" group="4"/>
+                    
                                             <body name="R_Leg" pos="-0.001 0 -0.0135" gravcomp="0">
                                                 <joint name="RKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 2.5" group="3" />
 
@@ -1181,6 +1193,9 @@
                                                 <site name="RPDQA_PDQA-P1" pos="-2.030e-03 -6.000e-04 -5.410e-03" size="0.0005" />
                                                 <site name="RPDQA_PDQA-P2" pos="-1.230e-03  7.000e-05 -1.182e-02" size="0.0005" />
                                                 <site name="RPDQI_PDQI-P1" pos="-2.090e-03 -2.200e-04 -7.340e-03" size="0.0005" />
+                                                
+                                                <site name="RTensorFasciaeLatae_1" pos="0 -0.00125 -0.002" size="0.0005" rgba="1 0 0 1" group="4"/>
+
                                                 <body name="RPedal" pos="-0.001 0.00125 -0.0184" gravcomp="0">
                                                     <joint name="RAnkle_adduction" pos="0 0 0" axis="0 0 1" range="-1.0471975511965976 1.0471975511965976" group="3" />
                                                     <joint name="RAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-1.0471975511965976 1.0471975511965976" group="3" />
@@ -2394,6 +2409,31 @@
                 <site site="L1_RTransverseProcess"/>
                 <site site="T13_RRibAngle"/>
                 
+        </spatial>
+
+        <spatial name="RTensorFasciaeLatae" group="5">
+            <site site="RTensorFasciaeLatae_1"/>
+            <site site="RTensorFasciaeLatae_2"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S4_SpinousProcess"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S3_SpinousProcess"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S2_SpinousProcess"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="S1_SpinousProcess"/>
+                <pulley divisor="5"/>
+                <site site="RTensorFasciaeLatae_2"/>
+                <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
+                <site site="RIliacCrest"/>
         </spatial>
 
 
