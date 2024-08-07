@@ -354,12 +354,68 @@
 
             <site name="RSubclavius_2" pos="0.0189 -0.0019 -0.0125" size="0.0005" group="5"/>
            
+            <site name="LLatissimusDorsi_2" pos="0.019 0.0055 -0.00925" size="0.0005" group="5"/>
+            <site name="LLatissimusDorsi_3" pos="0.013 0.00775 -0.0065" size="0.0005" group="5"/>
+            <site name="LLatissimusDorsi_4" pos="0.00725 0.00725 -0.003" size="0.0005" group="5"/>
+            <site name="LLatissimusDorsi_4_1" pos="0.006 0.005 0.001" size="0.0005" group="5"/>
+            <site name="LLatissimusDorsi_4_2" pos="0.0045 0.005 0.001" size="0.0005" group="5"/>
+            <site name="LLatissimusDorsi_4_3" pos="0.003 0.005 0.001" size="0.0005" group="5"/>
+            <site name="LLatissimusDorsi_4_4" pos="0.0015 0.005 0.001" size="0.0005" group="5"/>
+            <site name="LLatissimusDorsi_4_5" pos="0.00 0.005 0.001" size="0.0005" group="5"/>
+
+            <site name="LSerratusVentralisThoracis_7_1" pos="0.0045 0.007 -0.0105" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_7_2" pos="0.00775 0.00775 -0.008" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_6_1" pos="0.00625 0.0065 -0.0115" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_6_2" pos="0.00875 0.0075 -0.009" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_5_1" pos="0.00775 0.006 -0.012" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_5_2" pos="0.01 0.007 -0.01" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_4_1" pos="0.01 0.005 -0.0125" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_4_2" pos="0.01125 0.00625 -0.011" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_3_1" pos="0.012 0.004 -0.0125" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_3_2" pos="0.0125 0.006 -0.011" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_2_1" pos="0.01475 0.0035 -0.012" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_2_2" pos="0.01475 0.005 -0.01" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_1_1" pos="0.01775 0.003 -0.012" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisThoracis_1_2" pos="0.016 0.005 -0.009" size="0.0005" group="5"/>
+
+            <site name="LSerratusVentralisCervicis_1" pos="0.019 0.004 -0.0065" size="0.0005" group="5"/>
+
+            <site name="LPectoralisMajor_1" pos="0.022 0.00375 -0.0125" size="0.0005" group="5"/>
+            <site name="LPectoralisMajor_2" pos="0.021 0.00 -0.013" size="0.0005" group="5"/>
+            <site name="LPectoralisMajor_3" pos="0.019 0.00 -0.0145" size="0.0005" group="5"/>
+            <site name="LPectoralisMajor_4" pos="0.016 0.00 -0.015" size="0.0005" group="5"/>
+            <site name="LPectoralisMajor_5" pos="0.013 0.00 -0.015" size="0.0005" group="5"/>
+
+            <site name="LPectoralisMinor_1" pos="0.022 0.0035 -0.011" size="0.0005" group="5"/>
+            <site name="LPectoralisMinor_2" pos="0.019 0.00175 -0.013" size="0.0005" group="5"/>
+            <site name="LPectoralisMinor_3" pos="0.016 0.001 -0.0142" size="0.0005" group="5"/>
+            <site name="LPectoralisMinor_4" pos="0.01 0.00 -0.0155" size="0.0005" group="5"/>
+
+            <site name="LPectoralisMinimus_1" pos="0.016 0.0025 -0.0145" size="0.0005" group="5"/>
+            <site name="LPectoralisMinimus_2" pos="0.013 0.00175 -0.0152" size="0.0005" group="5"/>
+            <site name="LPectoralisMinimus_3" pos="0.01 0.001 -0.016" size="0.0005" group="5"/>
+            <site name="LPectoralisMinimus_4" pos="0.0045 0.00 -0.017" size="0.0005" group="5"/>
+
+            <site name="LScalenusAnterior_1" pos="0.0185 0.003 -0.012" size="0.0005" group="5" />
+            <site name="LScalenusAnterior_2" pos="0.019 0.00325 -0.0115" size="0.0005" group="5" />
+
+            <site name="LScalenusMedius_1" pos="0.012 0.004 -0.0125" size="0.0005" group="5" />
+            <site name="LScalenusMedius_2" pos="0.01475 0.0035 -0.012" size="0.0005" group="5" />
+
+            <site name="LScalenusPosterior_1" pos="0.01125 0.00625 -0.011" size="0.0005" group="5" />
+            <site name="LScalenusPosterior_2" pos="0.01475 0.005 -0.01" size="0.0005" group="5" />
+
+            <site name="LSemispinalisCapitisMedial_2" pos="0.02 0.00225 -0.0045" size="0.0005" group="5" />
+
+            <site name="LSternomastoideus_2" pos="0.022 0.001 -0.012" size="0.0005" group="5" />
+
+            <site name="LSpleniusCapitis_3" pos="0.02 0.0025 -0.004" size="0.0005" group="5" />
+
+            <site name="LSubclavius_2" pos="0.0189 0.0019 -0.0125" size="0.0005" group="5"/>
+
             <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/> -->
             <!-- <geom name="RIliocostalisCervicis" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RIliocostalisCervicis" group="5"/> -->
-            <geom name="RPsoasMajor" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RPsoasMajor" group="5"/>
-            <geom name="RPsoasMinor" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 0.5" mesh="RPsoasMinor" group="5"/>
-
-
+            
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
                 <joint name="T_C7_x" class="Cervical_x" pos="0 0 0" axis="1 0 0"/>
@@ -490,7 +546,31 @@
 
                                             <site name="Basioccipital" pos="0.0025 0.00 -0.0035" size="0.0005" group="5" />
                                             <site name="RLongusCapitis_1" pos="0.001 -0.0005 -0.0035" size="0.0005" group="5" />
+                                            
 
+                                            <site name="LRectusCapitisPosteriorMajor" pos="0.001 0.003 0.00175" size="0.0005" group="5" />
+                                            <site name="LRectusCapitisPosteriorMinor" pos="0.001 0.0015 0.00225" size="0.0005" group="5" />
+                                            <site name="LObliquusCapitisSuperior" pos="0.0015 0.004 0.001" size="0.0005" group="5" />
+                                            
+                                            <site name="LSemispinalisCapitisMedial_1" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
+                                            
+                                            <site name="LSemispinalisCapitisLateral_1" pos="0.0017 0.0035 0.00175" size="0.0005" group="5" />
+                                            <site name="LSemispinalisCapitisLateral_2" pos="0.00075 0.00325 0.00125" size="0.0005" group="5" />
+                                        
+                                            <site name="LMastoidProcess" pos="0.00225 0.00475 -0.00175" size="0.0005" group="5" />
+                                            <site name="LCleidocephalicus_1" pos="0.0035 0.005 0.001" size="0.0005" group="5"/>
+
+                                            <site name="LLongissimusCapitis_1" pos="0.001 0.0045 -0.001" size="0.0005" group="5"/>
+
+                                            <site name="LSpleniusCapitis_1" pos="0.001 0.0045 -0.0" size="0.0005" group="5" />
+                                            <site name="LSpleniusCapitis_2_1" pos="0.003 0.0015 0.0035" size="0.0005" group="5" />
+                                            <site name="LSpleniusCapitis_2_2" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
+
+                                            <site name="LTrapezius_head_1" pos="0.0025 0.0005 0.00375" size="0.0005" group="5" />
+                                            <site name="LTrapezius_head_2" pos="0.0015 0.0005 0.00375" size="0.0005" group="5" />
+
+                                            <site name="LLongusCapitis_1" pos="0.001 0.0005 -0.0035" size="0.0005" group="5" />
+                                        
                                         </body>
                                     </body>
                                 </body>
@@ -710,7 +790,6 @@
                 <site name="RCleidomastoideus_2" pos="0.00225 -0.00275 0.00175" size="0.0005" group="5"/>
                 <site name="ROmotransversarius_1" pos="0.00425 -0.00575 0.005" size="0.0005" group="5" />
                 <site name="RSubclavius_1" pos="0.00375 -0.005 0.00475" size="0.0005" group="5"/>
-
             </body>
 
             <body name="LScapula" pos="0.0135 0.0 -0.009" gravcomp="0">
@@ -731,6 +810,24 @@
                 <site name="LSubscapularis_origin" pos="2.94133000e-03 3.07928342e-03  7.62716341e-03" size="0.0005" />
                 <site name="LTeresMajor_origin" pos="-4.17450000e-04 7.79901805e-03  3.07864101e-03" size="0.0005" />
                 <site name="LTeresMinor_origin" pos="4.41866600e-03 6.75461590e-03  3.62145298e-03" size="0.0005" />
+                <site name="LSerratusVentralisThoracis_scapula_1" pos="-0.001 0.0065  0.005" size="0.0005" group="5"/>
+                <site name="LSerratusVentralisThoracis_scapula_2" pos="-0.0011 0.007  0.004" size="0.0005" group="5"/>
+                <site name="LSerratusVentralisCervicis_scapula_1" pos="0.0012 0.0045 0.00675" size="0.0005" group="5"/>
+                <site name="LPectoralisMinor_coraco_1" pos="1.00961300e-02 4.60999181e-03  2.23503656e-03" size="0.0005" group="5"/>
+                <site name="LRhomboideusCapitis_1" pos="1.35908000e-03 4.25962054e-03  7.62681373e-03" size="0.0005" group="5"/>
+                <site name="LRhomboideusCapitis_2" pos="0.005 0.005  0.007" size="0.0005" group="5"/>
+                <site name="LRhomboideusCervicis_1" pos="-0.001 0.00625  0.0045" size="0.0005" group="5" />
+                <site name="LRhomboideusCervicis_2" pos="2.94133000e-03 3.07928342e-03  0.00625" size="0.0005" group="5" />
+                <site name="LRhomboideusCervicis_3" pos="0.005 0.00275  0.0065" size="0.0005" group="5" />
+                <site name="LRhomboideusThoracis_1" pos="-0.001 0.006  0.0055" size="0.0005" group="5" />
+                <site name="LRhomboideusThoracis_2" pos="0.0012 0.00375 0.00675" size="0.0005" group="5" />
+                <site name="LOmotransversarius_2" pos="0.011 0.007  0.003" size="0.0005" group="5" />
+                <site name="LTrapezius_1" pos="0.004 0.006 0.00675" size="0.0005" group="5" />
+                <site name="LTrapezius_2" pos="0.01 0.007  0.003" size="0.0005" group="5" />
+                <site name="LTrapezius_3" pos="0.004 0.00275  0.0075" size="0.0005" group="5" />
+                <site name="LTrapezius_4" pos="-0.001 0.00575  0.007" size="0.0005" group="5" />
+
+                
                 <body name="LHumerus" pos="0.01 0.006 0.0015" euler="0 0 0" gravcomp="0">
                     <joint name="LShoulder_flexion" pos="0 0 0" axis="0 -1 0" range="-1.2217304763960306 1.2217304763960306" group="1" />
                     <joint name="LShoulder_adduction" pos="0 0 0" axis="-1 0 0" range="-1.0471975511965976 0.7853981633974483" group="1" />
@@ -778,6 +875,11 @@
                     <site name="LExtensorCarpiRadialisBrevis_origin" pos="6.19029536e-04 2.44040551e-03 -9.06773786e-03" size="0.0005" />
                     <site name="LExtensorDigitorumCommunis_origin" pos="8.55625110e-04 2.42963755e-03 -9.18865749e-03" size="0.0005" />
                     <site name="LExtensorDigitorumLateralis_origin" pos="9.57187076e-04 2.41146383e-03 -9.39008694e-03" size="0.0005" />
+                    <site name="LLatissimusDorsi_1" pos="0.0011 0.0 -0.0025" size="0.0005" group="5"/>
+                    <site name="LLatissimusDorsi_HumerusSide" pos="0.0005 -0.001 -0.0025" size="0.0005" group="5"/>
+                    <site name="LPectoralisMajor_Humerus_1" pos="2.34171008e-03 1.69247522e-03 -3.73872983e-03" size="0.0005" group="5"/>
+                    <site name="LPectoralisMinimus_Humerus_1" pos="0.0015 0.0 -0.00275" size="0.0005" group="5"/>
+                    
                     <body name="LUlna" pos="0.001 0.001 -0.01" euler="0 0 0" gravcomp="0">
                         <joint name="LElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 2.5" group="1" />
                         <geom name="LUlna" pos="0.003 -0.0015 0.0015" euler="0.08726646259971647 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LUlna" density="1908" />
@@ -896,7 +998,11 @@
                 <geom name="LClavicle" pos="-0.00235 0.0085 0.00075" euler="0.5 1.57 0" type="mesh" rgba="1 1 1 1" mesh="LClavicle" />
                 <joint name="LClavicle_r1" pos="0 0 0" axis="1 0 0" range="-0.17453292519943295 0.17453292519943295" group="1" />
                 <joint name="LClavicle_r2" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 0.17453292519943295" group="1" />
+                
                 <site name="LDeltoideusClavicle_origin" pos="0.0031 0.00375 0.0031" size="0.0005" rgba="0 0 1 1"/>
+                <site name="LCleidomastoideus_2" pos="0.00225 0.00275 0.00175" size="0.0005" group="5"/>
+                <site name="LOmotransversarius_1" pos="0.00425 0.00575 0.005" size="0.0005" group="5" />
+                <site name="LSubclavius_1" pos="0.00375 0.005 0.00475" size="0.0005" group="5"/>
             </body>
 
             <body name="L1" pos="0.0 0.00 0.00" gravcomp="0">
@@ -986,7 +1092,7 @@
                                         <geom name="RCF_BFA_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0173 -0.00325 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
                                         <geom name="ROE_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0169 -0.003 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
                                         <geom name="RHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 -0.0025 0.0015" euler="1.4835298641951802 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
-                                        <geom name="RTensorFasciaeLatae_cylinder" size="0.003 0.0075" pos="-0.009 -0.0028 0.001" euler="0.0 1.57 0.0" type="cylinder" group="1" rgba="0.19 0.83 0.78 0.2" />
+                                        <geom name="RTensorFasciaeLatae_cylinder" size="0.003 0.0075" pos="-0.009 -0.0028 0.001" euler="0.0 1.57 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                         
                                         <site name="RGA_at_Pelvis_sidesite" pos="-1.74690480e-02 -9.41424358e-04 -4.14452075e-03" size="0.0005" />
                                         <site name="RCF_BFA_at_Pelvis_sidesite" pos="-1.65346204e-02 -3.86699778e-03 -8.67257693e-05" size="0.0005" />
@@ -1022,7 +1128,6 @@
                                         <site name="RBFP_mid_BFP_mid-P1" pos="-1.74516417e-02 -3.86607058e-03  1.83094496e-03" size="0.0005" />
                                         <site name="RBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 -3.79640821e-03  1.54006153e-03" size="0.0005" />
                                         <site name="RRF_RF-P1" pos="-1.08334314e-02 -3.27061975e-03  1.52989635e-03" size="0.0005" />
-
                                         <site name="RTensorFasciaeLatae_3" pos="-0.009 -0.005 0.005" size="0.0005" rgba="1 0 0 1" group="4"/>
 
                                         <geom name="LGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 0.0015 -0.001" euler="-1.6580627893946132 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
@@ -1030,6 +1135,7 @@
                                         <geom name="LCF_BFA_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0173 0.00325 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
                                         <geom name="LOE_at_Pelvis_ellipsoid" size="0.0005" pos="-0.0169 0.003 0.0015" rgba="0.19 0.83 0.78 0.2" group="2" />
                                         <geom name="LHip_flexors_at_pelvis_cylinder" size="0.0009 0.001" pos="-0.0121 0.0025 0.0015" euler="-1.4835298641951802 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
+                                        <geom name="LTensorFasciaeLatae_cylinder" size="0.003 0.0075" pos="-0.009 0.0028 0.001" euler="0.0 1.57 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                         
                                         <site name="LGA_at_Pelvis_sidesite" pos="-1.74690480e-02 9.41424358e-04 -4.14452075e-03" size="0.0005" />
                                         <site name="LCF_BFA_at_Pelvis_sidesite" pos="-1.65346204e-02 3.86699778e-03 -8.67257693e-05" size="0.0005" />
@@ -1065,6 +1171,7 @@
                                         <site name="LBFP_mid_BFP_mid-P1" pos="-1.74516417e-02 3.86607058e-03  1.83094496e-03" size="0.0005" />
                                         <site name="LBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 3.79640821e-03  1.54006153e-03" size="0.0005" />
                                         <site name="LRF_RF-P1" pos="-1.08334314e-02 3.27061975e-03  1.52989635e-03" size="0.0005" />
+                                        <site name="LTensorFasciaeLatae_3" pos="-0.009 0.005 0.005" size="0.0005" rgba="1 0 0 1"/>
                                 
                                         <body name="RFemur" pos="-0.013 -0.0028 0.002" gravcomp="0">
                                             <joint name="RHip_rotation" pos="0 0 0" axis="0 0 1" range="-0.5 0.5" group="3" />
@@ -1321,6 +1428,9 @@
                                             <site name="LMG_MG-P1" pos="-0.00162 -0.00078 -0.01279" size="0.0005" />
                                             <site name="LLG_LG-P1" pos="-0.00188 0.00115 -0.01276" size="0.0005" />
                                             <site name="LPLANT_PLANT-P1" pos="-0.0017 0.00022 -0.01247" size="0.0005" />
+                                            
+                                            <site name="LTensorFasciaeLatae_2" pos="-0.00125 0.0025 -0.005" size="0.0005" rgba="1 0 0 1" group="4"/>
+                                            
                                             <body name="LLeg" pos="-0.001 0 -0.0135" gravcomp="0">
                                                 <joint name="LKnee_flexion" pos="0 0 0" axis="0 1 0" range="0.0 2.5" group="4" />
 
@@ -1379,6 +1489,9 @@
                                                 <site name="LPDQA_PDQA-P1" pos="-2.030e-03 6.000e-04 -5.410e-03" size="0.0005" />
                                                 <site name="LPDQA_PDQA-P2" pos="-1.230e-03  -7.000e-05 -1.182e-02" size="0.0005" />
                                                 <site name="LPDQI_PDQI-P1" pos="-2.090e-03 2.200e-04 -7.340e-03" size="0.0005" />
+                                                
+                                                <site name="LTensorFasciaeLatae_1" pos="0 0.00125 -0.002" size="0.0005" rgba="1 0 0 1" group="4"/>
+                                                
                                                 <body name="LPedal" pos="-0.001 -0.00125 -0.0184" gravcomp="0">
                                                     <joint name="LAnkle_adduction" pos="0 0 0" axis="0 0 -1" range="-1.0471975511965976 1.0471975511965976" group="4" />
                                                     <joint name="LAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-1.0471975511965976 1.0471975511965976" group="4" />
