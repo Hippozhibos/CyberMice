@@ -2282,7 +2282,7 @@
             <site site="T4_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RLongissimusThoracis" group="5">
+        <spatial name="RLongissimusThoracis" group="4">
             <site site="T1_RTransverseProcess"/>
             <site site="T2_RTransverseProcess"/>
             <site site="T3_RTransverseProcess"/>
@@ -2301,7 +2301,7 @@
             <site site="L3_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RLongissimusLumborum" group="5">
+        <spatial name="RLongissimusLumborum" group="4">
             <site site="T7_RTransverseProcess"/>
             <site site="T8_RTransverseProcess"/>
             <site site="T9_RTransverseProcess"/>
@@ -2326,7 +2326,7 @@
                 <site site="RIliacCrest"/>
         </spatial>
 
-        <spatial name="RMultifidusCervicis" group="5">
+        <spatial name="RMultifidusCervicis" group="4">
             <site site="C6_SpinousProcess"/>
             <site site="C6_RArticularProcess"/>
             <pulley divisor="4"/>
@@ -2391,7 +2391,7 @@
 
         </spatial>
 
-        <spatial name="RMultifidusLumborum" group="5">
+        <spatial name="RMultifidusLumborum" group="4">
             <site site="L3_SpinousProcess"/>
             <site site="L3_RTransverseProcess"/>
             <pulley divisor="4"/>
@@ -2492,7 +2492,7 @@
 
         </spatial>
 
-        <spatial name="RIliocostalisThoracis" group="5">
+        <spatial name="RIliocostalisThoracis" group="4">
             <site site="C7_RTransverseProcess"/>
             <site site="T1_RRibAngle"/>
             <site site="T2_RRibAngle"/>
@@ -2508,7 +2508,7 @@
             <site site="T12_RRibAngle"/>
         </spatial>
 
-        <spatial name="RQuadratusLumborum" group="5">
+        <spatial name="RQuadratusLumborum" group="4">
             <site site="RIliacCrest"/>
             <site site="L5_RTransverseProcess"/>
             <site site="L4_RTransverseProcess"/>
@@ -2524,7 +2524,7 @@
                 
         </spatial>
 
-        <spatial name="RTensorFasciaeLatae" group="5">
+        <spatial name="RTensorFasciaeLatae" group="3">
             <site site="RTensorFasciaeLatae_1"/>
             <site site="RTensorFasciaeLatae_2"/>
                 <pulley divisor="5"/>
@@ -2548,6 +2548,430 @@
                 <geom geom="RTensorFasciaeLatae_cylinder" sidesite="RTensorFasciaeLatae_3" />
                 <site site="RIliacCrest"/>
         </spatial>
+
+        <spatial name="LLatissimusDorsi" group="5">
+            <site site="LLatissimusDorsi_1" />
+            <site site="LLatissimusDorsi_2" />
+            <site site="LLatissimusDorsi_3" />
+            <site site="LLatissimusDorsi_4" />
+            <pulley divisor="5"/>
+            <site site="LLatissimusDorsi_4" />
+            <site site="LLatissimusDorsi_4_1" />
+            <site site="T11_SpinousProcess" />
+            <pulley divisor="5"/>
+            <site site="LLatissimusDorsi_4" />
+            <site site="LLatissimusDorsi_4_2" />
+            <site site="T12_SpinousProcess" />
+            <pulley divisor="5"/>
+            <site site="LLatissimusDorsi_4" />
+            <site site="LLatissimusDorsi_4_3" />
+            <site site="T13_SpinousProcess" />
+            <pulley divisor="5"/>
+            <site site="LLatissimusDorsi_4" />
+            <site site="LLatissimusDorsi_4_4" />
+            <site site="L1_SpinousProcess" />
+            <pulley divisor="5"/>
+            <site site="LLatissimusDorsi_4" />
+            <site site="LLatissimusDorsi_4_5" />
+            <site site="L2_SpinousProcess" />
+        </spatial>
+
+        <spatial name="LSerratusVentralisThoracis" group="5">
+            <site site="LSerratusVentralisThoracis_scapula_1"/>
+            <site site="LSerratusVentralisThoracis_scapula_2"/>
+            <pulley divisor="7"/>
+            <site site="LSerratusVentralisThoracis_scapula_2"/>
+            <site site="LSerratusVentralisThoracis_1_2"/>
+            <site site="LSerratusVentralisThoracis_1_1"/>
+            <pulley divisor="7"/>
+            <site site="LSerratusVentralisThoracis_scapula_2"/>
+            <site site="LSerratusVentralisThoracis_2_2"/>
+            <site site="LSerratusVentralisThoracis_2_1"/>
+            <pulley divisor="7"/>
+            <site site="LSerratusVentralisThoracis_scapula_2"/>
+            <site site="LSerratusVentralisThoracis_3_2"/>
+            <site site="LSerratusVentralisThoracis_3_1"/>
+            <pulley divisor="7"/>
+            <site site="LSerratusVentralisThoracis_scapula_2"/>
+            <site site="LSerratusVentralisThoracis_4_2"/>
+            <site site="LSerratusVentralisThoracis_4_1"/>
+            <pulley divisor="7"/>
+            <site site="LSerratusVentralisThoracis_scapula_2"/>
+            <site site="LSerratusVentralisThoracis_5_2"/>
+            <site site="LSerratusVentralisThoracis_5_1"/>
+            <pulley divisor="7"/>
+            <site site="LSerratusVentralisThoracis_scapula_2"/>
+            <site site="LSerratusVentralisThoracis_6_2"/>
+            <site site="LSerratusVentralisThoracis_6_1"/>
+            <pulley divisor="7"/>
+            <site site="LSerratusVentralisThoracis_scapula_2"/>
+            <site site="LSerratusVentralisThoracis_7_2"/>
+            <site site="LSerratusVentralisThoracis_7_1"/>
+        </spatial>
+
+        <spatial name="LSerratusVentralisCervicis" group="5">
+            <site site="LSerratusVentralisCervicis_scapula_1" />
+            <site site="LSerratusVentralisCervicis_1" />
+            <pulley divisor="5"/>
+            <site site="LSerratusVentralisCervicis_1" />
+            <site site="C3_LTransverseProcess" />
+            <pulley divisor="5"/>
+            <site site="LSerratusVentralisCervicis_1" />
+            <site site="C4_LTransverseProcess" />
+            <pulley divisor="5"/>
+            <site site="LSerratusVentralisCervicis_1" />
+            <site site="C5_LTransverseProcess" />
+            <pulley divisor="5"/>
+            <site site="LSerratusVentralisCervicis_1" />
+            <site site="C6_LTransverseProcess" />
+            <pulley divisor="5"/>
+            <site site="LSerratusVentralisCervicis_1" />
+            <site site="C7_LTransverseProcess" />
+        </spatial>
+
+        <spatial name="LPectoralisMajor" group="5">
+            <site site="LPectoralisMajor_Humerus_1" />
+            <site site="LPectoralisMajor_1" />
+            <pulley divisor="4"/>
+            <site site="LPectoralisMajor_1" />
+            <site site="LPectoralisMajor_2" />
+            <pulley divisor="4"/>
+            <site site="LPectoralisMajor_1" />
+            <site site="LPectoralisMajor_3" />
+            <pulley divisor="4"/>
+            <site site="LPectoralisMajor_1" />
+            <site site="LPectoralisMajor_4" />
+            <pulley divisor="4"/>
+            <site site="LPectoralisMajor_1" />
+            <site site="LPectoralisMajor_5" />
+        </spatial>
+
+        <spatial name="LPectoralisMinor" group="5">
+            <site site="LPectoralisMinor_coraco_1" />
+            <site site="LPectoralisMinor_1" />
+            <site site="LPectoralisMinor_2" />
+            <site site="LPectoralisMinor_3" />
+            <site site="LPectoralisMinor_4" />
+        </spatial>
+
+        <spatial name="LPectoralisMinimus" group="5">
+            <site site="LPectoralisMinimus_Humerus_1" />
+            <site site="LPectoralisMinimus_1" />
+            <site site="LPectoralisMinimus_2" />
+            <site site="LPectoralisMinimus_3" />
+            <site site="LPectoralisMinimus_4" />
+        </spatial>
+
+        <spatial name="LScalenusAnterior" group="5">
+            <site site="LScalenusAnterior_1" />
+            <site site="LScalenusAnterior_2" />
+            <pulley divisor="4"/>
+            <site site="LScalenusAnterior_2" />
+            <site site="C3_LTransverseProcess" />
+            <pulley divisor="4"/>
+            <site site="LScalenusAnterior_2" />
+            <site site="C4_LTransverseProcess" />
+            <pulley divisor="4"/>
+            <site site="LScalenusAnterior_2" />
+            <site site="C5_LTransverseProcess" />
+            <pulley divisor="4"/>
+            <site site="LScalenusAnterior_2" />
+            <site site="C6_LTransverseProcess" />
+        </spatial>
+
+        <spatial name="LScalenusMedius" group="5">
+            <site site="LScalenusMedius_1" />
+            <site site="LScalenusMedius_2" />
+            <pulley divisor="6"/>
+            <site site="LScalenusMedius_2" />
+            <site site="C2_LTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="LScalenusMedius_2" />
+            <site site="C3_LTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="LScalenusMedius_2" />
+            <site site="C4_LTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="LScalenusMedius_2" />
+            <site site="C5_LTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="LScalenusMedius_2" />
+            <site site="C6_LTransverseProcess" />
+            <pulley divisor="6"/>
+            <site site="LScalenusMedius_2" />
+            <site site="C7_LTransverseProcess" />
+        </spatial>
+
+        <spatial name="LScalenusPosterior" group="5">
+            <site site="LScalenusPosterior_1" />
+            <site site="LScalenusPosterior_2" />
+            <pulley divisor="3"/>
+            <site site="LScalenusPosterior_2" />
+            <site site="C5_LTransverseProcess" />
+            <pulley divisor="3"/>
+            <site site="LScalenusPosterior_2" />
+            <site site="C6_LTransverseProcess" />
+            <pulley divisor="3"/>
+            <site site="LScalenusPosterior_2" />
+            <site site="C7_LTransverseProcess" />
+        </spatial>
+
+        <spatial name="LRectusCapitisPosteriorMajor" group="5">
+            <site site="LRectusCapitisPosteriorMajor"/>
+            <site site="C2_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="LRectusCapitisPosteriorMinor" group="5">
+            <site site="LRectusCapitisPosteriorMinor"/>
+            <site site="C1_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="LObliquusCapitisSuperior" group="5">
+            <site site="LObliquusCapitisSuperior"/>
+            <site site="C1_LTransverseProcess"/>
+        </spatial>
+
+        <spatial name="LObliquusCapitisInferior" group="5">
+            <site site="C1_LTransverseProcess"/>
+            <site site="C2_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="LSemispinalisCapitisMedial" group="5">
+            <site site="LSemispinalisCapitisMedial_1"/>
+            <site site="LSemispinalisCapitisMedial_2"/>
+            <pulley divisor="2"/>
+            <site site="LSemispinalisCapitisMedial_2"/>
+            <site site="T4_LTransverseProcess"/>
+            <pulley divisor="2"/>
+            <site site="LSemispinalisCapitisMedial_2"/>
+            <site site="T5_LTransverseProcess"/>
+        </spatial>
+
+        <spatial name="LSemispinalisCapitisLateral" group="5">
+            <site site="LSemispinalisCapitisLateral_1"/>
+            <site site="LSemispinalisCapitisLateral_2"/>
+            <pulley divisor="6"/>
+            <site site="LSemispinalisCapitisLateral_2"/>
+            <site site="C3_LTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="LSemispinalisCapitisLateral_2"/>
+            <site site="C4_LTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="LSemispinalisCapitisLateral_2"/>
+            <site site="C5_LTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="LSemispinalisCapitisLateral_2"/>
+            <site site="C6_LTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="LSemispinalisCapitisLateral_2"/>
+            <site site="C7_LTransverseProcess"/>
+            <pulley divisor="6"/>
+            <site site="LSemispinalisCapitisLateral_2"/>
+            <site site="T1_LTransverseProcess"/>
+        </spatial>
+
+        <spatial name="LCleidomastoideus" group="5">
+            <site site="LMastoidProcess"/>
+            <site site="LCleidomastoideus_2"/>
+        </spatial>
+
+        <spatial name="LCleidoRCleidocephalicus" group="5">
+            <site site="LCleidocephalicus_1"/>
+            <site site="LCleidomastoideus_2"/>
+        </spatial>
+
+        <spatial name="LSternomastoideus" group="5">
+            <site site="LMastoidProcess"/>
+            <site site="LSternomastoideus_2"/>
+        </spatial>
+
+        <spatial name="LSpleniusCapitis" group="5">
+            <site site="LSpleniusCapitis_2_1"/>
+            <site site="LSpleniusCapitis_2_2"/>
+            <site site="LSpleniusCapitis_3"/>
+            <pulley divisor="5"/>
+            <site site="LSpleniusCapitis_3"/>
+            <site site="C7_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="LSpleniusCapitis_3"/>
+            <site site="T1_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="LSpleniusCapitis_3"/>
+            <site site="T2_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="LSpleniusCapitis_3"/>
+            <site site="T3_SpinousProcess"/>
+            <pulley divisor="5"/>
+            <site site="LSpleniusCapitis_3"/>
+            <site site="LSpleniusCapitis_1"/>
+            <site site="LMastoidProcess"/>
+        </spatial>
+
+        <spatial name="LRhomboideusCapitis" group="5">
+            <site site="LRhomboideusCapitis_1"/>
+            <site site="LRhomboideusCapitis_2"/>
+            <pulley divisor="2"/>
+            <site site="LRhomboideusCapitis_2"/>
+            <site site="LSemispinalisCapitisLateral_1"/>
+            <pulley divisor="2"/>
+            <site site="LRhomboideusCapitis_2"/>
+            <site site="LMastoidProcess"/>
+        </spatial>
+
+        <spatial name="LRhomboideusCervicis" group="5">
+            <site site="LRhomboideusCervicis_1"/>
+            <site site="LRhomboideusCervicis_2"/>
+            <site site="LRhomboideusCervicis_3"/>
+            <pulley divisor="3"/>
+            <site site="LRhomboideusCervicis_3"/>
+            <site site="LSpleniusCapitis_2_1"/>
+            <pulley divisor="3"/>
+            <site site="LRhomboideusCervicis_3"/>
+            <site site="LSemispinalisCapitisLateral_1"/>
+            <pulley divisor="3"/>
+            <site site="LRhomboideusCervicis_3"/>
+            <site site="LMastoidProcess"/>
+        </spatial>
+
+        <spatial name="LRhomboideusThoracis" group="5">
+            <site site="LRhomboideusThoracis_1"/>
+            <site site="LRhomboideusThoracis_2"/>
+            <pulley divisor="3"/>
+            <site site="LRhomboideusThoracis_2"/>
+            <site site="C7_SpinousProcess"/>
+            <pulley divisor="3"/>
+            <site site="LRhomboideusThoracis_2"/>
+            <site site="T1_SpinousProcess"/>
+            <pulley divisor="3"/>
+            <site site="LRhomboideusThoracis_2"/>
+            <site site="T2_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="LOmotransversarius" group="5">
+            <site site="C1_VentralTubercle"/>
+            <site site="LOmotransversarius_1"/>
+            <site site="LOmotransversarius_2"/>
+        </spatial>
+
+        <spatial name="LSubclavius" group="5">
+            <site site="LSubclavius_1"/>
+            <site site="LSubclavius_2"/>
+        </spatial>
+
+        <spatial name="LTrapeziusCervical" group="5">
+            <site site="LTrapezius_head_1"/>
+            <site site="LTrapezius_head_2"/>
+            <pulley divisor="3"/>
+            <site site="LTrapezius_head_2"/>
+            <site site="LTrapezius_1"/>
+            <pulley divisor="3"/>
+            <site site="LTrapezius_head_2"/>
+            <site site="LTrapezius_2"/>
+            <pulley divisor="3"/>
+            <site site="LTrapezius_head_2"/>
+            <site site="LTrapezius_3"/>
+        </spatial>
+
+        <spatial name="LTrapeziusThoracic" group="5">
+            <site site="LTrapezius_1"/>
+            <site site="LTrapezius_4"/>
+            <pulley divisor="4"/>
+            <site site="LTrapezius_4" />
+            <site site="T9_SpinousProcess"/>
+            <pulley divisor="4"/>
+            <site site="LTrapezius_4"/>
+            <site site="T10_SpinousProcess"/>
+            <pulley divisor="4"/>
+            <site site="LTrapezius_4"/>
+            <site site="T11_SpinousProcess"/>
+            <pulley divisor="4"/>
+            <site site="LTrapezius_4"/>
+            <site site="T12_SpinousProcess"/>
+        </spatial>
+
+        <spatial name="LLongusCapitis" group="5">
+            <site site="Basioccipital"/>
+            <site site="LLongusCapitis_1"/>
+            <pulley divisor="4"/>
+            <site site="LLongusCapitis_1"/>
+            <site site="C3_LTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="LLongusCapitis_1"/>
+            <site site="C4_LTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="LLongusCapitis_1"/>
+            <site site="C5_LTransverseProcess"/>
+            <pulley divisor="4"/>
+            <site site="LLongusCapitis_1"/>
+            <site site="C6_LTransverseProcess"/>
+        </spatial>
+
+        <spatial name="LLongusCapitisSuperiorOblique" group="5">
+            <site site="C1_VentralTubercle"/>
+            <site site="C2_LVentralArch"/>
+            <pulley divisor="3"/>
+            <site site="C2_LVentralArch"/>
+            <site site="C3_LTransverseProcess"/>
+            <pulley divisor="3"/>
+            <site site="C2_LVentralArch"/>
+            <site site="C4_LTransverseProcess"/>
+            <pulley divisor="3"/>
+            <site site="C2_LVentralArch"/>
+            <site site="C5_LTransverseProcess"/>
+        </spatial>
+
+        <spatial name="LLongusCapitisInferiorOblique" group="5">
+            <site site="C5_LTransverseProcess"/>
+            <site site="C6_LTransverseProcess"/>
+            <site site="C7_LVentralArch"/>
+            <pulley divisor="3"/>
+            <site site="C7_LVentralArch"/>
+            <site site="T1_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C7_LVentralArch"/>
+            <site site="T2_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C7_LVentralArch"/>
+            <site site="T3_VentralSurface"/>
+        </spatial>
+
+        <spatial name="LLongusCapitisVertical" group="5">
+            <site site="C2_VentralSurface"/>
+            <site site="C4_LVentralArch"/>
+            <pulley divisor="3"/>
+            <site site="C4_LVentralArch"/>
+            <site site="C3_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C4_LVentralArch"/>
+            <site site="C4_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C4_LVentralArch"/>
+            <site site="C5_LVentralArch"/>
+            <pulley divisor="4"/>
+            <site site="C5_LVentralArch"/>
+            <site site="C5_VentralSurface"/>
+            <pulley divisor="4"/>
+            <site site="C5_LVentralArch"/>
+            <site site="C6_VentralSurface"/>
+            <pulley divisor="4"/>
+            <site site="C5_LVentralArch"/>
+            <site site="C7_VentralSurface"/>
+            <pulley divisor="4"/>
+            <site site="C5_LVentralArch"/>
+            <site site="C7_LVentralArch"/>
+            <pulley divisor="3"/>
+            <site site="C7_LVentralArch"/>
+            <site site="T1_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C7_LVentralArch"/>
+            <site site="T2_VentralSurface"/>
+            <pulley divisor="3"/>
+            <site site="C7_LVentralArch"/>
+            <site site="T3_VentralSurface"/>
+        </spatial>
+
+
+
 
 
 
