@@ -1850,7 +1850,7 @@
             <site site="L2_SpinousProcess" />
         </spatial>
 
-        <spatial name="RSerratusVentralisThoracis" group="4">
+        <spatial name="RSerratusVentralisThoracis_tendon" group="4">
             <site site="RSerratusVentralisThoracis_scapula_1"/>
             <site site="RSerratusVentralisThoracis_scapula_2"/>
             <pulley divisor="7"/>
@@ -1884,7 +1884,7 @@
 
         </spatial>
 
-        <spatial name="RSerratusVentralisCervicis" group="4">
+        <spatial name="RSerratusVentralisCervicis_tendon" group="4">
             <site site="RSerratusVentralisCervicis_scapula_1" />
             <site site="RSerratusVentralisCervicis_1" />
             <pulley divisor="5"/>
@@ -1904,7 +1904,7 @@
             <site site="C7_RTransverseProcess" />
         </spatial>
 
-        <spatial name="RPectoralisMajor" group="4">
+        <spatial name="RPectoralisMajor_tendon" group="4">
             <site site="RPectoralisMajor_Humerus_1" />
             <site site="RPectoralisMajor_1" />
             <pulley divisor="4"/>
@@ -1921,7 +1921,7 @@
             <site site="RPectoralisMajor_5" />
         </spatial>
 
-        <spatial name="RPectoralisMinor" group="4">
+        <spatial name="RPectoralisMinor_tendon" group="4">
             <site site="RPectoralisMinor_coraco_1" />
             <site site="RPectoralisMinor_1" />
             <site site="RPectoralisMinor_2" />
@@ -1929,7 +1929,7 @@
             <site site="RPectoralisMinor_4" />
         </spatial>
 
-        <spatial name="RPectoralisMinimus" group="4">
+        <spatial name="RPectoralisMinimus_tendon" group="4">
             <site site="RPectoralisMinimus_Humerus_1" />
             <site site="RPectoralisMinimus_1" />
             <site site="RPectoralisMinimus_2" />
@@ -1937,7 +1937,7 @@
             <site site="RPectoralisMinimus_4" />
         </spatial>
 
-        <spatial name="RScalenusAnterior" group="4">
+        <spatial name="RScalenusAnterior_tendon" group="4">
             <site site="RScalenusAnterior_1" />
             <site site="RScalenusAnterior_2" />
             <pulley divisor="4"/>
@@ -1954,7 +1954,7 @@
             <site site="C6_RTransverseProcess" />
         </spatial>
 
-        <spatial name="RScalenusMedius" group="4">
+        <spatial name="RScalenusMedius_tendon" group="4">
             <site site="RScalenusMedius_1" />
             <site site="RScalenusMedius_2" />
             <pulley divisor="6"/>
@@ -1977,7 +1977,7 @@
             <site site="C7_RTransverseProcess" />
         </spatial>
 
-        <spatial name="RScalenusPosterior" group="4">
+        <spatial name="RScalenusPosterior_tendon" group="4">
             <site site="RScalenusPosterior_1" />
             <site site="RScalenusPosterior_2" />
             <pulley divisor="3"/>
@@ -1991,27 +1991,27 @@
             <site site="C7_RTransverseProcess" />
         </spatial>
 
-        <spatial name="RRectusCapitisPosteriorMajor" group="4">
+        <spatial name="RRectusCapitisPosteriorMajor_tendon" group="4">
             <site site="RRectusCapitisPosteriorMajor"/>
             <site site="C2_SpinousProcess"/>
         </spatial>
 
-        <spatial name="RRectusCapitisPosteriorMinor" group="4">
+        <spatial name="RRectusCapitisPosteriorMinor_tendon" group="4">
             <site site="RRectusCapitisPosteriorMinor"/>
             <site site="C1_SpinousProcess"/>
         </spatial>
 
-        <spatial name="RObliquusCapitisSuperior" group="4">
+        <spatial name="RObliquusCapitisSuperior_tendon" group="4">
             <site site="RObliquusCapitisSuperior"/>
             <site site="C1_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RObliquusCapitisInferior" group="4">
+        <spatial name="RObliquusCapitisInferior_tendon" group="4">
             <site site="C1_RTransverseProcess"/>
             <site site="C2_SpinousProcess"/>
         </spatial>
 
-        <spatial name="RSemispinalisCapitisMedial" group="4">
+        <spatial name="RSemispinalisCapitisMedial_tendon" group="4">
             <site site="RSemispinalisCapitisMedial_1"/>
             <site site="RSemispinalisCapitisMedial_2"/>
             <pulley divisor="2"/>
@@ -2022,7 +2022,7 @@
             <site site="T5_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RSemispinalisCapitisLateral" group="4">
+        <spatial name="RSemispinalisCapitisLateral_tendon" group="4">
             <site site="RSemispinalisCapitisLateral_1"/>
             <site site="RSemispinalisCapitisLateral_2"/>
             <pulley divisor="6"/>
@@ -2045,22 +2045,22 @@
             <site site="T1_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RCleidomastoideus" group="4">
+        <spatial name="RCleidomastoideus_tendon" group="4">
             <site site="RMastoidProcess"/>
             <site site="RCleidomastoideus_2"/>
         </spatial>
 
-        <spatial name="RCleidoRCleidocephalicus" group="4">
+        <spatial name="RCleidocephalicus_tendon" group="4">
             <site site="RCleidocephalicus_1"/>
             <site site="RCleidomastoideus_2"/>
         </spatial>
 
-        <spatial name="RSternomastoideus" group="4">
+        <spatial name="RSternomastoideus_tendon" group="4">
             <site site="RMastoidProcess"/>
             <site site="RSternomastoideus_2"/>
         </spatial>
 
-        <spatial name="RSpleniusCapitis" group="4">
+        <spatial name="RSpleniusCapitis_tendon" group="4">
             <site site="RSpleniusCapitis_2_1"/>
             <site site="RSpleniusCapitis_2_2"/>
             <site site="RSpleniusCapitis_3"/>
@@ -2082,7 +2082,7 @@
             <site site="RMastoidProcess"/>
         </spatial>
 
-        <spatial name="RRhomboideusCapitis" group="4">
+        <spatial name="RRhomboideusCapitis_tendon" group="4">
             <site site="RRhomboideusCapitis_1"/>
             <site site="RRhomboideusCapitis_2"/>
             <pulley divisor="2"/>
@@ -2093,7 +2093,7 @@
             <site site="RMastoidProcess"/>
         </spatial>
 
-        <spatial name="RRhomboideusCervicis" group="4">
+        <spatial name="RRhomboideusCervicis_tendon" group="4">
             <site site="RRhomboideusCervicis_1"/>
             <site site="RRhomboideusCervicis_2"/>
             <site site="RRhomboideusCervicis_3"/>
@@ -2108,7 +2108,7 @@
             <site site="RMastoidProcess"/>
         </spatial>
 
-        <spatial name="RRhomboideusThoracis" group="4">
+        <spatial name="RRhomboideusThoracis_tendon" group="4">
             <site site="RRhomboideusThoracis_1"/>
             <site site="RRhomboideusThoracis_2"/>
             <pulley divisor="3"/>
@@ -2122,18 +2122,18 @@
             <site site="T2_SpinousProcess"/>
         </spatial>
 
-        <spatial name="ROmotransversarius" group="4">
+        <spatial name="ROmotransversarius_tendon" group="4">
             <site site="C1_VentralTubercle"/>
             <site site="ROmotransversarius_1"/>
             <site site="ROmotransversarius_2"/>
         </spatial>
 
-        <spatial name="RSubclavius" group="4">
+        <spatial name="RSubclavius_tendon" group="4">
             <site site="RSubclavius_1"/>
             <site site="RSubclavius_2"/>
         </spatial>
 
-        <spatial name="RTrapeziusCervical" group="4">
+        <spatial name="RTrapeziusCervical_tendon" group="4">
             <site site="RTrapezius_head_1"/>
             <site site="RTrapezius_head_2"/>
             <pulley divisor="3"/>
@@ -2147,7 +2147,7 @@
             <site site="RTrapezius_3"/>
         </spatial>
 
-        <spatial name="RTrapeziusThoracic" group="4">
+        <spatial name="RTrapeziusThoracic_tendon" group="4">
             <site site="RTrapezius_1"/>
             <site site="RTrapezius_4"/>
             <pulley divisor="4"/>
@@ -2164,7 +2164,7 @@
             <site site="T12_SpinousProcess"/>
         </spatial>
 
-        <spatial name="RLongusCapitis" group="4">
+        <spatial name="RLongusCapitis_tendon" group="4">
             <site site="Basioccipital"/>
             <site site="RLongusCapitis_1"/>
             <pulley divisor="4"/>
@@ -2181,7 +2181,7 @@
             <site site="C6_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RLongusCapitisSuperiorOblique" group="4">
+        <spatial name="RLongusCapitisSuperiorOblique_tendon" group="4">
             <site site="C1_VentralTubercle"/>
             <site site="C2_RVentralArch"/>
             <pulley divisor="3"/>
@@ -2195,7 +2195,7 @@
             <site site="C5_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RLongusCapitisInferiorOblique" group="4">
+        <spatial name="RLongusCapitisInferiorOblique_tendon" group="4">
             <site site="C5_RTransverseProcess"/>
             <site site="C6_RTransverseProcess"/>
             <site site="C7_RVentralArch"/>
@@ -2210,7 +2210,7 @@
             <site site="T3_VentralSurface"/>
         </spatial>
 
-        <spatial name="RLongusCapitisVertical" group="4">
+        <spatial name="RLongusCapitisVertical_tendon" group="4">
             <site site="C2_VentralSurface"/>
             <site site="C4_RVentralArch"/>
             <pulley divisor="3"/>
@@ -2245,7 +2245,7 @@
             <site site="T3_VentralSurface"/>
         </spatial>
 
-        <spatial name="RIntertransversariCervicis" group="4">
+        <spatial name="RIntertransversariCervicis_tendon" group="4">
             <site site="C1_RTransverseProcess"/>
             <site site="C2_RTransverseProcess"/>
             <site site="C3_RTransverseProcess"/>
@@ -2256,7 +2256,7 @@
             <site site="T1_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RLongissimusCapitis" group="4">
+        <spatial name="RLongissimusCapitis_tendon" group="4">
             <site site="RMastoidProcess"/>
             <site site="RLongissimusCapitis_1"/>
             <pulley divisor="7"/>
@@ -2282,7 +2282,7 @@
             <site site="T4_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RLongissimusThoracis" group="4">
+        <spatial name="RLongissimusThoracis_tendon" group="4">
             <site site="T1_RTransverseProcess"/>
             <site site="T2_RTransverseProcess"/>
             <site site="T3_RTransverseProcess"/>
@@ -2301,7 +2301,7 @@
             <site site="L3_RTransverseProcess"/>
         </spatial>
 
-        <spatial name="RLongissimusLumborum" group="4">
+        <spatial name="RLongissimusLumborum_tendon" group="4">
             <site site="T7_RTransverseProcess"/>
             <site site="T8_RTransverseProcess"/>
             <site site="T9_RTransverseProcess"/>
@@ -2326,7 +2326,7 @@
                 <site site="RIliacCrest"/>
         </spatial>
 
-        <spatial name="RMultifidusCervicis" group="4">
+        <spatial name="RMultifidusCervicis_tendon" group="4">
             <site site="C6_SpinousProcess"/>
             <site site="C6_RArticularProcess"/>
             <pulley divisor="4"/>
@@ -2391,7 +2391,7 @@
 
         </spatial>
 
-        <spatial name="RMultifidusLumborum" group="4">
+        <spatial name="RMultifidusLumborum_tendon" group="4">
             <site site="L3_SpinousProcess"/>
             <site site="L3_RTransverseProcess"/>
             <pulley divisor="4"/>
@@ -2492,7 +2492,7 @@
 
         </spatial>
 
-        <spatial name="RIliocostalisThoracis" group="4">
+        <spatial name="RIliocostalisThoracis_tendon" group="4">
             <site site="C7_RTransverseProcess"/>
             <site site="T1_RRibAngle"/>
             <site site="T2_RRibAngle"/>
@@ -2508,7 +2508,7 @@
             <site site="T12_RRibAngle"/>
         </spatial>
 
-        <spatial name="RQuadratusLumborum" group="4">
+        <spatial name="RQuadratusLumborum_tendon" group="4">
             <site site="RIliacCrest"/>
             <site site="L5_RTransverseProcess"/>
             <site site="L4_RTransverseProcess"/>
@@ -2526,7 +2526,7 @@
 
         
 
-        <spatial name="LLatissimusDorsi" group="5">
+        <spatial name="LLatissimusDorsi_tendon" group="5">
             <site site="LLatissimusDorsi_1" />
             <site site="LLatissimusDorsi_2" />
             <site site="LLatissimusDorsi_3" />
@@ -2553,7 +2553,7 @@
             <site site="L2_SpinousProcess" />
         </spatial>
 
-        <spatial name="LSerratusVentralisThoracis" group="5">
+        <spatial name="LSerratusVentralisThoracis_tendon" group="5">
             <site site="LSerratusVentralisThoracis_scapula_1"/>
             <site site="LSerratusVentralisThoracis_scapula_2"/>
             <pulley divisor="7"/>
@@ -2586,7 +2586,7 @@
             <site site="LSerratusVentralisThoracis_7_1"/>
         </spatial>
 
-        <spatial name="LSerratusVentralisCervicis" group="5">
+        <spatial name="LSerratusVentralisCervicis_tendon" group="5">
             <site site="LSerratusVentralisCervicis_scapula_1" />
             <site site="LSerratusVentralisCervicis_1" />
             <pulley divisor="5"/>
@@ -2606,7 +2606,7 @@
             <site site="C7_LTransverseProcess" />
         </spatial>
 
-        <spatial name="LPectoralisMajor" group="5">
+        <spatial name="LPectoralisMajor_tendon" group="5">
             <site site="LPectoralisMajor_Humerus_1" />
             <site site="LPectoralisMajor_1" />
             <pulley divisor="4"/>
@@ -2623,7 +2623,7 @@
             <site site="LPectoralisMajor_5" />
         </spatial>
 
-        <spatial name="LPectoralisMinor" group="5">
+        <spatial name="LPectoralisMinor_tendon" group="5">
             <site site="LPectoralisMinor_coraco_1" />
             <site site="LPectoralisMinor_1" />
             <site site="LPectoralisMinor_2" />
@@ -2631,7 +2631,7 @@
             <site site="LPectoralisMinor_4" />
         </spatial>
 
-        <spatial name="LPectoralisMinimus" group="5">
+        <spatial name="LPectoralisMinimus_tendon" group="5">
             <site site="LPectoralisMinimus_Humerus_1" />
             <site site="LPectoralisMinimus_1" />
             <site site="LPectoralisMinimus_2" />
@@ -2639,7 +2639,7 @@
             <site site="LPectoralisMinimus_4" />
         </spatial>
 
-        <spatial name="LScalenusAnterior" group="5">
+        <spatial name="LScalenusAnterior_tendon" group="5">
             <site site="LScalenusAnterior_1" />
             <site site="LScalenusAnterior_2" />
             <pulley divisor="4"/>
@@ -2656,7 +2656,7 @@
             <site site="C6_LTransverseProcess" />
         </spatial>
 
-        <spatial name="LScalenusMedius" group="5">
+        <spatial name="LScalenusMedius_tendon" group="5">
             <site site="LScalenusMedius_1" />
             <site site="LScalenusMedius_2" />
             <pulley divisor="6"/>
@@ -2679,7 +2679,7 @@
             <site site="C7_LTransverseProcess" />
         </spatial>
 
-        <spatial name="LScalenusPosterior" group="5">
+        <spatial name="LScalenusPosterior_tendon" group="5">
             <site site="LScalenusPosterior_1" />
             <site site="LScalenusPosterior_2" />
             <pulley divisor="3"/>
@@ -2693,27 +2693,27 @@
             <site site="C7_LTransverseProcess" />
         </spatial>
 
-        <spatial name="LRectusCapitisPosteriorMajor" group="5">
+        <spatial name="LRectusCapitisPosteriorMajor_tendon" group="5">
             <site site="LRectusCapitisPosteriorMajor"/>
             <site site="C2_SpinousProcess"/>
         </spatial>
 
-        <spatial name="LRectusCapitisPosteriorMinor" group="5">
+        <spatial name="LRectusCapitisPosteriorMinor_tendon" group="5">
             <site site="LRectusCapitisPosteriorMinor"/>
             <site site="C1_SpinousProcess"/>
         </spatial>
 
-        <spatial name="LObliquusCapitisSuperior" group="5">
+        <spatial name="LObliquusCapitisSuperior_tendon" group="5">
             <site site="LObliquusCapitisSuperior"/>
             <site site="C1_LTransverseProcess"/>
         </spatial>
 
-        <spatial name="LObliquusCapitisInferior" group="5">
+        <spatial name="LObliquusCapitisInferior_tendon" group="5">
             <site site="C1_LTransverseProcess"/>
             <site site="C2_SpinousProcess"/>
         </spatial>
 
-        <spatial name="LSemispinalisCapitisMedial" group="5">
+        <spatial name="LSemispinalisCapitisMedial_tendon" group="5">
             <site site="LSemispinalisCapitisMedial_1"/>
             <site site="LSemispinalisCapitisMedial_2"/>
             <pulley divisor="2"/>
@@ -2724,7 +2724,7 @@
             <site site="T5_LTransverseProcess"/>
         </spatial>
 
-        <spatial name="LSemispinalisCapitisLateral" group="5">
+        <spatial name="LSemispinalisCapitisLateral_tendon" group="5">
             <site site="LSemispinalisCapitisLateral_1"/>
             <site site="LSemispinalisCapitisLateral_2"/>
             <pulley divisor="6"/>
@@ -2747,22 +2747,22 @@
             <site site="T1_LTransverseProcess"/>
         </spatial>
 
-        <spatial name="LCleidomastoideus" group="5">
+        <spatial name="LCleidomastoideus_tendon" group="5">
             <site site="LMastoidProcess"/>
             <site site="LCleidomastoideus_2"/>
         </spatial>
 
-        <spatial name="LCleidoRCleidocephalicus" group="5">
+        <spatial name="LCleidocephalicus_tendon" group="5">
             <site site="LCleidocephalicus_1"/>
             <site site="LCleidomastoideus_2"/>
         </spatial>
 
-        <spatial name="LSternomastoideus" group="5">
+        <spatial name="LSternomastoideus_tendon" group="5">
             <site site="LMastoidProcess"/>
             <site site="LSternomastoideus_2"/>
         </spatial>
 
-        <spatial name="LSpleniusCapitis" group="5">
+        <spatial name="LSpleniusCapitis_tendon" group="5">
             <site site="LSpleniusCapitis_2_1"/>
             <site site="LSpleniusCapitis_2_2"/>
             <site site="LSpleniusCapitis_3"/>
@@ -2784,7 +2784,7 @@
             <site site="LMastoidProcess"/>
         </spatial>
 
-        <spatial name="LRhomboideusCapitis" group="5">
+        <spatial name="LRhomboideusCapitis_tendon" group="5">
             <site site="LRhomboideusCapitis_1"/>
             <site site="LRhomboideusCapitis_2"/>
             <pulley divisor="2"/>
@@ -2795,7 +2795,7 @@
             <site site="LMastoidProcess"/>
         </spatial>
 
-        <spatial name="LRhomboideusCervicis" group="5">
+        <spatial name="LRhomboideusCervicis_tendon" group="5">
             <site site="LRhomboideusCervicis_1"/>
             <site site="LRhomboideusCervicis_2"/>
             <site site="LRhomboideusCervicis_3"/>
@@ -2810,7 +2810,7 @@
             <site site="LMastoidProcess"/>
         </spatial>
 
-        <spatial name="LRhomboideusThoracis" group="5">
+        <spatial name="LRhomboideusThoracis_tendon" group="5">
             <site site="LRhomboideusThoracis_1"/>
             <site site="LRhomboideusThoracis_2"/>
             <pulley divisor="3"/>
@@ -2824,18 +2824,18 @@
             <site site="T2_SpinousProcess"/>
         </spatial>
 
-        <spatial name="LOmotransversarius" group="5">
+        <spatial name="LOmotransversarius_tendon" group="5">
             <site site="C1_VentralTubercle"/>
             <site site="LOmotransversarius_1"/>
             <site site="LOmotransversarius_2"/>
         </spatial>
 
-        <spatial name="LSubclavius" group="5">
+        <spatial name="LSubclavius_tendon" group="5">
             <site site="LSubclavius_1"/>
             <site site="LSubclavius_2"/>
         </spatial>
 
-        <spatial name="LTrapeziusCervical" group="5">
+        <spatial name="LTrapeziusCervical_tendon" group="5">
             <site site="LTrapezius_head_1"/>
             <site site="LTrapezius_head_2"/>
             <pulley divisor="3"/>
@@ -2849,7 +2849,7 @@
             <site site="LTrapezius_3"/>
         </spatial>
 
-        <spatial name="LTrapeziusThoracic" group="5">
+        <spatial name="LTrapeziusThoracic_tendon" group="5">
             <site site="LTrapezius_1"/>
             <site site="LTrapezius_4"/>
             <pulley divisor="4"/>
@@ -2866,7 +2866,7 @@
             <site site="T12_SpinousProcess"/>
         </spatial>
 
-        <spatial name="LLongusCapitis" group="5">
+        <spatial name="LLongusCapitis_tendon" group="5">
             <site site="Basioccipital"/>
             <site site="LLongusCapitis_1"/>
             <pulley divisor="4"/>
@@ -2883,7 +2883,7 @@
             <site site="C6_LTransverseProcess"/>
         </spatial>
 
-        <spatial name="LLongusCapitisSuperiorOblique" group="5">
+        <spatial name="LLongusCapitisSuperiorOblique_tendon" group="5">
             <site site="C1_VentralTubercle"/>
             <site site="C2_LVentralArch"/>
             <pulley divisor="3"/>
@@ -2897,7 +2897,7 @@
             <site site="C5_LTransverseProcess"/>
         </spatial>
 
-        <spatial name="LLongusCapitisInferiorOblique" group="5">
+        <spatial name="LLongusCapitisInferiorOblique_tendon" group="5">
             <site site="C5_LTransverseProcess"/>
             <site site="C6_LTransverseProcess"/>
             <site site="C7_LVentralArch"/>
@@ -2912,7 +2912,7 @@
             <site site="T3_VentralSurface"/>
         </spatial>
 
-        <spatial name="LLongusCapitisVertical" group="5">
+        <spatial name="LLongusCapitisVertical_tendon" group="5">
             <site site="C2_VentralSurface"/>
             <site site="C4_LVentralArch"/>
             <pulley divisor="3"/>
@@ -2947,7 +2947,7 @@
             <site site="T3_VentralSurface"/>
         </spatial>
 
-        <spatial name="LIntertransversariCervicis" group="5">
+        <spatial name="LIntertransversariCervicis_tendon" group="5">
             <site site="C1_LTransverseProcess"/>
             <site site="C2_LTransverseProcess"/>
             <site site="C3_LTransverseProcess"/>
@@ -2958,7 +2958,7 @@
             <site site="T1_LTransverseProcess"/>
         </spatial>
 
-        <spatial name="LLongissimusCapitis" group="5">
+        <spatial name="LLongissimusCapitis_tendon" group="5">
             <site site="LMastoidProcess"/>
             <site site="LLongissimusCapitis_1"/>
             <pulley divisor="7"/>
@@ -2984,7 +2984,7 @@
             <site site="T4_LTransverseProcess"/>
         </spatial>
 
-        <spatial name="LLongissimusThoracis" group="5">
+        <spatial name="LLongissimusThoracis_tendon" group="5">
             <site site="T1_LTransverseProcess"/>
             <site site="T2_LTransverseProcess"/>
             <site site="T3_LTransverseProcess"/>
@@ -3003,7 +3003,7 @@
             <site site="L3_LTransverseProcess"/>
         </spatial>
 
-        <spatial name="LLongissimusLumborum" group="5">
+        <spatial name="LLongissimusLumborum_tendon" group="5">
             <site site="T7_LTransverseProcess"/>
             <site site="T8_LTransverseProcess"/>
             <site site="T9_LTransverseProcess"/>
@@ -3028,7 +3028,7 @@
                 <site site="LIliacCrest"/>
         </spatial>
 
-        <spatial name="LMultifidusCervicis" group="5">
+        <spatial name="LMultifidusCervicis_tendon" group="5">
             <site site="C6_SpinousProcess"/>
             <site site="C6_LArticularProcess"/>
             <pulley divisor="4"/>
@@ -3093,7 +3093,7 @@
 
         </spatial>
 
-        <spatial name="LMultifidusLumborum" group="5">
+        <spatial name="LMultifidusLumborum_tendon" group="5">
             <site site="L3_SpinousProcess"/>
             <site site="L3_LTransverseProcess"/>
             <pulley divisor="4"/>
@@ -3193,7 +3193,7 @@
                 <site site="S1_LTransverseProcess"/>
         </spatial>
 
-        <spatial name="LIliocostalisThoracis" group="5">
+        <spatial name="LIliocostalisThoracis_tendon" group="5">
             <site site="C7_LTransverseProcess"/>
             <site site="T1_LRibAngle"/>
             <site site="T2_LRibAngle"/>
@@ -3209,7 +3209,7 @@
             <site site="T12_LRibAngle"/>
         </spatial>
 
-        <spatial name="LQuadratusLumborum" group="5">
+        <spatial name="LQuadratusLumborum_tendon" group="5">
             <site site="LIliacCrest"/>
             <site site="L5_LTransverseProcess"/>
             <site site="L4_LTransverseProcess"/>
@@ -3865,7 +3865,7 @@
         <site site="RPDQI_PDQI-P7" />
         </spatial>
 
-        <spatial name="RTensorFasciaeLatae" group="2">
+        <spatial name="RTensorFasciaeLatae_tendon" group="2">
             <site site="RTensorFasciaeLatae_1"/>
             <site site="RTensorFasciaeLatae_2"/>
                 <pulley divisor="5"/>
@@ -4129,7 +4129,7 @@
         <site site="LPDQI_PDQI-P7" />
         </spatial>
 
-        <spatial name="LTensorFasciaeLatae" group="3">
+        <spatial name="LTensorFasciaeLatae_tendon" group="3">
             <site site="LTensorFasciaeLatae_1"/>
             <site site="LTensorFasciaeLatae_2"/>
                 <pulley divisor="5"/>
@@ -4160,7 +4160,88 @@
     <actuator>
 
         <general group="4" name="RLatissimusDorsi" class="muscle" tendon="RLatissimusDorsi_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        
+        <general group="4" name="RSerratusVentralisThoracis" class="muscle" tendon="RSerratusVentralisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSerratusVentralisCervicis" class="muscle" tendon="RSerratusVentralisCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RPectoralisMajor" class="muscle" tendon="RPectoralisMajor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RPectoralisMinor" class="muscle" tendon="RPectoralisMinor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RPectoralisMinimus" class="muscle" tendon="RPectoralisMinimus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RScalenusAnterior" class="muscle" tendon="RScalenusAnterior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RScalenusMedius" class="muscle" tendon="RScalenusMedius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RScalenusPosterior" class="muscle" tendon="RScalenusPosterior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRectusCapitisPosteriorMajor" class="muscle" tendon="RRectusCapitisPosteriorMajor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRectusCapitisPosteriorMinor" class="muscle" tendon="RRectusCapitisPosteriorMinor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RObliquusCapitisSuperior" class="muscle" tendon="RObliquusCapitisSuperior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RObliquusCapitisInferior" class="muscle" tendon="RObliquusCapitisInferior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSemispinalisCapitisMedial" class="muscle" tendon="RSemispinalisCapitisMedial_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSemispinalisCapitisLateral" class="muscle" tendon="RSemispinalisCapitisLateral_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RCleidomastoideus" class="muscle" tendon="RCleidomastoideus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RCleidocephalicus" class="muscle" tendon="RCleidocephalicus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSternomastoideus" class="muscle" tendon="RSternomastoideus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSpleniusCapitis" class="muscle" tendon="RSpleniusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRhomboideusCapitis" class="muscle" tendon="RRhomboideusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRhomboideusCervicis" class="muscle" tendon="RRhomboideusCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRhomboideusThoracis" class="muscle" tendon="RRhomboideusThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="ROmotransversarius" class="muscle" tendon="ROmotransversarius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSubclavius" class="muscle" tendon="RSubclavius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RTrapeziusCervical" class="muscle" tendon="RTrapeziusCervical_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RTrapeziusThoracic" class="muscle" tendon="RTrapeziusThoracic_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongusCapitis" class="muscle" tendon="RLongusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongusCapitisSuperiorOblique" class="muscle" tendon="RLongusCapitisSuperiorOblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongusCapitisInferiorOblique" class="muscle" tendon="RLongusCapitisInferiorOblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongusCapitisVertical" class="muscle" tendon="RLongusCapitisVertical_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RIntertransversariCervicis" class="muscle" tendon="RIntertransversariCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongissimusCapitis" class="muscle" tendon="RLongissimusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongissimusThoracis" class="muscle" tendon="RLongissimusThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongissimusLumborum" class="muscle" tendon="RLongissimusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RMultifidusCervicis" class="muscle" tendon="RMultifidusCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RMultifidusLumborum" class="muscle" tendon="RMultifidusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RIliocostalisThoracis" class="muscle" tendon="RIliocostalisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RQuadratusLumborum" class="muscle" tendon="RQuadratusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+
+        <general group="5" name="LLatissimusDorsi" class="muscle" tendon="LLatissimusDorsi_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSerratusVentralisThoracis" class="muscle" tendon="LSerratusVentralisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSerratusVentralisCervicis" class="muscle" tendon="LSerratusVentralisCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LPectoralisMajor" class="muscle" tendon="LPectoralisMajor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LPectoralisMinor" class="muscle" tendon="LPectoralisMinor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LPectoralisMinimus" class="muscle" tendon="LPectoralisMinimus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LScalenusAnterior" class="muscle" tendon="LScalenusAnterior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LScalenusMedius" class="muscle" tendon="LScalenusMedius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LScalenusPosterior" class="muscle" tendon="LScalenusPosterior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LRectusCapitisPosteriorMajor" class="muscle" tendon="LRectusCapitisPosteriorMajor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LRectusCapitisPosteriorMinor" class="muscle" tendon="LRectusCapitisPosteriorMinor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LObliquusCapitisSuperior" class="muscle" tendon="LObliquusCapitisSuperior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LObliquusCapitisInferior" class="muscle" tendon="LObliquusCapitisInferior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSemispinalisCapitisMedial" class="muscle" tendon="LSemispinalisCapitisMedial_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSemispinalisCapitisLateral" class="muscle" tendon="LSemispinalisCapitisLateral_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LCleidomastoideus" class="muscle" tendon="LCleidomastoideus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LCleidocephalicus" class="muscle" tendon="LCleidocephalicus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSternomastoideus" class="muscle" tendon="LSternomastoideus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSpleniusCapitis" class="muscle" tendon="LSpleniusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LRhomboideusCapitis" class="muscle" tendon="LRhomboideusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LRhomboideusCervicis" class="muscle" tendon="LRhomboideusCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LRhomboideusThoracis" class="muscle" tendon="LRhomboideusThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LOmotransversarius" class="muscle" tendon="LOmotransversarius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSubclavius" class="muscle" tendon="LSubclavius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LTrapeziusCervical" class="muscle" tendon="LTrapeziusCervical_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LTrapeziusThoracic" class="muscle" tendon="LTrapeziusThoracic_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongusCapitis" class="muscle" tendon="LLongusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongusCapitisSuperiorOblique" class="muscle" tendon="LLongusCapitisSuperiorOblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongusCapitisInferiorOblique" class="muscle" tendon="LLongusCapitisInferiorOblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongusCapitisVertical" class="muscle" tendon="LLongusCapitisVertical_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LIntertransversariCervicis" class="muscle" tendon="LIntertransversariCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongissimusCapitis" class="muscle" tendon="LLongissimusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongissimusThoracis" class="muscle" tendon="LLongissimusThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongissimusLumborum" class="muscle" tendon="LLongissimusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LMultifidusCervicis" class="muscle" tendon="LMultifidusCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LMultifidusLumborum" class="muscle" tendon="LMultifidusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LIliocostalisThoracis" class="muscle" tendon="LIliocostalisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LQuadratusLumborum" class="muscle" tendon="LQuadratusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+
+
+
+
         <general group="0" name="RBicepsLongus" class="muscle" tendon="RBicepsLongus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="0" name="RBicepsBrevis" class="muscle" tendon="RBicepsBrevis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="0" name="RTri_Long" class="muscle" tendon="RTri_Long_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
@@ -4272,7 +4353,7 @@
         <general group="2" name="RPB" class="muscle" tendon="RPB_tendon" lengthrange="0.0123375 0.0124584" actdim="1" gainprm="0.874437 1.48249 0.383521 1 0 2 10 0.944345 1.4 0" biasprm="0.874437 1.48249 0.383521 1 0 2 10 0.944345 1.4 0" />
         <general group="2" name="RPDQA" class="muscle" tendon="RPDQA_tendon" lengthrange="0.0276852 0.0279705" actdim="1" gainprm="0.851773 1.18737 0.106563 1 0 2 10 1.37597 1.4 0" biasprm="0.851773 1.18737 0.106563 1 0 2 10 1.37597 1.4 0" />
         <general group="2" name="RPDQI" class="muscle" tendon="RPDQI_tendon" lengthrange="0.0227332 0.0237422" actdim="1" gainprm="0.807598 1.13525 0.0984342 1 0 2 10 1.53495 1.4 0" biasprm="0.807598 1.13525 0.0984342 1 0 2 10 1.53495 1.4 0" />
-    
+        <general group="2" name="RTensorFasciaeLatae" class="muscle" tendon="RTensorFasciaeLatae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
    
         
         <general group="3" name="LGM_dorsal" class="muscle" tendon="LGM_dorsal_tendon" lengthrange="0.013406 0.0158182" actdim="1" gainprm="0.773478 1.19713 0.745767 1 0 2 10 2.40951 1.4 0" biasprm="0.773478 1.19713 0.745767 1 0 2 10 2.40951 1.4 0" />
@@ -4317,7 +4398,7 @@
         <general group="3" name="LPB" class="muscle" tendon="LPB_tendon" lengthrange="0.0123375 0.0124584" actdim="1" gainprm="0.874437 1.48249 0.383521 1 0 2 10 0.944345 1.4 0" biasprm="0.874437 1.48249 0.383521 1 0 2 10 0.944345 1.4 0" />
         <general group="3" name="LPDQA" class="muscle" tendon="LPDQA_tendon" lengthrange="0.0276852 0.0279705" actdim="1" gainprm="0.851773 1.18737 0.106563 1 0 2 10 1.37597 1.4 0" biasprm="0.851773 1.18737 0.106563 1 0 2 10 1.37597 1.4 0" />
         <general group="3" name="LPDQI" class="muscle" tendon="LPDQI_tendon" lengthrange="0.0227332 0.0237422" actdim="1" gainprm="0.807598 1.13525 0.0984342 1 0 2 10 1.53495 1.4 0" biasprm="0.807598 1.13525 0.0984342 1 0 2 10 1.53495 1.4 0" />
-        <general group="3" name="LTensorFasciaeLatae" class="muscle" tendon="LTensorFasciaeLatae" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="3" name="LTensorFasciaeLatae" class="muscle" tendon="LTensorFasciaeLatae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         
         <!-- <motor name="neck_x" gear="4" joint="neck_x" group="4" />
         <motor name="neck_y" gear="4" joint="neck_y" group="4" />
