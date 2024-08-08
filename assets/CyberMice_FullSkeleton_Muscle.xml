@@ -88,9 +88,9 @@
         <default class="collision">
             <geom contype="1" conaffinity="1" condim="1" group="1"/>
             <default class="collision_primitive">
-                <geom type="capsule" group="1" rgba="0 0.5 0.5 1" density="500.0"/>
+                <geom type="capsule" group="1" rgba="0 0.5 0.5 0.5" density="500.0"/>
                 <default class="collision_primitive_paw">
-                    <geom condim="3" priority="1" rgba="0 0.6 0.7 1" friction="1.5 0.005 0.0001"/>
+                    <geom condim="3" priority="1" rgba="0 0.6 0.7 0.5" friction="1.5 0.005 0.0001"/>
                 </default>
                 <default class="nonself_collision_primitive">
                     <geom conaffinity="0" rgba="0 0.5 0.5 0.5"/>
@@ -234,7 +234,7 @@
             <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" /> -->
 
             <geom name="Chest" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="Chest" />
-            <!-- <geom name="Chest_collision" class="nonself_collision_primitive" type="ellipsoid" size="0.02 0.008 0.01" density="468.251260009" pos="0.002 0 -0.007" euler="0 0 0"/> -->
+            <geom name="Chest_collision" class="nonself_collision_primitive" type="ellipsoid" size="0.02 0.008 0.01" density="468.251260009" pos="0.002 0 -0.007" euler="0 0 0"/>
 
             <site name="T13_SpinousProcess" pos="0.0005 0 0.0025" size="0.0005" group="5"/>
             <site name="T12_SpinousProcess" pos="0.00275 0 0.00275" size="0.0005" group="5"/>
@@ -1208,6 +1208,7 @@
                                             <joint name="RHip_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.5235987755982988" group="3" />
 
                                             <geom name="RFemur" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFemur" />
+                                            <geom name="RFemur_collision" class="collision_primitive" size="0.0025 0.006" density="1561.75550556" pos="-0.001 -0.001 -0.007" euler="0.1 0 0"/>
 
                                             <geom name="RQuads_at_Femur_cylinder" size="0.001 0.0015" pos="-0.0009 -0.0002 -0.0137" euler="1.5707963267948966 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                             <geom name="RHip_Flexors_at_Quads_ellipsoid" size="0.001" pos="-0.0001 -0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -1397,6 +1398,7 @@
                                             <joint name="LHip_adduction" pos="0 0 0" axis="-1 0 0" range="-1.0471975511965976 0.5235987755982988" group="4" />
 
                                             <geom name="LFemur" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFemur" />
+                                            <geom name="LFemur_collision" class="collision_primitive" size="0.0025 0.006" density="1561.75550556" pos="-0.001 0.001 -0.007" euler="-0.1 0 0"/>
 
                                             <geom name="LQuads_at_Femur_cylinder" size="0.001 0.0015" pos="-0.0009 0.0002 -0.0137" euler="-1.5707963267948966 0.0 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                             <geom name="LHip_Flexors_at_Quads_ellipsoid" size="0.001" pos="-0.0001 0.0016 -0.0027" group="2" rgba="0.19 0.83 0.78 0.2" />
