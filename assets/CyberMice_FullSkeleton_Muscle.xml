@@ -4414,16 +4414,27 @@
     </equality>
 
     <contact>
+        <exclude body1="CyberMice" body2="RHumerus" />    
         <exclude body1="RScapula" body2="RClavicle" />
         <exclude body1="RHumerus" body2="RClavicle" />
         <exclude body1="RHumerus" body2="RRadius" />
         <exclude body1="RUlna" body2="RCarpi" />
         <exclude body1="RCarpi" body2="RFinger" />
+        <exclude body1="CyberMice" body2="LHumerus" />
         <exclude body1="LScapula" body2="LClavicle" />
         <exclude body1="LHumerus" body2="LClavicle" />
         <exclude body1="LHumerus" body2="LRadius" />
         <exclude body1="LUlna" body2="LCarpi" />
         <exclude body1="LCarpi" body2="LFinger" />
+        <exclude body1="CyberMice" body2="C1" />
+        <exclude body1="CyberMice" body2="C2" />
+        <exclude body1="CyberMice" body2="C3" />
+        <exclude body1="CyberMice" body2="C4" />
+        <exclude body1="CyberMice" body2="C5" />
+        <exclude body1="CyberMice" body2="C6" />
+        <exclude body1="CyberMice" body2="Head" />
+        <exclude body1="C2" body2="Head" />
+        <exclude body1="L5" body2="Pelvis" />
     </contact>
 
     <sensor>
