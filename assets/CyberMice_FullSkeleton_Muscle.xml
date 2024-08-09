@@ -596,6 +596,8 @@
             
             <body name="RScapula" pos="0.0135 0.0 -0.009" euler="0 0.0 0" gravcomp="0">
                 <geom name="RScapula" pos="0.005 -0.0085 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="RScapula" density="1908" />
+                <geom name="Rscapula_collision" class="nonself_collision_primitive" type="ellipsoid" size="0.001 0.0035 0.0065" density="513.564646393" pos="0.005 -0.005 0.005" quat="0.3867556972129688 0.4740321312040688 0.7692223496423682 0.1844194839763772"/>
+                
                 <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
                 <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
                 <joint name="RScapula_r3" pos="0.005 -0.006 0.0055" axis="1 -0.1 -0.5" range="-0.08726646259971647 0.08726646259971647" group="0" />
@@ -634,6 +636,8 @@
                     <joint name="RShoulder_adduction" pos="0 0 0" axis="1 0 0" range="-1.0471975511965976 0.7853981633974483" group="0" />
                     <joint name="RShoulder_rotation" pos="0 0 0" axis="0 0 1" range="-0.17453292519943295 1.5707963267948966" group="0" />
                     <geom name="RHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RHumerus" density="1908" />
+                    <geom name="RHumerus_collision" class="collision_primitive" size="0.002 0.0045" pos="0.0005 -0.0005 -0.0045" euler="0 0 0"/>   
+                    
                     <geom name="RHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" quat="0.559627 0.471367 -0.439124 0.521346" group="2" rgba="0.19 0.83 0.78 0.1" />
                     <geom name="RHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 -0.0009 -0.00975" quat="0.671212 0.565354 -0.308854 0.366685" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" />
                     <site name="RHumerus_Distal_sidesite" pos="2.65606317e-03 -6.74797612e-04 -9.57142412e-03" size="0.0005" />
@@ -684,6 +688,8 @@
                     <body name="RUlna" pos="0.001 -0.001 -0.01" euler="0 0 0" gravcomp="0">
                         <joint name="RElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 2.5" group="0" />
                         <geom name="RUlna" pos="0.003 0.0015 0.0015" euler="-0.08726646259971647 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RUlna" density="1908" />
+                        <geom name="RUlna_collision" class="collision_primitive" size="0.001 0.006" pos="-0.0008 0 -0.0045" euler="0.1 0 0"/>
+                        
                         <geom name="RForearm_Proximal_cylinder" size="0.0007 0.0005" pos="-0.0011 0.00025 0.0018" euler="-1.5707963267948966 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
                         <site name="RForearm_Proximal_sidesite" pos="-1.21121904e-03  2.56772155e-04  3.57839572e-03" size="0.0005" />
                         <site name="RBrachialis_insertion" pos="-7.08316028e-04  1.04213950e-04 -6.17341662e-04" size="0.0005" />
@@ -707,6 +713,8 @@
                         <body name="RRadius" pos="0 0 -0.0075" gravcomp="0">
                             <joint name="RRadius_rotation" pos="0.0007 -0.0003 0" axis="-0.1 -0.075 1" range="-1.5707963267948966 1.5707963267948966" group="0" />
                             <geom name="RRadius" pos="0.003 0.0015 0.009" euler="-0.08726646259971647 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RRadius" density="1908" />
+                            <geom name="RRadius_collision" class="collision_primitive" size="0.001 0.005" pos="0.0005 0 0.002" euler="0.1 0 0"/>
+                            
                             <geom name="RPronator_cylinder" size="0.0005 0.0035" pos="0.0001 -0.00025 0.0025" euler="0.08726646259971647 2.9670597283903604 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                             <site name="RBicepsLongus_insertion" pos="-1.46450578e-04 -1.59235303e-06  6.53072842e-03" size="0.0005" />
                             <site name="RBicepsBrevis_insertion" pos="-1.59941705e-04 -9.25345857e-06  6.53366064e-03" size="0.0005" />
@@ -736,6 +744,12 @@
                                 <joint name="RWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-0.7853981633974483 0.7853981633974483" group="0" />
                                 <joint name="RWrist_flexion" pos="0 0 0" axis="1 0 0" range="-1.5707963267948966 1.5707963267948966" group="0" />
                                 <geom name="RCarpi" pos="0.003 -0.000 0.0124" euler="0.0 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RCarpi" density="1908" />
+                                <geom name="RFinger" pos="0.003 -0.000 0.0124" euler="0.0 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RFinger" density="1908" />
+                                <geom name="RHand_collision" class="collision_primitive_paw" type="ellipsoid" size="0.0016 0.001 0.002" density="2531.78122831" pos="0 0.001 -0.002" euler="0.25 0 0.1"/>   
+                                <geom name="RFinger_0_collision" class="collision_primitive_paw" size="0.0004 0.0008" pos="0.001 0.002 -0.0045" euler="0.25 0 0.1"/>
+                                <geom name="RFinger_1_collision" class="collision_primitive_paw" size="0.0004 0.0009" pos="0 0.002 -0.005" euler="0.25 0 0.1"/>
+                                <geom name="RFinger_2_collision" class="collision_primitive_paw" size="0.0004 0.0008" pos="-0.001 0.002 -0.0045" euler="0.25 0 0.1"/>
+                                
                                 <geom name="RWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" />
                                 <geom name="RWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
                                 <geom name="RWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar" size="0.000449646" pos="0.00021952  0.0004214  -0.00052225" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -779,16 +793,15 @@
                                 <site name="RExtensorCarpiUlnar_insertion" pos="-2.50265788e-04 -8.06297169e-05 -9.75047190e-04" size="0.0005" />
                                 <site name="RWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite" pos="5.23935970e-04  4.37852764e-04 -1.25804952e-04" size="0.0005" />
                                 <site name="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  8.80950408e-04 -4.62098941e-04" size="0.0005" />
-                                <body name="RFinger" pos="0 0 0" gravcomp="0">
-                                    <geom name="RFinger" pos="0.003 -0.000 0.0124" euler="0.0 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RFinger" density="1908" />
-                                    <site name="RFlexorDigitumProfundusHumerus_insertion" pos="-7.14972542e-05  2.16902108e-03 -3.71123283e-03" size="0.0005" />
-                                    <site name="RFlexorDigitumProfundusUlnar_insertion" pos="-4.55924778e-04  7.33065129e-04 -1.36120631e-03" size="0.0005" />
-                                    <site name="RFlexorDigitumProfundusRadial_insertion" pos="-2.70886598e-04  7.29933150e-04 -1.89909906e-03" size="0.0005" />
-                                    <site name="RFlexorDigitumsSuperficial_insertion" pos="-1.62237632e-04  2.01211627e-03 -3.69729994e-03" size="0.0005" />
-                                    <site name="RExtensorDigitorumCommunis_insertion" pos="2.33310562e-04  9.11031909e-04 -3.11384361e-03" size="0.0005" />
-                                    <site name="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3" pos="2.10026767e-05  1.36370597e-03 -3.88020761e-03" size="0.0005" />
-                                    <site name="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  1.06143762e-03 -1.06153355e-03" size="0.0005" />
-                                </body>
+                                               
+                                <site name="RFlexorDigitumProfundusHumerus_insertion" pos="-7.14972542e-05  2.16902108e-03 -3.71123283e-03" size="0.0005" />
+                                <site name="RFlexorDigitumProfundusUlnar_insertion" pos="-4.55924778e-04  7.33065129e-04 -1.36120631e-03" size="0.0005" />
+                                <site name="RFlexorDigitumProfundusRadial_insertion" pos="-2.70886598e-04  7.29933150e-04 -1.89909906e-03" size="0.0005" />
+                                <site name="RFlexorDigitumsSuperficial_insertion" pos="-1.62237632e-04  2.01211627e-03 -3.69729994e-03" size="0.0005" />
+                                <site name="RExtensorDigitorumCommunis_insertion" pos="2.33310562e-04  9.11031909e-04 -3.11384361e-03" size="0.0005" />
+                                <site name="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3" pos="2.10026767e-05  1.36370597e-03 -3.88020761e-03" size="0.0005" />
+                                <site name="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  1.06143762e-03 -1.06153355e-03" size="0.0005" />
+                            
                             </body>
                         </body>
                     </body>
@@ -808,6 +821,8 @@
 
             <body name="LScapula" pos="0.0135 0.0 -0.009" gravcomp="0">
                 <geom name="LScapula" pos="0.005 0.0085 -0.002" euler="0.3490658503988659 1.5707963267948966 0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="LScapula" density="1908" />
+                <geom name="LScapula_collision" class="nonself_collision_primitive" type="ellipsoid" size="0.001 0.0035 0.0065" density="513.564646393" pos="0.005 0.005 0.005" quat="0.1844194062696375 0.7692222855376651 0.4740322845517004 0.3867556738123709"/>
+                
                 <joint name="LScapula_r1" pos="0.005 0 0" axis="-1 0 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
                 <joint name="LScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
                 <joint name="LScapula_r3" pos="0.005 0.006 0.0055" axis="-1 -0.1 0.5" range="-0.08726646259971647 0.08726646259971647" group="1" />
@@ -847,6 +862,8 @@
                     <joint name="LShoulder_adduction" pos="0 0 0" axis="-1 0 0" range="-1.0471975511965976 0.7853981633974483" group="1" />
                     <joint name="LShoulder_rotation" pos="0 0 0" axis="0 0 -1" range="-0.17453292519943295 1.5707963267948966" group="1" />
                     <geom name="LHumerus" pos="-0.0005 0.000 -0.0065" euler="0.08726646259971647 0.7853981633974483 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LHumerus" density="1908" />
+                    <geom name="LHumerus_collision" class="collision_primitive" size="0.002 0.0045" pos="0.0005 0.0005 -0.0045" euler="0 0 0"/>
+                    
                     <geom name="LHumerus_Proximal_sphere" size="0.00115" pos="0.0001 -0.000 0.0003" euler="-1.3962634015954636 0.0 1.5009831567151235" group="2" rgba="0.19 0.83 0.78 0.5" density="0" />
                     <geom name="LHumerus_Distal_cylinder" size="0.0007 0.00125" pos="0.00085 0.0009 -0.00975" euler="-1.3962634015954636 0.0 0.9948376736367679" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.5" density="0" />
                     <site name="LHumerus_Distal_sidesite" pos="2.65606317e-03 6.74797612e-04 -9.57142412e-03" size="0.0005" />
@@ -897,6 +914,8 @@
                     <body name="LUlna" pos="0.001 0.001 -0.01" euler="0 0 0" gravcomp="0">
                         <joint name="LElbow_flexion" pos="0 0 0" axis="0 -1 0" range="0.0 2.5" group="1" />
                         <geom name="LUlna" pos="0.003 -0.0015 0.0015" euler="0.08726646259971647 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LUlna" density="1908" />
+                        <geom name="LUlna_collision" class="collision_primitive" size="0.001 0.006" pos="-0.0008 0 -0.0045" euler="-0.1 0 0"/>
+                        
                         <geom name="LForearm_Proximal_cylinder" size="0.0007 0.0005" pos="-0.0011 -0.00025 0.0018" euler="-1.5707963267948966 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" density="0" group="2" />
                         <site name="LForearm_Proximal_sidesite" pos="-1.21121904e-03  -2.56772155e-04  3.57839572e-03" size="0.0005" />
                         <site name="LBrachialis_insertion" pos="-7.08316028e-04  -1.04213950e-04 -6.17341662e-04" size="0.0005" />
@@ -920,6 +939,8 @@
                         <body name="LRadius" pos="0 0 -0.0075" gravcomp="0">
                             <joint name="LRadius_rotation" pos="0.0007 0.0003 0" axis="0.1 -0.075 -1" range="-1.5707963267948966 1.5707963267948966" group="1" />
                             <geom name="LRadius" pos="0.003 -0.0015 0.009" euler="0.08726646259971647 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LRadius" density="1908" />
+                            <geom name="LRadius_collision" class="collision_primitive" size="0.001 0.005" pos="0.0005 0 0.002" euler="-0.1 0 0"/>
+                            
                             <geom name="LPronator_cylinder" size="0.0005 0.0035" pos="0.0001 0.00025 0.0025" euler="-0.08726646259971647 2.9670597283903604 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" density="0" />
                             <site name="LBicepsLongus_insertion" pos="-1.46450578e-04 1.59235303e-06  6.53072842e-03" size="0.0005" />
                             <site name="LBicepsBrevis_insertion" pos="-1.59941705e-04 9.25345857e-06  6.53366064e-03" size="0.0005" />
@@ -949,6 +970,12 @@
                                 <joint name="LWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-0.7853981633974483 0.7853981633974483" group="1" />
                                 <joint name="LWrist_flexion" pos="0 0 0" axis="-1 0 0" range="-1.5707963267948966 1.5707963267948966" group="1" />
                                 <geom name="LCarpi" pos="0.003 0.00 0.0124" euler="0.0 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LCarpi" density="1908" />
+                                <geom name="LFinger" pos="0.003 0.00 0.0124" euler="0.0 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LFinger" />
+                                <geom name="LHand_collision" class="collision_primitive_paw" type="ellipsoid" size="0.0016 0.001 0.002" density="2531.78122831" pos="0 -0.001 -0.002" euler="-0.25 0 0.1"/>   
+                                <geom name="LFinger_0_collision" class="collision_primitive_paw" size="0.0004 0.0008" pos="0.001 -0.002 -0.0045" euler="-0.25 0 0.1"/>
+                                <geom name="LFinger_1_collision" class="collision_primitive_paw" size="0.0004 0.0009" pos="0 -0.002 -0.005" euler="-0.25 0 0.1"/>
+                                <geom name="LFinger_2_collision" class="collision_primitive_paw" size="0.0004 0.0008" pos="-0.001 -0.002 -0.0045" euler="-0.25 0 0.1"/>
+                                
                                 <geom name="LWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" />
                                 <geom name="LWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
                                 <geom name="LWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar" size="0.000449646" pos="0.00021952  -0.0004214  -0.00052225" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -992,16 +1019,15 @@
                                 <site name="LExtensorCarpiUlnar_insertion" pos="-2.50265788e-04 8.06297169e-05 -9.75047190e-04" size="0.0005" />
                                 <site name="LWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite" pos="5.23935970e-04  -4.37852764e-04 -1.25804952e-04" size="0.0005" />
                                 <site name="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  -8.80950408e-04 -4.62098941e-04" size="0.0005" />
-                                <body name="LFinger" pos="0 0 0" gravcomp="0">
-                                    <geom name="LFinger" pos="0.003 0.00 0.0124" euler="0.0 2.443460952792061 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LFinger" />
-                                    <site name="LFlexorDigitumProfundusHumerus_insertion" pos="-7.14972542e-05  -2.16902108e-03 -3.71123283e-03" size="0.0005" />
-                                    <site name="LFlexorDigitumProfundusUlnar_insertion" pos="-4.55924778e-04  -7.33065129e-04 -1.36120631e-03" size="0.0005" />
-                                    <site name="LFlexorDigitumProfundusRadial_insertion" pos="-2.70886598e-04  -7.29933150e-04 -1.89909906e-03" size="0.0005" />
-                                    <site name="LFlexorDigitumsSuperficial_insertion" pos="-1.62237632e-04  -2.01211627e-03 -3.69729994e-03" size="0.0005" />
-                                    <site name="LExtensorDigitorumCommunis_insertion" pos="2.33310562e-04  -9.11031909e-04 -3.11384361e-03" size="0.0005" />
-                                    <site name="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3" pos="2.10026767e-05  -1.36370597e-03 -3.88020761e-03" size="0.0005" />
-                                    <site name="LAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  -1.06143762e-03 -1.06153355e-03" size="0.0005" />
-                                </body>
+                            
+                                <site name="LFlexorDigitumProfundusHumerus_insertion" pos="-7.14972542e-05  -2.16902108e-03 -3.71123283e-03" size="0.0005" />
+                                <site name="LFlexorDigitumProfundusUlnar_insertion" pos="-4.55924778e-04  -7.33065129e-04 -1.36120631e-03" size="0.0005" />
+                                <site name="LFlexorDigitumProfundusRadial_insertion" pos="-2.70886598e-04  -7.29933150e-04 -1.89909906e-03" size="0.0005" />
+                                <site name="LFlexorDigitumsSuperficial_insertion" pos="-1.62237632e-04  -2.01211627e-03 -3.69729994e-03" size="0.0005" />
+                                <site name="LExtensorDigitorumCommunis_insertion" pos="2.33310562e-04  -9.11031909e-04 -3.11384361e-03" size="0.0005" />
+                                <site name="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3" pos="2.10026767e-05  -1.36370597e-03 -3.88020761e-03" size="0.0005" />
+                                <site name="LAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  -1.06143762e-03 -1.06153355e-03" size="0.0005" />
+
                             </body>
                         </body>
                     </body>
@@ -1277,7 +1303,8 @@
 
                                                 <geom name="R_Leg_geom_1" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTibfib" />
                                                 <geom name="R_Leg_geom_2" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPatella" />
-                                                
+                                                <geom name="R_leg_collision" class="collision_primitive" size="0.002 0.007" density="1302.86687267" pos="-0.0002 0.0002 -0.01" euler="0.05 0 0"/>
+
                                                 <geom name="RPlantarflexors_at_Tibia_cylinder" size="0.001 0.0015" pos="-0.0011 0 -0.0029" euler="4.656346458103152 0.05183627878423159 -0.011344640137963142" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                                 <geom name="RHip_Ext_at_Gastroc_ellipsoid" size="0.002" pos="-0.0007 -0.0002 -0.0064" euler="1.7003870237554755 -0.023387411976724018 3.070994085346623" group="2" rgba="0.19 0.83 0.78 0.2" />
                                                 <geom name="RAnkle_Everters_at_Lat_Malleolus_cylinder" size="0.0008 0.00075" pos="-0.0008 0 -0.0177" euler="4.566985600401042 0.08307767239493008 0.07051130178057091" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -1339,6 +1366,11 @@
                                                     <joint name="RAnkle_rotation" pos="0 0 0" axis="1 0 0" range="-0.3490658503988659 0.3490658503988659" group="3" />
                                                     
                                                     <geom name="RFoot" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFoot" />
+                                                    <geom name="RFoot_collision" class="collision_primitive_paw" size="0.0015 0.003" density="2041.15978228" pos="0.002 0 0" euler="0 1.57 0"/>
+                                                    <geom name="RToe_0_collision" class="collision_primitive_paw" size="0.001 0.003" density="2041.15978228" pos="0.01 0.0015 -0.0005" euler="0 1.57 0"/>
+                                                    <geom name="RToe_1_collision" class="collision_primitive_paw" size="0.001 0.003" density="2041.15978228" pos="0.01 0 -0.0005" euler="0 1.57 0"/>
+                                                    <geom name="RToe_2_collision" class="collision_primitive_paw" size="0.001 0.003" density="2041.15978228" pos="0.01 -0.0015 -0.0005" euler="0 1.57 0"/>
+
                                                     <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                                     
                                                     <site name="RPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03  7.89500000e-04" size="0.0005" />
@@ -1467,6 +1499,7 @@
 
                                                 <geom name="LLeg_geom_1" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LTibfib" />
                                                 <geom name="LLeg_geom_2" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPatella" />
+                                                <geom name="L_leg_collision" class="collision_primitive" size="0.002 0.007" density="1302.86687267" pos="-0.0002 -0.0002 -0.01" euler="-0.05 0 0"/>
                                                 
                                                 <geom name="LPlantarflexors_at_Tibia_cylinder" size="0.001 0.0015" pos="-0.0011 0 -0.0029" euler="-4.656346458103152 0.05183627878423159 -0.011344640137963142" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                                 <geom name="LHip_Ext_at_Gastroc_ellipsoid" size="0.002" pos="-0.0007 0.0002 -0.0064" euler="-1.7003870237554755 -0.023387411976724018 3.070994085346623" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -1529,6 +1562,11 @@
                                                     <joint name="LAnkle_rotation" pos="0 0 0" axis="-1 0 0" range="-0.3490658503988659 0.3490658503988659" group="4" />
                                                     
                                                     <geom name="LFoot" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFoot" />
+                                                    <geom name="LFoot_collision" class="collision_primitive_paw" size="0.0015 0.003" density="2041.15978228" pos="0.002 0 0" euler="0 1.57 0"/>
+                                                    <geom name="LToe_0_collision" class="collision_primitive_paw" size="0.001 0.003" density="2041.15978228" pos="0.01 -0.0015 -0.0005" euler="0 1.57 0"/>
+                                                    <geom name="LToe_1_collision" class="collision_primitive_paw" size="0.001 0.003" density="2041.15978228" pos="0.01 0 -0.0005" euler="0 1.57 0"/>
+                                                    <geom name="LToe_2_collision" class="collision_primitive_paw" size="0.001 0.003" density="2041.15978228" pos="0.01 0.0015 -0.0005" euler="0 1.57 0"/>
+                                                    
                                                     <geom name="LPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 0.0009 -0.0003" euler="-3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                                     
                                                     <site name="LPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03  7.89500000e-04" size="0.0005" />
@@ -4448,13 +4486,11 @@
         <exclude body1="RHumerus" body2="RClavicle" />
         <exclude body1="RHumerus" body2="RRadius" />
         <exclude body1="RUlna" body2="RCarpi" />
-        <exclude body1="RCarpi" body2="RFinger" />
         <exclude body1="CyberMice" body2="LHumerus" />
         <exclude body1="LScapula" body2="LClavicle" />
         <exclude body1="LHumerus" body2="LClavicle" />
         <exclude body1="LHumerus" body2="LRadius" />
         <exclude body1="LUlna" body2="LCarpi" />
-        <exclude body1="LCarpi" body2="LFinger" />
         <exclude body1="CyberMice" body2="C1" />
         <exclude body1="CyberMice" body2="C2" />
         <exclude body1="CyberMice" body2="C3" />
