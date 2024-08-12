@@ -15,7 +15,7 @@
     </visual>
     
     <default class="main">
-        <joint limited="true" stiffness=".0" armature="1e-05" damping=".00001" />
+        <joint limited="true" stiffness=".0" armature="1e-05" damping="1e-05" />
         <site rgba="0 0 0.8 1" size="0.0001 0.0001 0.0001" />
         <tendon limited="false" width="0.0001" rgba="0.95 0.3 0.3 1" />
         <default class="forelimbs">
@@ -34,35 +34,35 @@
         <default class="Lumbar">
             <joint group="3" pos="0.003 0 -0.003" armature="1e-05" damping="0.03"/>
             <general gainprm="0.15"/>
-            <default class="Lumbar_z">
-                <joint stiffness="0.02" range="-0.5235987755982988 0.7853981633974483"/>
+            <default class="Lumbar_x">
+                <joint stiffness="0.03" range="-0.25 0.25"/>
                 <tendon range="-1 1"/>
-                <general gainprm="0.4"/>
             </default>
             <default class="Lumbar_y">
-                <joint stiffness="0.03" range="-0.5235987755982988 0.5235987755982988"/>
+                <joint stiffness="0.03" range="-0.25 0.25"/>
                 <tendon range="-1 1"/>
             </default>
-            <default class="Lumbar_x">
-                <joint stiffness="0.03" range="-0.5235987755982988 0.5235987755982988"/>
+            <default class="Lumbar_z">
+                <joint stiffness="0.02" range="-0.25 0.25"/>
                 <tendon range="-1 1"/>
+                <general gainprm="0.4"/>
             </default>
         </default>
 
         <default class="Cervical">
-            <joint group="3" pos="-0.02 0 -0.05" stiffness="1.0" armature="0.001" damping="3.0"/>
-            <default class="Cervical_z">
-                <joint range="-0.4072434921320102 0.6108652381980153"/>
+            <joint group="3" pos="-0.02 0 -0.05" stiffness="2.0" armature="0.001" damping="1.0"/>
+            <default class="Cervical_x">
+                <joint range="-0.18 0.18"/>
                 <tendon range="-1 1"/>
                 <general gainprm="2.5"/>
             </default>
             <default class="Cervical_y">
-                <joint range="-0.6108652381980153 0.6108652381980153"/>
+                <joint range="-0.18 0.18"/>
                 <tendon range="-1 1"/>
                 <general gainprm="2.5"/>
             </default>
-            <default class="Cervical_x">
-                <joint range="-0.6108652381980153 0.6108652381980153"/>
+            <default class="Cervical_z">
+                <joint range="-0.18 0.18"/>
                 <tendon range="-1 1"/>
                 <general gainprm="2.5"/>
             </default>
@@ -221,17 +221,19 @@
 
     
     <worldbody>
-        <body name="CyberMice" pos="0 0 0">
+        <geom name="floor" type="plane" conaffinity="1" size="50 50 0.2" material="grid" pos="0 0 0" zaxis="0 0 1"/>
+
+        <body name="CyberMice" pos="0 0 0.05">
             <camera name="side" mode="trackcom" pos="0 -3.5 1" euler="-5 0 0" />
             <camera name="back" mode="trackcom" pos="-3.5 0 1.3" xyaxes="0 -1 0 1 0 3" />
             <light name="top" mode="trackcom" exponent="10" cutoff="45" ambient="0 0 0" pos="0 0 5" directional="false" />
 
-            <!-- <joint name="root_x" type="slide" pos="0 0 0" axis="1 0 0" limited="false" stiffness="0" group="0" />
+            <joint name="root_x" type="slide" pos="0 0 0" axis="1 0 0" limited="false" stiffness="0" group="0" />
             <joint name="root_y" type="slide" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
             <joint name="root_z" type="slide" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" />
             <joint name="root_rot_x" pos="0 0 0" axis="1 0 0" limited="false" stiffness="0" group="0" />
             <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
-            <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" /> -->
+            <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" />
 
             <geom name="Chest" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="Chest" />
             <geom name="Chest_collision" class="nonself_collision_primitive" type="ellipsoid" size="0.02 0.008 0.01" density="468.251260009" pos="0.002 0 -0.007" euler="0 0 0"/>
@@ -430,6 +432,7 @@
 
             <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/> -->
             
+
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
                 <geom name="C7_collision" class="nonself_collision_primitive" type="sphere" pos="0.001 0 0" size="0.003" density="300.0"/>
@@ -464,7 +467,7 @@
 
 
                     <body name="C5" pos="0.001 0 0.0004" gravcomp="0">
-                        <geom name="C5" pos="0.00 0.00055 0.0002" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C5" />
+                        <!-- <geom name="C5" pos="0.00 0.00055 0.0002" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C5" /> -->
                         <geom name="C5_collision" class="nonself_collision_primitive" type="sphere" pos="0.001 0 0" size="0.003" density="300.0"/>
 
                         <joint name="C6_C5_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588"/>
@@ -1065,6 +1068,7 @@
             <body name="L1" pos="0.0 0.00 0.00" gravcomp="0">
                 <geom name="L1" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="L1" />
                 <geom name="L1_collision" class="nonself_collision_primitive" type="sphere" size="0.0025" pos="-0.002 0 0"/>
+                <geom name="L1_Psoas_cylinder" size="0.002 0.004" pos="-0.002 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
 
                 <joint name="T_L1_x" class="Lumbar_x" pos="0 0 0.001" axis="0.9848 0 0.1736"/>
                 <joint name="T_L1_y" class="Lumbar_y" pos="0 0 0.001" axis="0 1 0"/>
@@ -1072,63 +1076,74 @@
                 <site name="L1_SpinousProcess" pos="-0.0025 0 0.002" size="0.0005" group="5"/>
                 <site name="L1_RTransverseProcess" pos="-0.001 -0.00175 0.0005" size="0.0005" group="5"/>
                 <site name="L1_LTransverseProcess" pos="-0.001 0.00175 0.0005" size="0.0005" group="5"/>
-
+                <site name="L1_PsoasSideSite" pos="-0.0025 0 -0.005" size="0.0005" group="5"/>
+                
                 <body name="L2" pos="-0.004 0 -0.00015" gravcomp="0">
                     <geom name="L2" pos="0.024 0 -0.00735" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="L2" />
                     <geom name="L2_collision" class="nonself_collision_primitive" type="sphere" size="0.0025" pos="-0.001 0 -0.00075"/>
-                    
+                    <geom name="L2_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+
                     <joint name="L1_L2_x" class="Lumbar_x" pos="0 0 0" axis="0.9848 0 0.1736"/>
                     <joint name="L1_L2_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                     <joint name="L1_L2_z" class="Lumbar_z" pos="0 0 0" axis="-0.1736 0 0.9848"/>
                     <site name="L2_SpinousProcess" pos="-0.001 0 0.001" size="0.0005" group="5"/>
                     <site name="L2_RTransverseProcess" pos="-0.00 -0.00175 -0.00075" size="0.0005" group="5"/>
                     <site name="L2_LTransverseProcess" pos="-0.00 0.00175 -0.00075" size="0.0005" group="5"/>
-
+                    <site name="L2_PsoasSideSite" pos="-0.001 0 -0.005" size="0.0005" group="5"/>
+                    
                     <body name="L3" pos="-0.00225 0 -0.00075" euler="0 0 0" gravcomp="0">
                         <geom name="L3" pos="0.02625 0 -0.0066" euler="0.2 0.0 0.09" type="mesh" rgba="1 1 1 1" mesh="L3" />
                         <geom name="L3_collision" class="nonself_collision_primitive" type="sphere" size="0.0025" pos="-0.001 0 -0.0005"/>
-                        
+                        <geom name="L3_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+
                         <joint name="L2_L3_x" class="Lumbar_x" pos="0 0 0" axis="0.9848 0 0.1736"/>
                         <joint name="L2_L3_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                         <joint name="L2_L3_z" class="Lumbar_z" pos="0 0 0" axis="-0.1736 0 0.9848"/>
                         <site name="L3_SpinousProcess" pos="-0.0015 0 0.0015" size="0.0005" group="5"/>
                         <site name="L3_RTransverseProcess" pos="-0.00 -0.00175 -0.00075" size="0.0005" group="5"/>
                         <site name="L3_LTransverseProcess" pos="-0.00 0.00175 -0.00075" size="0.0005" group="5"/>
-
+                        <site name="L3_PsoasSideSite" pos="-0.0015 0 -0.005" size="0.0005" group="5"/>
+                        
                         <body name="L4" pos="-0.00275 0 -0.0006" euler="0 0 0" gravcomp="0">
                             <geom name="L4" pos="0.029 -0.001 -0.006" euler="0.2 0.0 0.05" type="mesh" rgba="1 1 1 1" mesh="L4" />
                             <geom name="L4_collision" class="nonself_collision_primitive" type="sphere" size="0.0025" pos="-0.001 0 -0.00025"/>
-                            
+                            <geom name="L4_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+
                             <joint name="L3_L4_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0"/>
                             <joint name="L3_L4_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                             <joint name="L3_L4_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1"/>
                             <site name="L4_SpinousProcess" pos="-0.0015 0 0.002" size="0.0005" group="5"/>
                             <site name="L4_RTransverseProcess" pos="-0.00 -0.0018 -0.00075" size="0.0005" group="5"/>
                             <site name="L4_LTransverseProcess" pos="-0.00 0.0018 -0.00075" size="0.0005" group="5"/>
-
+                            <site name="L4_PsoasSideSite" pos="-0.0015 0 -0.005" size="0.0005" group="5"/>
+                            
                             <body name="L5" pos="-0.0035 0 -0.000" gravcomp="0">
                                 <geom name="L5" pos="0.0325 -0.0025 -0.006" euler="0.2 0.0 0" type="mesh" rgba="1 1 1 1" mesh="L5" />
                                 <geom name="L5_collision" class="nonself_collision_primitive" type="sphere" size="0.0025" pos="-0.001 0 0"/>
-                                
+                                <geom name="L5_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+
                                 <joint name="L4_L5_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0"/>
                                 <joint name="L4_L5_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                                 <joint name="L4_L5_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1"/>
                                 <site name="L5_SpinousProcess" pos="-0.001 0 0.0025" size="0.0005" group="5"/>
                                 <site name="L5_RTransverseProcess" pos="0.001 -0.0019 -0.00085" size="0.0005" group="5"/>
                                 <site name="L5_LTransverseProcess" pos="0.001 0.0019 -0.00085" size="0.0005" group="5"/>
-
+                                <site name="L5_PsoasSideSite" pos="-0.001 0 -0.005" size="0.0005" group="5"/>
+                                
                                 <body name="L6" pos="-0.003 0 -0.000" gravcomp="0">
                                     <geom name="L6" pos="0.0355 -0.00225 -0.006" euler="0.2 0.0 0" type="mesh" rgba="1 1 1 1" mesh="L6" />
                                     <geom name="L6_collision" class="nonself_collision_primitive" type="sphere" size="0.0025" pos="-0.001 0 0.00025"/>
-                                    
+                                    <geom name="L6_Psoas_cylinder" size="0.002 0.004" pos="-0.0015 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
+
                                     <joint name="L5_L6_x" class="Lumbar_x" pos="0 0 0" axis="1 0 0"/>
                                     <joint name="L5_L6_y" class="Lumbar_y" pos="0 0 0" axis="0 1 0"/>
                                     <joint name="L5_L6_z" class="Lumbar_z" pos="0 0 0" axis="0 0 1"/>
                                     <site name="L6_SpinousProcess" pos="-0.0005 0 0.00275" size="0.0005" group="5"/>
                                     <site name="L6_RTransverseProcess" pos="0.001 -0.0019 -0.00085" size="0.0005" group="5"/>
                                     <site name="L6_LTransverseProcess" pos="0.001 0.0019 -0.00085" size="0.0005" group="5"/>
+                                    <site name="L6_PsoasSideSite" pos="-0.0005 0 -0.005" size="0.0005" group="5"/>
 
-                                    <body name="Pelvis" pos="0.0025 0.00 -0.00175" gravcomp="0">
+                                    <body name="Pelvis" pos="0.0025 0.00 -0.00175" euler="0 0 0" gravcomp="0">
                                         <geom name="Sacral" pos="0.0325 -0.007 0.0025" euler="0.18 -0.2 -0.1" type="mesh" rgba="1 1 1 1" mesh="Sacral" />
                                         <geom name="RPelvis" pos="-0.013 -0.00325 0.002" euler="1.5707963267948966 -0.15 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RPelvis" />
                                         <geom name="LPelvis" pos="-0.013 0.00325 0.002" euler="1.5707963267948966 0.15 0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="LPelvis" />
@@ -1200,7 +1215,7 @@
                                         <site name="RBFP_mid_BFP_mid-P1" pos="-1.74516417e-02 -3.86607058e-03  1.83094496e-03" size="0.0005" />
                                         <site name="RBFP_caudal_BFP_caudal-P1" pos="-1.79036749e-02 -3.79640821e-03  1.54006153e-03" size="0.0005" />
                                         <site name="RRF_RF-P1" pos="-1.08334314e-02 -3.27061975e-03  1.52989635e-03" size="0.0005" />
-                                        <site name="RTensorFasciaeLatae_3" pos="-0.009 -0.005 0.005" size="0.0005" group="1"/>
+                                        <site name="RTensorFasciaeLatae_3" pos="-0.009 -0.005 0.005" size="0.0005"/>
 
                                         <geom name="LGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 0.0015 -0.001" euler="-1.6580627893946132 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
                                         <geom name="LST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2" />
@@ -3761,24 +3776,33 @@
         </spatial>
         <spatial name="RPMA_tendon" group="2">
             <site site="L6_RTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
             <site site="RPMA_PMA-P2" />
                 <pulley divisor="3"/>
                 <site site="RPMA_PMA-P2" />
+                <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
                 <site site="L5_RTransverseProcess" />
                 <pulley divisor="3"/>
                 <site site="RPMA_PMA-P2" />
+                <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
                 <site site="L4_RTransverseProcess" />
                 <pulley divisor="3"/>
                 <site site="RPMA_PMA-P2" />
+                <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
                 <site site="L3_RTransverseProcess" />
         </spatial>
         <spatial name="RPMI_tendon" group="2">
-            <site site="T13_RTransverseProcess"/>
-            <site site="L1_RTransverseProcess"/>
-            <site site="L2_RTransverseProcess"/>
-            <site site="L3_RTransverseProcess"/>
-            <site site="L4_RTransverseProcess"/>
             <site site="RPMI_PMI-P2" />
+            <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
+            <site site="L4_RTransverseProcess"/>
+            <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
+            <site site="L3_RTransverseProcess"/>
+            <geom geom="L3_Psoas_cylinder" sidesite="L3_PsoasSideSite" />
+            <site site="L2_RTransverseProcess"/>
+            <geom geom="L2_Psoas_cylinder" sidesite="L2_PsoasSideSite" />
+            <site site="L1_RTransverseProcess"/>
+            <geom geom="L1_Psoas_cylinder" sidesite="L1_PsoasSideSite" />
+            <site site="T13_RTransverseProcess"/>           
         </spatial>
         <spatial name="RILI_tendon" group="2">
         <site site="RILI_ILI-P1" />
@@ -4036,14 +4060,38 @@
         <geom geom="LGA_at_Pelvis_cylinder" sidesite="LGA_at_Pelvis_cylinder_GA_1_sidesite" />
         <site site="LGA_GA-P2" />
         </spatial>
+
         <spatial name="LPMA_tendon" group="3">
-        <site site="LPMA_PMA-P1" />
-        <site site="LPMA_PMA-P2" />
+            <site site="L6_LTransverseProcess" />
+            <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+            <site site="LPMA_PMA-P2" />
+                <pulley divisor="3"/>
+                <site site="LPMA_PMA-P2" />
+                <geom geom="L6_Psoas_cylinder" sidesite="L6_PsoasSideSite" />
+                <site site="L5_LTransverseProcess" />
+                <pulley divisor="3"/>
+                <site site="LPMA_PMA-P2" />
+                <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
+                <site site="L4_LTransverseProcess" />
+                <pulley divisor="3"/>
+                <site site="LPMA_PMA-P2" />
+                <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
+                <site site="L3_LTransverseProcess" />
         </spatial>
         <spatial name="LPMI_tendon" group="3">
-        <site site="LPMI_PMI-P1" />
-        <site site="LPMI_PMI-P2" />
+            <site site="LPMI_PMI-P2" />
+            <geom geom="L5_Psoas_cylinder" sidesite="L5_PsoasSideSite" />
+            <site site="L4_LTransverseProcess"/>
+            <geom geom="L4_Psoas_cylinder" sidesite="L4_PsoasSideSite" />
+            <site site="L3_LTransverseProcess"/>
+            <geom geom="L3_Psoas_cylinder" sidesite="L3_PsoasSideSite" />
+            <site site="L2_LTransverseProcess"/>
+            <geom geom="L2_Psoas_cylinder" sidesite="L2_PsoasSideSite" />
+            <site site="L1_LTransverseProcess"/>
+            <geom geom="L1_Psoas_cylinder" sidesite="L1_PsoasSideSite" />
+            <site site="T13_LTransverseProcess"/>           
         </spatial>
+
         <spatial name="LILI_tendon" group="3">
         <site site="LILI_ILI-P1" />
         <geom geom="LHip_Flexors_at_Quads_ellipsoid_ILI" sidesite="LHip_Flexors_at_Quads_ellipsoid_ILI_1_sidesite" />
@@ -4482,14 +4530,7 @@
         <general group="3" name="LPDQA" class="muscle" tendon="LPDQA_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="3" name="LPDQI" class="muscle" tendon="LPDQI_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="3" name="LTensorFasciaeLatae" class="muscle" tendon="LTensorFasciaeLatae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        
-        <!-- <motor name="neck_x" gear="4" joint="neck_x" group="4" />
-        <motor name="neck_y" gear="4" joint="neck_y" group="4" />
-        <motor name="neck_z" gear="4" joint="neck_z" group="4" />
 
-        <motor name="waist_x" gear="4" joint="waist_x" group="4" />
-        <motor name="waist_y" gear="4" joint="waist_y" group="4" />
-        <motor name="waist_z" gear="4" joint="waist_z" group="4" /> -->
     </actuator>
 
     <equality>
@@ -4508,6 +4549,7 @@
         <exclude body1="LHumerus" body2="LClavicle" />
         <exclude body1="LHumerus" body2="LRadius" />
         <exclude body1="LUlna" body2="LCarpi" />
+
         <exclude body1="CyberMice" body2="C1" />
         <exclude body1="CyberMice" body2="C2" />
         <exclude body1="CyberMice" body2="C3" />
@@ -4515,8 +4557,35 @@
         <exclude body1="CyberMice" body2="C5" />
         <exclude body1="CyberMice" body2="C6" />
         <exclude body1="CyberMice" body2="Head" />
-        <exclude body1="C2" body2="Head" />
+        <exclude body1="Head" body2="C2" />
+        <exclude body1="Head" body2="C3" />
+        <exclude body1="Head" body2="C4" />
+        <exclude body1="Head" body2="C5" />
+        <exclude body1="Head" body2="C6" />
+        <exclude body1="C1" body2="C3" />
+        <exclude body1="C1" body2="C4" />
+        <exclude body1="C1" body2="C5" />
+        <exclude body1="C1" body2="C6" />
+        <exclude body1="C1" body2="C7" />
+        <exclude body1="C2" body2="C4" />
+        <exclude body1="C2" body2="C5" />
+        <exclude body1="C2" body2="C6" />
+        <exclude body1="C2" body2="C7" />
+        <exclude body1="C3" body2="C5" />
+        <exclude body1="C3" body2="C6" />
+        <exclude body1="C3" body2="C7" />
+        <exclude body1="C4" body2="C6" />
+        <exclude body1="C4" body2="C7" />
+        <exclude body1="C5" body2="C7" />
+
+        <exclude body1="CyberMice" body2="L2" />
+        <exclude body1="CyberMice" body2="L3" />
+        <exclude body1="CyberMice" body2="L4" />
+        <exclude body1="CyberMice" body2="L5" />
+        <exclude body1="CyberMice" body2="L6" />
+        <exclude body1="CyberMice" body2="Pelvis" />
         <exclude body1="L5" body2="Pelvis" />
+        <exclude body1="L4" body2="Pelvis" />
     </contact>
 
     <sensor>
