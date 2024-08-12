@@ -432,6 +432,8 @@
             
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
+                <geom name="C7_collision" class="nonself_collision_primitive" type="sphere" pos="0.001 0 0" size="0.003" density="300.0"/>
+                
                 <joint name="T_C7_x" class="Cervical_x" pos="0 0 0" axis="1 0 0"/>
                 <joint name="T_C7_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
                 <joint name="T_C7_z" class="Cervical_z" pos="0 0 0" axis="0 0 1"/>
@@ -446,6 +448,8 @@
 
                 <body name="C6" pos="0.00075 0.00 0.0001" gravcomp="0">
                     <geom name="C6" pos="0.001 0.0005 0.0005" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C6" />
+                    <geom name="C6_collision" class="nonself_collision_primitive" type="sphere" pos="0.001 0 0" size="0.003" density="300.0"/>
+                    
                     <joint name="C7_C6_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588" />
                     <joint name="C7_C6_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
                     <joint name="C7_C6_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659"/>
@@ -461,6 +465,8 @@
 
                     <body name="C5" pos="0.001 0 0.0004" gravcomp="0">
                         <geom name="C5" pos="0.00 0.00055 0.0002" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C5" />
+                        <geom name="C5_collision" class="nonself_collision_primitive" type="sphere" pos="0.001 0 0" size="0.003" density="300.0"/>
+
                         <joint name="C6_C5_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588"/>
                         <joint name="C6_C5_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
                         <joint name="C6_C5_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659"/>
@@ -475,6 +481,8 @@
 
                         <body name="C4" pos="0.001 0 0.0003" gravcomp="0">
                             <geom name="C4" pos="-0.001 0.0006 -0.0003" euler="0.0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="C4" />
+                            <geom name="C4_collision" class="nonself_collision_primitive" type="sphere" pos="0.001 0 0" size="0.003" density="300.0"/>
+                            
                             <joint name="C5_C4_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588"/>
                             <joint name="C5_C4_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
                             <joint name="C5_C4_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659"/>
@@ -489,6 +497,9 @@
 
                             <body name="C3" pos="0.001 0 0.0005" euler="0 0 0" gravcomp="0">
                                 <geom name="C3" pos="-0.002 0.00065 -0.00075" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C3" />
+                                <geom name="C3_collision" class="nonself_collision_primitive" type="sphere" pos="0.001 0 0" size="0.003" density="300.0"/>
+
+                                
                                 <joint name="C4_C3_x" class="Cervical_x" pos="0 0 0" axis="0.9397 0 0.3420"/>
                                 <joint name="C4_C3_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
                                 <joint name="C4_C3_z" class="Cervical_z" pos="0 0 0" axis="-0.3420 0 0.9397"/>
@@ -503,6 +514,8 @@
 
                                 <body name="C2" pos="0.001 0 0.001" gravcomp="0">
                                     <geom name="C2" pos="-0.003 0.0006 -0.00175" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C2" />
+                                    <geom name="C2_collision" class="nonself_collision_primitive" type="sphere" pos="0.001 0 0" size="0.003" density="300.0"/>
+                                    
                                     <joint name="C3_C2_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
                                     <joint name="C3_C2_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
                                     <joint name="C3_C2_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063"/>
@@ -517,6 +530,8 @@
 
                                     <body name="C1" pos="0.001 0 0.001" gravcomp="0">
                                         <geom name="C1" pos="-0.0042 0.0006 -0.0028" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C1" />
+                                        <geom name="C1_collision" class="nonself_collision_primitive" type="sphere" pos="0.001 0 0" size="0.003" density="300.0"/>
+
                                         <joint name="C2_C1_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
                                         <joint name="C2_C1_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
                                         <joint name="C2_C1_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063"/>
@@ -531,7 +546,9 @@
 
 
                                         <body name="Head" pos="0.001 0 0.001" gravcomp="0">
-                                            <geom name="Head" pos="-0.005 0.0009 -0.004" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="Head" />
+                                            <geom name="Head" pos="-0.005 0.0009 -0.004" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="Head"/>
+                                            <geom name="Head_collision" class="collision_primitive" type="ellipsoid" size="0.0125 0.0075 0.007" density="703.10773841" pos="0.01 0 -0.005" euler="0 0.7 0"/>
+                                            
                                             <camera name="egocentric" fovy="80.0" pos="0.0125 0 0.0025" euler="0 0 0" />
                                             <joint name="C1_head_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
                                             <joint name="C1_head_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
