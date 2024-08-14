@@ -127,12 +127,6 @@
         <mesh name="LFinger" file="LFinger.stl" />
         <mesh name="LHand" file="LHand.stl" />
         <mesh name="LClavicle" file="LClavicle.stl" />
-        <mesh name="RBicep" file="RBicep.stl" />
-        <mesh name="RBrachialis" file="RBrachialis.stl" />
-        <mesh name="RTricep_long" file="RTriceps brachii-long head.stl" />
-        <mesh name="RSupraspinatus" file="RSupraspinatus Muscle.stl" />
-        <mesh name="RSubscapularis" file="RSubscapularis Muscle.stl" />
-        <mesh name="LSubscapularis" file="LSubscapularisMuscle.stl" />
         <mesh name="RPelvis" file="RPelvis.stl" />
         <mesh name="RFemur" file="RFemur.stl" />
         <mesh name="RTibfib" file="RTibfib.stl" />
@@ -188,35 +182,6 @@
         <mesh name="CA26" file="CA26.stl"/>
         <mesh name="CA27" file="CA27_28.stl"/>
         <mesh name="CA28" file="CA28.stl"/>
-        <mesh name="Segment_16" file="Segment_16.stl"/>
-        <mesh name="RLatissimusDorsi" file="RLatissimusDorsi.stl"/>
-        <mesh name="RSerratusVentralis" file="RSerratusAnteriorMuscle.stl"/>
-        <mesh name="RPectoralisMajor" file="RPectoralisMajor.stl"/>
-        <mesh name="RPectoralisMinor" file="RPectoralisMinor.stl"/>
-        <mesh name="RPectoralisMinimus" file="RPectoralisMinimus.stl"/>
-        <mesh name="RScalenus" file="RScalenus.stl"/>
-        <mesh name="RRectusCapitisPosteriorMajor_ObliquusCaptisInferior" file="RRectusCapitisPosteriorMajor_ObliquusCaptisInferior.stl"/>
-        <mesh name="RSemispinalisCapitis_ObliquusCapitisSuperior" file="RSemispinalisCapitis_ObliquusCapitisSuperior.stl"/>
-        <mesh name="RCleidomastoideus" file="RCleidomastoideus.stl"/>
-        <mesh name="RCleidocephalicus" file="RCleidocephalicus.stl"/>
-        <mesh name="RSternomastoideus" file="RSternomastoideus.stl"/>
-        <mesh name="RLongissimusCapitis" file="RLongissimusCapitis.stl"/>
-        <mesh name="RSpleniusCapitis" file="RSpleniusCapitis.stl"/>
-        <mesh name="RRhomboideusThoracis" file="RRhomboideusThoracis.stl"/>
-        <mesh name="RRhomboideusCervicis" file="RRhomboideusCervicis.stl"/>
-        <mesh name="RRhomboideusCapitis" file="RRhomboideusCapitis.stl"/>
-        <mesh name="ROmotransversarius" file="ROmotransversarius.stl"/>
-        <mesh name="RSubclavius" file="RSubclavius.stl"/>
-        <mesh name="RTrapezius" file="RTrapezius.stl"/>
-        <mesh name="RLongusColliCapitis" file="RLongusColliCapitis.stl"/>
-        <mesh name="RIliocostalisCervicis" file="RIliocostalisCervicis.stl"/>
-        <mesh name="RIliocostalisThoracis" file="RIliocostalisThoracis.stl"/>
-        <mesh name="RQuadratusLumborum" file="RQuadratusLumborum_1.stl"/>
-        <mesh name="RPsoasMajor" file="RPsoasMajor.stl"/>
-        <mesh name="RPsoasMinor" file="RPsoasMinor.stl"/>
-        <mesh name="RIliacus" file="RIliacus.stl"/>
-        
-
     </asset>
 
     
