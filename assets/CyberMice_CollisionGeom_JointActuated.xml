@@ -107,82 +107,6 @@
         <texture name="grid" type="2d" builtin="checker" rgb1="0.1 0.2 0.3" rgb2="0.2 0.3 0.4" mark="edge" markrgb="0.2 0.3 0.4" width="300" height="300" />
         <material name="grid" texture="grid" texrepeat="1 1" texuniform="true" reflectance="0.2" />
     </asset>
-    <asset>
-        <material name="bone" reflectance="1" shininess="0" specular="0" rgba="0.68 0.64 0.57 1" />
-        <mesh name="RSpineRibs" file="RSpine And Ribs.stl" />
-        <mesh name="RScapula" file="RScapula.stl" />
-        <mesh name="RHumerus" file="RHumerus.stl" />
-        <mesh name="RUlna" file="RUlna.stl" />
-        <mesh name="RRadius" file="RRadius.stl" />
-        <mesh name="RCarpi" file="RCarpi.stl" />
-        <mesh name="RFinger" file="RFinger.stl" />
-        <mesh name="RHand" file="RHand.stl" />
-        <mesh name="RClavicle" file="RClavicle.stl" />
-        <mesh name="LSpineRibs" file="LSpine And Ribs.stl" />
-        <mesh name="LScapula" file="LScapula.stl" />
-        <mesh name="LHumerus" file="LHumerus.stl" />
-        <mesh name="LUlna" file="LUlna.stl" />
-        <mesh name="LRadius" file="LRadius.stl" />
-        <mesh name="LCarpi" file="LCarpi.stl" />
-        <mesh name="LFinger" file="LFinger.stl" />
-        <mesh name="LHand" file="LHand.stl" />
-        <mesh name="LClavicle" file="LClavicle.stl" />
-        <mesh name="RPelvis" file="RPelvis.stl" />
-        <mesh name="RFemur" file="RFemur.stl" />
-        <mesh name="RTibfib" file="RTibfib.stl" />
-        <mesh name="RPatella" file="RPatella.stl" />
-        <mesh name="RFoot" file="RFoot.stl" />
-        <mesh name="LPelvis" file="LPelvis.stl" />
-        <mesh name="LFemur" file="LFemur.stl" />
-        <mesh name="LTibfib" file="LTibfib.stl" />
-        <mesh name="LPatella" file="LPatella.stl" />
-        <mesh name="LFoot" file="LFoot.stl" />
-        <mesh name="Head" file="Head.stl"/>
-        <mesh name="Chest" file="Chest.stl"/>
-        <mesh name="WholeBody" file="FullSkeletonRef.stl"/>
-        <mesh name="C1" file="C1.stl"/>
-        <mesh name="C2" file="C2.stl"/>
-        <mesh name="C3" file="C3.stl"/>
-        <mesh name="C4" file="C4.stl"/>
-        <mesh name="C5" file="C5.stl"/>
-        <mesh name="C6" file="C6.stl"/>
-        <mesh name="C7" file="C7.stl"/>
-        <mesh name="L1" file="L1.stl"/>
-        <mesh name="L2" file="L2.stl"/>
-        <mesh name="L3" file="L3.stl"/>
-        <mesh name="L4" file="L4.stl"/>
-        <mesh name="L5" file="L5.stl"/>
-        <mesh name="L6" file="L6.stl"/>
-        <mesh name="Sacral" file="S1-4.stl"/>
-        <mesh name="CA1" file="CA1.stl"/>
-        <mesh name="CA2" file="CA2.stl"/>
-        <mesh name="CA3" file="CA3.stl"/>
-        <mesh name="CA4" file="CA4.stl"/>
-        <mesh name="CA5" file="CA5.stl"/>
-        <mesh name="CA6" file="CA6.stl"/>
-        <mesh name="CA7" file="CA7.stl"/>
-        <mesh name="CA8" file="CA8.stl"/>
-        <mesh name="CA9" file="CA9.stl"/>
-        <mesh name="CA10" file="CA10.stl"/>
-        <mesh name="CA11" file="CA11.stl"/>
-        <mesh name="CA12" file="CA12.stl"/>
-        <mesh name="CA13" file="CA13.stl"/>
-        <mesh name="CA14" file="CA14.stl"/>
-        <mesh name="CA15" file="CA15.stl"/>
-        <mesh name="CA16" file="CA16.stl"/>
-        <mesh name="CA17" file="CA17.stl"/>
-        <mesh name="CA18" file="CA18.stl"/>
-        <mesh name="CA19" file="CA19.stl"/>
-        <mesh name="CA20" file="CA20.stl"/>
-        <mesh name="CA21" file="CA21.stl"/>
-        <mesh name="CA22" file="CA22.stl"/>
-        <mesh name="CA23" file="CA23.stl"/>
-        <mesh name="CA24" file="CA24.stl"/>
-        <mesh name="CA25" file="CA25.stl"/>
-        <mesh name="CA26" file="CA26.stl"/>
-        <mesh name="CA27" file="CA27_28.stl"/>
-        <mesh name="CA28" file="CA28.stl"/>
-    </asset>
     
     <worldbody>
         <body name="CyberMice" pos="0 0 0.05">
@@ -599,63 +523,36 @@
     <tendon>
         <fixed name="Cervical_x" class="Cervical_x">
             <joint joint="T_C7_x" coef="0.125"/>
-            <joint joint="C7_C6_x" coef="0.125"/>
-            <joint joint="C6_C5_x" coef="0.125"/>
             <joint joint="C5_C4_x" coef="0.125"/>
-            <joint joint="C4_C3_x" coef="0.125"/>
-            <joint joint="C3_C2_x" coef="0.125"/>
             <joint joint="C2_C1_x" coef="0.125"/>
-            <joint joint="C1_head_x" coef="0.125"/>
         </fixed>
 
         <fixed name="Cervical_y" class="Cervical_y">
-            <joint joint="T_C7_y" coef="0.125"/>
             <joint joint="C7_C6_y" coef="0.125"/>
-            <joint joint="C6_C5_y" coef="0.125"/>
-            <joint joint="C5_C4_y" coef="0.125"/>
             <joint joint="C4_C3_y" coef="0.125"/>
-            <joint joint="C3_C2_y" coef="0.125"/>
-            <joint joint="C2_C1_y" coef="0.125"/>
             <joint joint="C1_head_y" coef="0.125"/>
         </fixed>
 
         <fixed name="Cervical_z" class="Cervical_z">
-            <joint joint="T_C7_z" coef="0.125"/>
-            <joint joint="C7_C6_z" coef="0.125"/>
-            <joint joint="C6_C5_z" coef="0.125"/>
-            <joint joint="C5_C4_z" coef="0.125"/>
-            <joint joint="C4_C3_z" coef="0.125"/>
+            <joint joint="C6_C5_z" coef="0.125"/> 
             <joint joint="C3_C2_z" coef="0.125"/>
-            <joint joint="C2_C1_z" coef="0.125"/>
             <joint joint="C1_head_z" coef="0.125"/>
         </fixed>
 
         <fixed name="Lumbar_x" class="Lumbar_x">
             <joint joint="T_L1_x" coef="0.142"/>
-            <joint joint="L1_L2_x" coef="0.142"/>
-            <joint joint="L2_L3_x" coef="0.142"/>
             <joint joint="L3_L4_x" coef="0.142"/>
-            <joint joint="L4_L5_x" coef="0.142"/>
-            <joint joint="L5_L6_x" coef="0.142"/>
             <joint joint="L6_S1_x" coef="0.148"/>
         </fixed>
 
         <fixed name="Lumbar_y" class="Lumbar_y">
-            <joint joint="T_L1_y" coef="0.142"/>
             <joint joint="L1_L2_y" coef="0.142"/>
-            <joint joint="L2_L3_y" coef="0.142"/>
-            <joint joint="L3_L4_y" coef="0.142"/>
             <joint joint="L4_L5_y" coef="0.142"/>
-            <joint joint="L5_L6_y" coef="0.142"/>
             <joint joint="L6_S1_y" coef="0.148"/>
         </fixed>
 
         <fixed name="Lumbar_z" class="Lumbar_z">
-            <joint joint="T_L1_z" coef="0.142"/>
-            <joint joint="L1_L2_z" coef="0.142"/>
             <joint joint="L2_L3_z" coef="0.142"/>
-            <joint joint="L3_L4_z" coef="0.142"/>
-            <joint joint="L4_L5_z" coef="0.142"/>
             <joint joint="L5_L6_z" coef="0.142"/>
             <joint joint="L6_S1_z" coef="0.148"/>
         </fixed>

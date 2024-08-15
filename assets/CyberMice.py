@@ -12,7 +12,7 @@ from dm_control.mujoco import wrapper as mj_wrapper
 import numpy as np
 
 _XML_PATH = os.path.join(os.path.dirname(__file__),
-                         'CyberMiceJointActuated_2.xml')
+                         'CyberMice_CollisionGeom_JointActuated.xml')
 
 _MICE_MOCAP_JOINTS = [
     'root_x', 'root_y', 'root_z', 
@@ -27,14 +27,17 @@ _MICE_MOCAP_JOINTS = [
     'LElbow_flexion',
     'LRadius_rotation', 'LWrist_adduction', 'LWrist_flexion', 
     'LClavicle_r1', 'LClavicle_r2',
-    'waist_x','waist_y','waist_z',
     'RHip_rotation','RHip_flexion','RHip_adduction', 
-    'RKnee_flexion', 
-    'RAnkle_adduction', 'RAnkle_flexion', 'RAnkle_rotation',
+    'RKnee_flexion', 'RAnkle_flexion', 'RAnkle_rotation',
     'LHip_rotation','LHip_flexion','LHip_adduction', 
-    'LKnee_flexion', 
-    'LAnkle_adduction', 'LAnkle_flexion', 'LAnkle_rotation',
-    'neck_x', 'neck_y', 'neck_z',]
+    'LKnee_flexion', 'LAnkle_flexion', 'LAnkle_rotation',
+    'T_C7_x','C7_C6_y','C6_C5_z',
+    'C5_C4_x','C4_C3_y','C3_C2_z',
+    'C2_C1_x','C1_head_y','C1_head_z',
+    'T_L1_x','L1_L2_y','L2_L3_z',
+    'L3_L4_x','L4_L5_y','L5_L6_z',
+    'L6_S1_x','L6_S1_y','L6_S1_z',
+    ]
 
 _UPRIGHT_POS = (0.0, 0.0, 0.0)
 _UPRIGHT_QUAT = (1., 0., 0., 0.)
