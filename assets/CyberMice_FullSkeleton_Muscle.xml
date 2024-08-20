@@ -182,6 +182,8 @@
         <mesh name="CA26" file="CA26.stl"/>
         <mesh name="CA27" file="CA27_28.stl"/>
         <mesh name="CA28" file="CA28.stl"/>
+        <mesh name="CA_tendon_1" file="CA_tendon_1.stl"/>
+        <mesh name="CA_tendon_2" file="CA_tendon_2.stl"/>
     </asset>
 
     
@@ -395,8 +397,10 @@
 
             <site name="LSubclavius_2" pos="0.0189 0.0019 -0.0125" size="0.0005" group="5"/>
 
-            <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/> -->
-            
+            <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/>
+            <geom name="CA_tendon_1" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 1" mesh="CA_tendon_1" group="5"/>
+            <geom name="CA_tendon_2" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 1" mesh="CA_tendon_2" group="5"/>
+
 
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
                 <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
@@ -1622,136 +1626,297 @@
                                         <body name="CA1" pos="-0.0175 0 0.003" gravcomp="0">
                                             <geom name="CA1" pos="0.05 -0.00325 -0.00475" euler="0.2 -0.1 -0.05" type="mesh" rgba="1 1 1 1" mesh="CA1"/>                                            
                                             <geom name="CA1_collision" class="collision_primitive" size="0.00175 0.0015" density="507.157357703" pos="-0.001 0 0" euler="1.57 0 0" group="1"/>
+                                            
+                                            <site name="CA1_RTransverseProcess" pos="-0.001 -0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            <site name="CA1_LTransverseProcess" pos="-0.001 0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            <site name="CA1_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                             <joint name="S4_CA1_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                             <joint name="S4_CA1_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                            
                                             <body name="CA2" pos="-0.003 0 0" gravcomp="0">
                                                 <geom name="CA2" pos="0.053 -0.0055 -0.005" euler="0.2 -0.1 -0.1" type="mesh" rgba="1 1 1 1" mesh="CA2"/>
                                                 <geom name="CA2_collision" class="collision_primitive" size="0.00175 0.001" density="507.157357703" pos="-0.001 0 0" euler="1.57 0 0" group="1"/>                                                
+                                                
+                                                <site name="CA2_RTransverseProcess" pos="-0.001 -0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                <site name="CA2_LTransverseProcess" pos="-0.001 0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                <site name="CA2_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                 <joint name="CA1_CA2_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                 <joint name="CA1_CA2_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                
                                                 <body name="CA3" pos="-0.0025 0 0" gravcomp="0">
                                                     <geom name="CA3" pos="0.055 -0.0035 -0.0095" euler="0 0 -0.05" type="mesh" rgba="1 1 1 1" mesh="CA3"/>                                                    
                                                     <geom name="CA3_collision" class="collision_primitive" size="0.0015 0.00075" density="507.157357703" pos="-0.0011 0 0.001" euler="0 1.57 0" group="1"/>
+                                                    
+                                                    <site name="CA3_RTransverseProcess" pos="-0.001 -0.00115 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                    <site name="CA3_LTransverseProcess" pos="-0.001 0.00115 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                    <site name="CA3_SCVentralMedial" pos="-0.0005 0 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                     <joint name="CA2_CA3_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                     <joint name="CA2_CA3_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                    
                                                     <body name="CA4" pos="-0.0025 0 0.001" gravcomp="0">
                                                         <geom name="CA4" pos="0.0575 -0.0095 -0.00775" euler="-0.35 0.0 -0.1" type="mesh" rgba="1 1 1 1" mesh="CA4"/>                                                        
                                                         <geom name="CA4_collision" class="collision_primitive" size="0.0015 0.00075" density="507.157357703" pos="-0.0015 0 0" euler="0 1.57 0" group="1"/>
+                                                        
+                                                        <site name="CA4_RTransverseProcess" pos="-0.0015 -0.00115 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                        <site name="CA4_LTransverseProcess" pos="-0.0015 0.00115 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                        <site name="CA4_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                         <joint name="CA3_CA4_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                         <joint name="CA3_CA4_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                        
                                                         <body name="CA5" pos="-0.0034 0.0 0.0" gravcomp="0">
                                                             <geom name="CA5" pos="0.06 -0.00875 -0.01425" euler="-0.35 0.1 -0.05" type="mesh" rgba="1 1 1 1" mesh="CA5"/>                                                            
                                                             <geom name="CA5_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.00175 0 0" euler="0 1.57 0" group="1"/>
+                                                            
+                                                            <site name="CA5_RTransverseProcess" pos="-0.0005 -0.00115 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                            <site name="CA5_LTransverseProcess" pos="-0.0005 0.00115 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                            <site name="CA5_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                             <joint name="CA4_CA5_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                             <joint name="CA4_CA5_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                            
                                                             <body name="CA6" pos="-0.004 0.0 0.0" gravcomp="0">
                                                                 <geom name="CA6" pos="0.05675 -0.01325 -0.03175" euler="-0.3 0.4 -0.05" type="mesh" rgba="1 1 1 1" mesh="CA6"/>                                                                
                                                                 <geom name="CA6_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.00175 0 0" euler="0 1.57 0" group="1"/>
+                                                                
+                                                                <site name="CA6_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                <site name="CA6_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                <site name="CA6_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                 <joint name="CA5_CA6_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                 <joint name="CA5_CA6_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                
                                                                 <body name="CA7" pos="-0.00375 0.0 0.0" gravcomp="0">
                                                                     <geom name="CA7" pos="0.04275 -0.01625 -0.052" euler="-0.3 0.8 0" type="mesh" rgba="1 1 1 1" mesh="CA7"/>                                                                    
                                                                     <geom name="CA7_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.00175 0 0" euler="0 1.57 0" group="1"/>
+                                                                    
+                                                                    <site name="CA7_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                    <site name="CA7_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                    <site name="CA7_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                     <joint name="CA6_CA7_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                     <joint name="CA6_CA7_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                    
                                                                     <body name="CA8" pos="-0.004 0.0 0.0" gravcomp="0">
                                                                         <geom name="CA8" pos="0.0085 -0.0215 -0.068" euler="-0.3 1.4 0" type="mesh" rgba="1 1 1 1" mesh="CA8"/>                                                                        
                                                                         <geom name="CA8_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.00175 0 0" euler="0 1.57 0" group="1"/>
+                                                                        
+                                                                        <site name="CA8_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                        <site name="CA8_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                        <site name="CA8_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                         <joint name="CA7_CA8_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                         <joint name="CA7_CA8_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                        
                                                                         <body name="CA9" pos="-0.00375 0 0" gravcomp="0">
                                                                             <geom name="CA9" pos="-0.016 -0.0215 -0.067" euler="-0.3 1.8 0" type="mesh" rgba="1 1 1 1" mesh="CA9"/>                                                                            
                                                                             <geom name="CA9_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.00175 0 0" euler="0 1.57 0" group="1"/>
+                                                                            
+                                                                            <site name="CA9_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                            <site name="CA9_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                            <site name="CA9_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                             <joint name="CA8_CA9_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                             <joint name="CA8_CA9_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                            
                                                                             <body name="CA10" pos="-0.004 0 0" gravcomp="0">
                                                                                 <geom name="CA10" pos="-0.032 -0.0195 -0.0605" euler="-0.3 2.1 0" type="mesh" rgba="1 1 1 1" mesh="CA10"/>                                                                                
                                                                                 <geom name="CA10_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.002 0 0" euler="0 1.57 0" group="1"/>
+                                                                                
+                                                                                <site name="CA10_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                <site name="CA10_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                <site name="CA10_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                 <joint name="CA9_CA10_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                 <joint name="CA9_CA10_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                
                                                                                 <body name="CA11" pos="-0.00425 0 0" gravcomp="0">
                                                                                     <geom name="CA11" pos="-0.05 -0.01475 -0.045" euler="-0.3 2.5 0" type="mesh" rgba="1 1 1 1" mesh="CA11"/>
                                                                                     <geom name="CA11_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.002 0 0" euler="0 1.57 0" group="1"/>
+                                                                                    
+                                                                                    <site name="CA11_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                    <site name="CA11_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                    <site name="CA11_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                     <joint name="CA10_CA11_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                     <joint name="CA10_CA11_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                    
                                                                                     <body name="CA12" pos="-0.00425 0 0" gravcomp="0">
                                                                                         <geom name="CA12" pos="-0.0575 -0.01 -0.02975" euler="-0.3 2.8 0" type="mesh" rgba="1 1 1 1" mesh="CA12"/>
                                                                                         <geom name="CA12_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.002 0 0" euler="0 1.57 0" group="1"/>
+                                                                                        
+                                                                                        <site name="CA12_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                        <site name="CA12_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                        <site name="CA12_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                         <joint name="CA11_CA12_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                         <joint name="CA11_CA12_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                        
                                                                                         <body name="CA13" pos="-0.00425 0 0" gravcomp="0">
                                                                                             <geom name="CA13" pos="-0.05825 -0.00675 -0.0185" euler="-0.3 3.0 0" type="mesh" rgba="1 1 1 1" mesh="CA13"/>
                                                                                             <geom name="CA13_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.002 0 0" euler="0 1.57 0" group="1"/>
+                                                                                            
+                                                                                            <site name="CA13_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                            <site name="CA13_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                            <site name="CA13_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                             <joint name="CA12_CA13_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                             <joint name="CA12_CA13_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                            
                                                                                             <body name="CA14" pos="-0.00415 0 0" gravcomp="0">
                                                                                                 <geom name="CA14" pos="-0.056 -0.00425 -0.01085" euler="-0.3 3.14 0" type="mesh" rgba="1 1 1 1" mesh="CA14"/>
                                                                                                 <geom name="CA14_collision" class="collision_primitive" size="0.00125 0.001" density="507.157357703" pos="-0.00175 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                
+                                                                                                <site name="CA14_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                <site name="CA14_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                <site name="CA14_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                 <joint name="CA13_CA14_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                 <joint name="CA13_CA14_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                
                                                                                                 <body name="CA15" pos="-0.004 0 0" gravcomp="0">
                                                                                                     <geom name="CA15" pos="-0.0515 -0.0043 -0.01075" euler="-0.3 3.14 0" type="mesh" rgba="1 1 1 1" mesh="CA15"/>
                                                                                                     <geom name="CA15_collision" class="collision_primitive" size="0.00125 0.001" density="507.157357703" pos="-0.0015 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                    
+                                                                                                    <site name="CA15_RSCVentralLateral" pos="-0.0005 -0.0011 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                    <site name="CA15_LSCVentralLateral" pos="-0.0005 0.0011 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                    <site name="CA15_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                     <joint name="CA14_CA15_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                     <joint name="CA14_CA15_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                    
                                                                                                     <body name="CA16" pos="-0.00375 0 0" gravcomp="0">
                                                                                                         <geom name="CA16" pos="-0.047 -0.009 -0.00945" euler="-0.3 3.14 -0.1" type="mesh" rgba="1 1 1 1" mesh="CA16"/>
                                                                                                         <geom name="CA16_collision" class="collision_primitive" size="0.00125 0.001" density="507.157357703" pos="-0.0015 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                        
+                                                                                                        <site name="CA16_RSCVentralLateral" pos="-0.0005 -0.0011 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                        <site name="CA16_LSCVentralLateral" pos="-0.0005 0.0011 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                        <site name="CA16_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                         <joint name="CA15_CA16_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                         <joint name="CA15_CA16_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                        
                                                                                                         <body name="CA17" pos="-0.0036 0 0" gravcomp="0">
                                                                                                             <geom name="CA17" pos="-0.0435 -0.0049 -0.0105" euler="-0.3 3.14 -0.0" type="mesh" rgba="1 1 1 1" mesh="CA17"/>
                                                                                                             <geom name="CA17_collision" class="collision_primitive" size="0.00125 0.00075" density="507.157357703" pos="-0.0017 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                            
+                                                                                                            <site name="CA17_RSCVentralLateral" pos="-0.0005 -0.001 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                            <site name="CA17_LSCVentralLateral" pos="-0.0005 0.001 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                            <site name="CA17_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                             <joint name="CA16_CA17_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                             <joint name="CA16_CA17_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                            
                                                                                                             <body name="CA18" pos="-0.0036 0 0" gravcomp="0">
                                                                                                                 <geom name="CA18" pos="-0.03975 -0.0049 -0.0104" euler="-0.3 3.14 -0.0" type="mesh" rgba="1 1 1 1" mesh="CA18"/>
                                                                                                                 <geom name="CA18_collision" class="collision_primitive" size="0.00125 0.00075" density="507.157357703" pos="-0.0017 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                
+                                                                                                                <site name="CA18_RSCVentralLateral" pos="-0.0005 -0.0009 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                <site name="CA18_LSCVentralLateral" pos="-0.0005 0.0009 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                <site name="CA18_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                 <joint name="CA17_CA18_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                 <joint name="CA17_CA18_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                                
                                                                                                                 <body name="CA19" pos="-0.0035 0 0" gravcomp="0">
                                                                                                                     <geom name="CA19" pos="-0.037 -0.0003 -0.0075" euler="-0.3 3.25 0.1" type="mesh" rgba="1 1 1 1" mesh="CA19"/>
                                                                                                                     <geom name="CA19_collision" class="collision_primitive" size="0.0009 0.0009" density="507.157357703" pos="-0.0016 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                    
+                                                                                                                    <site name="CA19_RSCVentralLateral" pos="-0.0005 -0.0009 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                    <site name="CA19_LSCVentralLateral" pos="-0.0005 0.0009 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                    <site name="CA19_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                     <joint name="CA18_CA19_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                     <joint name="CA18_CA19_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                                    
                                                                                                                     <body name="CA20" pos="-0.00335 0 0" gravcomp="0">
                                                                                                                         <geom name="CA20" pos="-0.033 -0.004 -0.008" euler="-0.3 3.2 0" type="mesh" rgba="1 1 1 1" mesh="CA20"/>
                                                                                                                         <geom name="CA20_collision" class="collision_primitive" size="0.0009 0.0008" density="507.157357703" pos="-0.0014 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                        
+                                                                                                                        <site name="CA20_RSCVentralLateral" pos="-0.0005 -0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA20_LSCVentralLateral" pos="-0.0005 0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA20_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                         <joint name="CA19_CA20_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA19_CA20_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                                        
                                                                                                                         <body name="CA21" pos="-0.0031 0 -0.0" gravcomp="0">
                                                                                                                         <geom name="CA21" pos="-0.0302 -0.0035 -0.0064" euler="-0.3 3.25 0" type="mesh" rgba="1 1 1 1" mesh="CA21"/>
                                                                                                                         <geom name="CA21_collision" class="collision_primitive" size="0.0009 0.0007" density="507.157357703" pos="-0.0013 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                        
+                                                                                                                        <site name="CA21_RSCVentralLateral" pos="-0.0005 -0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA21_LSCVentralLateral" pos="-0.0005 0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA21_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                         <joint name="CA20_CA21_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA20_CA21_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                                        
                                                                                                                         <body name="CA22" pos="-0.00275 0 0.0" gravcomp="0">
                                                                                                                         <geom name="CA22" pos="-0.0268 -0.004 -0.00775" euler="-0.3 3.2 0" type="mesh" rgba="1 1 1 1" mesh="CA22"/>
                                                                                                                         <geom name="CA22_collision" class="collision_primitive" size="0.0007 0.0007" density="507.157357703" pos="-0.0012 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                        
+                                                                                                                        <site name="CA22_RSCVentralLateral" pos="-0.0005 -0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA22_LSCVentralLateral" pos="-0.0005 0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA22_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                         <joint name="CA21_CA22_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA21_CA22_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                                        
                                                                                                                         <body name="CA23" pos="-0.0025 0 0" gravcomp="0">
                                                                                                                         <geom name="CA23" pos="-0.02175 -0.0053 -0.01225" euler="-0.3 3.0 0" type="mesh" rgba="1 1 1 1" mesh="CA23"/>
                                                                                                                         <geom name="CA23_collision" class="collision_primitive" size="0.0005 0.0006" density="507.157357703" pos="-0.001 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                        
+                                                                                                                        <site name="CA23_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA23_LSCVentralLateral" pos="-0.0005 0.0006 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA23_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                         <joint name="CA22_CA23_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA22_CA23_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                                        
                                                                                                                         <body name="CA24" pos="-0.002 0 0" gravcomp="0">
                                                                                                                         <geom name="CA24" pos="-0.0195 -0.0052 -0.0123" euler="-0.3 3.0 0" type="mesh" rgba="1 1 1 1" mesh="CA24"/>
                                                                                                                         <geom name="CA24_collision" class="collision_primitive" size="0.0005 0.0006" density="507.157357703" pos="-0.001 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                        
+                                                                                                                        <site name="CA24_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA24_LSCVentralLateral" pos="-0.0005 0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA24_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                         <joint name="CA23_CA24_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA23_CA24_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                                        
                                                                                                                         <body name="CA25" pos="-0.002 0 0" gravcomp="0">
                                                                                                                         <geom name="CA25" pos="-0.016 -0.0057 -0.0141" euler="-0.3 2.9 0" type="mesh" rgba="1 1 1 1" mesh="CA25"/>
                                                                                                                         <geom name="CA25_collision" class="collision_primitive" size="0.0005 0.0004" density="507.157357703" pos="-0.0008 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                        
+                                                                                                                        <site name="CA25_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA25_LSCVentralLateral" pos="-0.0005 0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA25_SCVentralMedial" pos="-0.0005 0 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                         <joint name="CA24_CA25_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA24_CA25_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                                        
                                                                                                                         <body name="CA26" pos="-0.00175 0 0" gravcomp="0">
                                                                                                                         <geom name="CA26" pos="-0.01415 -0.00565 -0.0141" euler="-0.3 2.9 0" type="mesh" rgba="1 1 1 1" mesh="CA26"/>
                                                                                                                         <geom name="CA26_collision" class="collision_primitive" size="0.0005 0.0003" density="507.157357703" pos="-0.0007 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                        
+                                                                                                                        <site name="CA26_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA26_LSCVentralLateral" pos="-0.0005 0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA26_SCVentralMedial" pos="-0.0005 0 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                         <joint name="CA25_CA26_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA25_CA26_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
+                                                                                                                        
                                                                                                                         <body name="CA27" pos="-0.00155 0 0" gravcomp="0">
                                                                                                                         <geom name="CA27" pos="-0.01215 -0.00565 -0.0141" euler="-0.3 2.9 0" type="mesh" rgba="1 1 1 1" mesh="CA27"/>
                                                                                                                         <geom name="CA27_collision" class="collision_primitive" size="0.0005 0.0005" density="507.157357703" pos="-0.0009 0 0" euler="0 1.57 0" group="1"/>
+                                                                                                                        
+                                                                                                                        <site name="CA27_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA27_LSCVentralLateral" pos="-0.0005 0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA27_SCVentralMedial" pos="-0.0005 0 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+
                                                                                                                         <joint name="CA26_CA27_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA26_CA27_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
                                                                                                                         </body>
@@ -1794,7 +1959,7 @@
         </body>
     </worldbody>
 
-    <tendon>
+    <!-- <tendon>
         <fixed name="Cervical_x" class="Cervical_x">
             <joint joint="T_C7_x" coef="0.125"/>
             <joint joint="C7_C6_x" coef="0.125"/>
@@ -4583,5 +4748,5 @@
     <sensor>
         <subtreelinvel name="torso_subtreelinvel" body="CyberMice" />
         <subtreecom name="body_com" body="CyberMice" />
-    </sensor>
+    </sensor> -->
 </mujoco>
