@@ -1627,10 +1627,16 @@
                                             <geom name="CA1" pos="0.05 -0.00325 -0.00475" euler="0.2 -0.1 -0.05" type="mesh" rgba="1 1 1 1" mesh="CA1"/>                                            
                                             <geom name="CA1_collision" class="collision_primitive" size="0.00175 0.0015" density="507.157357703" pos="-0.001 0 0" euler="1.57 0 0" group="1"/>
                                             
-                                            <site name="CA1_RTransverseProcess" pos="-0.001 -0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                            <site name="CA1_LTransverseProcess" pos="-0.001 0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                            <site name="CA1_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
-
+                                            <site name="CA1_RSCVentralLateral" pos="-0.001 -0.002 -0.00125" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            <site name="CA1_LSCVentralLateral" pos="-0.001 0.002 -0.00125" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            <site name="CA1_RSCVentralMedial" pos="-0.0005 -0.0005 -0.00125" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            <site name="CA1_LSCVentralMedial" pos="-0.0005 0.0005 -0.00125" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            
+                                            <site name="CA1_RSCDorsalLateral" pos="-0.001 -0.0015 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            <site name="CA1_LSCDorsalLateral" pos="-0.001 0.0015 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            <site name="CA1_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            <site name="CA1_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            
                                             <joint name="S4_CA1_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                             <joint name="S4_CA1_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
                                             
@@ -1638,9 +1644,15 @@
                                                 <geom name="CA2" pos="0.053 -0.0055 -0.005" euler="0.2 -0.1 -0.1" type="mesh" rgba="1 1 1 1" mesh="CA2"/>
                                                 <geom name="CA2_collision" class="collision_primitive" size="0.00175 0.001" density="507.157357703" pos="-0.001 0 0" euler="1.57 0 0" group="1"/>                                                
                                                 
-                                                <site name="CA2_RTransverseProcess" pos="-0.001 -0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                <site name="CA2_LTransverseProcess" pos="-0.001 0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                <site name="CA2_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                <site name="CA2_RSCVentralLateral" pos="-0.0005 -0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                <site name="CA2_LSCVentralLateral" pos="-0.0005 0.002 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                <site name="CA2_RSCVentralMedial" pos="-0.0005 -0.0005 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                <site name="CA2_LSCVentralMedial" pos="-0.0005 0.0005 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                <site name="CA2_RSCDorsalLateral" pos="-0.0005 -0.0015 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                <site name="CA2_LSCDorsalLateral" pos="-0.0005 0.0015 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                <site name="CA2_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                <site name="CA2_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                 <joint name="CA1_CA2_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                 <joint name="CA1_CA2_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1649,9 +1661,15 @@
                                                     <geom name="CA3" pos="0.055 -0.0035 -0.0095" euler="0 0 -0.05" type="mesh" rgba="1 1 1 1" mesh="CA3"/>                                                    
                                                     <geom name="CA3_collision" class="collision_primitive" size="0.0015 0.00075" density="507.157357703" pos="-0.0011 0 0.001" euler="0 1.57 0" group="1"/>
                                                     
-                                                    <site name="CA3_RTransverseProcess" pos="-0.001 -0.00115 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                    <site name="CA3_LTransverseProcess" pos="-0.001 0.00115 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                    <site name="CA3_SCVentralMedial" pos="-0.0005 0 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                    <site name="CA3_RSCVentralLateral" pos="-0.001 -0.00115 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                    <site name="CA3_LSCVentralLateral" pos="-0.001 0.00115 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                    <site name="CA3_RSCVentralMedial" pos="-0.0005 -0.0005 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                    <site name="CA3_LSCVentralMedial" pos="-0.0005 0.0005 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                    <site name="CA3_RSCDorsalLateral" pos="-0.001 -0.001 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                    <site name="CA3_LSCDorsalLateral" pos="-0.001 0.001 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                    <site name="CA3_RSCDorsalMedial" pos="-0.0005 -0.0005 0.00125" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                    <site name="CA3_LSCDorsalMedial" pos="-0.0005 0.0005 0.00125" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                     <joint name="CA2_CA3_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                     <joint name="CA2_CA3_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1660,9 +1678,15 @@
                                                         <geom name="CA4" pos="0.0575 -0.0095 -0.00775" euler="-0.35 0.0 -0.1" type="mesh" rgba="1 1 1 1" mesh="CA4"/>                                                        
                                                         <geom name="CA4_collision" class="collision_primitive" size="0.0015 0.00075" density="507.157357703" pos="-0.0015 0 0" euler="0 1.57 0" group="1"/>
                                                         
-                                                        <site name="CA4_RTransverseProcess" pos="-0.0015 -0.00115 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                        <site name="CA4_LTransverseProcess" pos="-0.0015 0.00115 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                        <site name="CA4_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                        <site name="CA4_RSCVentralLateral" pos="-0.0015 -0.00115 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                        <site name="CA4_LSCVentralLateral" pos="-0.0015 0.00115 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                        <site name="CA4_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                        <site name="CA4_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                        <site name="CA4_RSCDorsalLateral" pos="-0.0015 -0.00115 0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                        <site name="CA4_LSCDorsalLateral" pos="-0.0015 0.00115 0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                        <site name="CA4_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                        <site name="CA4_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                         <joint name="CA3_CA4_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                         <joint name="CA3_CA4_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1671,9 +1695,15 @@
                                                             <geom name="CA5" pos="0.06 -0.00875 -0.01425" euler="-0.35 0.1 -0.05" type="mesh" rgba="1 1 1 1" mesh="CA5"/>                                                            
                                                             <geom name="CA5_collision" class="collision_primitive" size="0.0015 0.00085" density="507.157357703" pos="-0.00175 0 0" euler="0 1.57 0" group="1"/>
                                                             
-                                                            <site name="CA5_RTransverseProcess" pos="-0.0005 -0.00115 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                            <site name="CA5_LTransverseProcess" pos="-0.0005 0.00115 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                            <site name="CA5_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                            <site name="CA5_RSCVentralLateral" pos="-0.0005 -0.00115 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                            <site name="CA5_LSCVentralLateral" pos="-0.0005 0.00115 0" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                            <site name="CA5_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                            <site name="CA5_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                            <site name="CA5_RSCDorsalLateral" pos="-0.0005 -0.00115 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                            <site name="CA5_LSCDorsalLateral" pos="-0.0005 0.00115 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                            <site name="CA5_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                            <site name="CA5_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                             <joint name="CA4_CA5_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                             <joint name="CA4_CA5_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1684,7 +1714,13 @@
                                                                 
                                                                 <site name="CA6_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                 <site name="CA6_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                <site name="CA6_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                <site name="CA6_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                <site name="CA6_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                <site name="CA6_RSCDorsalLateral" pos="-0.0005 -0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                <site name="CA6_LSCDorsalLateral" pos="-0.0005 0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                <site name="CA6_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                <site name="CA6_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                 <joint name="CA5_CA6_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                 <joint name="CA5_CA6_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1695,7 +1731,13 @@
                                                                     
                                                                     <site name="CA7_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                     <site name="CA7_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                    <site name="CA7_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                    <site name="CA7_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                    <site name="CA7_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                    <site name="CA7_RSCDorsalLateral" pos="-0.0005 -0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                    <site name="CA7_LSCDorsalLateral" pos="-0.0005 0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                    <site name="CA7_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                    <site name="CA7_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                     <joint name="CA6_CA7_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                     <joint name="CA6_CA7_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1706,7 +1748,13 @@
                                                                         
                                                                         <site name="CA8_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                         <site name="CA8_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                        <site name="CA8_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                        <site name="CA8_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                        <site name="CA8_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                        <site name="CA8_RSCDorsalLateral" pos="-0.0005 -0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                        <site name="CA8_LSCDorsalLateral" pos="-0.0005 0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                        <site name="CA8_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                        <site name="CA8_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                         <joint name="CA7_CA8_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                         <joint name="CA7_CA8_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1717,7 +1765,13 @@
                                                                             
                                                                             <site name="CA9_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                             <site name="CA9_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                            <site name="CA9_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                            <site name="CA9_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                            <site name="CA9_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                            <site name="CA9_RSCDorsalLateral" pos="-0.0005 -0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                            <site name="CA9_LSCDorsalLateral" pos="-0.0005 0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                            <site name="CA9_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                            <site name="CA9_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                             <joint name="CA8_CA9_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                             <joint name="CA8_CA9_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1728,7 +1782,13 @@
                                                                                 
                                                                                 <site name="CA10_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                 <site name="CA10_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                <site name="CA10_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                <site name="CA10_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                <site name="CA10_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                <site name="CA10_RSCDorsalLateral" pos="-0.0005 -0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                <site name="CA10_LSCDorsalLateral" pos="-0.0005 0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                <site name="CA10_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                <site name="CA10_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                 <joint name="CA9_CA10_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                 <joint name="CA9_CA10_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1739,7 +1799,13 @@
                                                                                     
                                                                                     <site name="CA11_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                     <site name="CA11_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                    <site name="CA11_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                    <site name="CA11_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                    <site name="CA11_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                    <site name="CA11_RSCDorsalLateral" pos="-0.0005 -0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                    <site name="CA11_LSCDorsalLateral" pos="-0.0005 0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                    <site name="CA11_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                    <site name="CA11_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                     <joint name="CA10_CA11_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                     <joint name="CA10_CA11_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1750,7 +1816,13 @@
                                                                                         
                                                                                         <site name="CA12_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                         <site name="CA12_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                        <site name="CA12_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                        <site name="CA12_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                        <site name="CA12_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                        <site name="CA12_RSCDorsalLateral" pos="-0.0005 -0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                        <site name="CA12_LSCDorsalLateral" pos="-0.0005 0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                        <site name="CA12_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                        <site name="CA12_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                         <joint name="CA11_CA12_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                         <joint name="CA11_CA12_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1761,7 +1833,13 @@
                                                                                             
                                                                                             <site name="CA13_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                             <site name="CA13_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                            <site name="CA13_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                            <site name="CA13_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                            <site name="CA13_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                            <site name="CA13_RSCDorsalLateral" pos="-0.0005 -0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                            <site name="CA13_LSCDorsalLateral" pos="-0.0005 0.0011 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                            <site name="CA13_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                            <site name="CA13_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                             <joint name="CA12_CA13_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                             <joint name="CA12_CA13_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1772,7 +1850,13 @@
                                                                                                 
                                                                                                 <site name="CA14_RSCVentralLateral" pos="-0.0005 -0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                 <site name="CA14_LSCVentralLateral" pos="-0.0005 0.0011 0" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                <site name="CA14_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                <site name="CA14_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                <site name="CA14_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                <site name="CA14_RSCDorsalLateral" pos="-0.0005 -0.0011 0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                <site name="CA14_LSCDorsalLateral" pos="-0.0005 0.0011 0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                <site name="CA14_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                <site name="CA14_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                 <joint name="CA13_CA14_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                 <joint name="CA13_CA14_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1783,7 +1867,13 @@
                                                                                                     
                                                                                                     <site name="CA15_RSCVentralLateral" pos="-0.0005 -0.0011 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                     <site name="CA15_LSCVentralLateral" pos="-0.0005 0.0011 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                    <site name="CA15_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                    <site name="CA15_RSCVentralMedial" pos="-0.0005 -0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                    <site name="CA15_LSCVentralMedial" pos="-0.0005 0.0005 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                    <site name="CA15_RSCDorsalLateral" pos="-0.0005 -0.0011 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                    <site name="CA15_LSCDorsalLateral" pos="-0.0005 0.0011 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                    <site name="CA15_RSCDorsalMedial" pos="-0.0005 -0.0005 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                    <site name="CA15_LSCDorsalMedial" pos="-0.0005 0.0005 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                     <joint name="CA14_CA15_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                     <joint name="CA14_CA15_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1794,7 +1884,13 @@
                                                                                                         
                                                                                                         <site name="CA16_RSCVentralLateral" pos="-0.0005 -0.0011 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                         <site name="CA16_LSCVentralLateral" pos="-0.0005 0.0011 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                        <site name="CA16_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                        <site name="CA16_RSCVentralMedial" pos="-0.0005 -0.00025 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                        <site name="CA16_LSCVentralMedial" pos="-0.0005 0.00025 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                        <site name="CA16_RSCDorsalLateral" pos="-0.0005 -0.00085 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                        <site name="CA16_LSCDorsalLateral" pos="-0.0005 0.00085 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                        <site name="CA16_RSCDorsalMedial" pos="-0.0005 -0.00025 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                        <site name="CA16_LSCDorsalMedial" pos="-0.0005 0.00025 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                         <joint name="CA15_CA16_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                         <joint name="CA15_CA16_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1805,7 +1901,13 @@
                                                                                                             
                                                                                                             <site name="CA17_RSCVentralLateral" pos="-0.0005 -0.001 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                             <site name="CA17_LSCVentralLateral" pos="-0.0005 0.001 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                            <site name="CA17_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                            <site name="CA17_RSCVentralMedial" pos="-0.0005 -0.00025 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                            <site name="CA17_LSCVentralMedial" pos="-0.0005 0.00025 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                            <site name="CA17_RSCDorsalLateral" pos="-0.0005 -0.00085 0.0006" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                            <site name="CA17_LSCDorsalLateral" pos="-0.0005 0.00085 0.0006" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                            <site name="CA17_RSCDorsalMedial" pos="-0.0005 -0.00025 0.0008" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                            <site name="CA17_LSCDorsalMedial" pos="-0.0005 0.00025 0.0008" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                             <joint name="CA16_CA17_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                             <joint name="CA16_CA17_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1816,7 +1918,13 @@
                                                                                                                 
                                                                                                                 <site name="CA18_RSCVentralLateral" pos="-0.0005 -0.0009 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                                 <site name="CA18_LSCVentralLateral" pos="-0.0005 0.0009 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                <site name="CA18_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                <site name="CA18_RSCVentralMedial" pos="-0.0005 -0.00025 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                <site name="CA18_LSCVentralMedial" pos="-0.0005 0.00025 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                <site name="CA18_RSCDorsalLateral" pos="-0.0005 -0.0009 0.0006" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                <site name="CA18_LSCDorsalLateral" pos="-0.0005 0.0009 0.0006" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                <site name="CA18_RSCDorsalMedial" pos="-0.0005 -0.00025 0.0008" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                <site name="CA18_LSCDorsalMedial" pos="-0.0005 0.00025 0.0008" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                 <joint name="CA17_CA18_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                 <joint name="CA17_CA18_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1827,7 +1935,13 @@
                                                                                                                     
                                                                                                                     <site name="CA19_RSCVentralLateral" pos="-0.0005 -0.0009 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                                     <site name="CA19_LSCVentralLateral" pos="-0.0005 0.0009 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                    <site name="CA19_SCVentralMedial" pos="-0.0005 0 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                    <site name="CA19_RSCVentralMedial" pos="-0.0005 -0.00025 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                    <site name="CA19_LSCVentralMedial" pos="-0.0005 0.00025 -0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                    <site name="CA19_RSCDorsalLateral" pos="-0.0005 -0.0009 0.0006" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                    <site name="CA19_LSCDorsalLateral" pos="-0.0005 0.0009 0.0006" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                    <site name="CA19_RSCDorsalMedial" pos="-0.0005 -0.00025 0.0008" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                    <site name="CA19_LSCDorsalMedial" pos="-0.0005 0.00025 0.0008" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                     <joint name="CA18_CA19_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                     <joint name="CA18_CA19_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1838,7 +1952,13 @@
                                                                                                                         
                                                                                                                         <site name="CA20_RSCVentralLateral" pos="-0.0005 -0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                                         <site name="CA20_LSCVentralLateral" pos="-0.0005 0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                        <site name="CA20_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA20_RSCVentralMedial" pos="-0.0005 -0.00025 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA20_LSCVentralMedial" pos="-0.0005 0.00025 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                        <site name="CA20_RSCDorsalLateral" pos="-0.0005 -0.0008 0.0006" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA20_LSCDorsalLateral" pos="-0.0005 0.0008 0.0006" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA20_RSCDorsalMedial" pos="-0.0005 -0.00025 0.0008" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA20_LSCDorsalMedial" pos="-0.0005 0.00025 0.0008" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                         <joint name="CA19_CA20_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA19_CA20_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1847,9 +1967,15 @@
                                                                                                                         <geom name="CA21" pos="-0.0302 -0.0035 -0.0064" euler="-0.3 3.25 0" type="mesh" rgba="1 1 1 1" mesh="CA21"/>
                                                                                                                         <geom name="CA21_collision" class="collision_primitive" size="0.0009 0.0007" density="507.157357703" pos="-0.0013 0 0" euler="0 1.57 0" group="1"/>
                                                                                                                         
-                                                                                                                        <site name="CA21_RSCVentralLateral" pos="-0.0005 -0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                        <site name="CA21_LSCVentralLateral" pos="-0.0005 0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                        <site name="CA21_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA21_RSCVentralLateral" pos="-0.0005 -0.0008 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA21_LSCVentralLateral" pos="-0.0005 0.0008 -0.0003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA21_RSCVentralMedial" pos="-0.0005 -0.00025 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA21_LSCVentralMedial" pos="-0.0005 0.00025 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                        <site name="CA21_RSCDorsalLateral" pos="-0.0005 -0.0008 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA21_LSCDorsalLateral" pos="-0.0005 0.0008 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA21_RSCDorsalMedial" pos="-0.0005 -0.00025 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA21_LSCDorsalMedial" pos="-0.0005 0.00025 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                         <joint name="CA20_CA21_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA20_CA21_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1860,7 +1986,13 @@
                                                                                                                         
                                                                                                                         <site name="CA22_RSCVentralLateral" pos="-0.0005 -0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                                         <site name="CA22_LSCVentralLateral" pos="-0.0005 0.0008 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                        <site name="CA22_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA22_RSCVentralMedial" pos="-0.0005 -0.0001 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA22_LSCVentralMedial" pos="-0.0005 0.0001 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                        <site name="CA22_RSCDorsalLateral" pos="-0.0005 -0.0008 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA22_LSCDorsalLateral" pos="-0.0005 0.0008 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA22_RSCDorsalMedial" pos="-0.0005 -0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA22_LSCDorsalMedial" pos="-0.0005 0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                         <joint name="CA21_CA22_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA21_CA22_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1871,7 +2003,13 @@
                                                                                                                         
                                                                                                                         <site name="CA23_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                                         <site name="CA23_LSCVentralLateral" pos="-0.0005 0.0006 -0.0002" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                        <site name="CA23_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA23_RSCVentralMedial" pos="-0.0005 -0.0001 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA23_LSCVentralMedial" pos="-0.0005 0.0001 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                        <site name="CA23_RSCDorsalLateral" pos="-0.0005 -0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA23_LSCDorsalLateral" pos="-0.0005 0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA23_RSCDorsalMedial" pos="-0.0005 -0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA23_LSCDorsalMedial" pos="-0.0005 0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                         <joint name="CA22_CA23_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA22_CA23_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1882,7 +2020,13 @@
                                                                                                                         
                                                                                                                         <site name="CA24_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                                         <site name="CA24_LSCVentralLateral" pos="-0.0005 0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                        <site name="CA24_SCVentralMedial" pos="-0.0005 0 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA24_RSCVentralMedial" pos="-0.0005 -0.0001 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA24_LSCVentralMedial" pos="-0.0005 0.0001 -0.00075" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                        <site name="CA24_RSCDorsalLateral" pos="-0.0005 -0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA24_LSCDorsalLateral" pos="-0.0005 0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA24_RSCDorsalMedial" pos="-0.0005 -0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA24_LSCDorsalMedial" pos="-0.0005 0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                         <joint name="CA23_CA24_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA23_CA24_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1893,7 +2037,13 @@
                                                                                                                         
                                                                                                                         <site name="CA25_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                                         <site name="CA25_LSCVentralLateral" pos="-0.0005 0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                        <site name="CA25_SCVentralMedial" pos="-0.0005 0 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA25_RSCVentralMedial" pos="-0.0005 -0.0001 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA25_LSCVentralMedial" pos="-0.0005 0.0001 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                        <site name="CA25_RSCDorsalLateral" pos="-0.0005 -0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA25_LSCDorsalLateral" pos="-0.0005 0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA25_RSCDorsalMedial" pos="-0.0005 -0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA25_LSCDorsalMedial" pos="-0.0005 0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                         <joint name="CA24_CA25_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA24_CA25_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1904,7 +2054,13 @@
                                                                                                                         
                                                                                                                         <site name="CA26_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                                         <site name="CA26_LSCVentralLateral" pos="-0.0005 0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                        <site name="CA26_SCVentralMedial" pos="-0.0005 0 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA26_RSCVentralMedial" pos="-0.0005 -0.0001 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA26_LSCVentralMedial" pos="-0.0005 0.0001 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                        <site name="CA26_RSCDorsalLateral" pos="-0.0005 -0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA26_LSCDorsalLateral" pos="-0.0005 0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA26_RSCDorsalMedial" pos="-0.0005 -0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA26_LSCDorsalMedial" pos="-0.0005 0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                         <joint name="CA25_CA26_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA25_CA26_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -1915,7 +2071,13 @@
                                                                                                                         
                                                                                                                         <site name="CA27_RSCVentralLateral" pos="-0.0005 -0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                                                                                         <site name="CA27_LSCVentralLateral" pos="-0.0005 0.0006 -0.0001" size="0.0005" group="4" rgba="1 0 0 1"/>
-                                                                                                                        <site name="CA27_SCVentralMedial" pos="-0.0005 0 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA27_RSCVentralMedial" pos="-0.0005 -0.0001 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA27_LSCVentralMedial" pos="-0.0005 0.0001 -0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                                                                                                        <site name="CA27_RSCDorsalLateral" pos="-0.0005 -0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA27_LSCDorsalLateral" pos="-0.0005 0.0006 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA27_RSCDorsalMedial" pos="-0.0005 -0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                                                                                                        <site name="CA27_LSCDorsalMedial" pos="-0.0005 0.0001 0.0007" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                                                                                                         <joint name="CA26_CA27_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                                                                                                         <joint name="CA26_CA27_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
