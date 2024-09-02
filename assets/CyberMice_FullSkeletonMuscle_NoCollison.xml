@@ -1099,11 +1099,17 @@
                                         <site name="S2_RTransverseProcess" pos="-0.009 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="S3_RTransverseProcess" pos="-0.012 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="S4_RTransverseProcess" pos="-0.015 -0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                        <site name="S3_RLateralSurface" pos="-0.011 -0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S4_RLateralSurface" pos="-0.0135 -0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         
                                         <site name="S1_LTransverseProcess" pos="-0.0055 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="S2_LTransverseProcess" pos="-0.009 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="S3_LTransverseProcess" pos="-0.012 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="S4_LTransverseProcess" pos="-0.015 0.0015 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                        <site name="S3_LLateralSurface" pos="-0.011 0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="S4_LLateralSurface" pos="-0.0135 0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                         <site name="S1_VentralSurface" pos="-0.0065 0.0 0.0015" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="S2_VentralSurface" pos="-0.01 0.00 0.0015" size="0.0005" group="4" rgba="1 0 0 1"/>
@@ -1112,6 +1118,9 @@
 
                                         <site name="RIliacCrest" pos="-0.001 -0.005 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="LIliacCrest" pos="-0.001 0.005 0.0025" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                        <site name="RIschiaticSpine" pos="-0.0125 -0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="LIschiaticSpine" pos="-0.0125 0.00275 0.003" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         
                                         <geom name="RGA_at_Pelvis_cylinder" size="0.0025 0.0025" pos="-0.0202 -0.0015 -0.001" euler="1.6580627893946132 0.0 0.0" type="cylinder" rgba="0.19 0.83 0.78 0.2" group="2" />
                                         <geom name="RST_at_Pelvis_sphere" size="0.0006" pos="-0.0187 -0.0035 0.0006" rgba="0.19 0.83 0.78 0.2" group="2" />
@@ -1591,6 +1600,9 @@
                                             <site name="CA1_LSCDorsalLateral" pos="-0.001 0.0015 0.0005" size="0.0005" group="4" rgba="1 0 0 1"/>
                                             <site name="CA1_RSCDorsalMedial" pos="-0.0005 -0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
                                             <site name="CA1_LSCDorsalMedial" pos="-0.0005 0.0005 0.001" size="0.0005" group="4" rgba="1 0 0 1"/>
+
+                                            <site name="CA1_RLateralSurface" pos="0.0005 -0.0025 0.00025" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                            <site name="CA1_LLateralSurface" pos="0.0005 0.0025 0.00025" size="0.0005" group="4" rgba="1 0 0 1"/>
                                             
                                             <joint name="S4_CA1_y" class="Caudal_y" pos="0 0 0" axis="0 1 0"/>
                                             <joint name="S4_CA1_z" class="Caudal_z" pos="0 0 0" axis="0 0 1"/>
@@ -3013,6 +3025,57 @@
             <site site="CA27_RSCDorsalLateral"/>
         </spatial>
 
+        <spatial name="RIntertransversariiDorsalesCaudae" group="4">
+            <site site="S3_RLateralSurface"/>
+            <site site="S4_RLateralSurface"/>
+            <site site="CA1_RLateralSurface"/>
+            <site site="CA2_RSCDorsalLateral"/>
+            <site site="CA3_RSCDorsalLateral"/>
+            <site site="CA4_RSCDorsalLateral"/>
+            <site site="CA5_RSCDorsalLateral"/>
+            <site site="CA6_RSCDorsalLateral"/>
+        </spatial>
+
+        <spatial name="RIntertransversariiVentralesCaudae" group="4">
+            <site site="S4_RLateralSurface"/>
+            <site site="CA1_RSCVentralLateral"/>
+            <site site="CA2_RSCVentralLateral"/>
+            <site site="CA3_RSCVentralLateral"/>
+            <site site="CA4_RSCVentralLateral"/>
+            <site site="CA5_RSCVentralLateral"/>
+            <site site="CA6_RSCVentralLateral"/>
+            <site site="CA7_RSCVentralLateral"/>
+            <site site="CA8_RSCVentralLateral"/>
+            <site site="CA9_RSCVentralLateral"/>
+            <site site="CA10_RSCVentralLateral"/>
+            <site site="CA11_RSCVentralLateral"/>
+            <site site="CA12_RSCVentralLateral"/>
+            <site site="CA13_RSCVentralLateral"/>
+            <site site="CA14_RSCVentralLateral"/>
+            <site site="CA15_RSCVentralLateral"/>
+            <site site="CA16_RSCVentralLateral"/>
+            <site site="CA17_RSCVentralLateral"/>
+            <site site="CA18_RSCVentralLateral"/>
+            <site site="CA19_RSCVentralLateral"/>
+            <site site="CA20_RSCVentralLateral"/>
+            <site site="CA21_RSCVentralLateral"/>
+            <site site="CA22_RSCVentralLateral"/>
+            <site site="CA23_RSCVentralLateral"/>
+            <site site="CA24_RSCVentralLateral"/>
+            <site site="CA25_RSCVentralLateral"/>
+            <site site="CA26_RSCVentralLateral"/>
+            <site site="CA27_RSCVentralLateral"/>
+        </spatial>
+
+        <spatial name="RCoccygeus" group="4">
+            <site site="RIschiaticSpine"/>
+            <site site="CA1_RSCVentralLateral"/>
+            <site site="CA2_RSCVentralLateral"/>
+            <site site="CA3_RSCVentralLateral"/>
+            <site site="CA4_RSCVentralLateral"/>
+            <site site="CA5_RSCVentralLateral"/>
+        </spatial>
+
 
 
 
@@ -3856,9 +3919,56 @@
             <site site="CA27_LSCDorsalLateral"/>
         </spatial>
 
+        <spatial name="LIntertransversariiDorsalesCaudae" group="5">
+            <site site="S3_LLateralSurface"/>
+            <site site="S4_LLateralSurface"/>
+            <site site="CA1_LLateralSurface"/>
+            <site site="CA2_LSCDorsalLateral"/>
+            <site site="CA3_LSCDorsalLateral"/>
+            <site site="CA4_LSCDorsalLateral"/>
+            <site site="CA5_LSCDorsalLateral"/>
+            <site site="CA6_LSCDorsalLateral"/>
+        </spatial>
 
+        <spatial name="LIntertransversariiVentralesCaudae" group="5">
+            <site site="S4_LLateralSurface"/>
+            <site site="CA1_LSCVentralLateral"/>
+            <site site="CA2_LSCVentralLateral"/>
+            <site site="CA3_LSCVentralLateral"/>
+            <site site="CA4_LSCVentralLateral"/>
+            <site site="CA5_LSCVentralLateral"/>
+            <site site="CA6_LSCVentralLateral"/>
+            <site site="CA7_LSCVentralLateral"/>
+            <site site="CA8_LSCVentralLateral"/>
+            <site site="CA9_LSCVentralLateral"/>
+            <site site="CA10_LSCVentralLateral"/>
+            <site site="CA11_LSCVentralLateral"/>
+            <site site="CA12_LSCVentralLateral"/>
+            <site site="CA13_LSCVentralLateral"/>
+            <site site="CA14_LSCVentralLateral"/>
+            <site site="CA15_LSCVentralLateral"/>
+            <site site="CA16_LSCVentralLateral"/>
+            <site site="CA17_LSCVentralLateral"/>
+            <site site="CA18_LSCVentralLateral"/>
+            <site site="CA19_LSCVentralLateral"/>
+            <site site="CA20_LSCVentralLateral"/>
+            <site site="CA21_LSCVentralLateral"/>
+            <site site="CA22_LSCVentralLateral"/>
+            <site site="CA23_LSCVentralLateral"/>
+            <site site="CA24_LSCVentralLateral"/>
+            <site site="CA25_LSCVentralLateral"/>
+            <site site="CA26_LSCVentralLateral"/>
+            <site site="CA27_LSCVentralLateral"/>
+        </spatial>
 
-
+        <spatial name="LCoccygeus" group="5">
+            <site site="LIschiaticSpine"/>
+            <site site="CA1_LSCVentralLateral"/>
+            <site site="CA2_LSCVentralLateral"/>
+            <site site="CA3_LSCVentralLateral"/>
+            <site site="CA4_LSCVentralLateral"/>
+            <site site="CA5_LSCVentralLateral"/>
+        </spatial>
 
 
 
