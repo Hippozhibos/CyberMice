@@ -182,8 +182,21 @@
         <mesh name="CA26" file="CA26.stl"/>
         <mesh name="CA27" file="CA27_28.stl"/>
         <mesh name="CA28" file="CA28.stl"/>
-        <mesh name="CA_tendon_1" file="CA_tendon_1.stl"/>
-        <mesh name="CA_tendon_2" file="CA_tendon_2.stl"/>
+        <mesh name="RTarsalMetatarsal" file="RTarsalMetatarsal.stl"/>
+        <mesh name="RPhalange1_1" file="RPhalange1_1.stl"/>
+        <mesh name="RPhalange1_3" file="RPhalange1_3.stl"/>
+        <mesh name="RPhalange2_1" file="RPhalange2_1.stl"/>
+        <mesh name="RPhalange2_2" file="RPhalange2_2.stl"/>
+        <mesh name="RPhalange2_3" file="RPhalange2_3.stl"/>
+        <mesh name="RPhalange3_1" file="RPhalange3_1.stl"/>
+        <mesh name="RPhalange3_2" file="RPhalange3_2.stl"/>
+        <mesh name="RPhalange3_3" file="RPhalange3_3.stl"/>
+        <mesh name="RPhalange4_1" file="RPhalange4_1.stl"/>
+        <mesh name="RPhalange4_2" file="RPhalange4_2.stl"/>
+        <mesh name="RPhalange4_3" file="RPhalange4_3.stl"/>
+        <mesh name="RPhalange5_1" file="RPhalange5_1.stl"/>
+        <mesh name="RPhalange5_2" file="RPhalange5_2.stl"/>
+        <mesh name="RPhalange5_3" file="RPhalange5_3.stl"/>
     </asset>
 
     
@@ -396,9 +409,7 @@
 
             <site name="LSubclavius_2" pos="0.0189 0.0019 -0.0125" size="0.0005" group="5"/>
 
-            <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/>
-            <geom name="CA_tendon_1" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 1" mesh="CA_tendon_1" group="5"/>
-            <geom name="CA_tendon_2" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 0.5 0.5 1" mesh="CA_tendon_2" group="5"/> -->
+            <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/>
 
 
             <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
