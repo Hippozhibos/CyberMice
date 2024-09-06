@@ -197,6 +197,20 @@
         <mesh name="RPhalange5_1" file="RPhalange5_1.stl"/>
         <mesh name="RPhalange5_2" file="RPhalange5_2.stl"/>
         <mesh name="RPhalange5_3" file="RPhalange5_3.stl"/>
+        <mesh name="LFMetaphalange" file="LFPMetaphalange.stl"/>
+        <mesh name="RFMetaphalange" file="RFPMetaphalange.stl"/>
+        <mesh name="RFPhalange2_1" file="RFPhalange2_1.stl"/>
+        <mesh name="RFPhalange2_2" file="RFPhalange2_2.stl"/>
+        <mesh name="RFPhalange2_3" file="RFPhalange2_3.stl"/>
+        <mesh name="RFPhalange3_1" file="RFPhalange3_1.stl"/>
+        <mesh name="RFPhalange3_2" file="RFPhalange3_2.stl"/>
+        <mesh name="RFPhalange3_3" file="RFPhalange3_3.stl"/>
+        <mesh name="RFPhalange4_1" file="RFPhalange4_1.stl"/>
+        <mesh name="RFPhalange4_2" file="RFPhalange4_2.stl"/>
+        <mesh name="RFPhalange4_3" file="RFPhalange4_3.stl"/>
+        <mesh name="RFPhalange5_1" file="RFPhalange5_1.stl"/>
+        <mesh name="RFPhalange5_2" file="RFPhalange5_2.stl"/>
+        <mesh name="RFPhalange5_3" file="RFPhalange5_3.stl"/>
     </asset>
 
     
