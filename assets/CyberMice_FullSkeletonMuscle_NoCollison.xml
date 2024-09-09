@@ -823,6 +823,8 @@
                                         </body>
                                     </body>
                                 </body>
+
+                                <!-- consider: revising the axis before load in mujoco -->
                             
                             </body>
                         </body>
