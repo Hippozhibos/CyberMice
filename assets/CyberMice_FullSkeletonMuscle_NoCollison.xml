@@ -199,6 +199,8 @@
         <mesh name="RPhalange5_3" file="RPhalange5_3.stl"/>
         <mesh name="LFMetaphalange" file="LFPMetaphalange.stl"/>
         <mesh name="RFMetaphalange" file="RFPMetaphalange.stl"/>
+        <mesh name="RFPhalange1_1" file="RFPhalange1_1.stl"/>
+        <mesh name="RFPhalange1_3" file="RFPhalange1_3.stl"/>
         <mesh name="RFPhalange2_1" file="RFPhalange2_1.stl"/>
         <mesh name="RFPhalange2_2" file="RFPhalange2_2.stl"/>
         <mesh name="RFPhalange2_3" file="RFPhalange2_3.stl"/>
@@ -743,8 +745,8 @@
                             <body name="RCarpi" pos="0 0 -0.0035" gravcomp="0">
                                 <joint name="RWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-0.7853981633974483 0.7853981633974483" group="0" />
                                 <joint name="RWrist_flexion" pos="0 0 0" axis="1 0 0" range="-1.5707963267948966 1.5707963267948966" group="0" />
-                                <geom name="RCarpi" pos="0.003 -0.000 0.0124" euler="0.0 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RCarpi" density="1908" />
-                                <geom name="RFinger" pos="0.003 -0.000 0.0124" euler="0.0 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RFinger" density="1908" />
+                                <geom name="RCarpi" pos="0.0035 0.0035 0.012" euler="-0.5 2.5 0.2" type="mesh" rgba="1 1 1 1" mesh="RCarpi" density="1908" />
+                                <geom name="RFMetaphalange" pos="0.0035 0.0035 0.012" euler="-0.5 2.5 0.2" type="mesh" rgba="1 1 1 1" mesh="RFMetaphalange" density="1908" />
                                 
                                 <geom name="RWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" />
                                 <geom name="RWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" />
@@ -797,6 +799,30 @@
                                 <site name="RExtensorDigitorumCommunis_insertion" pos="2.33310562e-04  9.11031909e-04 -3.11384361e-03" size="0.0005" />
                                 <site name="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3" pos="2.10026767e-05  1.36370597e-03 -3.88020761e-03" size="0.0005" />
                                 <site name="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  1.06143762e-03 -1.06153355e-03" size="0.0005" />
+                                
+                                <body name="RFPhalange1_1" pos="0 0 0" gravcomp="0">
+                                    <geom name="RFPhalange1_1" pos="0.0106 0.00575 0.00575" euler="0 1.57 0" type="mesh" rgba="1 1 1 1" mesh="RFPhalange1_1" density="1908" group="4"/>
+                                    <joint name="RFPhalange1_1_adduction" pos="0.0011 0.0011 -0.00135" axis="0 -1 0" range="-0.1 0.1" group="2"/>
+                                    <joint name="RFPhalange1_1_flexion" pos="0.0011 0.0011 -0.00135" axis="1 0 0" range="-0.5 0.5" group="2" />
+                                    
+                                    <body name="RFPhalange1_3" pos="0 0 0" gravcomp="0">
+                                        <geom name="RFPhalange1_3" pos="0.0106 0.00575 0.00575" euler="0 1.57 0" type="mesh" rgba="1 1 1 1" mesh="RFPhalange1_3" density="1908" group="4"/>
+                                        <joint name="RFPhalange1_3_flexion" pos="0.0011 0.00175 -0.0019" axis="1 0 0" range="-0.5 0.5" group="2" />
+                                    </body>
+                                </body>
+
+                                <body name="RFPhalange2_1" pos="0 0 0" gravcomp="0">
+                                    <geom name="RFPhalange2_1" pos="0.0065 0.0115 0.0001" euler="-0.5 0.8 -0.8" type="mesh" rgba="1 1 1 1" mesh="RFPhalange2_1" density="1908" group="4"/>
+                                    <joint name="RFPhalange2_1_adduction" pos="0.001 0.00075 -0.0035" axis="0 -1 0" range="-0.1 0.1" group="2"/>
+                                    <joint name="RFPhalange2_1_flexion" pos="0.001 0.00075 -0.0035" axis="1 0 0" range="-0.5 0.5" group="2" />
+
+                                    <body name="RFPhalange2_2" pos="0 0 0" gravcomp="0">
+                                        <geom name="RFPhalange2_2" pos="0.0065 0.0115 0.0001" euler="-0.5 0.8 -0.8" type="mesh" rgba="1 1 1 1" mesh="RFPhalange2_2" density="1908" group="4"/>
+                                        <body name="RFPhalange2_3" pos="0 0 0" gravcomp="0">
+                                            <geom name="RFPhalange2_3" pos="0.0065 0.0115 0.0001" euler="-0.5 0.8 -0.8" type="mesh" rgba="1 1 1 1" mesh="RFPhalange2_3" density="1908" group="4"/>
+                                        </body>
+                                    </body>
+                                </body>
                             
                             </body>
                         </body>
