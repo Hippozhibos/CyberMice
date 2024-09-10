@@ -1396,7 +1396,8 @@
                                                     <joint name="RAnkle_flexion" pos="0 0 0" axis="0 -1 0" range="-1.0471975511965976 1.0471975511965976" group="3" />
                                                     <joint name="RAnkle_rotation" pos="0 0 0" axis="1 0 0" range="-0.3490658503988659 0.3490658503988659" group="3" />
                                                     
-                                                    <geom name="RFoot" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFoot" />
+                                                    <!-- <geom name="RFoot" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RFoot" /> -->
+                                                    <geom name="RTarsalMetatarsal" pos="0.02 0.0075 0.0525" euler="0.0 -1.25 0.0" type="mesh" rgba="1 1 1 1" mesh="RTarsalMetatarsal" group="4" />
 
                                                     <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                                     
@@ -1447,6 +1448,34 @@
                                                     <site name="RPDQI_PDQI-P5" pos="7.20000000e-03 -1.48000000e-03 -2.00000000e-04" size="0.0005" />
                                                     <site name="RPDQI_PDQI-P6" pos="1.04700000e-02 -1.11000000e-03 -4.90000000e-04" size="0.0005" />
                                                     <site name="RPDQI_PDQI-P7" pos="1.15900000e-02 -6.80000000e-04 -1.24000000e-03" size="0.0005" />
+
+                                                    <body name="RPhalange1_1" pos="0.0075 -0.00025 -0.0018" gravcomp="0">
+                                                        <geom name="RPhalange1_1" pos="0.001 0 0" euler="0.0 -1.5 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange1_1" density="1908" group="4"/>
+                                                        <joint name="RPhalange1_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="2"/>
+                                                        <joint name="RPhalange1_1_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+                                                        
+                                                        <body name="RPhalange1_3" pos="0.0021 0 0" gravcomp="0">
+                                                            <geom name="RPhalange1_3" pos="0.0005 0 0" euler="0.0 -1.5 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange1_3" density="1908" group="4"/>
+                                                            <joint name="RPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+                                                        </body>
+                                                    </body>
+
+                                                    <body name="RPhalange2_1" pos="0.0096 -0.0011 -0.0007" gravcomp="0">
+                                                        <geom name="RPhalange2_1" pos="0 0 0" euler="0.0 -1.6 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_1" density="1908" group="4"/>
+                                                        <joint name="RPhalange2_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="2"/>
+                                                        <joint name="RPhalange2_1_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                        <body name="RPhalange2_2" pos="0.00275 0 0" gravcomp="0">
+                                                            <geom name="RPhalange2_2" pos="0 0.0001 0" euler="0.0 -1.57 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_2" density="1908" group="4"/>
+                                                            <joint name="RPhalange2_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                            <body name="RPhalange2_3" pos="0.0017 0 0" gravcomp="0">
+                                                                <geom name="RPhalange2_3" pos="0 0 0" euler="0.0 -1.57 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_3" density="1908" group="4"/>
+                                                                <joint name="RPhalange2_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+                                                            </body>
+                                                        </body>
+                                                    </body>
+
                                                 </body>
                                             </body>
                                         </body>
