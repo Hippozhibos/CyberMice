@@ -214,6 +214,20 @@
         <mesh name="RFPhalange5_2" file="RFPhalange5_2.stl"/>
         <mesh name="RFPhalange5_3" file="RFPhalange5_3.stl"/>
         <mesh name="LTarsalMetatarsal" file="LTarsalMetatarsal.stl"/>
+        <mesh name="LPhalange1_1" file="LPhalange1_1.stl"/>
+        <mesh name="LPhalange1_3" file="LPhalange1_3.stl"/>
+        <mesh name="LPhalange2_1" file="LPhalange2_1.stl"/>
+        <mesh name="LPhalange2_2" file="LPhalange2_2.stl"/>
+        <mesh name="LPhalange2_3" file="LPhalange2_3.stl"/>
+        <mesh name="LPhalange3_1" file="LPhalange3_1.stl"/>
+        <mesh name="LPhalange3_2" file="LPhalange3_2.stl"/>
+        <mesh name="LPhalange3_3" file="LPhalange3_3.stl"/>
+        <mesh name="LPhalange4_1" file="LPhalange4_1.stl"/>
+        <mesh name="LPhalange4_2" file="LPhalange4_2.stl"/>
+        <mesh name="LPhalange4_3" file="LPhalange4_3.stl"/>
+        <mesh name="LPhalange5_1" file="LPhalange5_1.stl"/>
+        <mesh name="LPhalange5_2" file="LPhalange5_2.stl"/>
+        <mesh name="LPhalange5_3" file="LPhalange5_3.stl"/>
     </asset>
 
     
@@ -1462,16 +1476,16 @@
                                                     </body>
 
                                                     <body name="RPhalange2_1" pos="0.0094 -0.00 -0.0025" gravcomp="0">
-                                                        <geom name="RPhalange2_1" pos="0 0 0" euler="0.0 -1.6 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_1" density="1908" group="4"/>
+                                                        <geom name="RPhalange2_1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_1" density="1908" group="4"/>
                                                         <joint name="RPhalange2_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="2"/>
                                                         <joint name="RPhalange2_1_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
 
                                                         <body name="RPhalange2_2" pos="0.00275 0 0" gravcomp="0">
-                                                            <geom name="RPhalange2_2" pos="0 0.0001 0" euler="0.0 -1.57 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_2" density="1908" group="4"/>
+                                                            <geom name="RPhalange2_2" pos="0 0.0001 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_2" density="1908" group="4"/>
                                                             <joint name="RPhalange2_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
 
                                                             <body name="RPhalange2_3" pos="0.0017 0 0" gravcomp="0">
-                                                                <geom name="RPhalange2_3" pos="0 0 0" euler="0.0 -1.57 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_3" density="1908" group="4"/>
+                                                                <geom name="RPhalange2_3" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_3" density="1908" group="4"/>
                                                                 <joint name="RPhalange2_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
                                                             </body>
                                                         </body>
@@ -1665,7 +1679,8 @@
                                                     <joint name="LAnkle_rotation" pos="0 0 0" axis="-1 0 0" range="-0.3490658503988659 0.3490658503988659" group="4" />
                                                     
                                                     <!-- <geom name="LFoot" pos="0 0 0" euler="1.5707963267948966 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LFoot" /> -->
-                                                    <geom name="LTarsalMetatarsal" pos="0 0.0002 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LTarsalMetatarsal" group="4" />
+                                                    <geom name="LTarsalMetatarsal" pos="0 0.00075 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LTarsalMetatarsal" group="4" />
+                                                    <!-- <geom name="RTarsalMetatarsal" pos="0 -0.00075 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTarsalMetatarsal" group="4" /> -->
 
                                                     <geom name="LPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 0.0009 -0.0003" euler="-3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" />
                                                     
@@ -1716,6 +1731,81 @@
                                                     <site name="LPDQI_PDQI-P5" pos="7.20000000e-03 -1.48000000e-03 -2.00000000e-04" size="0.0005" />
                                                     <site name="LPDQI_PDQI-P6" pos="1.04700000e-02 -1.11000000e-03 -4.90000000e-04" size="0.0005" />
                                                     <site name="LPDQI_PDQI-P7" pos="1.15900000e-02 -6.80000000e-04 -1.24000000e-03" size="0.0005" />
+
+                                                    <body name="LPhalange1_1" pos="0.00725 -0.0007 -0.00325" gravcomp="0">
+                                                        <geom name="LPhalange1_1" pos="0.0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange1_1" density="1908" group="4"/>
+                                                        <joint name="LPhalange1_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="2"/>
+                                                        <joint name="LPhalange1_1_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+                                                        
+                                                        <body name="LPhalange1_3" pos="0.0021 0.0001 0" gravcomp="0">
+                                                            <geom name="LPhalange1_3" pos="0 0 0" euler="0.0 0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange1_3" density="1908" group="4"/>
+                                                            <joint name="LPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+                                                        </body>
+                                                    </body>
+
+                                                    <body name="LPhalange2_1" pos="0.0094 0.00 -0.0025" gravcomp="0">
+                                                        <geom name="LPhalange2_1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange2_1" density="1908" group="4"/>
+                                                        <joint name="LPhalange2_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="2"/>
+                                                        <joint name="LPhalange2_1_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                        <body name="LPhalange2_2" pos="0.00275 0 0" gravcomp="0">
+                                                            <geom name="LPhalange2_2" pos="0 0.0001 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange2_2" density="1908" group="4"/>
+                                                            <joint name="LPhalange2_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                            <body name="LPhalange2_3" pos="0.0017 0 0" gravcomp="0">
+                                                                <geom name="LPhalange2_3" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange2_3" density="1908" group="4"/>
+                                                                <joint name="LPhalange2_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+                                                            </body>
+                                                        </body>
+                                                    </body>
+
+                                                    <body name="LPhalange3_1" pos="0.01 0.001 -0.0018" gravcomp="0">
+                                                        <geom name="LPhalange3_1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange3_1" density="1908" group="4"/>
+                                                        <joint name="LPhalange3_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="2"/>
+                                                        <joint name="LPhalange3_1_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                        <body name="LPhalange3_2" pos="0.0031 0 0" gravcomp="0">
+                                                            <geom name="LPhalange3_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange3_2" density="1908" group="4"/>
+                                                            <joint name="LPhalange3_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                            <body name="LPhalange3_3" pos="0.0017 0 0" gravcomp="0">
+                                                                <geom name="LPhalange3_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange3_3" density="1908" group="4"/>
+                                                                <joint name="LPhalange3_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+                                                            </body>
+                                                        </body>
+                                                    </body>
+
+                                                    <body name="LPhalange4_1" pos="0.0098 0.00175 -0.0025" gravcomp="0">
+                                                        <geom name="LPhalange4_1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange4_1" density="1908" group="4"/>
+                                                        <joint name="LPhalange4_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="2"/>
+                                                        <joint name="LPhalange4_1_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                        <body name="LPhalange4_2" pos="0.003 0 -0.0002" gravcomp="0">
+                                                            <geom name="LPhalange4_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange4_2" density="1908" group="4"/>
+                                                            <joint name="LPhalange4_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                            <body name="LPhalange4_3" pos="0.00185 -0.0001 0" gravcomp="0">
+                                                                <geom name="LPhalange4_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange4_3" density="1908" group="4"/>
+                                                                <joint name="LPhalange4_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+                                                            </body>
+                                                        </body>
+                                                    </body>
+
+                                                    <body name="LPhalange5_1" pos="0.00745 0.0025 -0.003" gravcomp="0">
+                                                        <geom name="LPhalange5_1" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange5_1" density="1908" group="4"/>
+                                                        <joint name="LPhalange5_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="2"/>
+                                                        <joint name="LPhalange5_1_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                        <body name="LPhalange5_2" pos="0.0025 0 0" gravcomp="0">
+                                                            <geom name="LPhalange5_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange5_2" density="1908" group="4"/>
+                                                            <joint name="LPhalange5_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+
+                                                            <body name="LPhalange5_3" pos="0.0015 -0.0001 0" gravcomp="0">
+                                                                <geom name="LPhalange5_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange5_3" density="1908" group="4"/>
+                                                                <joint name="LPhalange5_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="2" />
+                                                            </body>
+                                                        </body>
+                                                    </body>
 
 
                                                 </body>
