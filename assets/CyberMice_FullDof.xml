@@ -930,7 +930,7 @@
             </body>
             
             <body name="RScapula" pos="0.0135 0.0 -0.009" euler="0 0.0 0" gravcomp="0">
-                <geom name="RScapula" pos="0.005 -0.0085 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 0" mesh="RScapula" density="1908" />
+                <geom name="RScapula" pos="0.005 -0.0085 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="RScapula" density="1908" />
                 
                 <joint name="RScapula_r1" pos="0.005 0 0" axis="1 0 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
                 <joint name="RScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="0" />
@@ -1222,7 +1222,7 @@
             </body>
 
             <body name="LScapula" pos="0.0135 0.0 -0.009" gravcomp="0">
-                <geom name="LScapula" pos="0.005 0.0085 -0.002" euler="0.3490658503988659 1.5707963267948966 0.2617993877991494" type="mesh" rgba="1 1 1 0" mesh="LScapula" density="1908" />
+                <geom name="LScapula" pos="0.005 0.0085 -0.002" euler="0.3490658503988659 1.5707963267948966 0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="LScapula" density="1908" />
                 
                 <joint name="LScapula_r1" pos="0.005 0 0" axis="-1 0 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
                 <joint name="LScapula_r2" pos="0.005 0 0" axis="0 1 0" range="-0.08726646259971647 0.08726646259971647" group="1" />
