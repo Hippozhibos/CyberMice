@@ -35,15 +35,15 @@
             <joint group="3" pos="0.003 0 -0.003" armature="1e-05" damping="0.03"/>
             <general gainprm="0.15"/>
             <default class="Thoracic_x">
-                <joint stiffness="0.03" range="-0.1 0.1"/>
+                <joint stiffness="0.03" range="-0.01 0.01"/>
                 <tendon range="-1 1"/>
             </default>
             <default class="Thoracic_y">
-                <joint stiffness="0.03" range="-0.1 0.1"/>
+                <joint stiffness="0.03" range="-0.01 0.01"/>
                 <tendon range="-1 1"/>
             </default>
             <default class="Thoracic_z">
-                <joint stiffness="0.02" range="-0.1 0.1"/>
+                <joint stiffness="0.02" range="-0.01 0.01"/>
                 <tendon range="-1 1"/>
                 <general gainprm="0.4"/>
             </default>
@@ -929,6 +929,7 @@
                 </body>
             </body>
             
+            <!--<Think about put Scapula under T4-T6 -->
             <body name="RScapula" pos="0.0135 0.0 -0.009" euler="0 0.0 0" gravcomp="0">
                 <geom name="RScapula" pos="0.005 -0.0085 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="RScapula" density="1908" />
                 
