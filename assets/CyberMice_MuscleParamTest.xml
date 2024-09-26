@@ -1,8 +1,5 @@
 <mujoco model="CyberMice">
     <compiler meshdir="meshes" balanceinertia="true" angle="radian" eulerseq="xyz" />
-    <compiler>
-        <!-- <lengthrange useexisting="false"/> -->
-    </compiler>
     
     <option timestep="0.002" />
     <size njmax="1000" nconmax="400" nkey="1" nuser_jnt="1" />
@@ -25,13 +22,31 @@
             <geom type="mesh" contype="3" conaffinity="2" friction="0.7" solref="0.015 1" solimp="0.95 0.99 0.003" material="bone" />
         </default>
         <default class="muscle">
-            <general ctrllimited="true" ctrlrange="0 1" dyntype="muscle" gaintype="muscle" biastype="muscle" dynprm="0.01 0.04 0 0 0 0 0 0 0 0" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+            <general ctrllimited="true" ctrlrange="0.01 1" dyntype="muscle" gaintype="muscle" biastype="muscle" dynprm="0.01 0.04 0 0 0 0 0 0 0 0" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         </default>
         <default class="motor">
             <general gainprm="5 0 0 0 0 0 0 0 0 0" />
         </default>
         <default class="sensor">
             <site group="4" />
+        </default>
+
+        <default class="Thoracic">
+            <joint group="3" pos="0.003 0 -0.003" armature="1e-05" damping="0.03"/>
+            <general gainprm="0.15"/>
+            <default class="Thoracic_x">
+                <joint stiffness="0.03" range="-0.01 0.01"/>
+                <tendon range="-1 1"/>
+            </default>
+            <default class="Thoracic_y">
+                <joint stiffness="0.03" range="-0.01 0.01"/>
+                <tendon range="-1 1"/>
+            </default>
+            <default class="Thoracic_z">
+                <joint stiffness="0.02" range="-0.01 0.01"/>
+                <tendon range="-1 1"/>
+                <general gainprm="0.4"/>
+            </default>
         </default>
 
         <default class="Lumbar">
@@ -250,13 +265,50 @@
         <mesh name="T13" file="T13.stl"/>
         <mesh name="Rib_13R" file="Rib_13R.stl"/>
         <mesh name="Rib_13L" file="Rib_13L.stl"/>
+        <mesh name="T12" file="T12.stl"/>
+        <mesh name="Rib_12R" file="Rib_12R.stl"/>
+        <mesh name="Rib_12L" file="Rib_12L.stl"/>
+        <mesh name="T11" file="T11.stl"/>
+        <mesh name="Rib_11R" file="Rib_11R.stl"/>
+        <mesh name="Rib_11L" file="Rib_11L.stl"/>
+        <mesh name="T10" file="T10.stl"/>
+        <mesh name="Rib_10R" file="Rib_10R.stl"/>
+        <mesh name="Rib_10L" file="Rib_10L.stl"/>
+        <mesh name="T9" file="T9.stl"/>
+        <mesh name="Rib_9R" file="Rib_9R.stl"/>
+        <mesh name="Rib_9L" file="Rib_9L.stl"/>
+        <mesh name="T8" file="T8.stl"/>
+        <mesh name="Rib_8R" file="Rib_8R.stl"/>
+        <mesh name="Rib_8L" file="Rib_8L.stl"/>
+        <mesh name="T7" file="T7.stl"/>
+        <mesh name="Rib_7R" file="Rib_7R.stl"/>
+        <mesh name="Rib_7L" file="Rib_7L.stl"/>
+        <mesh name="T6" file="T6.stl"/>
+        <mesh name="Rib_6R" file="Rib_6R.stl"/>
+        <mesh name="Rib_6L" file="Rib_6L.stl"/>
+        <mesh name="T5" file="T5.stl"/>
+        <mesh name="Rib_5R" file="Rib_5R.stl"/>
+        <mesh name="Rib_5L" file="Rib_5L.stl"/>
+        <mesh name="T4" file="T4.stl"/>
+        <mesh name="Rib_4R" file="Rib_4R.stl"/>
+        <mesh name="Rib_4L" file="Rib_4L.stl"/>
+        <mesh name="T3" file="T3.stl"/>
+        <mesh name="Rib_3R" file="Rib_3R.stl"/>
+        <mesh name="Rib_3L" file="Rib_3L.stl"/>
+        <mesh name="T2" file="T2.stl"/>
+        <mesh name="Rib_2R" file="Rib_2R.stl"/>
+        <mesh name="Rib_2L" file="Rib_2L.stl"/>
+        <mesh name="T1" file="T1.stl"/>
+        <mesh name="Rib_1R" file="Rib_1R.stl"/>
+        <mesh name="Rib_1L" file="Rib_1L.stl"/>
+
     </asset>
 
     
     <worldbody>
         <!-- <geom name="floor" type="plane" conaffinity="1" size="50 50 0.2" material="grid" pos="0 0 0" zaxis="0 0 1"/> -->
 
-        <body name="CyberMice" pos="0 0 0.05">
+        <body name="T13" pos="0 0 0.05">
             <camera name="side" mode="trackcom" pos="0 -3.5 1" euler="-5 0 0" />
             <camera name="back" mode="trackcom" pos="-3.5 0 1.3" xyaxes="0 -1 0 1 0 3" />
             <light name="top" mode="trackcom" exponent="10" cutoff="45" ambient="0 0 0" pos="0 0 5" directional="false" />
@@ -268,9 +320,8 @@
             <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
             <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" /> -->
 
-            <!-- <geom name="Chest" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="Chest" contype="0" conaffinity="0" /> -->
-            <geom name="Chest" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="Chest"/>
-            <!-- <geom name="T13" pos="0 0 0" euler="0 0 0" type="mesh" rgba="1 0 0 1" mesh="T13" /> -->
+            <!-- <geom name="Chest" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0 0 1 0.3" mesh="Chest" group="5"/> -->
+            <geom name="T13" pos="-0.0005 0 0.0002" euler="0 0 0.1" type="mesh" rgba="1 1 1 1" mesh="T13" />
 
             <site name="T13_SpinousProcess" pos="0.0005 0 0.0025" size="0.0005" group="5"/>
             <site name="T12_SpinousProcess" pos="0.00275 0 0.00275" size="0.0005" group="5"/>
@@ -466,182 +517,409 @@
 
             <!-- <geom name="WholeBodyReference" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0.5 0.5 1 1" mesh="WholeBody" group="5"/> -->
 
-            <!-- <body name="Rib_13R" pos="0.002 -0.0015 0" gravcomp="0">
+            <body name="Rib_13R" pos="0.002 -0.0015 0" gravcomp="0">
                 <geom name="Rib_13R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_13R" />
                 <joint name="Rib_13R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                 <joint name="Rib_13R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
             </body>
 
             <body name="Rib_13L" pos="0.002 0.0015 0" gravcomp="0">
-                <geom name="Rib_13L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 0 0 1" mesh="Rib_13L" />
+                <geom name="Rib_13L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_13L" />
                 <joint name="Rib_13L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                 <joint name="Rib_13L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
-            </body> -->
+            </body>
 
-
-            <body name="C7" pos="0.01875 0 -0.008" gravcomp="0">
-                <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
+            <body name="T12" pos="0.0025 0 0" gravcomp="0">
+                <geom name="T12" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T12" />
+                <joint name="T13_T12_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                <joint name="T13_T12_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                <joint name="T13_T12_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
                 
-                <joint name="T_C7_x" class="Cervical_x" pos="0 0 0" axis="1 0 0"/>
-                <joint name="T_C7_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
-                <joint name="T_C7_z" class="Cervical_z" pos="0 0 0" axis="0 0 1"/>
-                <site name="C7_SpinousProcess" pos="0.00055 0.0 0.001" size="0.0005" group="5"/>
-                <site name="C7_RTransverseProcess" pos="0.00055 -0.003 -0.001" size="0.0005" group="5"/>
-                <site name="C7_LTransverseProcess" pos="0.00055 0.003 -0.001" size="0.0005" group="5"/>
-                <site name="C7_VentralSurface" pos="0.00075 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                <site name="C7_RVentralArch" pos="0.00075 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                <site name="C7_LVentralArch" pos="0.00075 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                <site name="C7_RArticularProcess" pos="0.0003 -0.0015 0.0003" size="0.0005" group="5" rgba="1 0 1 1"/>
-                <site name="C7_LArticularProcess" pos="0.0003 0.0015 0.0003" size="0.0005" group="5" rgba="1 0 1 1"/>
+                <body name="Rib_12R" pos="0.002 -0.0015 0" gravcomp="0">
+                    <geom name="Rib_12R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_12R" />
+                    <joint name="Rib_12R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                    <joint name="Rib_12R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                </body>
 
-                <body name="C6" pos="0.00075 0.00 0.0001" gravcomp="0">
-                    <geom name="C6" pos="0.001 0.0005 0.0005" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C6" />
+                <body name="Rib_12L" pos="0.002 0.0015 0" gravcomp="0">
+                    <geom name="Rib_12L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_12L" />
+                    <joint name="Rib_12L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                    <joint name="Rib_12L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                </body>
+
+                <body name="T11" pos="0.002 0 -0.0002" gravcomp="0">
+                    <geom name="T11" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T11" />
+                    <joint name="T12_T11_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                    <joint name="T12_T11_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                    <joint name="T12_T11_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
                     
-                    <joint name="C7_C6_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588" />
-                    <joint name="C7_C6_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
-                    <joint name="C7_C6_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659"/>
-                    <site name="C6_SpinousProcess" pos="0.00055 0.0 0.001" size="0.0005" group="5"/>
-                    <site name="C6_RTransverseProcess" pos="0.00075 -0.003 -0.0005" size="0.0005" group="5"/>
-                    <site name="C6_LTransverseProcess" pos="0.00075 0.003 -0.0005" size="0.0005" group="5"/>
-                    <site name="C6_VentralSurface" pos="0.0011 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                    <site name="C6_RVentralArch" pos="0.0011 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                    <site name="C6_LVentralArch" pos="0.0011 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                    <site name="C6_RArticularProcess" pos="0.0005 -0.0015 0.0003" size="0.0005" group="5" rgba="1 0 1 1"/>
-                    <site name="C6_LArticularProcess" pos="0.0005 0.0015 0.0003" size="0.0005" group="5" rgba="1 0 1 1"/>
+                    <body name="Rib_11R" pos="0.002 -0.0015 0" gravcomp="0">
+                        <geom name="Rib_11R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_11R" />
+                        <joint name="Rib_11R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                        <joint name="Rib_11R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                    </body>
 
+                    <body name="Rib_11L" pos="0.002 0.0015 0" gravcomp="0">
+                        <geom name="Rib_11L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_11L" />
+                        <joint name="Rib_11L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                        <joint name="Rib_11L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                    </body>
 
-                    <body name="C5" pos="0.001 0 0.0004" gravcomp="0">
-                        <geom name="C5" pos="0.00 0.00055 0.0002" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C5" />
+                    <body name="T10" pos="0.0017 0 -0.0003" gravcomp="0">
+                        <geom name="T10" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T10" />
+                        <joint name="T11_T10_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                        <joint name="T11_T10_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                        <joint name="T11_T10_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
+                        
+                        <body name="Rib_10R" pos="0.002 -0.0015 0" gravcomp="0">
+                            <geom name="Rib_10R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_10R" />
+                            <joint name="Rib_10R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                            <joint name="Rib_10R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                        </body>
 
-                        <joint name="C6_C5_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588"/>
-                        <joint name="C6_C5_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
-                        <joint name="C6_C5_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659"/>
-                        <site name="C5_SpinousProcess" pos="0.0003 0.0 0.00125" size="0.0005" group="5"/>
-                        <site name="C5_RTransverseProcess" pos="0.00075 -0.003 -0.0005" size="0.0005" group="5"/>
-                        <site name="C5_LTransverseProcess" pos="0.00075 0.003 -0.0005" size="0.0005" group="5"/>
-                        <site name="C5_VentralSurface" pos="0.00125 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                        <site name="C5_RVentralArch" pos="0.00125 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                        <site name="C5_LVentralArch" pos="0.00125 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                        <site name="C5_RArticularProcess" pos="0.00035 -0.0015 0.0002" size="0.0005" group="5" rgba="1 0 1 1"/>
-                        <site name="C5_LArticularProcess" pos="0.00035 0.0015 0.0002" size="0.0005" group="5" rgba="1 0 1 1"/>
+                        <body name="Rib_10L" pos="0.002 0.0015 0" gravcomp="0">
+                            <geom name="Rib_10L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_10L" />
+                            <joint name="Rib_10L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                            <joint name="Rib_10L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                        </body>
 
-                        <body name="C4" pos="0.001 0 0.0003" gravcomp="0">
-                            <geom name="C4" pos="-0.001 0.0006 -0.0003" euler="0.0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="C4" />
+                        <body name="T9" pos="0.0016 0 -0.001" gravcomp="0">
+                            <geom name="T9" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T9" />
+                            <joint name="T10_T9_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                            <joint name="T10_T9_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                            <joint name="T10_T9_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
                             
-                            <joint name="C5_C4_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588"/>
-                            <joint name="C5_C4_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
-                            <joint name="C5_C4_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659"/>
-                            <site name="C4_SpinousProcess" pos="0.0001 0.0 0.001" size="0.0005" group="5"/>
-                            <site name="C4_RTransverseProcess" pos="0.0009 -0.002 -0.0006" size="0.0005" group="5"/>
-                            <site name="C4_LTransverseProcess" pos="0.0009 0.002 -0.0006" size="0.0005" group="5"/>
-                            <site name="C4_VentralSurface" pos="0.0015 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                            <site name="C4_RVentralArch" pos="0.0015 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                            <site name="C4_LVentralArch" pos="0.0015 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                            <site name="C4_RArticularProcess" pos="0.0003 -0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
-                            <site name="C4_LArticularProcess" pos="0.0003 0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
+                            <body name="Rib_9R" pos="0.002 -0.0015 -0.0005" gravcomp="0">
+                                <geom name="Rib_9R" pos="0 0 0" euler="0 -0.075 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_9R" />
+                                <joint name="Rib_9R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                <joint name="Rib_9R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                            </body>
 
-                            <body name="C3" pos="0.001 0 0.0005" euler="0 0 0" gravcomp="0">
-                                <geom name="C3" pos="-0.002 0.00065 -0.00075" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C3" />
+                            <body name="Rib_9L" pos="0.002 0.0015 -0.0005" gravcomp="0">
+                                <geom name="Rib_9L" pos="0 0 0" euler="0 -0.075 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_9L" />
+                                <joint name="Rib_9L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                <joint name="Rib_9L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                            </body>
+
+                            <body name="T8" pos="0.00125 0 -0.001" gravcomp="0">
+                                <geom name="T8" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T8" />
+                                <joint name="T9_T8_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                                <joint name="T9_T8_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                                <joint name="T9_T8_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
                                 
-                                <joint name="C4_C3_x" class="Cervical_x" pos="0 0 0" axis="0.9397 0 0.3420"/>
-                                <joint name="C4_C3_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
-                                <joint name="C4_C3_z" class="Cervical_z" pos="0 0 0" axis="-0.3420 0 0.9397"/>
-                                <site name="C3_SpinousProcess" pos="-0.0002 0.0 0.001" size="0.0005" group="5"/>
-                                <site name="C3_RTransverseProcess" pos="0.0009 -0.002 -0.0006" size="0.0005" group="5"/>
-                                <site name="C3_LTransverseProcess" pos="0.0009 0.002 -0.0006" size="0.0005" group="5"/>
-                                <site name="C3_VentralSurface" pos="0.0015 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                                <site name="C3_RVentralArch" pos="0.0015 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                                <site name="C3_LVentralArch" pos="0.0015 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
-                                <site name="C3_RArticularProcess" pos="0.0002 -0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
-                                <site name="C3_LArticularProcess" pos="0.0002 0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
+                                <body name="Rib_8R" pos="0.002 -0.0015 0.0" gravcomp="0">
+                                    <geom name="Rib_8R" pos="0 0 0" euler="0 0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_8R" />
+                                    <joint name="Rib_8R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                    <joint name="Rib_8R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                </body>
 
-                                <body name="C2" pos="0.001 0 0.001" gravcomp="0">
-                                    <geom name="C2" pos="-0.003 0.0006 -0.00175" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C2" />
+                                <body name="Rib_8L" pos="0.002 0.0015 0.0" gravcomp="0">
+                                    <geom name="Rib_8L" pos="0 0 0" euler="0 0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_8L" />
+                                    <joint name="Rib_8L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                    <joint name="Rib_8L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                </body>
+
+                                <body name="T7" pos="0.00125 0 -0.001" gravcomp="0">
+                                    <geom name="T7" pos="-0.0 0 0.0" euler="0 0.5 0" type="mesh" rgba="1 1 1 1" mesh="T7" />
+                                    <joint name="T8_T7_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                                    <joint name="T8_T7_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                                    <joint name="T8_T7_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
                                     
-                                    <joint name="C3_C2_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
-                                    <joint name="C3_C2_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
-                                    <joint name="C3_C2_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063"/>
-                                    <site name="C2_SpinousProcess" pos="-0.001 0.0 0.00125" size="0.0005" group="5"/>
-                                    <site name="C2_RTransverseProcess" pos="0.001 -0.002 -0.001" size="0.0005" group="5"/>
-                                    <site name="C2_LTransverseProcess" pos="0.001 0.002 -0.001" size="0.0005" group="5"/>
-                                    <site name="C2_VentralSurface" pos="0.00175 0.0 -0.0015" size="0.0005" group="5" rgba="1 0 0 1" />
-                                    <site name="C2_RVentralArch" pos="0.00175 -0.001 -0.0015" size="0.0005" group="5" rgba="1 0 0 1" />
-                                    <site name="C2_LVentralArch" pos="0.00175 0.001 -0.0015" size="0.0005" group="5" rgba="1 0 0 1" />
-                                    <site name="C2_RArticularProcess" pos="0.0 -0.0015 0.0" size="0.0005" group="5" rgba="1 0 1 1"/>
-                                    <site name="C2_LArticularProcess" pos="0.0 0.0015 0.0" size="0.0005" group="5" rgba="1 0 1 1"/>
+                                    <body name="Rib_7R" pos="0.00225 -0.00125 0.00025" gravcomp="0">
+                                        <geom name="Rib_7R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_7R" />
+                                        <joint name="Rib_7R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                        <joint name="Rib_7R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                    </body>
 
-                                    <body name="C1" pos="0.001 0 0.001" gravcomp="0">
-                                        <geom name="C1" pos="-0.0042 0.0006 -0.0028" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C1" />
+                                    <body name="Rib_7L" pos="0.00225 0.00125 0.00025" gravcomp="0">
+                                        <geom name="Rib_7L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_7L" />
+                                        <joint name="Rib_7L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                        <joint name="Rib_7L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                    </body>
 
-                                        <joint name="C2_C1_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
-                                        <joint name="C2_C1_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
-                                        <joint name="C2_C1_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063"/>
-                                        <site name="C1_SpinousProcess" pos="-0.001 0.0 0.001" size="0.0005" group="5"/>
-                                        <site name="C1_RTransverseProcess" pos="0.00025 -0.003 -0.001" size="0.0005" group="5"/>
-                                        <site name="C1_LTransverseProcess" pos="0.00025 0.003 -0.001" size="0.0005" group="5"/>
-                                        <site name="C1_VentralTubercle" pos="0.00225 0.0 -0.0025" size="0.0005" group="5" />
-                                        <site name="C1_RVentralArch" pos="0.00125 -0.0015 -0.00175" size="0.0005" group="5" />
-                                        <site name="C1_LVentralArch" pos="0.00125 0.0015 -0.00175" size="0.0005" group="5" />
-                                        <site name="C1_RArticularProcess" pos="-0.0005 -0.002 0.0" size="0.0005" group="5" rgba="1 0 1 1"/>
-                                        <site name="C1_LArticularProcess" pos="-0.0005 0.002 0.0" size="0.0005" group="5" rgba="1 0 1 1"/>
-
-
-                                        <body name="Head" pos="0.001 0 0.001" gravcomp="0">
-                                            <geom name="Head" pos="-0.005 0.0009 -0.004" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="Head"/>
-                                            
-                                            <camera name="egocentric" fovy="80.0" pos="0.0125 0 0.0025" euler="0 0 0" />
-                                            <joint name="C1_head_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
-                                            <joint name="C1_head_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
-                                            <joint name="C1_head_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063"/>
+                                    <body name="T6" pos="0.0008 0 -0.001" gravcomp="0">
+                                        <geom name="T6" pos="0.0005 0 0.0" euler="0 0.5 0" type="mesh" rgba="1 1 1 1" mesh="T6" />
+                                        <joint name="T7_T6_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                                        <joint name="T7_T6_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                                        <joint name="T7_T6_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
                                         
-                                            <site name="RRectusCapitisPosteriorMajor" pos="0.001 -0.003 0.00175" size="0.0005" group="5" />
-                                            <site name="RRectusCapitisPosteriorMinor" pos="0.001 -0.0015 0.00225" size="0.0005" group="5" />
-                                            <site name="RObliquusCapitisSuperior" pos="0.0015 -0.004 0.001" size="0.0005" group="5" />
+                                        <body name="Rib_6R" pos="0.002 -0.00125 -0.0005" gravcomp="0">
+                                            <geom name="Rib_6R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_6R" />
+                                            <joint name="Rib_6R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                            <joint name="Rib_6R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                        </body>
+
+                                        <body name="Rib_6L" pos="0.002 0.00125 -0.0005" gravcomp="0">
+                                            <geom name="Rib_6L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_6L" />
+                                            <joint name="Rib_6L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                            <joint name="Rib_6L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                        </body>
+
+                                        <body name="T5" pos="0.00125 0 -0.001" gravcomp="0">
+                                            <geom name="T5" pos="0.0005 0 0.0" euler="0 0.5 0" type="mesh" rgba="1 1 1 1" mesh="T5" />
+                                            <joint name="T6_T5_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                                            <joint name="T6_T5_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                                            <joint name="T6_T5_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
                                             
-                                            <site name="RSemispinalisCapitisMedial_1" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
-                                            
-                                            <site name="RSemispinalisCapitisLateral_1" pos="0.0017 -0.0035 0.00175" size="0.0005" group="5" />
-                                            <site name="RSemispinalisCapitisLateral_2" pos="0.00075 -0.00325 0.00125" size="0.0005" group="5" />
-                                        
-                                            <site name="RMastoidProcess" pos="0.00225 -0.00475 -0.00175" size="0.0005" group="5" />
-                                            <site name="RCleidocephalicus_1" pos="0.0035 -0.005 0.001" size="0.0005" group="5"/>
+                                            <body name="Rib_5R" pos="0.002 -0.00125 -0.0006" gravcomp="0">
+                                                <geom name="Rib_5R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_5R" />
+                                                <joint name="Rib_5R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                <joint name="Rib_5R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                            </body>
 
-                                            <site name="RLongissimusCapitis_1" pos="0.001 -0.0045 -0.001" size="0.0005" group="5"/>
+                                            <body name="Rib_5L" pos="0.002 0.00125 -0.0006" gravcomp="0">
+                                                <geom name="Rib_5L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_5L" />
+                                                <joint name="Rib_5L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                <joint name="Rib_5L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                            </body>
 
-                                            <site name="RSpleniusCapitis_1" pos="0.001 -0.0045 -0.0" size="0.0005" group="5" />
-                                            <site name="RSpleniusCapitis_2_1" pos="0.003 -0.0015 0.0035" size="0.0005" group="5" />
-                                            <site name="RSpleniusCapitis_2_2" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
+                                            <body name="T4" pos="0.0015 0 -0.0013" gravcomp="0">
+                                                <geom name="T4" pos="0.0005 0 0.0" euler="0 0.5 0" type="mesh" rgba="1 1 1 1" mesh="T4" />
+                                                <joint name="T5_T4_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                                                <joint name="T5_T4_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                                                <joint name="T5_T4_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
+                                                
+                                                <body name="Rib_4R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
+                                                    <geom name="Rib_4R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_4R" />
+                                                    <joint name="Rib_4R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                    <joint name="Rib_4R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                </body>
 
-                                            <site name="RTrapezius_head_1" pos="0.0025 -0.0005 0.00375" size="0.0005" group="5" />
-                                            <site name="RTrapezius_head_2" pos="0.0015 -0.0005 0.00375" size="0.0005" group="5" />
+                                                <body name="Rib_4L" pos="0.001 0.00125 -0.0006" gravcomp="0">
+                                                    <geom name="Rib_4L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_4L" />
+                                                    <joint name="Rib_4L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                    <joint name="Rib_4L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                </body>
 
-                                            <site name="Basioccipital" pos="0.0025 0.00 -0.0035" size="0.0005" group="5" />
-                                            <site name="RLongusCapitis_1" pos="0.001 -0.0005 -0.0035" size="0.0005" group="5" />
-                                            
+                                                <body name="T3" pos="0.00135 0 -0.00075" gravcomp="0">
+                                                    <geom name="T3" pos="0.0005 0 0.0" euler="0 0.4 0" type="mesh" rgba="1 1 1 1" mesh="T3" />
+                                                    <joint name="T4_T3_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                                                    <joint name="T4_T3_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                                                    <joint name="T4_T3_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
+                                                    
+                                                    <body name="Rib_3R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
+                                                        <geom name="Rib_3R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_3R" />
+                                                        <joint name="Rib_3R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                        <joint name="Rib_3R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                    </body>
 
-                                            <site name="LRectusCapitisPosteriorMajor" pos="0.001 0.003 0.00175" size="0.0005" group="5" />
-                                            <site name="LRectusCapitisPosteriorMinor" pos="0.001 0.0015 0.00225" size="0.0005" group="5" />
-                                            <site name="LObliquusCapitisSuperior" pos="0.0015 0.004 0.001" size="0.0005" group="5" />
-                                            
-                                            <site name="LSemispinalisCapitisMedial_1" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
-                                            
-                                            <site name="LSemispinalisCapitisLateral_1" pos="0.0017 0.0035 0.00175" size="0.0005" group="5" />
-                                            <site name="LSemispinalisCapitisLateral_2" pos="0.00075 0.00325 0.00125" size="0.0005" group="5" />
-                                        
-                                            <site name="LMastoidProcess" pos="0.00225 0.00475 -0.00175" size="0.0005" group="5" />
-                                            <site name="LCleidocephalicus_1" pos="0.0035 0.005 0.001" size="0.0005" group="5"/>
+                                                    <body name="Rib_3L" pos="0.001 0.00125 -0.0006" gravcomp="0">
+                                                        <geom name="Rib_3L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_3L" />
+                                                        <joint name="Rib_3L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                        <joint name="Rib_3L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                    </body>
 
-                                            <site name="LLongissimusCapitis_1" pos="0.001 0.0045 -0.001" size="0.0005" group="5"/>
+                                                    <body name="T2" pos="0.0012 0 -0.00075" gravcomp="0">
+                                                        <geom name="T2" pos="0.0005 0 0.0" euler="0 0.1 0" type="mesh" rgba="1 1 1 1" mesh="T2" />
+                                                        <joint name="T3_T2_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                                                        <joint name="T3_T2_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                                                        <joint name="T3_T2_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
+                                                        
+                                                        <body name="Rib_2R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
+                                                            <geom name="Rib_2R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_2R" />
+                                                            <joint name="Rib_2R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                            <joint name="Rib_2R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                        </body>
 
-                                            <site name="LSpleniusCapitis_1" pos="0.001 0.0045 -0.0" size="0.0005" group="5" />
-                                            <site name="LSpleniusCapitis_2_1" pos="0.003 0.0015 0.0035" size="0.0005" group="5" />
-                                            <site name="LSpleniusCapitis_2_2" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
+                                                        <body name="Rib_2L" pos="0.001 0.00125 -0.0006" gravcomp="0">
+                                                            <geom name="Rib_2L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_2L" />
+                                                            <joint name="Rib_2L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                            <joint name="Rib_2L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                        </body>
 
-                                            <site name="LTrapezius_head_1" pos="0.0025 0.0005 0.00375" size="0.0005" group="5" />
-                                            <site name="LTrapezius_head_2" pos="0.0015 0.0005 0.00375" size="0.0005" group="5" />
+                                                        <body name="T1" pos="0.0008 0 -0.00075" gravcomp="0">
+                                                            <geom name="T1" pos="0.0005 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T1" />
+                                                            <joint name="T2_T1_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0"/>
+                                                            <joint name="T2_T1_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0"/>
+                                                            <joint name="T2_T1_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1"/>
+                                                            
+                                                            <body name="Rib_1R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
+                                                                <geom name="Rib_1R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_1R" />
+                                                                <joint name="Rib_1R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                                <joint name="Rib_1R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                            </body>
 
-                                            <site name="LLongusCapitis_1" pos="0.001 0.0005 -0.0035" size="0.0005" group="5" />
-                                        
+                                                            <body name="Rib_1L" pos="0.001 0.00125 -0.0006" gravcomp="0">
+                                                                <geom name="Rib_1L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_1L" />
+                                                                <joint name="Rib_1L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                                <joint name="Rib_1L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                            </body>
+
+                                                            <body name="C7" pos="0.0015 0 0.0008" gravcomp="0">
+                                                                <geom name="C7" pos="0.0015 0.0005 0.0006" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C7" />
+                                                                
+                                                                <joint name="T_C7_x" class="Cervical_x" pos="0 0 0" axis="1 0 0"/>
+                                                                <joint name="T_C7_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
+                                                                <joint name="T_C7_z" class="Cervical_z" pos="0 0 0" axis="0 0 1"/>
+                                                                <site name="C7_SpinousProcess" pos="0.00055 0.0 0.001" size="0.0005" group="5"/>
+                                                                <site name="C7_RTransverseProcess" pos="0.00055 -0.003 -0.001" size="0.0005" group="5"/>
+                                                                <site name="C7_LTransverseProcess" pos="0.00055 0.003 -0.001" size="0.0005" group="5"/>
+                                                                <site name="C7_VentralSurface" pos="0.00075 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                <site name="C7_RVentralArch" pos="0.00075 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                <site name="C7_LVentralArch" pos="0.00075 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                <site name="C7_RArticularProcess" pos="0.0003 -0.0015 0.0003" size="0.0005" group="5" rgba="1 0 1 1"/>
+                                                                <site name="C7_LArticularProcess" pos="0.0003 0.0015 0.0003" size="0.0005" group="5" rgba="1 0 1 1"/>
+
+                                                                <body name="C6" pos="0.00075 0.00 0.0001" gravcomp="0">
+                                                                    <geom name="C6" pos="0.001 0.0005 0.0005" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C6" />
+                                                                    
+                                                                    <joint name="C7_C6_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588" />
+                                                                    <joint name="C7_C6_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
+                                                                    <joint name="C7_C6_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659"/>
+                                                                    <site name="C6_SpinousProcess" pos="0.00055 0.0 0.001" size="0.0005" group="5"/>
+                                                                    <site name="C6_RTransverseProcess" pos="0.00075 -0.003 -0.0005" size="0.0005" group="5"/>
+                                                                    <site name="C6_LTransverseProcess" pos="0.00075 0.003 -0.0005" size="0.0005" group="5"/>
+                                                                    <site name="C6_VentralSurface" pos="0.0011 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                    <site name="C6_RVentralArch" pos="0.0011 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                    <site name="C6_LVentralArch" pos="0.0011 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                    <site name="C6_RArticularProcess" pos="0.0005 -0.0015 0.0003" size="0.0005" group="5" rgba="1 0 1 1"/>
+                                                                    <site name="C6_LArticularProcess" pos="0.0005 0.0015 0.0003" size="0.0005" group="5" rgba="1 0 1 1"/>
+
+
+                                                                    <body name="C5" pos="0.001 0 0.0004" gravcomp="0">
+                                                                        <geom name="C5" pos="0.00 0.00055 0.0002" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="C5" />
+
+                                                                        <joint name="C6_C5_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588"/>
+                                                                        <joint name="C6_C5_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
+                                                                        <joint name="C6_C5_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659"/>
+                                                                        <site name="C5_SpinousProcess" pos="0.0003 0.0 0.00125" size="0.0005" group="5"/>
+                                                                        <site name="C5_RTransverseProcess" pos="0.00075 -0.003 -0.0005" size="0.0005" group="5"/>
+                                                                        <site name="C5_LTransverseProcess" pos="0.00075 0.003 -0.0005" size="0.0005" group="5"/>
+                                                                        <site name="C5_VentralSurface" pos="0.00125 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                        <site name="C5_RVentralArch" pos="0.00125 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                        <site name="C5_LVentralArch" pos="0.00125 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                        <site name="C5_RArticularProcess" pos="0.00035 -0.0015 0.0002" size="0.0005" group="5" rgba="1 0 1 1"/>
+                                                                        <site name="C5_LArticularProcess" pos="0.00035 0.0015 0.0002" size="0.0005" group="5" rgba="1 0 1 1"/>
+
+                                                                        <body name="C4" pos="0.001 0 0.0003" gravcomp="0">
+                                                                            <geom name="C4" pos="-0.001 0.0006 -0.0003" euler="0.0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="C4" />
+                                                                            
+                                                                            <joint name="C5_C4_x" class="Cervical_x" pos="0 0 0" axis="0.9659 0 0.2588"/>
+                                                                            <joint name="C5_C4_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
+                                                                            <joint name="C5_C4_z" class="Cervical_z" pos="0 0 0" axis="-0.2588 0 0.9659"/>
+                                                                            <site name="C4_SpinousProcess" pos="0.0001 0.0 0.001" size="0.0005" group="5"/>
+                                                                            <site name="C4_RTransverseProcess" pos="0.0009 -0.002 -0.0006" size="0.0005" group="5"/>
+                                                                            <site name="C4_LTransverseProcess" pos="0.0009 0.002 -0.0006" size="0.0005" group="5"/>
+                                                                            <site name="C4_VentralSurface" pos="0.0015 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                            <site name="C4_RVentralArch" pos="0.0015 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                            <site name="C4_LVentralArch" pos="0.0015 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                            <site name="C4_RArticularProcess" pos="0.0003 -0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
+                                                                            <site name="C4_LArticularProcess" pos="0.0003 0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
+
+                                                                            <body name="C3" pos="0.001 0 0.0005" euler="0 0 0" gravcomp="0">
+                                                                                <geom name="C3" pos="-0.002 0.00065 -0.00075" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C3" />
+                                                                                
+                                                                                <joint name="C4_C3_x" class="Cervical_x" pos="0 0 0" axis="0.9397 0 0.3420"/>
+                                                                                <joint name="C4_C3_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
+                                                                                <joint name="C4_C3_z" class="Cervical_z" pos="0 0 0" axis="-0.3420 0 0.9397"/>
+                                                                                <site name="C3_SpinousProcess" pos="-0.0002 0.0 0.001" size="0.0005" group="5"/>
+                                                                                <site name="C3_RTransverseProcess" pos="0.0009 -0.002 -0.0006" size="0.0005" group="5"/>
+                                                                                <site name="C3_LTransverseProcess" pos="0.0009 0.002 -0.0006" size="0.0005" group="5"/>
+                                                                                <site name="C3_VentralSurface" pos="0.0015 0.0 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                                <site name="C3_RVentralArch" pos="0.0015 -0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                                <site name="C3_LVentralArch" pos="0.0015 0.001 -0.00125" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                                <site name="C3_RArticularProcess" pos="0.0002 -0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
+                                                                                <site name="C3_LArticularProcess" pos="0.0002 0.0015 0.0001" size="0.0005" group="5" rgba="1 0 1 1"/>
+
+                                                                                <body name="C2" pos="0.001 0 0.001" gravcomp="0">
+                                                                                    <geom name="C2" pos="-0.003 0.0006 -0.00175" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C2" />
+                                                                                    
+                                                                                    <joint name="C3_C2_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
+                                                                                    <joint name="C3_C2_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
+                                                                                    <joint name="C3_C2_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063"/>
+                                                                                    <site name="C2_SpinousProcess" pos="-0.001 0.0 0.00125" size="0.0005" group="5"/>
+                                                                                    <site name="C2_RTransverseProcess" pos="0.001 -0.002 -0.001" size="0.0005" group="5"/>
+                                                                                    <site name="C2_LTransverseProcess" pos="0.001 0.002 -0.001" size="0.0005" group="5"/>
+                                                                                    <site name="C2_VentralSurface" pos="0.00175 0.0 -0.0015" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                                    <site name="C2_RVentralArch" pos="0.00175 -0.001 -0.0015" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                                    <site name="C2_LVentralArch" pos="0.00175 0.001 -0.0015" size="0.0005" group="5" rgba="1 0 0 1" />
+                                                                                    <site name="C2_RArticularProcess" pos="0.0 -0.0015 0.0" size="0.0005" group="5" rgba="1 0 1 1"/>
+                                                                                    <site name="C2_LArticularProcess" pos="0.0 0.0015 0.0" size="0.0005" group="5" rgba="1 0 1 1"/>
+
+                                                                                    <body name="C1" pos="0.001 0 0.001" gravcomp="0">
+                                                                                        <geom name="C1" pos="-0.0042 0.0006 -0.0028" euler="0.0 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="C1" />
+
+                                                                                        <joint name="C2_C1_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
+                                                                                        <joint name="C2_C1_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
+                                                                                        <joint name="C2_C1_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063"/>
+                                                                                        <site name="C1_SpinousProcess" pos="-0.001 0.0 0.001" size="0.0005" group="5"/>
+                                                                                        <site name="C1_RTransverseProcess" pos="0.00025 -0.003 -0.001" size="0.0005" group="5"/>
+                                                                                        <site name="C1_LTransverseProcess" pos="0.00025 0.003 -0.001" size="0.0005" group="5"/>
+                                                                                        <site name="C1_VentralTubercle" pos="0.00225 0.0 -0.0025" size="0.0005" group="5" />
+                                                                                        <site name="C1_RVentralArch" pos="0.00125 -0.0015 -0.00175" size="0.0005" group="5" />
+                                                                                        <site name="C1_LVentralArch" pos="0.00125 0.0015 -0.00175" size="0.0005" group="5" />
+                                                                                        <site name="C1_RArticularProcess" pos="-0.0005 -0.002 0.0" size="0.0005" group="5" rgba="1 0 1 1"/>
+                                                                                        <site name="C1_LArticularProcess" pos="-0.0005 0.002 0.0" size="0.0005" group="5" rgba="1 0 1 1"/>
+
+
+                                                                                        <body name="Head" pos="0.001 0 0.001" gravcomp="0">
+                                                                                            <geom name="Head" pos="-0.005 0.0009 -0.004" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="Head"/>
+                                                                                            
+                                                                                            <camera name="egocentric" fovy="80.0" pos="0.0125 0 0.0025" euler="0 0 0" />
+                                                                                            <joint name="C1_head_x" class="Cervical_x" pos="0 0 0" axis="0.9063 0 0.4226"/>
+                                                                                            <joint name="C1_head_y" class="Cervical_y" pos="0 0 0" axis="0 1 0"/>
+                                                                                            <joint name="C1_head_z" class="Cervical_z" pos="0 0 0" axis="-0.4226 0 0.9063"/>
+                                                                                        
+                                                                                            <site name="RRectusCapitisPosteriorMajor" pos="0.001 -0.003 0.00175" size="0.0005" group="5" />
+                                                                                            <site name="RRectusCapitisPosteriorMinor" pos="0.001 -0.0015 0.00225" size="0.0005" group="5" />
+                                                                                            <site name="RObliquusCapitisSuperior" pos="0.0015 -0.004 0.001" size="0.0005" group="5" />
+                                                                                            
+                                                                                            <site name="RSemispinalisCapitisMedial_1" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
+                                                                                            
+                                                                                            <site name="RSemispinalisCapitisLateral_1" pos="0.0017 -0.0035 0.00175" size="0.0005" group="5" />
+                                                                                            <site name="RSemispinalisCapitisLateral_2" pos="0.00075 -0.00325 0.00125" size="0.0005" group="5" />
+                                                                                        
+                                                                                            <site name="RMastoidProcess" pos="0.00225 -0.00475 -0.00175" size="0.0005" group="5" />
+                                                                                            <site name="RCleidocephalicus_1" pos="0.0035 -0.005 0.001" size="0.0005" group="5"/>
+
+                                                                                            <site name="RLongissimusCapitis_1" pos="0.001 -0.0045 -0.001" size="0.0005" group="5"/>
+
+                                                                                            <site name="RSpleniusCapitis_1" pos="0.001 -0.0045 -0.0" size="0.0005" group="5" />
+                                                                                            <site name="RSpleniusCapitis_2_1" pos="0.003 -0.0015 0.0035" size="0.0005" group="5" />
+                                                                                            <site name="RSpleniusCapitis_2_2" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
+
+                                                                                            <site name="RTrapezius_head_1" pos="0.0025 -0.0005 0.00375" size="0.0005" group="5" />
+                                                                                            <site name="RTrapezius_head_2" pos="0.0015 -0.0005 0.00375" size="0.0005" group="5" />
+
+                                                                                            <site name="Basioccipital" pos="0.0025 0.00 -0.0035" size="0.0005" group="5" />
+                                                                                            <site name="RLongusCapitis_1" pos="0.001 -0.0005 -0.0035" size="0.0005" group="5" />
+                                                                                            
+
+                                                                                            <site name="LRectusCapitisPosteriorMajor" pos="0.001 0.003 0.00175" size="0.0005" group="5" />
+                                                                                            <site name="LRectusCapitisPosteriorMinor" pos="0.001 0.0015 0.00225" size="0.0005" group="5" />
+                                                                                            <site name="LObliquusCapitisSuperior" pos="0.0015 0.004 0.001" size="0.0005" group="5" />
+                                                                                            
+                                                                                            <site name="LSemispinalisCapitisMedial_1" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
+                                                                                            
+                                                                                            <site name="LSemispinalisCapitisLateral_1" pos="0.0017 0.0035 0.00175" size="0.0005" group="5" />
+                                                                                            <site name="LSemispinalisCapitisLateral_2" pos="0.00075 0.00325 0.00125" size="0.0005" group="5" />
+                                                                                        
+                                                                                            <site name="LMastoidProcess" pos="0.00225 0.00475 -0.00175" size="0.0005" group="5" />
+                                                                                            <site name="LCleidocephalicus_1" pos="0.0035 0.005 0.001" size="0.0005" group="5"/>
+
+                                                                                            <site name="LLongissimusCapitis_1" pos="0.001 0.0045 -0.001" size="0.0005" group="5"/>
+
+                                                                                            <site name="LSpleniusCapitis_1" pos="0.001 0.0045 -0.0" size="0.0005" group="5" />
+                                                                                            <site name="LSpleniusCapitis_2_1" pos="0.003 0.0015 0.0035" size="0.0005" group="5" />
+                                                                                            <site name="LSpleniusCapitis_2_2" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
+
+                                                                                            <site name="LTrapezius_head_1" pos="0.0025 0.0005 0.00375" size="0.0005" group="5" />
+                                                                                            <site name="LTrapezius_head_2" pos="0.0015 0.0005 0.00375" size="0.0005" group="5" />
+
+                                                                                            <site name="LLongusCapitis_1" pos="0.001 0.0005 -0.0035" size="0.0005" group="5" />
+                                                                                        
+                                                                                        </body>
+                                                                                    </body>
+                                                                                </body>
+                                                                            </body>
+                                                                        </body>
+                                                                    </body>
+                                                                </body>
+                                                            </body>
+                                                        </body>
+                                                    </body>
+                                                </body>
+                                            </body>
                                         </body>
                                     </body>
                                 </body>
@@ -651,6 +929,7 @@
                 </body>
             </body>
             
+            <!--<Think about put Scapula under T4-T6 -->
             <body name="RScapula" pos="0.0135 0.0 -0.009" euler="0 0.0 0" gravcomp="0">
                 <geom name="RScapula" pos="0.005 -0.0085 -0.002" euler="-0.3490658503988659 1.5707963267948966 -0.2617993877991494" type="mesh" rgba="1 1 1 1" mesh="RScapula" density="1908" />
                 
@@ -1238,7 +1517,7 @@
             </body>
 
             <body name="L1" pos="0.0005 0.00 0.00075" gravcomp="0">
-                <geom name="L1" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0 1 1 1" mesh="L1" />
+                <geom name="L1" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="1 1 1 1" mesh="L1" />
                 <geom name="L1_Psoas_cylinder" size="0.002 0.004" pos="-0.002 0 0" euler="1.57 0 0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2"/>
 
                 <joint name="T_L1_x" class="Lumbar_x" pos="0 0 0.001" axis="0.9848 0 0.1736"/>
@@ -5323,85 +5602,96 @@
     </tendon>
     
     <actuator>
+    
+        <!-- unconverged muscle-->
 
-        <general group="4" name="RLatissimusDorsi" class="muscle" tendon="RLatissimusDorsi_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RSerratusVentralisThoracis" class="muscle" tendon="RSerratusVentralisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RSerratusVentralisCervicis" class="muscle" tendon="RSerratusVentralisCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RPectoralisMajor" class="muscle" tendon="RPectoralisMajor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RPectoralisMinor" class="muscle" tendon="RPectoralisMinor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RPectoralisMinimus" class="muscle" tendon="RPectoralisMinimus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RScalenusAnterior" class="muscle" tendon="RScalenusAnterior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RScalenusMedius" class="muscle" tendon="RScalenusMedius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RScalenusPosterior" class="muscle" tendon="RScalenusPosterior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RRectusCapitisPosteriorMajor" class="muscle" tendon="RRectusCapitisPosteriorMajor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RRectusCapitisPosteriorMinor" class="muscle" tendon="RRectusCapitisPosteriorMinor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RObliquusCapitisSuperior" class="muscle" tendon="RObliquusCapitisSuperior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RObliquusCapitisInferior" class="muscle" tendon="RObliquusCapitisInferior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RSemispinalisCapitisMedial" class="muscle" tendon="RSemispinalisCapitisMedial_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RSemispinalisCapitisLateral" class="muscle" tendon="RSemispinalisCapitisLateral_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RCleidomastoideus" class="muscle" tendon="RCleidomastoideus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RCleidocephalicus" class="muscle" tendon="RCleidocephalicus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RSternomastoideus" class="muscle" tendon="RSternomastoideus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RSpleniusCapitis" class="muscle" tendon="RSpleniusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RRhomboideusCapitis" class="muscle" tendon="RRhomboideusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RRhomboideusCervicis" class="muscle" tendon="RRhomboideusCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RRhomboideusThoracis" class="muscle" tendon="RRhomboideusThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="ROmotransversarius" class="muscle" tendon="ROmotransversarius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RSubclavius" class="muscle" tendon="RSubclavius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RTrapeziusCervical" class="muscle" tendon="RTrapeziusCervical_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RTrapeziusThoracic" class="muscle" tendon="RTrapeziusThoracic_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RLongusCapitis" class="muscle" tendon="RLongusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RLongusCapitisSuperiorOblique" class="muscle" tendon="RLongusCapitisSuperiorOblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RLongusCapitisInferiorOblique" class="muscle" tendon="RLongusCapitisInferiorOblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RLongusCapitisVertical" class="muscle" tendon="RLongusCapitisVertical_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RIntertransversariCervicis" class="muscle" tendon="RIntertransversariCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RLongissimusCapitis" class="muscle" tendon="RLongissimusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RLongissimusThoracis" class="muscle" tendon="RLongissimusThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RLongissimusLumborum" class="muscle" tendon="RLongissimusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RMultifidusCervicis" class="muscle" tendon="RMultifidusCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RMultifidusLumborum" class="muscle" tendon="RMultifidusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RIliocostalisThoracis" class="muscle" tendon="RIliocostalisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="4" name="RQuadratusLumborum" class="muscle" tendon="RQuadratusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <!-- <general group="4" name="RSemispinalisCapitisMedial" class="muscle" tendon="RSemispinalisCapitisMedial_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSemispinalisCapitisLateral" class="muscle" tendon="RSemispinalisCapitisLateral_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSpleniusCapitis" class="muscle" tendon="RSpleniusCapitis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRhomboideusCapitis" class="muscle" tendon="RRhomboideusCapitis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRhomboideusCervicis" class="muscle" tendon="RRhomboideusCervicis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongusCapitisInferiorOblique" class="muscle" tendon="RLongusCapitisInferiorOblique_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongusCapitisVertical" class="muscle" tendon="RLongusCapitisVertical_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RIntertransversariCervicis" class="muscle" tendon="RIntertransversariCervicis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongissimusCapitis" class="muscle" tendon="RLongissimusCapitis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        
+         -->
 
 
-        <general group="5" name="LLatissimusDorsi" class="muscle" tendon="LLatissimusDorsi_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LSerratusVentralisThoracis" class="muscle" tendon="LSerratusVentralisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LSerratusVentralisCervicis" class="muscle" tendon="LSerratusVentralisCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LPectoralisMajor" class="muscle" tendon="LPectoralisMajor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LPectoralisMinor" class="muscle" tendon="LPectoralisMinor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LPectoralisMinimus" class="muscle" tendon="LPectoralisMinimus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LScalenusAnterior" class="muscle" tendon="LScalenusAnterior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LScalenusMedius" class="muscle" tendon="LScalenusMedius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LScalenusPosterior" class="muscle" tendon="LScalenusPosterior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LRectusCapitisPosteriorMajor" class="muscle" tendon="LRectusCapitisPosteriorMajor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LRectusCapitisPosteriorMinor" class="muscle" tendon="LRectusCapitisPosteriorMinor_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LObliquusCapitisSuperior" class="muscle" tendon="LObliquusCapitisSuperior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LObliquusCapitisInferior" class="muscle" tendon="LObliquusCapitisInferior_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LSemispinalisCapitisMedial" class="muscle" tendon="LSemispinalisCapitisMedial_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LSemispinalisCapitisLateral" class="muscle" tendon="LSemispinalisCapitisLateral_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LCleidomastoideus" class="muscle" tendon="LCleidomastoideus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LCleidocephalicus" class="muscle" tendon="LCleidocephalicus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LSternomastoideus" class="muscle" tendon="LSternomastoideus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LSpleniusCapitis" class="muscle" tendon="LSpleniusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LRhomboideusCapitis" class="muscle" tendon="LRhomboideusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LRhomboideusCervicis" class="muscle" tendon="LRhomboideusCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LRhomboideusThoracis" class="muscle" tendon="LRhomboideusThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LOmotransversarius" class="muscle" tendon="LOmotransversarius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LSubclavius" class="muscle" tendon="LSubclavius_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LTrapeziusCervical" class="muscle" tendon="LTrapeziusCervical_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LTrapeziusThoracic" class="muscle" tendon="LTrapeziusThoracic_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LLongusCapitis" class="muscle" tendon="LLongusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LLongusCapitisSuperiorOblique" class="muscle" tendon="LLongusCapitisSuperiorOblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LLongusCapitisInferiorOblique" class="muscle" tendon="LLongusCapitisInferiorOblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LLongusCapitisVertical" class="muscle" tendon="LLongusCapitisVertical_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LIntertransversariCervicis" class="muscle" tendon="LIntertransversariCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LLongissimusCapitis" class="muscle" tendon="LLongissimusCapitis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LLongissimusThoracis" class="muscle" tendon="LLongissimusThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LLongissimusLumborum" class="muscle" tendon="LLongissimusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LMultifidusCervicis" class="muscle" tendon="LMultifidusCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LMultifidusLumborum" class="muscle" tendon="LMultifidusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LIliocostalisThoracis" class="muscle" tendon="LIliocostalisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
-        <general group="5" name="LQuadratusLumborum" class="muscle" tendon="LQuadratusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+        <!-- converged muscle-->
+
+        <general group="4" name="RLatissimusDorsi" class="muscle" tendon="RLatissimusDorsi_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSerratusVentralisThoracis" class="muscle" tendon="RSerratusVentralisThoracis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSerratusVentralisCervicis" class="muscle" tendon="RSerratusVentralisCervicis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RPectoralisMajor" class="muscle" tendon="RPectoralisMajor_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RPectoralisMinor" class="muscle" tendon="RPectoralisMinor_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RPectoralisMinimus" class="muscle" tendon="RPectoralisMinimus_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RScalenusAnterior" class="muscle" tendon="RScalenusAnterior_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RScalenusMedius" class="muscle" tendon="RScalenusMedius_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RScalenusPosterior" class="muscle" tendon="RScalenusPosterior_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRectusCapitisPosteriorMajor" class="muscle" tendon="RRectusCapitisPosteriorMajor_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRectusCapitisPosteriorMinor" class="muscle" tendon="RRectusCapitisPosteriorMinor_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RObliquusCapitisSuperior" class="muscle" tendon="RObliquusCapitisSuperior_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RObliquusCapitisInferior" class="muscle" tendon="RObliquusCapitisInferior_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RCleidomastoideus" class="muscle" tendon="RCleidomastoideus_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RCleidocephalicus" class="muscle" tendon="RCleidocephalicus_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSternomastoideus" class="muscle" tendon="RSternomastoideus_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RRhomboideusThoracis" class="muscle" tendon="RRhomboideusThoracis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="ROmotransversarius" class="muscle" tendon="ROmotransversarius_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSubclavius" class="muscle" tendon="RSubclavius_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RTrapeziusCervical" class="muscle" tendon="RTrapeziusCervical_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RTrapeziusThoracic" class="muscle" tendon="RTrapeziusThoracic_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongusCapitis" class="muscle" tendon="RLongusCapitis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongusCapitisSuperiorOblique" class="muscle" tendon="RLongusCapitisSuperiorOblique_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        
+        
+        <general group="4" name="RLongissimusThoracis" class="muscle" tendon="RLongissimusThoracis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RLongissimusLumborum" class="muscle" tendon="RLongissimusLumborum_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RMultifidusCervicis" class="muscle" tendon="RMultifidusCervicis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RMultifidusLumborum" class="muscle" tendon="RMultifidusLumborum_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RIliocostalisThoracis" class="muscle" tendon="RIliocostalisThoracis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RQuadratusLumborum" class="muscle" tendon="RQuadratusLumborum_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+
+        <general group="5" name="LLatissimusDorsi" class="muscle" tendon="LLatissimusDorsi_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSerratusVentralisThoracis" class="muscle" tendon="LSerratusVentralisThoracis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSerratusVentralisCervicis" class="muscle" tendon="LSerratusVentralisCervicis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LPectoralisMajor" class="muscle" tendon="LPectoralisMajor_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LPectoralisMinor" class="muscle" tendon="LPectoralisMinor_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LPectoralisMinimus" class="muscle" tendon="LPectoralisMinimus_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LScalenusAnterior" class="muscle" tendon="LScalenusAnterior_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LScalenusMedius" class="muscle" tendon="LScalenusMedius_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LScalenusPosterior" class="muscle" tendon="LScalenusPosterior_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LRectusCapitisPosteriorMajor" class="muscle" tendon="LRectusCapitisPosteriorMajor_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LRectusCapitisPosteriorMinor" class="muscle" tendon="LRectusCapitisPosteriorMinor_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LObliquusCapitisSuperior" class="muscle" tendon="LObliquusCapitisSuperior_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LObliquusCapitisInferior" class="muscle" tendon="LObliquusCapitisInferior_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <!-- <general group="5" name="LSemispinalisCapitisMedial" class="muscle" tendon="LSemispinalisCapitisMedial_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSemispinalisCapitisLateral" class="muscle" tendon="LSemispinalisCapitisLateral_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" /> -->
+        <general group="5" name="LCleidomastoideus" class="muscle" tendon="LCleidomastoideus_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LCleidocephalicus" class="muscle" tendon="LCleidocephalicus_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSternomastoideus" class="muscle" tendon="LSternomastoideus_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <!-- <general group="5" name="LSpleniusCapitis" class="muscle" tendon="LSpleniusCapitis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" /> -->
+        <!-- <general group="5" name="LRhomboideusCapitis" class="muscle" tendon="LRhomboideusCapitis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" /> -->
+        <!-- <general group="5" name="LRhomboideusCervicis" class="muscle" tendon="LRhomboideusCervicis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" /> -->
+        <general group="5" name="LRhomboideusThoracis" class="muscle" tendon="LRhomboideusThoracis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LOmotransversarius" class="muscle" tendon="LOmotransversarius_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LSubclavius" class="muscle" tendon="LSubclavius_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LTrapeziusCervical" class="muscle" tendon="LTrapeziusCervical_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LTrapeziusThoracic" class="muscle" tendon="LTrapeziusThoracic_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongusCapitis" class="muscle" tendon="LLongusCapitis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongusCapitisSuperiorOblique" class="muscle" tendon="LLongusCapitisSuperiorOblique_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <!-- <general group="5" name="LLongusCapitisInferiorOblique" class="muscle" tendon="LLongusCapitisInferiorOblique_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" /> -->
+        <!-- <general group="5" name="LLongusCapitisVertical" class="muscle" tendon="LLongusCapitisVertical_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" /> -->
+        <!-- <general group="5" name="LIntertransversariCervicis" class="muscle" tendon="LIntertransversariCervicis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" /> -->
+        <!-- <general group="5" name="LLongissimusCapitis" class="muscle" tendon="LLongissimusCapitis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" /> -->
+        <general group="5" name="LLongissimusThoracis" class="muscle" tendon="LLongissimusThoracis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LLongissimusLumborum" class="muscle" tendon="LLongissimusLumborum_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LMultifidusCervicis" class="muscle" tendon="LMultifidusCervicis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LMultifidusLumborum" class="muscle" tendon="LMultifidusLumborum_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LIliocostalisThoracis" class="muscle" tendon="LIliocostalisThoracis_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="LQuadratusLumborum" class="muscle" tendon="LQuadratusLumborum_tendon" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
 
 
         <general group="0" name="RBicepsLongus" class="muscle" tendon="RBicepsLongus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
@@ -5570,33 +5860,15 @@
     </equality>
 
     <contact>  
-        <exclude body1="CyberMice" body2="RHumerus" />    
         <exclude body1="RScapula" body2="RClavicle" />
         <exclude body1="RHumerus" body2="RClavicle" />
         <exclude body1="RHumerus" body2="RRadius" />
-        <exclude body1="RHumerus" body2="RUlna" />
         <exclude body1="RUlna" body2="RCarpi" />
-        <exclude body1="CyberMice" body2="LHumerus" />
         <exclude body1="LScapula" body2="LClavicle" />
         <exclude body1="LHumerus" body2="LClavicle" />
-        <exclude body1="LHumerus" body2="LUlna" />
         <exclude body1="LHumerus" body2="LRadius" />
         <exclude body1="LUlna" body2="LCarpi" />
 
-        <exclude body1="CyberMice" body2="RClavicle" />
-        <exclude body1="CyberMice" body2="LClavicle" />
-        <exclude body1="CyberMice" body2="RScapula" />
-        <exclude body1="CyberMice" body2="LScapula" />
-
-        <exclude body1="CyberMice" body2="C1" />
-        <exclude body1="CyberMice" body2="C2" />
-        <exclude body1="CyberMice" body2="C3" />
-        <exclude body1="CyberMice" body2="C4" />
-        <exclude body1="CyberMice" body2="C5" />
-        <exclude body1="CyberMice" body2="C6" />
-        <exclude body1="CyberMice" body2="C7" />
-        <exclude body1="CyberMice" body2="Head" />
-        <exclude body1="Head" body2="C1" />
         <exclude body1="Head" body2="C2" />
         <exclude body1="Head" body2="C3" />
         <exclude body1="Head" body2="C4" />
@@ -5618,23 +5890,12 @@
         <exclude body1="C4" body2="C7" />
         <exclude body1="C5" body2="C7" />
 
-        <exclude body1="CyberMice" body2="L1" />
-        <exclude body1="CyberMice" body2="L2" />
-        <exclude body1="CyberMice" body2="L3" />
-        <exclude body1="CyberMice" body2="L4" />
-        <exclude body1="CyberMice" body2="L5" />
-        <exclude body1="CyberMice" body2="L6" />
-        <exclude body1="CyberMice" body2="Pelvis" />
         <exclude body1="L5" body2="Pelvis" />
         <exclude body1="L4" body2="Pelvis" />
-
-        <exclude body1="Pelvis" body2="RFemur" />
-        <exclude body1="Pelvis" body2="LFemur" />
-        <exclude body1="Pelvis" body2="CA1" />
     </contact>
 
     <sensor>
-        <subtreelinvel name="torso_subtreelinvel" body="CyberMice" />
-        <subtreecom name="body_com" body="CyberMice" />
+        <subtreelinvel name="torso_subtreelinvel" body="T13" />
+        <subtreecom name="body_com" body="T13" />
     </sensor>
 </mujoco>

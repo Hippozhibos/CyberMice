@@ -320,7 +320,7 @@
             <joint name="root_rot_y" pos="0 0 0" axis="0 1 0" limited="false" stiffness="0" group="0" />
             <joint name="root_rot_z" pos="0 0 0" axis="0 0 1" limited="false" stiffness="0" group="0" /> -->
 
-            <geom name="Chest" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0 0 1 0.3" mesh="Chest" group="5"/>
+            <!-- <geom name="Chest" pos="0.02 0 -0.0075" euler="0.2 0.0 0.1" type="mesh" rgba="0 0 1 0.3" mesh="Chest" group="5"/> -->
             <geom name="T13" pos="-0.0005 0 0.0002" euler="0 0 0.1" type="mesh" rgba="1 1 1 1" mesh="T13" />
 
             <site name="T13_SpinousProcess" pos="0.0005 0 0.0025" size="0.0005" group="5"/>
