@@ -1,5 +1,5 @@
 <mujoco model="CyberMice">
-    <compiler meshdir="meshes" balanceinertia="true" angle="radian" eulerseq="xyz" />
+    <compiler meshdir="small_meshes" balanceinertia="true" angle="radian" eulerseq="xyz" />
     
     <option timestep="0.002" />
     <size njmax="1000" nconmax="400" nkey="1" nuser_jnt="1" />
@@ -148,7 +148,7 @@
         <mesh name="LFemur" file="LFemur.stl" />
         <mesh name="LTibfib" file="LTibfib.stl" />
         <mesh name="LPatella" file="LPatella.stl" />
-        <mesh name="Head" file="Head_small.stl"/>
+        <mesh name="Head" file="Head.stl"/>
 
         <mesh name="C1" file="C1.stl"/>
         <mesh name="C2" file="C2.stl"/>
@@ -192,7 +192,6 @@
         <mesh name="CA25" file="CA25.stl"/>
         <mesh name="CA26" file="CA26.stl"/>
         <mesh name="CA27" file="CA27_28.stl"/>
-        <mesh name="CA28" file="CA28.stl"/>
 
         <mesh name="RTarsalMetatarsal" file="RTarsalMetatarsal.stl"/>
         <mesh name="RPhalange1_1" file="RPhalange1_1.stl"/>
