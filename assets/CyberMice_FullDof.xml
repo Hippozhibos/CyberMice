@@ -317,51 +317,51 @@
 
             <geom name="T13" pos="-0.0005 0 0.0002" euler="0 0 0.1" type="mesh" rgba="1 1 1 1" mesh="T13" density="1908"/>
 
-            <site name="T13_SpinousProcess" pos="0.0005 0 0.0025" size="0.0005" group="5"/>
-            <site name="T12_SpinousProcess" pos="0.00275 0 0.00275" size="0.0005" group="5"/>
-            <site name="T11_SpinousProcess" pos="0.00475 0 0.0025" size="0.0005" group="5"/>
-            <site name="T10_SpinousProcess" pos="0.00675 0 0.00175" size="0.0005" group="5"/>
-            <site name="T9_SpinousProcess" pos="0.00825 0 0.001" size="0.0005" group="5"/>
-            <site name="T8_SpinousProcess" pos="0.01 0 0" size="0.0005" group="5"/>
-            <site name="T7_SpinousProcess" pos="0.0112 0 -0.001" size="0.0005" group="5"/>
-            <site name="T6_SpinousProcess" pos="0.0126 0 -0.002" size="0.0005" group="5"/>
-            <site name="T5_SpinousProcess" pos="0.014 0 -0.0035" size="0.0005" group="5"/>
-            <site name="T4_SpinousProcess" pos="0.0155 0 -0.005" size="0.0005" group="5"/>
-            <site name="T3_SpinousProcess" pos="0.0165 0 -0.006" size="0.0005" group="5"/>
-            <site name="T2_SpinousProcess" pos="0.0175 0 -0.0055" size="0.0005" group="5"/>
-            <site name="T1_SpinousProcess" pos="0.0185 0 -0.007" size="0.0005" group="5"/>
+            <site name="T13_SpinousProcess" pos="0.0005 0 0.0025" size="0.0005" rgba="0 0 1 1" group="4"/>
+            <!-- <site name="T12_SpinousProcess" pos="0.00275 0 0.00275" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T11_SpinousProcess" pos="0.00475 0 0.0025" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T10_SpinousProcess" pos="0.00675 0 0.00175" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T9_SpinousProcess" pos="0.00825 0 0.001" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T8_SpinousProcess" pos="0.01 0 0" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T7_SpinousProcess" pos="0.0112 0 -0.001" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T6_SpinousProcess" pos="0.0126 0 -0.002" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T5_SpinousProcess" pos="0.014 0 -0.0035" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T4_SpinousProcess" pos="0.0155 0 -0.005" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T3_SpinousProcess" pos="0.0165 0 -0.006" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T2_SpinousProcess" pos="0.0175 0 -0.0055" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+            <!-- <site name="T1_SpinousProcess" pos="0.0185 0 -0.007" size="0.0005" rgba="1 1 0 1" group="4"/> -->
 
-            <site name="T13_RTransverseProcess" pos="0.0005 -0.00175 0.001" size="0.0005" group="5"/>
-            <site name="T12_RTransverseProcess" pos="0.0025 -0.00175 0.001" size="0.0005" group="5"/>
-            <site name="T11_RTransverseProcess" pos="0.005 -0.00175 0.0005" size="0.0005" group="5"/>
-            <site name="T10_RTransverseProcess" pos="0.0065 -0.00175 0.0" size="0.0005" group="5"/>
-            <site name="T9_RTransverseProcess" pos="0.008 -0.00175 -0.0005" size="0.0005" group="5"/>
-            <site name="T8_RTransverseProcess" pos="0.00975 -0.00175 -0.0015" size="0.0005" group="5"/>
-            <site name="T7_RTransverseProcess" pos="0.0112 -0.00175 -0.0025" size="0.0005" group="5"/>
-            <site name="T6_RTransverseProcess" pos="0.0126 -0.00175 -0.0035" size="0.0005" group="5"/>
-            <site name="T5_RTransverseProcess" pos="0.014 -0.00175 -0.005" size="0.0005" group="5"/>
-            <site name="T4_RTransverseProcess" pos="0.0155 -0.00175 -0.0065" size="0.0005" group="5"/>
-            <site name="T3_RTransverseProcess" pos="0.0165 -0.00175 -0.0075" size="0.0005" group="5"/>
-            <site name="T2_RTransverseProcess" pos="0.0175 -0.00175 -0.0085" size="0.0005" group="5"/>
-            <site name="T1_RTransverseProcess" pos="0.0185 -0.00175 -0.0085" size="0.0005" group="5"/>
+            <site name="T13_RTransverseProcess" pos="0.0005 -0.00175 0.001" size="0.0005" group="4"/>
+            <site name="T12_RTransverseProcess" pos="0.0025 -0.00175 0.001" size="0.0005" group="4"/>
+            <site name="T11_RTransverseProcess" pos="0.005 -0.00175 0.0005" size="0.0005" group="4"/>
+            <site name="T10_RTransverseProcess" pos="0.0065 -0.00175 0.0" size="0.0005" group="4"/>
+            <site name="T9_RTransverseProcess" pos="0.008 -0.00175 -0.0005" size="0.0005" group="4"/>
+            <site name="T8_RTransverseProcess" pos="0.00975 -0.00175 -0.0015" size="0.0005" group="4"/>
+            <site name="T7_RTransverseProcess" pos="0.0112 -0.00175 -0.0025" size="0.0005" group="4"/>
+            <site name="T6_RTransverseProcess" pos="0.0126 -0.00175 -0.0035" size="0.0005" group="4"/>
+            <site name="T5_RTransverseProcess" pos="0.014 -0.00175 -0.005" size="0.0005" group="4"/>
+            <site name="T4_RTransverseProcess" pos="0.0155 -0.00175 -0.0065" size="0.0005" group="4"/>
+            <site name="T3_RTransverseProcess" pos="0.0165 -0.00175 -0.0075" size="0.0005" group="4"/>
+            <site name="T2_RTransverseProcess" pos="0.0175 -0.00175 -0.0085" size="0.0005" group="4"/>
+            <site name="T1_RTransverseProcess" pos="0.0185 -0.00175 -0.0085" size="0.0005" group="4"/>
 
-            <site name="T13_LTransverseProcess" pos="0.0005 0.00175 0.001" size="0.0005" group="5"/>
-            <site name="T12_LTransverseProcess" pos="0.0025 0.00175 0.001" size="0.0005" group="5"/>
-            <site name="T11_LTransverseProcess" pos="0.005 0.00175 0.0005" size="0.0005" group="5"/>
-            <site name="T10_LTransverseProcess" pos="0.0065 0.00175 0.0" size="0.0005" group="5"/>
-            <site name="T9_LTransverseProcess" pos="0.008 0.00175 -0.0005" size="0.0005" group="5"/>
-            <site name="T8_LTransverseProcess" pos="0.00975 0.00175 -0.0015" size="0.0005" group="5"/>
-            <site name="T7_LTransverseProcess" pos="0.0112 0.00175 -0.0025" size="0.0005" group="5"/>
-            <site name="T6_LTransverseProcess" pos="0.0126 0.00175 -0.0035" size="0.0005" group="5"/>
-            <site name="T5_LTransverseProcess" pos="0.014 0.00175 -0.005" size="0.0005" group="5"/>
-            <site name="T4_LTransverseProcess" pos="0.0155 0.00175 -0.0065" size="0.0005" group="5"/>
-            <site name="T3_LTransverseProcess" pos="0.0165 0.00175 -0.0075" size="0.0005" group="5"/>
-            <site name="T2_LTransverseProcess" pos="0.0175 0.00175 -0.0085" size="0.0005" group="5"/>
-            <site name="T1_LTransverseProcess" pos="0.0185 0.00175 -0.0085" size="0.0005" group="5"/>
+            <site name="T13_LTransverseProcess" pos="0.0005 0.00175 0.001" size="0.0005" group="4"/>
+            <site name="T12_LTransverseProcess" pos="0.0025 0.00175 0.001" size="0.0005" group="4"/>
+            <site name="T11_LTransverseProcess" pos="0.005 0.00175 0.0005" size="0.0005" group="4"/>
+            <site name="T10_LTransverseProcess" pos="0.0065 0.00175 0.0" size="0.0005" group="4"/>
+            <site name="T9_LTransverseProcess" pos="0.008 0.00175 -0.0005" size="0.0005" group="4"/>
+            <site name="T8_LTransverseProcess" pos="0.00975 0.00175 -0.0015" size="0.0005" group="4"/>
+            <site name="T7_LTransverseProcess" pos="0.0112 0.00175 -0.0025" size="0.0005" group="4"/>
+            <site name="T6_LTransverseProcess" pos="0.0126 0.00175 -0.0035" size="0.0005" group="4"/>
+            <site name="T5_LTransverseProcess" pos="0.014 0.00175 -0.005" size="0.0005" group="4"/>
+            <site name="T4_LTransverseProcess" pos="0.0155 0.00175 -0.0065" size="0.0005" group="4"/>
+            <site name="T3_LTransverseProcess" pos="0.0165 0.00175 -0.0075" size="0.0005" group="4"/>
+            <site name="T2_LTransverseProcess" pos="0.0175 0.00175 -0.0085" size="0.0005" group="4"/>
+            <site name="T1_LTransverseProcess" pos="0.0185 0.00175 -0.0085" size="0.0005" group="4"/>
 
-            <site name="T3_VentralSurface" pos="0.016 0 -0.0085" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T2_VentralSurface" pos="0.017 0 -0.009" size="0.0005" group="5" rgba="1 1 0 1"/>
-            <site name="T1_VentralSurface" pos="0.018 0 -0.0095" size="0.0005" group="5" rgba="1 1 0 1"/>
+            <site name="T3_VentralSurface" pos="0.016 0 -0.0085" size="0.0005" group="4" rgba="1 1 0 1"/>
+            <site name="T2_VentralSurface" pos="0.017 0 -0.009" size="0.0005" group="4" rgba="1 1 0 1"/>
+            <site name="T1_VentralSurface" pos="0.018 0 -0.0095" size="0.0005" group="4" rgba="1 1 0 1"/>
 
             <site name="T13_RRibAngle" pos="0.00125 -0.0035 0.0008" size="0.0005" group="4"/>
             <site name="T12_RRibAngle" pos="0.0025 -0.00425 0.0006" size="0.0005" group="4"/>
@@ -523,9 +523,12 @@
 
             <body name="T12" pos="0.0025 0 0" gravcomp="0">
                 <geom name="T12" pos="-0.0 0 0.0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="T12" density="1908"/>
+
                 <joint name="T13_T12_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
                 <joint name="T13_T12_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                 <joint name="T13_T12_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
+
+                <site name="T12_SpinousProcess" pos="0.00025 0 0.00275" size="0.0005" rgba="0 0 1 1" group="4"/>
                 
                 <body name="Rib_12R" pos="0.002 -0.0015 0" gravcomp="0">
                     <geom name="Rib_12R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_12R" density="1908"/>
@@ -545,6 +548,8 @@
                     <joint name="T12_T11_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                     <joint name="T12_T11_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                     
+                    <site name="T11_SpinousProcess" pos="0.00025 0 0.0027" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                     <body name="Rib_11R" pos="0.002 -0.0015 0" gravcomp="0">
                         <geom name="Rib_11R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_11R" density="1908"/>
                         <joint name="Rib_11R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -563,6 +568,8 @@
                         <joint name="T11_T10_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                         <joint name="T11_T10_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                         
+                        <site name="T10_SpinousProcess" pos="0.00055 0 0.00225" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                         <body name="Rib_10R" pos="0.002 -0.0015 0" gravcomp="0">
                             <geom name="Rib_10R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_10R" density="1908"/>
                             <joint name="Rib_10R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -581,6 +588,8 @@
                             <joint name="T10_T9_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                             <joint name="T10_T9_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                             
+                            <site name="T9_SpinousProcess" pos="0.00045 0 0.0025" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                             <body name="Rib_9R" pos="0.002 -0.0015 -0.0005" gravcomp="0">
                                 <geom name="Rib_9R" pos="0 0 0" euler="0 -0.075 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_9R" density="1908"/>
                                 <joint name="Rib_9R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -599,6 +608,8 @@
                                 <joint name="T9_T8_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                                 <joint name="T9_T8_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                                 
+                                <site name="T8_SpinousProcess" pos="0.00095 0 0.0025" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                                 <body name="Rib_8R" pos="0.002 -0.0015 0.0" gravcomp="0">
                                     <geom name="Rib_8R" pos="0 0 0" euler="0 0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_8R" density="1908"/>
                                     <joint name="Rib_8R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -617,6 +628,8 @@
                                     <joint name="T8_T7_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                                     <joint name="T8_T7_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                                     
+                                    <site name="T7_SpinousProcess" pos="0.0009 0 0.0025" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                                     <body name="Rib_7R" pos="0.00225 -0.00125 0.00025" gravcomp="0">
                                         <geom name="Rib_7R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_7R" density="1908"/>
                                         <joint name="Rib_7R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -635,6 +648,8 @@
                                         <joint name="T7_T6_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                                         <joint name="T7_T6_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                                         
+                                        <site name="T6_SpinousProcess" pos="0.0015 0 0.0025" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                                         <body name="Rib_6R" pos="0.002 -0.00125 -0.0005" gravcomp="0">
                                             <geom name="Rib_6R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_6R" density="1908"/>
                                             <joint name="Rib_6R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -653,6 +668,8 @@
                                             <joint name="T6_T5_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                                             <joint name="T6_T5_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                                             
+                                            <site name="T5_SpinousProcess" pos="0.00165 0 0.002" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                                             <body name="Rib_5R" pos="0.002 -0.00125 -0.0006" gravcomp="0">
                                                 <geom name="Rib_5R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_5R" density="1908"/>
                                                 <joint name="Rib_5R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -671,6 +688,8 @@
                                                 <joint name="T5_T4_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                                                 <joint name="T5_T4_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                                                 
+                                                <site name="T4_SpinousProcess" pos="0.00165 0 0.0018" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                                                 <body name="Rib_4R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
                                                     <geom name="Rib_4R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_4R" density="1908"/>
                                                     <joint name="Rib_4R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -1278,6 +1297,8 @@
                                                     <joint name="T4_T3_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                                                     <joint name="T4_T3_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                                                     
+                                                    <site name="T3_SpinousProcess" pos="0.0013 0 0.00155" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                                                     <body name="Rib_3R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
                                                         <geom name="Rib_3R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_3R" density="1908"/>
                                                         <joint name="Rib_3R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -1296,6 +1317,8 @@
                                                         <joint name="T3_T2_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                                                         <joint name="T3_T2_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                                                         
+                                                        <site name="T2_SpinousProcess" pos="0.0011 0 0.0028" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                                                         <body name="Rib_2R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
                                                             <geom name="Rib_2R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_2R" density="1908"/>
                                                             <joint name="Rib_2R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -1313,7 +1336,9 @@
                                                             <joint name="T2_T1_x" class="Thoracic_x" pos="0 0 0" axis="1 0 0" group="0"/>
                                                             <joint name="T2_T1_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                                                             <joint name="T2_T1_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
-                                                            
+                                                                        
+                                                            <site name="T1_SpinousProcess" pos="0.0013 0 0.00205" size="0.0005" rgba="0 0 1 1" group="4"/>
+
                                                             <body name="Rib_1R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
                                                                 <geom name="Rib_1R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_1R" density="1908"/>
                                                                 <joint name="Rib_1R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
