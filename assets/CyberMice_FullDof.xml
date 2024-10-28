@@ -400,7 +400,7 @@
             <site name="RLatissimusDorsi_4_4" pos="0.0015 -0.005 0.001" size="0.0005" group="5"/>
             <site name="RLatissimusDorsi_4_5" pos="0.00 -0.005 0.001" size="0.0005" group="5"/>
 
-            <site name="RSerratusVentralisThoracis_7_1" pos="0.0045 -0.007 -0.0105" size="0.0005" group="5"/>
+            <site name="RSerratusVentralisThoracis_7_1" pos="0.0045 -0.007 -0.0105" size="0.0005" rgba="1 0 0 1" group="5"/>
             <site name="RSerratusVentralisThoracis_7_2" pos="0.00775 -0.00775 -0.008" size="0.0005" group="5"/>
             <site name="RSerratusVentralisThoracis_6_1" pos="0.00625 -0.0065 -0.0115" size="0.0005" group="5"/>
             <site name="RSerratusVentralisThoracis_6_2" pos="0.00875 -0.0075 -0.009" size="0.0005" group="5"/>
@@ -528,7 +528,8 @@
                 <joint name="T13_T12_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                 <joint name="T13_T12_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
 
-                <site name="T12_SpinousProcess" pos="0.00025 0 0.00275" size="0.0005" rgba="0 0 1 1" group="4"/>
+                <!-- <site name="T12_SpinousProcess" pos="0.00275 0 0.00275" size="0.0005" rgba="1 1 0 1" group="4"/> -->
+                <site name="T12_SpinousProcess" pos="0.00025 0 0.00275" size="0.0005" rgba="1 0 0 1" group="4"/>
                 
                 <body name="Rib_12R" pos="0.002 -0.0015 0" gravcomp="0">
                     <geom name="Rib_12R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_12R" density="1908"/>
@@ -548,6 +549,7 @@
                     <joint name="T12_T11_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                     <joint name="T12_T11_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                     
+                    <!-- <site name="T11_SpinousProcess" pos="0.00475 0 0.0025" size="0.0005" rgba="1 1 0 1" group="4"/> -->
                     <site name="T11_SpinousProcess" pos="0.00025 0 0.0027" size="0.0005" rgba="0 0 1 1" group="4"/>
 
                     <body name="Rib_11R" pos="0.002 -0.0015 0" gravcomp="0">
@@ -568,6 +570,7 @@
                         <joint name="T11_T10_y" class="Thoracic_y" pos="0 0 0" axis="0 1 0" group="0"/>
                         <joint name="T11_T10_z" class="Thoracic_z" pos="0 0 0" axis="0 0 1" group="0"/>
                         
+                        <!-- <site name="T10_SpinousProcess" pos="0.00675 0 0.00175" size="0.0005" rgba="1 1 0 1" group="4"/> -->
                         <site name="T10_SpinousProcess" pos="0.00055 0 0.00225" size="0.0005" rgba="0 0 1 1" group="4"/>
 
                         <body name="Rib_10R" pos="0.002 -0.0015 0" gravcomp="0">
@@ -2739,6 +2742,7 @@
 
 
         </body>
+
     </worldbody>
 
     <!-- <tendon>
