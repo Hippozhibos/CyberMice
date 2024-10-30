@@ -513,12 +513,14 @@
                 <geom name="Rib_13R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_13R" density="1908"/>
                 <joint name="Rib_13R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                 <joint name="Rib_13R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                <site name="Rib13Rinter" pos="-0.000507 -0.002149 0.000711" size="0.0005" group="4" rgba="1 0 0 1" />            
             </body>
 
             <body name="Rib_13L" pos="0.002 0.0015 0" gravcomp="0">
                 <geom name="Rib_13L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_13L" density="1908"/>
                 <joint name="Rib_13L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                 <joint name="Rib_13L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                <site name="Rib13Linter" pos="-0.000507 0.002149 0.000711" size="0.0005" group="4" rgba="1 0 0 1" />            
             </body>
 
             <body name="T12" pos="0.0025 0 0" gravcomp="0">
@@ -535,12 +537,14 @@
                     <geom name="Rib_12R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_12R" density="1908"/>
                     <joint name="Rib_12R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                     <joint name="Rib_12R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                    <site name="Rib12Rinter" pos="-0.001650 -0.002388 0.000989" size="0.0005" group="4" rgba="1 0 0 1" />                
                 </body>
 
                 <body name="Rib_12L" pos="0.002 0.0015 0" gravcomp="0">
                     <geom name="Rib_12L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_12L" density="1908"/>
                     <joint name="Rib_12L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                     <joint name="Rib_12L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                    <site name="Rib12Linter" pos="-0.001650 0.002388 0.000989" size="0.0005" group="4" rgba="1 0 0 1" />                
                 </body>
 
                 <body name="T11" pos="0.002 0 -0.0002" gravcomp="0">
@@ -556,12 +560,14 @@
                         <geom name="Rib_11R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_11R" density="1908"/>
                         <joint name="Rib_11R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                         <joint name="Rib_11R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                        <site name="Rib11Rinter" pos="-0.002271 -0.003099 0.001192" size="0.0005" group="4" rgba="1 0 0 1" />                    
                     </body>
 
                     <body name="Rib_11L" pos="0.002 0.0015 0" gravcomp="0">
                         <geom name="Rib_11L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_11L" density="1908"/>
                         <joint name="Rib_11L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                         <joint name="Rib_11L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                        <site name="Rib11Linter" pos="-0.002271 0.003099 0.001192" size="0.0005" group="4" rgba="1 0 0 1" />                    
                     </body>
 
                     <body name="T10" pos="0.0017 0 -0.0003" gravcomp="0">
@@ -577,12 +583,14 @@
                             <geom name="Rib_10R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_10R" density="1908"/>
                             <joint name="Rib_10R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                             <joint name="Rib_10R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                            <site name="Rib10Rinter" pos="-0.001711 -0.002655 0.001005" size="0.0005" group="4" rgba="1 0 0 1" />                        
                         </body>
 
                         <body name="Rib_10L" pos="0.002 0.0015 0" gravcomp="0">
                             <geom name="Rib_10L" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_10L" density="1908"/>
                             <joint name="Rib_10L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                             <joint name="Rib_10L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                            <site name="Rib10Linter" pos="-0.001711 0.002655 0.001005" size="0.0005" group="4" rgba="1 0 0 1" />                        
                         </body>
 
                         <body name="T9" pos="0.0016 0 -0.001" gravcomp="0">
@@ -597,12 +605,14 @@
                                 <geom name="Rib_9R" pos="0 0 0" euler="0 -0.075 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_9R" density="1908"/>
                                 <joint name="Rib_9R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                                 <joint name="Rib_9R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                <site name="Rib9Rinter" pos="-0.001946 -0.003228 0.002026" size="0.0005" group="4" rgba="1 0 0 1" />                            
                             </body>
 
                             <body name="Rib_9L" pos="0.002 0.0015 -0.0005" gravcomp="0">
                                 <geom name="Rib_9L" pos="0 0 0" euler="0 -0.075 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_9L" density="1908"/>
                                 <joint name="Rib_9L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                                 <joint name="Rib_9L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                <site name="Rib9Linter" pos="-0.001946 0.003228 0.002026" size="0.0005" group="4" rgba="1 0 0 1" />                            
                             </body>
 
                             <body name="T8" pos="0.00125 0 -0.001" gravcomp="0">
@@ -617,12 +627,14 @@
                                     <geom name="Rib_8R" pos="0 0 0" euler="0 0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_8R" density="1908"/>
                                     <joint name="Rib_8R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                                     <joint name="Rib_8R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                    <site name="Rib8Rinter" pos="-0.001839 -0.003360 0.001153" size="0.0005" group="4" rgba="1 0 0 1" />                                
                                 </body>
 
                                 <body name="Rib_8L" pos="0.002 0.0015 0.0" gravcomp="0">
                                     <geom name="Rib_8L" pos="0 0 0" euler="0 0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_8L" density="1908"/>
                                     <joint name="Rib_8L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                                     <joint name="Rib_8L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                    <site name="Rib8Linter" pos="-0.001839 0.003360 0.001153" size="0.0005" group="4" rgba="1 0 0 1" />                                
                                 </body>
 
                                 <body name="T7" pos="0.00125 0 -0.001" gravcomp="0">
@@ -637,12 +649,14 @@
                                         <geom name="Rib_7R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_7R" density="1908"/>
                                         <joint name="Rib_7R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                                         <joint name="Rib_7R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                        <site name="Rib7Rinter" pos="-0.002566 -0.004461 0.000414" size="0.0005" group="4" rgba="1 0 0 1" />                                    
                                     </body>
 
                                     <body name="Rib_7L" pos="0.00225 0.00125 0.00025" gravcomp="0">
                                         <geom name="Rib_7L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_7L" density="1908"/>
                                         <joint name="Rib_7L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                                         <joint name="Rib_7L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                        <site name="Rib7Linter" pos="-0.002566 0.004461 0.000414" size="0.0005" group="4" rgba="1 0 0 1" />                                    
                                     </body>
 
                                     <body name="T6" pos="0.0008 0 -0.001" gravcomp="0">
@@ -657,12 +671,16 @@
                                             <geom name="Rib_6R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_6R" density="1908"/>
                                             <joint name="Rib_6R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                                             <joint name="Rib_6R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                            <site name="Rib6Rinter" pos="-0.002384 -0.004349 0.000603" size="0.0005" group="4" rgba="1 0 0 1" />
+                                            <site name="Rib6Rrectusabdominis" pos="-0.004317 0.00093 -0.01096" size="0.0005" group="4" rgba="1 0 0 1" />
                                         </body>
 
                                         <body name="Rib_6L" pos="0.002 0.00125 -0.0005" gravcomp="0">
                                             <geom name="Rib_6L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_6L" density="1908"/>
                                             <joint name="Rib_6L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                                             <joint name="Rib_6L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                            <site name="Rib6Linter" pos="-0.002384 0.004349 0.000603" size="0.0005" group="4" rgba="1 0 0 1" />
+                                            <site name="Rib6Lrectusabdominis" pos="-0.004317 -0.00093 -0.01096" size="0.0005" group="4" rgba="1 0 0 1" />
                                         </body>
 
                                         <body name="T5" pos="0.00125 0 -0.001" gravcomp="0">
@@ -677,12 +695,14 @@
                                                 <geom name="Rib_5R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_5R" density="1908"/>
                                                 <joint name="Rib_5R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                                                 <joint name="Rib_5R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                <site name="Rib5Rinter" pos="-0.002860 -0.004564 0.000096" size="0.0005" group="4" rgba="1 0 0 1" />                                            
                                             </body>
 
                                             <body name="Rib_5L" pos="0.002 0.00125 -0.0006" gravcomp="0">
                                                 <geom name="Rib_5L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_5L" density="1908"/>
                                                 <joint name="Rib_5L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                                                 <joint name="Rib_5L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                <site name="Rib5Linter" pos="-0.002860 0.004564 0.000096" size="0.0005" group="4" rgba="1 0 0 1" />                                            
                                             </body>
 
                                             <body name="T4" pos="0.0015 0 -0.0013" gravcomp="0">
@@ -697,12 +717,14 @@
                                                     <geom name="Rib_4R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_4R" density="1908"/>
                                                     <joint name="Rib_4R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                                                     <joint name="Rib_4R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                    <site name="Rib4Rinter" pos="-0.002237 -0.003879 0.000555" size="0.0005" group="4" rgba="1 0 0 1" />
                                                 </body>
 
                                                 <body name="Rib_4L" pos="0.001 0.00125 -0.0006" gravcomp="0">
                                                     <geom name="Rib_4L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_4L" density="1908"/>
                                                     <joint name="Rib_4L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                                                     <joint name="Rib_4L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                    <site name="Rib4Linter" pos="-0.002237 0.003879 0.000555" size="0.0005" group="4" rgba="1 0 0 1" />
                                                 </body>
 
                                                 <body name="RScapula" pos="0.0 0.0 -0.00225" euler="0 0.0 0" gravcomp="0">
@@ -1306,12 +1328,14 @@
                                                         <geom name="Rib_3R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_3R" density="1908"/>
                                                         <joint name="Rib_3R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                                                         <joint name="Rib_3R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                        <site name="Rib3Rinter" pos="-0.001880 -0.003718 0.000772" size="0.0005" group="4" rgba="1 0 0 1"/>                                                    
                                                     </body>
 
                                                     <body name="Rib_3L" pos="0.001 0.00125 -0.0006" gravcomp="0">
                                                         <geom name="Rib_3L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_3L" density="1908"/>
                                                         <joint name="Rib_3L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                                                         <joint name="Rib_3L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                        <site name="Rib3Linter" pos="-0.001880 0.003718 0.000772" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                     </body>
 
                                                     <body name="T2" pos="0.0012 0 -0.00075" gravcomp="0">
@@ -1326,12 +1350,14 @@
                                                             <geom name="Rib_2R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_2R" density="1908"/>
                                                             <joint name="Rib_2R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                                                             <joint name="Rib_2R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                            <site name="Rib2Rinter" pos="-0.000876 -0.001691 -0.000519" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                         </body>
 
                                                         <body name="Rib_2L" pos="0.001 0.00125 -0.0006" gravcomp="0">
                                                             <geom name="Rib_2L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_2L" density="1908"/>
                                                             <joint name="Rib_2L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                                                             <joint name="Rib_2L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                            <site name="Rib2Linter" pos="-0.000876 0.001691 -0.000519" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                         </body>
 
                                                         <body name="T1" pos="0.0008 0 -0.00075" gravcomp="0">
@@ -1346,12 +1372,14 @@
                                                                 <geom name="Rib_1R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_1R" density="1908"/>
                                                                 <joint name="Rib_1R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
                                                                 <joint name="Rib_1R_pump" pos="0 0 0" axis="-0.7 0 0.7" range="-0.1 0.1" group="5" />
+                                                                <site name="Rib1Rinter" pos="-0.000420 -0.001380 -0.001533" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                             </body>
 
                                                             <body name="Rib_1L" pos="0.001 0.00125 -0.0006" gravcomp="0">
                                                                 <geom name="Rib_1L" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_1L" density="1908"/>
                                                                 <joint name="Rib_1L_bucket" pos="0 0 0" axis="-0.7 0 -0.7" range="-0.1 0.1" group="5" />
                                                                 <joint name="Rib_1L_pump" pos="0 0 0" axis="0.7 0 -0.7" range="-0.1 0.1" group="5" />
+                                                                <site name="Rib1Linter" pos="-0.000420 0.001380 -0.001533" size="0.0005" group="4" rgba="1 0 0 1"/>
                                                             </body>
 
                                                             <body name="C7" pos="0.0015 0 0.0008" gravcomp="0">
@@ -1619,6 +1647,12 @@
                                         <joint name="L6_S1_x" class="Lumbar_x" pos="-0.005 0 0.002" axis="1 0 0" group="0"/>
                                         <joint name="L6_S1_y" class="Lumbar_y" pos="-0.005 0 0.002" axis="0 1 0" group="0"/>
                                         <joint name="L6_S1_z" class="Lumbar_z" pos="-0.005 0 0.002" axis="0 0 1" group="0"/>
+
+                                        <!-- <site name="Rcristaepubis" pos="-0.0183 -0.004721 -0.002698" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="Lcristaepubis" pos="-0.0183 0.004721 -0.002698" size="0.0005" group="4" rgba="1 0 0 1"/> -->
+
+                                        <site name="Rcristaepubis" pos="-0.0175 -0.001 -0.002698" size="0.0005" group="4" rgba="1 0 0 1"/>
+                                        <site name="Lcristaepubis" pos="-0.0175 0.001 -0.002698" size="0.0005" group="4" rgba="1 0 0 1"/>
 
                                         <site name="S1_SpinousProcess" pos="-0.0065 0.0 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
                                         <site name="S2_SpinousProcess" pos="-0.01 0.00 0.0035" size="0.0005" group="4" rgba="1 0 0 1"/>
@@ -2745,7 +2779,7 @@
 
     </worldbody>
 
-    <!-- <tendon>
+    <tendon>
         <fixed name="Cervical_x" class="Cervical_x">
             <joint joint="T_C7_x" coef="0.125"/>
             <joint joint="C7_C6_x" coef="0.125"/>
@@ -2868,6 +2902,144 @@
             <joint joint="CA25_CA26_z" coef="0.037"/>
             <joint joint="CA26_CA27_z" coef="0.037"/>
         </fixed>
+
+
+        <spatial name="Rintercostal_tendon" group="4">
+			<site site="Rib1Rinter" />
+			<site site="Rib2Rinter" />
+			<site site="Rib3Rinter" />
+			<site site="Rib4Rinter" />
+			<site site="Rib5Rinter" />
+			<site site="Rib6Rinter" />
+			<site site="Rib7Rinter" />
+			<site site="Rib8Rinter" />
+			<site site="Rib9Rinter" />
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+        </spatial>
+
+        <spatial name="Lintercostal_tendon" group="5">
+			<site site="Rib1Linter" />
+			<site site="Rib2Linter" />
+			<site site="Rib3Linter" />
+			<site site="Rib4Linter" />
+			<site site="Rib5Linter" />
+			<site site="Rib6Linter" />
+			<site site="Rib7Linter" />
+			<site site="Rib8Linter" />
+			<site site="Rib9Linter" />
+			<site site="Rib10Linter" />
+			<site site="Rib11Linter" />
+			<site site="Rib12Linter" />
+			<site site="Rib13Linter" />
+        </spatial>
+
+        <spatial name="Rrectusabdominis_tendon" group="4">
+            <site site="Rcristaepubis" />
+            <site site="Rib6Rrectusabdominis" />
+        </spatial>
+
+        <spatial name="Lrectusabdominis_tendon" group="5">
+            <site site="Lcristaepubis" />
+            <site site="Rib6Lrectusabdominis" />
+        </spatial>
+
+        <spatial name="Rexternaloblique_tendon" group="4">
+			<site site="Rib5Rinter" />
+			<site site="Rib6Rinter" />
+			<site site="Rib7Rinter" />
+			<site site="Rib8Rinter" />
+			<site site="Rib9Rinter" />
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+            <pulley divisor="2"/>
+            <site site="Rib13Rinter" />
+            <site site="Rcristaepubis" />
+            <pulley divisor="2"/>
+            <site site="Rib13Rinter" />
+            <site site="RIliacCrest" /> 
+        </spatial>
+
+        <spatial name="Lexternaloblique_tendon" group="5">
+			<site site="Rib5Linter" />
+			<site site="Rib6Linter" />
+			<site site="Rib7Linter" />
+			<site site="Rib8Linter" />
+			<site site="Rib9Linter" />
+			<site site="Rib10Linter" />
+			<site site="Rib11Linter" />
+			<site site="Rib12Linter" />
+			<site site="Rib13Linter" />
+            <pulley divisor="2"/>
+            <site site="Rib13Linter" />
+            <site site="Lcristaepubis" />
+            <pulley divisor="2"/>
+            <site site="Rib13Linter" />
+            <site site="LIliacCrest" /> 
+        </spatial>
+
+        <spatial name="Rinternaloblique_tendon" group="4">
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+            <pulley divisor="2"/>
+            <site site="Rib13Rinter" />
+            <site site="Rcristaepubis" />
+            <pulley divisor="2"/>
+            <site site="Rib13Rinter" />
+            <site site="RIliacCrest" /> 
+        </spatial>
+
+        <spatial name="Linternaloblique_tendon" group="5">
+			<site site="Rib10Linter" />
+			<site site="Rib11Linter" />
+			<site site="Rib12Linter" />
+			<site site="Rib13Linter" />
+            <pulley divisor="2"/>
+            <site site="Rib13Linter" />
+            <site site="Lcristaepubis" />
+            <pulley divisor="2"/>
+            <site site="Rib13Linter" />
+            <site site="LIliacCrest" />  
+        </spatial>
+
+        <spatial name="Rtransversusabdominis_tendon" group="4">
+			<site site="Rib7Rinter" />
+			<site site="Rib8Rinter" />
+			<site site="Rib9Rinter" />
+			<site site="Rib10Rinter" />
+			<site site="Rib11Rinter" />
+			<site site="Rib12Rinter" />
+			<site site="Rib13Rinter" />
+            <pulley divisor="2"/>
+            <site site="Rib13Rinter" />
+            <site site="Rcristaepubis" />
+            <pulley divisor="2"/>
+            <site site="Rib13Rinter" />
+            <site site="RIliacCrest" /> 
+        </spatial>
+
+        <spatial name="Ltransversusabdominis_tendon" group="5">
+			<site site="Rib7Linter" />
+			<site site="Rib8Linter" />
+			<site site="Rib9Linter" />
+			<site site="Rib10Linter" />
+			<site site="Rib11Linter" />
+			<site site="Rib12Linter" />
+			<site site="Rib13Linter" />
+            <pulley divisor="2"/>
+            <site site="Rib13Linter" />
+            <site site="Lcristaepubis" />
+            <pulley divisor="2"/>
+            <site site="Rib13Linter" />
+            <site site="LIliacCrest" /> 
+        </spatial>
+
 
         <spatial name="RLatissimusDorsi_tendon" group="4">
             <site site="RLatissimusDorsi_1" />
@@ -5862,7 +6034,7 @@
         
         <general group="3" name="LTensorFasciaeLatae" class="muscle" tendon="LTensorFasciaeLatae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
 
-    </actuator> -->
+    </actuator>
 
     <equality>
         <weld name="RGlenohumeral Joint" active="true" body1="RScapula" body2="RClavicle" anchor="0.0015 -0.0065 0.0055" torquescale="1" />
