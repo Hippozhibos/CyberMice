@@ -898,8 +898,8 @@
                                                             <body name="RRadius" pos="0 0 -0.0075" gravcomp="0">
                                                                 <joint name="RRadius_rotation" pos="0.0007 -0.0003 0" axis="-0.1 -0.075 1" range="-1.5707963267948966 1.5707963267948966" group="1" />
                                                                 <geom name="RRadius" pos="0.003 0.0015 0.009" euler="-0.08726646259971647 2.443460952792061 -0.08726646259971647" type="mesh" rgba="1 1 1 1" mesh="RRadius" density="1908" />
-                                                                
                                                                 <geom name="RPronator_cylinder" size="0.0005 0.0035" pos="0.0001 -0.00025 0.0025" euler="0.08726646259971647 2.9670597283903604 0.0" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+                                                                
                                                                 <site name="RBicepsLongus_insertion" pos="-1.46450578e-04 -1.59235303e-06  6.53072842e-03" size="0.0005" />
                                                                 <site name="RBicepsBrevis_insertion" pos="-1.59941705e-04 -9.25345857e-06  6.53366064e-03" size="0.0005" />
                                                                 <site name="RPronatorTeres_insertion" pos="1.05259638e-03 -6.81224402e-05  2.44470168e-03" size="0.0005" />
@@ -924,6 +924,7 @@
                                                                 <site name="RAbductorPollicisLongus_RAbductorPollicisLongus-P4" pos="8.81736028e-04 -2.51502477e-04 -1.88134507e-03" size="0.0005" />
                                                                 <site name="RAbductorPollicisLongus_RAbductorPollicisLongus-P4_0" pos="1.07466650e-03  2.87167816e-04 -3.43590591e-03" size="0.0005" />
                                                                 <site name="RPronatorQuadratus_origin" pos="3.58995558e-04  2.30108196e-07  1.66069051e-04" size="0.0005" />
+                                                                
                                                                 <body name="RCarpi" pos="0 0 -0.0035" gravcomp="0">
                                                                     <joint name="RWrist_adduction" pos="0 0 0" axis="0 -1 0" range="-0.7853981633974483 0.7853981633974483" group="1" />
                                                                     <joint name="RWrist_flexion" pos="0 0 0" axis="1 0 0" range="-1.5707963267948966 1.5707963267948966" group="1" />
@@ -1987,47 +1988,32 @@
                                                     <site name="REDL_EDL-P6" pos="0.01 -0.001 -0.00125" size="0.0005" rgba="1 0 0 1"/>
                                                     <site name="REDL_EDL-P7" pos="0.01 -0.002 -0.0018" size="0.0005" rgba="1 0 0 1"/>
                                                     <site name="REDL_EDL-P8" pos="0.0075 -0.00275 -0.0025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <!-- <site name="REDL_EDL-P9" pos="1.26100000e-02  1.00000000e-04 -9.00000000e-05" size="0.0005" rgba="1 0 0 1"/> -->
-                                                    <!-- <site name="REDL_EDL-P10" pos="1.32100000e-02  1.20000000e-04 -1.14000000e-03" size="0.0005" rgba="1 0 0 1"/> -->
-                                                    <!-- <site name="REDL_EDL-P11" pos="1.33700000e-02  1.50000000e-04 -1.72000000e-03" size="0.0005" rgba="1 0 0 1"/> -->
-                                                    <!-- <site name="REDL_EDL-P12" pos="1.35200000e-02  1.30000000e-04 -1.93000000e-03" size="0.0005" rgba="1 0 0 1"/> -->
-                                                    <site name="REHL_EHL-P5" pos="1.13000000e-03  2.90000000e-04  1.40000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REHL_EHL-P6" pos="2.56000000e-03  1.06000000e-03 -5.10000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REHL_EHL-P7" pos="5.04000000e-03  1.39000000e-03 -2.70000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REHL_EHL-P8" pos="7.30000000e-03  1.82000000e-03  2.30000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REHL_EHL-P9" pos="8.67000000e-03  1.54000000e-03 -6.70000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REHL_EHL-P10" pos="9.28000000e-03  1.19000000e-03 -1.16000000e-03" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="REHL_EHL-P5" pos="0.00113 0.0003 -0.0015" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="REHL_EHL-P6" pos="0.00725  0.00075 -0.003" size="0.0005" rgba="1 0 0 1"/>
                                                     <site name="RMG_MG-P2" pos="-2.05000000e-03 -2.80000000e-04  3.00000000e-05" size="0.0005" rgba="1 0 0 1"/>
                                                     <site name="RLG_LG-P2" pos="-2.00000000e-03 -6.90000000e-04  1.00000000e-04" size="0.0005" rgba="1 0 0 1"/>
                                                     <site name="RSOL_SOL-P2" pos="-1.83000000e-03 -4.70000000e-04  2.10000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPLANT_PLANT-P2" pos="-2.02000000e-03 -4.70000000e-04  1.50000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P3" pos="7.40000000e-04  3.10000000e-04 -1.08000000e-03" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P4" pos="3.05000000e-03  8.00000000e-05 -8.20000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P5" pos="6.60000000e-03  7.00000000e-05  8.00000000e-05" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P6" pos="9.79000000e-03  1.70000000e-04  2.90000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P7" pos="1.20800000e-02  5.00000000e-05 -2.20000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P8" pos="1.27500000e-02  1.20000000e-04 -1.38000000e-03" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P9" pos="1.32500000e-02  1.20000000e-04 -2.04000000e-03" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RTP_TP-P4" pos="6.50000000e-04  9.60000000e-04 -8.80000000e-04" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RPLANT_PLANT-P2" pos="-2.02000000e-03 -4.70000000e-04  1.50000000e-04" size="0.0005" rgba="1 0 0 1"/>                                                    
+                                                    <site name="RFDL_FDL-P3" pos="0.00075 -0.0005 -0.0025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RFDL_FDL-P4" pos="0.00725  0.00075 -0.004" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RFDL_FDL-P5" pos="0.0095 0 -0.0025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RFDL_FDL-P6" pos="0.01 -0.001 -0.00225" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RFDL_FDL-P7" pos="0.01 -0.002 -0.0028" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RFDL_FDL-P8" pos="0.0075 -0.00275 -0.0035" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RTP_TP-P4" pos="0.00065  0.0005 -0.00175" size="0.0005" rgba="1 0 0 1"/>
                                                     <site name="RPL_PL-P4" pos="8.10000000e-04 -9.40000000e-04 -9.10000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPL_PL-P5" pos="1.34000000e-03 -2.80000000e-04 -9.90000000e-04" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RPL_PL-P5" pos="1.34000000e-03 -2.80000000e-04 -9.90000000e-04" size="0.0005" rgba="1 0 0 1"/> 
                                                     <site name="RPT_PT-P3" pos="-1.10000000e-04 -8.90000000e-04  1.60000000e-04" size="0.0005" rgba="1 0 0 1"/>
                                                     <site name="RPT_PT-P4" pos="6.00000000e-04 -9.50000000e-04 -1.70000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPB_PB-P2" pos="-7.00000000e-05 -8.50000000e-04  2.80000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPB_PB-P3" pos="2.13000000e-03 -1.01000000e-03 -6.80000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQA_PDQA-P3" pos="1.70000000e-04 -7.60000000e-04  2.30000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQA_PDQA-P4" pos="3.23000000e-03 -8.00000000e-04 -1.20000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQA_PDQA-P5" pos="7.48000000e-03 -1.02000000e-03  5.80000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQA_PDQA-P6" pos="9.28000000e-03 -1.17000000e-03  7.70000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQA_PDQA-P7" pos="1.21100000e-02 -9.60000000e-04  6.00000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQA_PDQA-P8" pos="1.37700000e-02 -7.20000000e-04 -9.20000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQI_PDQI-P2" pos="6.70000000e-04 -7.60000000e-04 -5.00000000e-05" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQI_PDQI-P3" pos="2.23000000e-03 -1.16000000e-03 -6.30000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQI_PDQI-P4" pos="4.21000000e-03 -1.07000000e-03 -2.90000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQI_PDQI-P5" pos="7.20000000e-03 -1.48000000e-03 -2.00000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQI_PDQI-P6" pos="1.04700000e-02 -1.11000000e-03 -4.90000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQI_PDQI-P7" pos="1.15900000e-02 -6.80000000e-04 -1.24000000e-03" size="0.0005" rgba="1 0 0 1"/>
-
+                                                    <site name="RPB_PB-P2" pos="-7.00000000e-05 -0.001  0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RPB_PB-P3" pos="0.0015 -0.002 -0.002" size="0.0005" rgba="1 0 0 1"/>       
+                                                    <site name="RPDQA_PDQA-P3" pos="0.00017 -0.00075  0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RPDQA_PDQA-P4" pos="0.00323 -0.0015 -0.0015" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RPDQA_PDQA-P5" pos="0.0095 -0.00225 -0.002" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RPDQI_PDQI-P2" pos="0.00067 -0.00076 -0.00005" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RPDQI_PDQI-P3" pos="0.003 -0.002 -0.002" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RPDQI_PDQI-P4" pos="0.0075 -0.003 -0.0025" size="0.0005" rgba="1 0 0 1"/>
+                                                    
                                                     <body name="RPhalange1_1" pos="0.00725 0.0007 -0.00325" gravcomp="0">
                                                         <geom name="RPhalange1_1" pos="0.0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange1_1" density="1908" group="0"/>
                                                         <joint name="RPhalange1_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="3"/>
@@ -2036,6 +2022,8 @@
                                                         <body name="RPhalange1_3" pos="0.0021 0.0001 0" gravcomp="0">
                                                             <geom name="RPhalange1_3" pos="0 0 0" euler="0.0 0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange1_3" density="1908" group="0"/>
                                                             <joint name="RPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            <site name="REHL_EHL-P7" pos="0.0001 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="RFDL_FDL-P9" pos="0.0001 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
                                                         </body>
                                                     </body>
 
@@ -2047,13 +2035,17 @@
                                                         <body name="RPhalange2_2" pos="0.00275 0 0" gravcomp="0">
                                                             <geom name="RPhalange2_2" pos="0 0.0001 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_2" density="1908" group="0"/>
                                                             <joint name="RPhalange2_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            
                                                             <site name="REDL_EDL-P9" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
                                                             <site name="REDL_EDL-P9-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="RFDL_FDL-P10" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="RFDL_FDL-P10-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
 
                                                             <body name="RPhalange2_3" pos="0.0017 0 0" gravcomp="0">
                                                                 <geom name="RPhalange2_3" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_3" density="1908" group="0"/>
                                                                 <joint name="RPhalange2_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
                                                                 <site name="REDL_EDL-P10" pos="0.0005 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                                <site name="RFDL_FDL-P11" pos="0.0005 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2066,13 +2058,17 @@
                                                         <body name="RPhalange3_2" pos="0.0031 0 0" gravcomp="0">
                                                             <geom name="RPhalange3_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange3_2" density="1908" group="0"/>
                                                             <joint name="RPhalange3_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            
                                                             <site name="REDL_EDL-P11" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
                                                             <site name="REDL_EDL-P11-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="RFDL_FDL-P12" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="RFDL_FDL-P12-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
 
                                                             <body name="RPhalange3_3" pos="0.0017 0 0" gravcomp="0">
                                                                 <geom name="RPhalange3_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange3_3" density="1908" group="0"/>
                                                                 <joint name="RPhalange3_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
                                                                 <site name="REDL_EDL-P12" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
+                                                                <site name="RFDL_FDL-P13" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2085,14 +2081,20 @@
                                                         <body name="RPhalange4_2" pos="0.003 0 -0.0002" gravcomp="0">
                                                             <geom name="RPhalange4_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange4_2" density="1908" group="0"/>
                                                             <joint name="RPhalange4_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            
                                                             <site name="REDL_EDL-P13" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
                                                             <site name="REDL_EDL-P13-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
-
+                                                            <site name="RFDL_FDL-P14" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="RFDL_FDL-P14-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="RPDQA_PDQA-P6" pos="0 -0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="RPDQA_PDQA-P7" pos="0.001 -0.00025 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            
                                                             <body name="RPhalange4_3" pos="0.00185 -0.0001 0" gravcomp="0">
                                                                 <geom name="RPhalange4_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange4_3" density="1908" group="0"/>
                                                                 <joint name="RPhalange4_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
                                                                 <site name="REDL_EDL-P14" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
-                                                            
+                                                                <site name="RFDL_FDL-P15" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                                <site name="RPDQA_PDQA-P8" pos="0.00025 -0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2105,14 +2107,20 @@
                                                         <body name="RPhalange5_2" pos="0.0025 0 0" gravcomp="0">
                                                             <geom name="RPhalange5_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange5_2" density="1908" group="0"/>
                                                             <joint name="RPhalange5_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            
                                                             <site name="REDL_EDL-P15" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
                                                             <site name="REDL_EDL-P15-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="RFDL_FDL-P16" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="RFDL_FDL-P16-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="RPDQI_PDQI-P5" pos="0 -0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="RPDQI_PDQI-P6" pos="0.001 -0.00025 0.00025" size="0.0005" rgba="1 0 0 1"/>
 
                                                             <body name="RPhalange5_3" pos="0.0015 -0.0001 0" gravcomp="0">
                                                                 <geom name="RPhalange5_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange5_3" density="1908" group="0"/>
                                                                 <joint name="RPhalange5_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
                                                                 <site name="REDL_EDL-P16" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
-                                                            
+                                                                <site name="RFDL_FDL-P17" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                                <site name="RPDQI_PDQI-P7" pos="0.00025 -0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2257,57 +2265,41 @@
                                                     <joint name="LAnkle_rotation" pos="0 0 0" axis="-1 0 0" range="-0.3490658503988659 0.3490658503988659" group="4" />
                                             
                                                     <geom name="LTarsalMetatarsal" pos="0 0.00075 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LTarsalMetatarsal" group="0" density="1908" />
-
                                                     <geom name="LPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 0.0009 -0.0003" euler="-3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                     
-                                                    <site name="LPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03  7.89500000e-04" size="0.0005" />
-                                                    <site name="LTA_TA-P6" pos="8.40000000e-04  6.40000000e-04  1.00000000e-05" size="0.0005" />
-                                                    <site name="LEDL_EDL-P4" pos="1.34000000e-03 -2.70000000e-04 -7.00000000e-05" size="0.0005" />
-                                                    <site name="LEDL_EDL-P5" pos="5.23000000e-03  6.88338275e-20  3.10000000e-04" size="0.0005" />
-                                                    <site name="LEDL_EDL-P6" pos="7.95000000e-03  6.00000000e-05  9.10000000e-04" size="0.0005" />
-                                                    <site name="LEDL_EDL-P7" pos="9.49000000e-03  1.20000000e-04  1.09000000e-03" size="0.0005" />
-                                                    <site name="LEDL_EDL-P8" pos="1.13400000e-02  1.70000000e-04  4.50000000e-04" size="0.0005" />
-                                                    <site name="LEDL_EDL-P9" pos="1.26100000e-02  1.00000000e-04 -9.00000000e-05" size="0.0005" />
-                                                    <site name="LEDL_EDL-P10" pos="1.32100000e-02  1.20000000e-04 -1.14000000e-03" size="0.0005" />
-                                                    <site name="LEDL_EDL-P11" pos="1.33700000e-02  1.50000000e-04 -1.72000000e-03" size="0.0005" />
-                                                    <site name="LEDL_EDL-P12" pos="1.35200000e-02  1.30000000e-04 -1.93000000e-03" size="0.0005" />
-                                                    <site name="LEHL_EHL-P5" pos="1.13000000e-03  2.90000000e-04  1.40000000e-04" size="0.0005" />
-                                                    <site name="LEHL_EHL-P6" pos="2.56000000e-03  1.06000000e-03 -5.10000000e-04" size="0.0005" />
-                                                    <site name="LEHL_EHL-P7" pos="5.04000000e-03  1.39000000e-03 -2.70000000e-04" size="0.0005" />
-                                                    <site name="LEHL_EHL-P8" pos="7.30000000e-03  1.82000000e-03  2.30000000e-04" size="0.0005" />
-                                                    <site name="LEHL_EHL-P9" pos="8.67000000e-03  1.54000000e-03 -6.70000000e-04" size="0.0005" />
-                                                    <site name="LEHL_EHL-P10" pos="9.28000000e-03  1.19000000e-03 -1.16000000e-03" size="0.0005" />
-                                                    <site name="LMG_MG-P2" pos="-2.05000000e-03 -2.80000000e-04  3.00000000e-05" size="0.0005" />
-                                                    <site name="LLG_LG-P2" pos="-2.00000000e-03 -6.90000000e-04  1.00000000e-04" size="0.0005" />
-                                                    <site name="LSOL_SOL-P2" pos="-1.83000000e-03 -4.70000000e-04  2.10000000e-04" size="0.0005" />
-                                                    <site name="LPLANT_PLANT-P2" pos="-2.02000000e-03 -4.70000000e-04  1.50000000e-04" size="0.0005" />
-                                                    <site name="LFDL_FDL-P3" pos="7.40000000e-04  3.10000000e-04 -1.08000000e-03" size="0.0005" />
-                                                    <site name="LFDL_FDL-P4" pos="3.05000000e-03  8.00000000e-05 -8.20000000e-04" size="0.0005" />
-                                                    <site name="LFDL_FDL-P5" pos="6.60000000e-03  7.00000000e-05  8.00000000e-05" size="0.0005" />
-                                                    <site name="LFDL_FDL-P6" pos="9.79000000e-03  1.70000000e-04  2.90000000e-04" size="0.0005" />
-                                                    <site name="LFDL_FDL-P7" pos="1.20800000e-02  5.00000000e-05 -2.20000000e-04" size="0.0005" />
-                                                    <site name="LFDL_FDL-P8" pos="1.27500000e-02  1.20000000e-04 -1.38000000e-03" size="0.0005" />
-                                                    <site name="LFDL_FDL-P9" pos="1.32500000e-02  1.20000000e-04 -2.04000000e-03" size="0.0005" />
-                                                    <site name="LTP_TP-P4" pos="6.50000000e-04  9.60000000e-04 -8.80000000e-04" size="0.0005" />
-                                                    <site name="LPL_PL-P4" pos="8.10000000e-04 -9.40000000e-04 -9.10000000e-04" size="0.0005" />
-                                                    <site name="LPL_PL-P5" pos="1.34000000e-03 -2.80000000e-04 -9.90000000e-04" size="0.0005" />
-                                                    <site name="LPT_PT-P3" pos="-1.10000000e-04 -8.90000000e-04  1.60000000e-04" size="0.0005" />
-                                                    <site name="LPT_PT-P4" pos="6.00000000e-04 -9.50000000e-04 -1.70000000e-04" size="0.0005" />
-                                                    <site name="LPB_PB-P2" pos="-7.00000000e-05 -8.50000000e-04  2.80000000e-04" size="0.0005" />
-                                                    <site name="LPB_PB-P3" pos="2.13000000e-03 -1.01000000e-03 -6.80000000e-04" size="0.0005" />
-                                                    <site name="LPDQA_PDQA-P3" pos="1.70000000e-04 -7.60000000e-04  2.30000000e-04" size="0.0005" />
-                                                    <site name="LPDQA_PDQA-P4" pos="3.23000000e-03 -8.00000000e-04 -1.20000000e-04" size="0.0005" />
-                                                    <site name="LPDQA_PDQA-P5" pos="7.48000000e-03 -1.02000000e-03  5.80000000e-04" size="0.0005" />
-                                                    <site name="LPDQA_PDQA-P6" pos="9.28000000e-03 -1.17000000e-03  7.70000000e-04" size="0.0005" />
-                                                    <site name="LPDQA_PDQA-P7" pos="1.21100000e-02 -9.60000000e-04  6.00000000e-04" size="0.0005" />
-                                                    <site name="LPDQA_PDQA-P8" pos="1.37700000e-02 -7.20000000e-04 -9.20000000e-04" size="0.0005" />
-                                                    <site name="LPDQI_PDQI-P2" pos="6.70000000e-04 -7.60000000e-04 -5.00000000e-05" size="0.0005" />
-                                                    <site name="LPDQI_PDQI-P3" pos="2.23000000e-03 -1.16000000e-03 -6.30000000e-04" size="0.0005" />
-                                                    <site name="LPDQI_PDQI-P4" pos="4.21000000e-03 -1.07000000e-03 -2.90000000e-04" size="0.0005" />
-                                                    <site name="LPDQI_PDQI-P5" pos="7.20000000e-03 -1.48000000e-03 -2.00000000e-04" size="0.0005" />
-                                                    <site name="LPDQI_PDQI-P6" pos="1.04700000e-02 -1.11000000e-03 -4.90000000e-04" size="0.0005" />
-                                                    <site name="LPDQI_PDQI-P7" pos="1.15900000e-02 -6.80000000e-04 -1.24000000e-03" size="0.0005" />
-
+                                                    <site name="LPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 1.59400000e-03 -0.001" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LTA_TA-P6" pos="8.40000000e-04 -6.40000000e-04  -0.002" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LEDL_EDL-P4" pos="0.00134 0.00025 -0.001" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LEDL_EDL-P5" pos="0.0095 0 -0.0015" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LEDL_EDL-P6" pos="0.01 0.001 -0.00125" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LEDL_EDL-P7" pos="0.01 0.002 -0.0018" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LEDL_EDL-P8" pos="0.0075 0.00275 -0.0025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LEHL_EHL-P5" pos="0.00113 -0.0003 -0.0015" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LEHL_EHL-P6" pos="0.00725  -0.00075 -0.003" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LMG_MG-P2" pos="-2.05000000e-03 2.80000000e-04  3.00000000e-05" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LLG_LG-P2" pos="-2.00000000e-03 6.90000000e-04  1.00000000e-04" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LSOL_SOL-P2" pos="-1.83000000e-03 4.70000000e-04  2.10000000e-04" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPLANT_PLANT-P2" pos="-2.02000000e-03 4.70000000e-04  1.50000000e-04" size="0.0005" rgba="1 0 0 1"/>                                                    
+                                                    <site name="LFDL_FDL-P3" pos="0.00075 0.0005 -0.0025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LFDL_FDL-P4" pos="0.00725  -0.00075 -0.004" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LFDL_FDL-P5" pos="0.0095 0 -0.0025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LFDL_FDL-P6" pos="0.01 0.001 -0.00225" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LFDL_FDL-P7" pos="0.01 0.002 -0.0028" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LFDL_FDL-P8" pos="0.0075 0.00275 -0.0035" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LTP_TP-P4" pos="0.00065  -0.0005 -0.00175" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPL_PL-P4" pos="8.10000000e-04 9.40000000e-04 -9.10000000e-04" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPL_PL-P5" pos="1.34000000e-03 2.80000000e-04 -9.90000000e-04" size="0.0005" rgba="1 0 0 1"/> 
+                                                    <site name="LPT_PT-P3" pos="-1.10000000e-04 8.90000000e-04  1.60000000e-04" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPT_PT-P4" pos="6.00000000e-04 9.50000000e-04 -1.70000000e-04" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPB_PB-P2" pos="-7.00000000e-05 0.001  0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPB_PB-P3" pos="0.0015 0.002 -0.002" size="0.0005" rgba="1 0 0 1"/>       
+                                                    <site name="LPDQA_PDQA-P3" pos="0.00017 0.00075  0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPDQA_PDQA-P4" pos="0.00323 0.0015 -0.0015" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPDQA_PDQA-P5" pos="0.0095 0.00225 -0.002" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPDQI_PDQI-P2" pos="0.00067 0.00076 -0.00005" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPDQI_PDQI-P3" pos="0.003 0.002 -0.002" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPDQI_PDQI-P4" pos="0.0075 0.003 -0.0025" size="0.0005" rgba="1 0 0 1"/>
+                                                    
                                                     <body name="LPhalange1_1" pos="0.00725 -0.0007 -0.00325" gravcomp="0">
                                                         <geom name="LPhalange1_1" pos="0.0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange1_1" density="1908" group="0"/>
                                                         <joint name="LPhalange1_1_adduction" pos="0 0 0" axis="0 0 1" range="-0.1 0.1" group="3"/>
@@ -2316,6 +2308,8 @@
                                                         <body name="LPhalange1_3" pos="0.0021 0.0001 0" gravcomp="0">
                                                             <geom name="LPhalange1_3" pos="0 0 0" euler="0.0 0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange1_3" density="1908" group="0"/>
                                                             <joint name="LPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            <site name="LEHL_EHL-P7" pos="0.0001 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LFDL_FDL-P9" pos="0.0001 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
                                                         </body>
                                                     </body>
 
@@ -2327,10 +2321,16 @@
                                                         <body name="LPhalange2_2" pos="0.00275 0 0" gravcomp="0">
                                                             <geom name="LPhalange2_2" pos="0 0.0001 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange2_2" density="1908" group="0"/>
                                                             <joint name="LPhalange2_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            <site name="LEDL_EDL-P9" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LEDL_EDL-P9-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LFDL_FDL-P10" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="LFDL_FDL-P10-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
 
                                                             <body name="LPhalange2_3" pos="0.0017 0 0" gravcomp="0">
                                                                 <geom name="LPhalange2_3" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange2_3" density="1908" group="0"/>
                                                                 <joint name="LPhalange2_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                                <site name="LEDL_EDL-P10" pos="0.0005 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                                <site name="LFDL_FDL-P11" pos="0.0005 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2343,10 +2343,16 @@
                                                         <body name="LPhalange3_2" pos="0.0031 0 0" gravcomp="0">
                                                             <geom name="LPhalange3_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange3_2" density="1908" group="0"/>
                                                             <joint name="LPhalange3_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            <site name="LEDL_EDL-P11" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LEDL_EDL-P11-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LFDL_FDL-P12" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="LFDL_FDL-P12-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
 
                                                             <body name="LPhalange3_3" pos="0.0017 0 0" gravcomp="0">
                                                                 <geom name="LPhalange3_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange3_3" density="1908" group="0"/>
                                                                 <joint name="LPhalange3_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                                <site name="LEDL_EDL-P12" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
+                                                                <site name="LFDL_FDL-P13" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2359,10 +2365,19 @@
                                                         <body name="LPhalange4_2" pos="0.003 0 -0.0002" gravcomp="0">
                                                             <geom name="LPhalange4_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange4_2" density="1908" group="0"/>
                                                             <joint name="LPhalange4_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            <site name="LEDL_EDL-P13" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LEDL_EDL-P13-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LFDL_FDL-P14" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="LFDL_FDL-P14-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="LPDQA_PDQA-P6" pos="0 0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LPDQA_PDQA-P7" pos="0.001 0.00025 0.00025" size="0.0005" rgba="1 0 0 1"/>
 
                                                             <body name="LPhalange4_3" pos="0.00185 -0.0001 0" gravcomp="0">
                                                                 <geom name="LPhalange4_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange4_3" density="1908" group="0"/>
                                                                 <joint name="LPhalange4_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                                <site name="LEDL_EDL-P14" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
+                                                                <site name="LFDL_FDL-P15" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                                <site name="LPDQA_PDQA-P8" pos="0.00025 0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2375,10 +2390,19 @@
                                                         <body name="LPhalange5_2" pos="0.0025 0 0" gravcomp="0">
                                                             <geom name="LPhalange5_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange5_2" density="1908" group="0"/>
                                                             <joint name="LPhalange5_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                            <site name="LEDL_EDL-P15" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LEDL_EDL-P15-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LFDL_FDL-P16" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="LFDL_FDL-P16-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="LPDQI_PDQI-P5" pos="0 0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LPDQI_PDQI-P6" pos="0.001 0.00025 0.00025" size="0.0005" rgba="1 0 0 1"/>
 
                                                             <body name="LPhalange5_3" pos="0.0015 -0.0001 0" gravcomp="0">
                                                                 <geom name="LPhalange5_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange5_3" density="1908" group="0"/>
                                                                 <joint name="LPhalange5_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
+                                                                <site name="LEDL_EDL-P16" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
+                                                                <site name="LFDL_FDL-P17" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                                <site name="LPDQI_PDQI-P7" pos="0.00025 0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2856,7 +2880,6 @@
                     </body>
                 </body>
             </body>
-
 
         </body>
 
@@ -4975,10 +4998,10 @@
             <site site="RInfraspinatus_insertion" />
         </spatial>
         <spatial name="RSupraspinatus_tendon" group="0">
-        <site site="RSupraspinatus_origin" />
-        <site site="RSupraspinatus_P1" />
-        <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RSupraspinatus_1_sidesite" />
-        <site site="RSupraspinatus_insertion" />
+            <site site="RSupraspinatus_origin" />
+            <site site="RSupraspinatus_P1" />
+            <geom geom="RHumerus_Proximal_sphere" sidesite="RHumerus_Proximal_sphere_RSupraspinatus_1_sidesite" />
+            <site site="RSupraspinatus_insertion" />
         </spatial>
         <spatial name="RSubscapularis_tendon" group="0">
         <site site="RSubscapularis_origin" />
@@ -5459,31 +5482,57 @@
         <site site="RTA_TA-P5" />
         <site site="RTA_TA-P6" />
         </spatial>
+
         <spatial name="REDL_tendon" group="2">
-        <site site="REDL_EDL-P1" />
-        <site site="REDL_EDL-P2" />
-        <site site="REDL_EDL-P3" />
-        <site site="REDL_EDL-P4" />
-        <pulley divisor="4"/>
-        <site site="REDL_EDL-P4" />
-        <site site="REDL_EDL-P5" />
-        <site site="REDL_EDL-P9" />
-        <site site="REDL_EDL-P10" />
-        <pulley divisor="4"/>
-        <site site="REDL_EDL-P4" />
-        <site site="REDL_EDL-P6" />
-        <site site="REDL_EDL-P11" />
-        <site site="REDL_EDL-P12" />
-        
-        <pulley divisor="4"/>
-        <site site="REDL_EDL-P4" />
-        <site site="REDL_EDL-P7" />
-        <pulley divisor="4"/>
-        <site site="REDL_EDL-P4" />
-        <site site="REDL_EDL-P8" />
-        
+            <site site="REDL_EDL-P1" />
+            <site site="REDL_EDL-P2" />
+            <site site="REDL_EDL-P3" />
+            <site site="REDL_EDL-P4" />
+                <pulley divisor="4"/>
+                <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P5" />
+                <site site="REDL_EDL-P9" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P9" />
+                    <site site="REDL_EDL-P9-1" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P9" />
+                    <site site="REDL_EDL-P10" />
+                
+                <pulley divisor="4"/>
+                <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P6" />
+                <site site="REDL_EDL-P11" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P11" />
+                    <site site="REDL_EDL-P11-1" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P11" />
+                    <site site="REDL_EDL-P12" />
+                
+                <pulley divisor="4"/>
+                <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P7" />
+                <site site="REDL_EDL-P13" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P13" />
+                    <site site="REDL_EDL-P13-1" />
+                    <pulley divisor="2"/>
+                    <site site="REDL_EDL-P13" />
+                    <site site="REDL_EDL-P14" />
+
+                <pulley divisor="4"/>
+                <site site="REDL_EDL-P4" />
+                <site site="REDL_EDL-P8" />
+                <site site="REDL_EDL-P15" />
+                <pulley divisor="2"/>
+                <site site="REDL_EDL-P15" />
+                <site site="REDL_EDL-P15-1" />
+                <pulley divisor="2"/>
+                <site site="REDL_EDL-P15" />
+                <site site="REDL_EDL-P16" />
         </spatial>
-        
+
         <spatial name="REHL_tendon" group="2">
         <site site="REHL_EHL-P1" />
         <site site="REHL_EHL-P2" />
@@ -5492,40 +5541,85 @@
         <site site="REHL_EHL-P5" />
         <site site="REHL_EHL-P6" />
         <site site="REHL_EHL-P7" />
-        <site site="REHL_EHL-P8" />
-        <site site="REHL_EHL-P9" />
-        <site site="REHL_EHL-P10" />
         </spatial>
+
         <spatial name="RMG_tendon" group="2">
         <site site="RMG_MG-P1" />
         <geom geom="RPlantarflexors_at_Tibia_cylinder" sidesite="RPlantarflexors_at_Tibia_cylinder_MG_1_sidesite" />
         <site site="RMG_MG-P2" />
         </spatial>
+
         <spatial name="RLG_tendon" group="2">
         <site site="RLG_LG-P1" />
         <geom geom="RPlantarflexors_at_Tibia_cylinder" sidesite="RPlantarflexors_at_Tibia_cylinder_LG_1_sidesite" />
         <site site="RLG_LG-P2" />
         </spatial>
+
         <spatial name="RSOL_tendon" group="2">
         <site site="RSOL_SOL-P1" />
         <site site="RSOL_SOL-P2" />
         </spatial>
+
         <spatial name="RPLANT_tendon" group="2">
         <site site="RPLANT_PLANT-P1" />
         <geom geom="RPlantarflexors_at_Tibia_cylinder" sidesite="RPlantarflexors_at_Tibia_cylinder_PLANT_1_sidesite" />
         <site site="RPLANT_PLANT-P2" />
         </spatial>
+        
         <spatial name="RFDL_tendon" group="2">
-        <site site="RFDL_FDL-P1" />
-        <site site="RFDL_FDL-P2" />
-        <site site="RFDL_FDL-P3" />
-        <site site="RFDL_FDL-P4" />
-        <site site="RFDL_FDL-P5" />
-        <site site="RFDL_FDL-P6" />
-        <site site="RFDL_FDL-P7" />
-        <site site="RFDL_FDL-P8" />
-        <site site="RFDL_FDL-P9" />
+            <site site="RFDL_FDL-P1" />
+            <site site="RFDL_FDL-P2" />
+            <site site="RFDL_FDL-P3" />
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P4" />
+                <site site="RFDL_FDL-P9" />
+
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P5" />
+                <site site="RFDL_FDL-P10" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P10" />
+                    <site site="RFDL_FDL-P10-1" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P10" />
+                    <site site="RFDL_FDL-P11" />
+
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P6" />
+                <site site="RFDL_FDL-P12" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P12" />
+                    <site site="RFDL_FDL-P12-1" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P12" />
+                    <site site="RFDL_FDL-P13" />
+
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P7" />
+                <site site="RFDL_FDL-P14" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P14" />
+                    <site site="RFDL_FDL-P14-1" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P14" />
+                    <site site="RFDL_FDL-P15" />
+
+                <pulley divisor="5"/>
+                <site site="RFDL_FDL-P3" />
+                <site site="RFDL_FDL-P8" />
+                <site site="RFDL_FDL-P16" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P16" />
+                    <site site="RFDL_FDL-P16-1" />
+                    <pulley divisor="2"/>
+                    <site site="RFDL_FDL-P16" />
+                    <site site="RFDL_FDL-P17" />
         </spatial>
+
         <spatial name="RTP_tendon" group="2">
         <site site="RTP_TP-P1" />
         <site site="RTP_TP-P2" />
@@ -5758,20 +5852,57 @@
         <site site="LTA_TA-P5" />
         <site site="LTA_TA-P6" />
         </spatial>
+
         <spatial name="LEDL_tendon" group="3">
-        <site site="LEDL_EDL-P1" />
-        <site site="LEDL_EDL-P2" />
-        <site site="LEDL_EDL-P3" />
-        <site site="LEDL_EDL-P4" />
-        <site site="LEDL_EDL-P5" />
-        <site site="LEDL_EDL-P6" />
-        <site site="LEDL_EDL-P7" />
-        <site site="LEDL_EDL-P8" />
-        <site site="LEDL_EDL-P9" />
-        <site site="LEDL_EDL-P10" />
-        <site site="LEDL_EDL-P11" />
-        <site site="LEDL_EDL-P12" />
+            <site site="LEDL_EDL-P1" />
+            <site site="LEDL_EDL-P2" />
+            <site site="LEDL_EDL-P3" />
+            <site site="LEDL_EDL-P4" />
+                <pulley divisor="4"/>
+                <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P5" />
+                <site site="LEDL_EDL-P9" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P9" />
+                    <site site="LEDL_EDL-P9-1" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P9" />
+                    <site site="LEDL_EDL-P10" />
+                
+                <pulley divisor="4"/>
+                <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P6" />
+                <site site="LEDL_EDL-P11" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P11" />
+                    <site site="LEDL_EDL-P11-1" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P11" />
+                    <site site="LEDL_EDL-P12" />
+                
+                <pulley divisor="4"/>
+                <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P7" />
+                <site site="LEDL_EDL-P13" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P13" />
+                    <site site="LEDL_EDL-P13-1" />
+                    <pulley divisor="2"/>
+                    <site site="LEDL_EDL-P13" />
+                    <site site="LEDL_EDL-P14" />
+
+                <pulley divisor="4"/>
+                <site site="LEDL_EDL-P4" />
+                <site site="LEDL_EDL-P8" />
+                <site site="LEDL_EDL-P15" />
+                <pulley divisor="2"/>
+                <site site="LEDL_EDL-P15" />
+                <site site="LEDL_EDL-P15-1" />
+                <pulley divisor="2"/>
+                <site site="LEDL_EDL-P15" />
+                <site site="LEDL_EDL-P16" />
         </spatial>
+
         <spatial name="LEHL_tendon" group="3">
         <site site="LEHL_EHL-P1" />
         <site site="LEHL_EHL-P2" />
@@ -5780,10 +5911,8 @@
         <site site="LEHL_EHL-P5" />
         <site site="LEHL_EHL-P6" />
         <site site="LEHL_EHL-P7" />
-        <site site="LEHL_EHL-P8" />
-        <site site="LEHL_EHL-P9" />
-        <site site="LEHL_EHL-P10" />
         </spatial>
+
         <spatial name="LMG_tendon" group="3">
         <site site="LMG_MG-P1" />
         <geom geom="LPlantarflexors_at_Tibia_cylinder" sidesite="LPlantarflexors_at_Tibia_cylinder_MG_1_sidesite" />
@@ -5803,17 +5932,61 @@
         <geom geom="LPlantarflexors_at_Tibia_cylinder" sidesite="LPlantarflexors_at_Tibia_cylinder_PLANT_1_sidesite" />
         <site site="LPLANT_PLANT-P2" />
         </spatial>
+
         <spatial name="LFDL_tendon" group="3">
-        <site site="LFDL_FDL-P1" />
-        <site site="LFDL_FDL-P2" />
-        <site site="LFDL_FDL-P3" />
-        <site site="LFDL_FDL-P4" />
-        <site site="LFDL_FDL-P5" />
-        <site site="LFDL_FDL-P6" />
-        <site site="LFDL_FDL-P7" />
-        <site site="LFDL_FDL-P8" />
-        <site site="LFDL_FDL-P9" />
+            <site site="LFDL_FDL-P1" />
+            <site site="LFDL_FDL-P2" />
+            <site site="LFDL_FDL-P3" />
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P4" />
+                <site site="LFDL_FDL-P9" />
+
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P5" />
+                <site site="LFDL_FDL-P10" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P10" />
+                    <site site="LFDL_FDL-P10-1" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P10" />
+                    <site site="LFDL_FDL-P11" />
+
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P6" />
+                <site site="LFDL_FDL-P12" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P12" />
+                    <site site="LFDL_FDL-P12-1" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P12" />
+                    <site site="LFDL_FDL-P13" />
+
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P7" />
+                <site site="LFDL_FDL-P14" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P14" />
+                    <site site="LFDL_FDL-P14-1" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P14" />
+                    <site site="LFDL_FDL-P15" />
+
+                <pulley divisor="5"/>
+                <site site="LFDL_FDL-P3" />
+                <site site="LFDL_FDL-P8" />
+                <site site="LFDL_FDL-P16" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P16" />
+                    <site site="LFDL_FDL-P16-1" />
+                    <pulley divisor="2"/>
+                    <site site="LFDL_FDL-P16" />
+                    <site site="LFDL_FDL-P17" />
         </spatial>
+
         <spatial name="LTP_tendon" group="3">
         <site site="LTP_TP-P1" />
         <site site="LTP_TP-P2" />
@@ -6002,7 +6175,6 @@
         <general group="0" name="RPronatorQuadratus" class="muscle" tendon="RPronatorQuadratus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
     
 
-        
         <general group="1" name="LBicepsLongus" class="muscle" tendon="LBicepsLongus_tendon" ctrlrange="0.01 1" lengthrange="0.00784 0.01419" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="1" name="LBicepsBrevis" class="muscle" tendon="LBicepsBrevis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="1" name="LTri_Long" class="muscle" tendon="LTri_Long_tendon" ctrlrange="0.01 1" lengthrange="0.00753 0.01526" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
@@ -6079,7 +6251,6 @@
         <general group="2" name="RPB" class="muscle" tendon="RPB_tendon" lengthrange="0.0123375 0.0124584" actdim="1" gainprm="0.874437 1.48249 0.383521 1 0 2 10 0.944345 1.4 0" biasprm="0.874437 1.48249 0.383521 1 0 2 10 0.944345 1.4 0"/>
         <general group="2" name="RPDQA" class="muscle" tendon="RPDQA_tendon" lengthrange="0.0276852 0.0279705" actdim="1" gainprm="0.851773 1.18737 0.106563 1 0 2 10 1.37597 1.4 0" biasprm="0.851773 1.18737 0.106563 1 0 2 10 1.37597 1.4 0"/>
         <general group="2" name="RPDQI" class="muscle" tendon="RPDQI_tendon" lengthrange="0.0227332 0.0237422" actdim="1" gainprm="0.807598 1.13525 0.0984342 1 0 2 10 1.53495 1.4 0" biasprm="0.807598 1.13525 0.0984342 1 0 2 10 1.53495 1.4 0"/>
-        
         <general group="2" name="RTensorFasciaeLatae" class="muscle" tendon="RTensorFasciaeLatae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
    
         
@@ -6125,7 +6296,6 @@
         <general group="3" name="LPB" class="muscle" tendon="LPB_tendon" lengthrange="0.0123375 0.0124584" actdim="1" gainprm="0.874437 1.48249 0.383521 1 0 2 10 0.944345 1.4 0" biasprm="0.874437 1.48249 0.383521 1 0 2 10 0.944345 1.4 0"/>
         <general group="3" name="LPDQA" class="muscle" tendon="LPDQA_tendon" lengthrange="0.0276852 0.0279705" actdim="1" gainprm="0.851773 1.18737 0.106563 1 0 2 10 1.37597 1.4 0" biasprm="0.851773 1.18737 0.106563 1 0 2 10 1.37597 1.4 0"/>
         <general group="3" name="LPDQI" class="muscle" tendon="LPDQI_tendon" lengthrange="0.0227332 0.0237422" actdim="1" gainprm="0.807598 1.13525 0.0984342 1 0 2 10 1.53495 1.4 0" biasprm="0.807598 1.13525 0.0984342 1 0 2 10 1.53495 1.4 0"/>
-        
         <general group="3" name="LTensorFasciaeLatae" class="muscle" tendon="LTensorFasciaeLatae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
 
     </actuator>
