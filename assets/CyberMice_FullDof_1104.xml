@@ -911,7 +911,7 @@
                                                                 <site name="RFlexorDigitumProfundusRadial_origin" pos="1.79184742e-04  2.37440008e-05  5.55275427e-03" size="0.0005" />
                                                                 <site name="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2" pos="3.88055093e-04  1.50211076e-04  2.25041487e-03" size="0.0005" />
                                                                 <site name="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2" pos="-4.31640377e-04  7.72061429e-04  9.92740853e-04" size="0.0005" />
-                                                                <site name="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" pos="-1.32312486e-04  1.41034086e-03 -2.83207644e-03" size="0.0005" />
+                                                                <site name="RFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" pos="-1.32312486e-04  7.72061429e-04 -2.83207644e-03" size="0.0005" />
                                                                 <site name="RExtensorCarpiRadialisLongus_insertion" pos="1.33882609e-03  6.82714799e-05  1.61706820e-03" size="0.0005" />
                                                                 <site name="RExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2" pos="8.53431993e-04 -6.58379920e-04  6.73662941e-04" size="0.0005" />
                                                                 <site name="RExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2_0" pos="1.02807732e-03  5.64517594e-05 -3.47094996e-03" size="0.0005" />
@@ -946,8 +946,6 @@
                                                                     <geom name="RWrist_Extensor_ellipsoid_RExtensorCarpiUlnar" size="0.000469275" pos="0.000267 0.00047446 -0.00067945" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                                     <geom name="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus" size="0.00047319" pos="0.00022195  0.00032321 -0.00058098" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                                     
-                                                                    <site name="RWrist_Extensor_sidesite" pos="9.69446299e-04 -5.62035217e-04 -1.34491370e-03" size="0.0005" />
-                                                                    <site name="RWrist_Flexor_sidesite" pos="1.54046541e-04  1.78330596e-03 -6.92378270e-04" size="0.0005" />
                                                                     <site name="RFlaxorCarpiUlnar_insertion" pos="-6.27075644e-04  9.03877667e-05 -5.82679233e-04" size="0.0005" />
                                                                     <site name="RWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar_1_sidesite" pos="7.86303987e-04  3.72838006e-04 -6.39069023e-04" size="0.0005" />
                                                                     <site name="RPalmarLongus_insertion" pos="-6.98085778e-05  6.25130573e-04 -3.46668951e-04" size="0.0005" />
@@ -955,13 +953,11 @@
                                                                     <site name="RWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis_1_sidesite" pos="3.63326054e-04  6.99437039e-05 -1.04996552e-03" size="0.0005" />
                                                                     <site name="RExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3" pos=" 1.30136364e-03  4.71476600e-04 -2.33604342e-04" size="0.0005" />
                                                                     <site name="RExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3_0" pos="8.91305762e-04  5.80372099e-04 -5.46536742e-04" size="0.0005" />
-                                                                    <site name="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus_3_sidesite" pos="-5.00910119e-04  4.02478920e-03 -6.46358132e-03" size="0.0005" rgba="0.9 0.6 0.8 0.6" />
                                                                     <site name="RExtensorCarpiRadialisBrevis_insertion" pos=" 6.27286510e-04  3.34967226e-04 -5.56064001e-04" size="0.0005" />
-                                                                    <site name="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite" pos="3.53170059e-04  7.39460786e-04 -6.16293742e-04" size="0.0005" />
+                                                                    <site name="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite" pos="3.53170059e-04  7.39460786e-04 -6.16293742e-04" size="0.0005" rgba="0 1 0 1"/>
                                                                     <site name="RExtensorCarpiUlnar_insertion" pos="-2.50265788e-04 -8.06297169e-05 -9.75047190e-04" size="0.0005" />
                                                                     <site name="RWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite" pos="5.23935970e-04  4.37852764e-04 -1.25804952e-04" size="0.0005" />
                                                                     
-
                                                                     <site name="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" pos="2.42536184e-05  8.93121705e-04 -6.41884180e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
                                                                     <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" pos="2.76084522e-05  8.93456627e-04 -6.39212735e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
                                                                     <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" pos="4.91523042e-04  2.46820180e-04 -3.81801364e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
@@ -982,22 +978,24 @@
                                                                     <site name="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" pos="-2.16625677e-04 -3.94783983e-04 -2.78842876e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
                                                                     <site name="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" pos="-5.00910119e-04  4.02478920e-03 -6.46358132e-03" size="0.0005" rgba="1 0 0 1" group="5"/>
                                                                     <site name="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  8.80950408e-04 -4.62098941e-04" size="0.0005" rgba="1 0 0 1" group="5"/>           
-                                                                    <site name="RExtensorDigitorum-2" pos="0.00075 -0.00025 -0.003" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="RExtensorDigitorum-3" pos="0.0 -0.00025 -0.00375" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="RExtensorDigitorum-4" pos="-0.0007 -0.00025 -0.00325" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="RExtensorDigitorum-5" pos="-0.0014 -0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="RExtensorDigitum-2" pos="0.00075 -0.00025 -0.003" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="RExtensorDigitum-3" pos="0.0 -0.00025 -0.00375" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="RExtensorDigitum-4" pos="-0.0007 -0.00025 -0.00325" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="RExtensorDigitum-5" pos="-0.0014 -0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
 
-                                                                    <site name="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  1.06143762e-03 -1.06153355e-03" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  0.00075 -1.06153355e-03" size="0.0005" rgba="0 1 0 1" group="5"/>
                                                                     
 
                                                                     <body name="RFPhalange1_1" pos="0.001 0.0005 -0.0015" gravcomp="0">
                                                                         <geom name="RFPhalange1_1" pos="0 0 0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="RFPhalange1_1" density="1908" group="0"/>
                                                                         <joint name="RFPhalange1_1_adduction" pos="0 0 0" axis="1 0 0" range="-0.1 0.1" group="1"/>
                                                                         <joint name="RFPhalange1_1_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 0.5" group="1" />
-                                                                        
+                                                                        <site name="RAbductorPollicisLongus-1-1" pos="0.0005 0.0001 0.0" size="0.0005" rgba="0 1 0 1" group="5"/>
+
                                                                         <body name="RFPhalange1_3" pos="0.0005 -0.0001 -0.0003" gravcomp="0">
                                                                             <geom name="RFPhalange1_3" pos="0 0 0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="RFPhalange1_3" density="1908" group="0"/>
                                                                             <joint name="RFPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 0.5" group="1" />
+                                                                            <site name="RAbductorPollicisLongus-1-3" pos="0.0005 0.0002 -0.0001" size="0.0005" rgba="0 1 0 1" group="5"/>
                                                                         </body>
                                                                     </body>
 
@@ -1232,7 +1230,7 @@
                                                                 <site name="LFlexorDigitumProfundusRadial_origin" pos="1.79184742e-04  -2.37440008e-05  5.55275427e-03" size="0.0005" />
                                                                 <site name="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2" pos="3.88055093e-04  -1.50211076e-04  2.25041487e-03" size="0.0005" />
                                                                 <site name="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2" pos="-4.31640377e-04  -7.72061429e-04  9.92740853e-04" size="0.0005" />
-                                                                <site name="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" pos="-1.32312486e-04  -1.41034086e-03 -2.83207644e-03" size="0.0005" />
+                                                                <site name="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" pos="-1.32312486e-04  -7.72061429e-04 -2.83207644e-03" size="0.0005" />
                                                                 <site name="LExtensorCarpiRadialisLongus_insertion" pos="1.33882609e-03  -6.82714799e-05  1.61706820e-03" size="0.0005" />
                                                                 <site name="LExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2" pos="8.53431993e-04 6.58379920e-04  6.73662941e-04" size="0.0005" />
                                                                 <site name="LExtensorCarpiRadialisBrevis_RExtensorCarpiRadialisBrevis-P2_0" pos="1.02807732e-03  -5.64517594e-05 -3.47094996e-03" size="0.0005" />
@@ -1253,8 +1251,8 @@
                                                                     
                                                                     <geom name="LFMetaphalange" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFMetaphalange" density="1908" />
                                                                     
-                                                                    <geom name="LWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
-                                                                    <geom name="LWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
+                                                                    <!-- <geom name="LWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/> -->
+                                                                    <!-- <geom name="LWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/> -->
                                                                     <geom name="LWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar" size="0.000449646" pos="0.00021952  -0.0004214  -0.00052225" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                                     <geom name="LWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis" size="0.00045" pos="0.0003315   -0.00038212 -0.00061726" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                                     <geom name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" size="0.000304547" pos="0.00020325  -0.00042665 -0.00056262" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
@@ -1268,52 +1266,56 @@
                                                                     <geom name="LWrist_Extensor_ellipsoid_RExtensorCarpiUlnar" size="0.000469275" pos="0.000267 -0.00047446 -0.00067945" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                                     <geom name="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus" size="0.00047319" pos="0.00022195  -0.00032321 -0.00058098" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                                     
-                                                                    <site name="LWrist_Extensor_sidesite" pos="9.69446299e-04 5.62035217e-04 -1.34491370e-03" size="0.0005" />
-                                                                    <site name="LWrist_Flexor_sidesite" pos="1.54046541e-04  -1.78330596e-03 -6.92378270e-04" size="0.0005" />
                                                                     <site name="LFlaxorCarpiUlnar_insertion" pos="-6.27075644e-04  -9.03877667e-05 -5.82679233e-04" size="0.0005" />
                                                                     <site name="LWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar_1_sidesite" pos="7.86303987e-04  -3.72838006e-04 -6.39069023e-04" size="0.0005" />
                                                                     <site name="LPalmarLongus_insertion" pos="-6.98085778e-05  -6.25130573e-04 -3.46668951e-04" size="0.0005" />
                                                                     <site name="LFlaxorCarpiRadialis_insertion" pos="3.86256434e-04  -1.13428378e-03 -1.11469883e-04" size="0.0005" />
                                                                     <site name="LWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis_1_sidesite" pos="3.63326054e-04  -6.99437039e-05 -1.04996552e-03" size="0.0005" />
-                                                                    <site name="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" pos="2.42536184e-05  -8.93121705e-04 -6.41884180e-04" size="0.0005" />
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" pos="2.76084522e-05  -8.93456627e-04 -6.39212735e-04" size="0.0005" />
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" pos="4.91523042e-04  -2.46820180e-04 -3.81801364e-04" size="0.0005" />
-                                                                    <site name="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" pos="-3.03306131e-04  -6.73419446e-04 -3.61223373e-04" size="0.0005" />
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" pos="-3.22087024e-04  -6.79525849e-04 -4.74444121e-04" size="0.0005" />
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" pos="7.39557126e-04  -3.03938128e-04 -8.40713072e-04" size="0.0005" />
-                                                                    <site name="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" pos="2.72918971e-05  -7.82249778e-04 -5.69821823e-04" size="0.0005" />
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" pos="2.41125861e-05  -7.81508909e-04 -5.72959528e-04" size="0.0005" />
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" pos="-1.88427990e-04  -4.23132420e-04 -9.00549463e-04" size="0.0005" />
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" pos="2.33044057e-04  -5.02305239e-04 -2.42210363e-04" size="0.0005" />
                                                                     <site name="LExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3" pos=" 1.30136364e-03  -4.71476600e-04 -2.33604342e-04" size="0.0005" />
                                                                     <site name="LExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3_0" pos="8.91305762e-04  -5.80372099e-04 -5.46536742e-04" size="0.0005" />
-                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus_3_sidesite" pos="-5.00910119e-04  -4.02478920e-03 -6.46358132e-03" size="0.0005" rgba="0.9 0.6 0.8 0.6" />
                                                                     <site name="LExtensorCarpiRadialisBrevis_insertion" pos=" 6.27286510e-04  -3.34967226e-04 -5.56064001e-04" size="0.0005" />
-                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite" pos="3.53170059e-04  -7.39460786e-04 -6.16293742e-04" size="0.0005" />
-                                                                    <site name="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" pos="2.41397465e-04 1.24380010e-04 -6.71755326e-04" size="0.0005" />
-                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" pos="-5.00910119e-04  -4.02478920e-03 -6.46358132e-03" size="0.0005" />
-                                                                    <site name="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" pos="-2.16625677e-04 3.94783983e-04 -2.78842876e-04" size="0.0005" />
-                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" pos="-5.00910119e-04  -4.02478920e-03 -6.46358132e-03" size="0.0005" />
+                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite" pos="3.53170059e-04  -7.39460786e-04 -6.16293742e-04" size="0.0005" rgba="0 1 0 1"/>
                                                                     <site name="LExtensorCarpiUlnar_insertion" pos="-2.50265788e-04 8.06297169e-05 -9.75047190e-04" size="0.0005" />
                                                                     <site name="LWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite" pos="5.23935970e-04  -4.37852764e-04 -1.25804952e-04" size="0.0005" />
-                                                                    <site name="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  -8.80950408e-04 -4.62098941e-04" size="0.0005" />
-                                                                
-                                                                    <site name="LFlexorDigitumProfundusHumerus_insertion" pos="-7.14972542e-05  -2.16902108e-03 -3.71123283e-03" size="0.0005" />
-                                                                    <site name="LFlexorDigitumProfundusUlnar_insertion" pos="-4.55924778e-04  -7.33065129e-04 -1.36120631e-03" size="0.0005" />
-                                                                    <site name="LFlexorDigitumProfundusRadial_insertion" pos="-2.70886598e-04  -7.29933150e-04 -1.89909906e-03" size="0.0005" />
-                                                                    <site name="LFlexorDigitumsSuperficial_insertion" pos="-1.62237632e-04  -2.01211627e-03 -3.69729994e-03" size="0.0005" />
-                                                                    <site name="LExtensorDigitorumCommunis_insertion" pos="2.33310562e-04  -9.11031909e-04 -3.11384361e-03" size="0.0005" />
-                                                                    <site name="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3" pos="2.10026767e-05  -1.36370597e-03 -3.88020761e-03" size="0.0005" />
-                                                                    <site name="LAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  -1.06143762e-03 -1.06153355e-03" size="0.0005" />
+                                                                    
+                                                                    <site name="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" pos="2.42536184e-05  -8.93121705e-04 -6.41884180e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" pos="2.76084522e-05  -8.93456627e-04 -6.39212735e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" pos="4.91523042e-04  -2.46820180e-04 -3.81801364e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" pos="-3.03306131e-04  -6.73419446e-04 -3.61223373e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" pos="-3.22087024e-04  -6.79525849e-04 -4.74444121e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" pos="7.39557126e-04  -3.03938128e-04 -8.40713072e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" pos="2.72918971e-05  -7.82249778e-04 -5.69821823e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" pos="2.41125861e-05  -7.81508909e-04 -5.72959528e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" pos="-1.88427990e-04  -4.23132420e-04 -9.00549463e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" pos="2.33044057e-04  -5.02305239e-04 -2.42210363e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LFlexorDigitum-2" pos="0.00075 -0.00025 -0.003" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="LFlexorDigitum-3" pos="0.0 -0.00025 -0.00375" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="LFlexorDigitum-4" pos="-0.0007 -0.00025 -0.00325" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="LFlexorDigitum-5" pos="-0.0014 -0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    
+                                                                    <site name="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" pos="2.41397465e-04 1.24380010e-04 -6.71755326e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" pos="-5.00910119e-04  -4.02478920e-03 -6.46358132e-03" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" pos="-2.16625677e-04 3.94783983e-04 -2.78842876e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" pos="-5.00910119e-04  -4.02478920e-03 -6.46358132e-03" size="0.0005" rgba="1 0 0 1" group="5"/>
+                                                                    <site name="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  -8.80950408e-04 -4.62098941e-04" size="0.0005" rgba="1 0 0 1" group="5"/>           
+                                                                    <site name="LExtensorDigitum-2" pos="0.00075 0.00025 -0.003" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="LExtensorDigitum-3" pos="0.0 0.00025 -0.00375" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="LExtensorDigitum-4" pos="-0.0007 0.00025 -0.00325" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="LExtensorDigitum-5" pos="-0.0014 0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
 
+                                                                    <site name="LAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  -0.00075 -1.06153355e-03" size="0.0005" rgba="0 1 0 1" group="5"/>
+                                                                    
                                                                     <body name="LFPhalange1_1" pos="0.001 -0.0005 -0.0015" gravcomp="0">
                                                                         <geom name="LFPhalange1_1" pos="0 0 0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="LFPhalange1_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange1_1_adduction" pos="0 0 0" axis="1 0 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange1_1_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 0.5" group="2" />
-                                                                        
+                                                                        <site name="LAbductorPollicisLongus-1-1" pos="0.0005 -0.0001 0.0" size="0.0005" rgba="0 1 0 1" group="5"/>
+
                                                                         <body name="LFPhalange1_3" pos="0.0005 -0.0001 -0.0003" gravcomp="0">
                                                                             <geom name="LFPhalange1_3" pos="0 0 0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="LFPhalange1_3" density="1908" group="0"/>
                                                                             <joint name="LFPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 0.5" group="2" />
+                                                                            <site name="LAbductorPollicisLongus-1-3" pos="0.0005 -0.0002 -0.0001" size="0.0005" rgba="0 1 0 1" group="5"/>
+
                                                                         </body>
                                                                     </body>
 
@@ -1321,14 +1323,21 @@
                                                                         <geom name="LFPhalange2_1" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange2_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange2_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange2_1_flexion" pos="0 0 0" axis="-1 0 0" range="-0.5 1.57" group="2" />
-
+                                                                        <site name="LFlexorDigitum-2-1" pos="0 -0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LExtensorDigitum-2-1" pos="0 0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        
                                                                         <body name="LFPhalange2_2" pos="0 0 -0.0015" gravcomp="0">
                                                                             <geom name="LFPhalange2_2" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange2_2" density="1908" group="0"/>
                                                                             <joint name="LFPhalange2_2_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
+                                                                            <site name="LFlexorDigitum-2-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="LExtensorDigitum-2-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
                                                                             
                                                                             <body name="LFPhalange2_3" pos="0 0 -0.00125" gravcomp="0">
                                                                                 <geom name="LFPhalange2_3" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange2_3" density="1908" group="0"/>
                                                                                 <joint name="LFPhalange2_3_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
+                                                                                <site name="LFlexorDigitum-2-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LExtensorDigitum-2-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            
                                                                             </body>
                                                                         </body>
                                                                     </body>
@@ -1337,14 +1346,21 @@
                                                                         <geom name="LFPhalange3_1" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange3_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange3_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange3_1_flexion" pos="0 0 0" axis="-1 0 0" range="-0.5 1.57" group="2" />
+                                                                        <site name="LFlexorDigitum-3-1" pos="0 -0.00025 -0.0018" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LExtensorDigitum-3-1" pos="0 0.00025 -0.0018" size="0.0005" rgba="1 0 0 1" group="5" />
 
                                                                         <body name="LFPhalange3_2" pos="0 0 -0.0018" gravcomp="0">
                                                                             <geom name="LFPhalange3_2" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange3_2" density="1908" group="0"/>
                                                                             <joint name="LFPhalange3_2_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
+                                                                            <site name="LFlexorDigitum-3-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="LExtensorDigitum-3-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
                                                                             
                                                                             <body name="LFPhalange3_3" pos="0 0 -0.00125" gravcomp="0">
                                                                                 <geom name="LFPhalange3_3" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange3_3" density="1908" group="0"/>
                                                                                 <joint name="LFPhalange3_3_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
+                                                                                <site name="LFlexorDigitum-3-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LExtensorDigitum-3-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            
                                                                             </body>
                                                                         </body>
                                                                     </body>
@@ -1353,14 +1369,24 @@
                                                                         <geom name="LFPhalange4_1" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange4_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange4_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange4_1_flexion" pos="0 0 0" axis="-1 0 0" range="-0.5 1.57" group="2" />
+                                                                        <site name="LFlexorDigitum-4-1" pos="0 -0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LExtensorDigitum-4-1" pos="0 0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LExtensorDigitumLateralis-4-1" pos="-0.0002 0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
 
                                                                         <body name="LFPhalange4_2" pos="0 0 -0.0015" gravcomp="0">
                                                                             <geom name="LFPhalange4_2" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange4_2" density="1908" group="0"/>
                                                                             <joint name="LFPhalange4_2_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
+                                                                            <site name="LFlexorDigitum-4-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="LExtensorDigitum-4-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="LExtensorDigitumLateralis-4-2" pos="-0.0002 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />                                                                            
                                                                             
                                                                             <body name="LFPhalange4_3" pos="0 0 -0.00125" gravcomp="0">
                                                                                 <geom name="LFPhalange4_3" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange4_3" density="1908" group="0"/>
                                                                                 <joint name="LFPhalange4_3_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
+                                                                                <site name="LFlexorDigitum-4-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LExtensorDigitum-4-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LExtensorDigitumLateralis-4-3" pos="-0.0002 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            
                                                                             </body>
                                                                         </body>
                                                                     </body>
@@ -1369,18 +1395,27 @@
                                                                         <geom name="LFPhalange5_1" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange5_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange5_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange5_1_flexion" pos="0 0 0" axis="-1 0 0" range="-0.5 1.57" group="2" />
+                                                                        <site name="LFlexorDigitum-5-1" pos="0 -0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LExtensorDigitum-5-1" pos="0 0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LExtensorDigitumLateralis-5-1" pos="-0.0002 0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
 
                                                                         <body name="LFPhalange5_2" pos="0 0 -0.002" gravcomp="0">
                                                                             <geom name="LFPhalange5_2" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange5_2" density="1908" group="0"/>
                                                                             <joint name="LFPhalange5_2_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
+                                                                            <site name="LFlexorDigitum-5-2" pos="0 -0.00025 -0.00065" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="LExtensorDigitum-5-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="LExtensorDigitumLateralis-5-2" pos="-0.0002 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
                                                                             
                                                                             <body name="LFPhalange5_3" pos="0 0 -0.0013" gravcomp="0">
                                                                                 <geom name="LFPhalange5_3" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange5_3" density="1908" group="0"/>
                                                                                 <joint name="LFPhalange5_3_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
+                                                                                <site name="LFlexorDigitum-5-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LExtensorDigitum-5-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LExtensorDigitumLateralis-5-3" pos="-0.0002 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            
                                                                             </body>
                                                                         </body>
                                                                     </body>
-
                                                                 </body>
                                                             </body>
                                                         </body>
@@ -5214,7 +5249,6 @@
         <site site="RExtensorCarpiRadialisLongus_origin" />
         <site site="RExtensorCarpiRadialisLongus_insertion" />
         <site site="RExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3" />
-        <geom geom="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus" sidesite="RWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus_3_sidesite" />
         <site site="RExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3_0" />
         </spatial>
 
@@ -5230,8 +5264,54 @@
             <site site="RExtensorDigitorumCommunis_origin" />
             <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
             <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
-            <!-- <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" /> -->
-            <!-- <site site="RExtensorDigitorumCommunis_insertion" /> -->
+                <pulley divisor="4"/>
+                <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-2"/>
+                <site site="RExtensorDigitum-2-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-2-1"/>
+                    <site site="RExtensorDigitum-2-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-2-1"/>
+                    <site site="RExtensorDigitum-2-3"/>
+            
+                <pulley divisor="4"/>
+                <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-3"/>
+                <site site="RExtensorDigitum-3-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-3-1"/>
+                    <site site="RExtensorDigitum-3-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-3-1"/>
+                    <site site="RExtensorDigitum-3-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-4"/>
+                <site site="RExtensorDigitum-4-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-3"/>
+
+                <pulley divisor="4"/>
+                <site site="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="RExtensorDigitum-5"/>
+                <site site="RExtensorDigitum-5-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-3"/>
+        
         </spatial>
 
         <spatial name="RExtensorDigitorumLateralis_tendon" group="0">
@@ -5240,8 +5320,30 @@
             <site site="RExtensorDigitorumLateralis_insertion" />
             <geom geom="RPronator_cylinder" sidesite="RPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite" />
             <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
-            <!-- <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" /> -->
-            <!-- <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3" /> -->
+                <pulley divisor="2"/>
+                <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="RExtensorDigitum-4"/>
+                <site site="RExtensorDigitum-4-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-3"/>
+            
+                <pulley divisor="2"/>
+                <site site="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <geom geom="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="RExtensorDigitum-5"/>
+                <site site="RExtensorDigitum-5-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-3"/>
+
         </spatial>
 
         <spatial name="RExtensorCarpiUlnar_tendon" group="0">
@@ -5258,13 +5360,15 @@
         <site site="RSupinator_insertion" />
         </spatial>
         <spatial name="RAbductorPollicisLongus_tendon" group="0">
-        <site site="RAbductorPollicisLongus_origin" />
-        <geom geom="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus" sidesite="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" />
-        <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P2" />
-        <site site="RAbductorPollicisLongus_insertion" />
-        <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P4" />
-        <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P4_0" />
-        <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" />
+            <site site="RAbductorPollicisLongus_origin" />
+            <geom geom="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus" sidesite="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" />
+            <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P2" />
+            <site site="RAbductorPollicisLongus_insertion" />
+            <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P4" />
+            <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P4_0" />
+            <site site="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" />
+            <site site="RAbductorPollicisLongus-1-1"/>
+            <site site="RAbductorPollicisLongus-1-3"/>
         </spatial>
         <spatial name="RPronatorQuadratus_tendon" group="0">
         <site site="RPronatorQuadratus_origin" />
@@ -5376,43 +5480,145 @@
         <site site="LFlaxorCarpiRadialis_RFlaxorCarpiRadialis-P3" />
         <site site="LFlaxorCarpiRadialis_insertion" />
         </spatial>
+
         <spatial name="LFlexorDigitumProfundusHumerus_tendon" group="1">
-        <site site="LFlexorDigitumProfundusHumerus_origin" />
-        <site site="LFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P2" />
-        <site site="LFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P3" />
-        <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" />
-        <site site="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
-        <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
-        <site site="LFlexorDigitumProfundusHumerus_insertion" />
+            <site site="LFlexorDigitumProfundusHumerus_origin" />
+            <site site="LFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P2" />
+            <site site="LFlexorDigitumProfundusHumerus_RSuperficialDigitalFlexorMuscle-P3" />
+            <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" />
+            <site site="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="LFlexorDigitum-2"/>
+                <site site="LFlexorDigitum-2-1"/>
+                <site site="LFlexorDigitum-2-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="LFlexorDigitum-3"/>
+                <site site="LFlexorDigitum-3-1"/>
+                <site site="LFlexorDigitum-3-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="LFlexorDigitum-4"/>
+                <site site="LFlexorDigitum-4-1"/>
+                <site site="LFlexorDigitum-4-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" />
+                <site site="LFlexorDigitum-5"/>
+                <site site="LFlexorDigitum-5-1"/>
+                <site site="LFlexorDigitum-5-3"/>
+
         </spatial>
+
         <spatial name="LFlexorDigitumProfundusUlnar_tendon" group="1">
-        <site site="LFlexorDigitumProfundusUlnar_origin" />
-        <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P2" />
-        <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" />
-        <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
-        <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
-        <site site="LFlexorDigitumProfundusUlnar_insertion" />
+            <site site="LFlexorDigitumProfundusUlnar_origin" />
+            <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P2" />
+            <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" />
+            <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="LFlexorDigitum-2"/>
+                <site site="LFlexorDigitum-2-1"/>
+                <site site="LFlexorDigitum-2-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="LFlexorDigitum-3"/>
+                <site site="LFlexorDigitum-3-1"/>
+                <site site="LFlexorDigitum-3-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="LFlexorDigitum-4"/>
+                <site site="LFlexorDigitum-4-1"/>
+                <site site="LFlexorDigitum-4-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" />
+                <site site="LFlexorDigitum-5"/>
+                <site site="LFlexorDigitum-5-1"/>
+                <site site="LFlexorDigitum-5-3"/>
         </spatial>
+
         <spatial name="LFlexorDigitumProfundusRadial_tendon" group="1">
-        <site site="LFlexorDigitumProfundusRadial_origin" />
-        <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2" />
-        <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" />
-        <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
-        <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
-        <site site="LFlexorDigitumProfundusRadial_insertion" />
+            <site site="LFlexorDigitumProfundusRadial_origin" />
+            <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P2" />
+            <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" />
+            <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="LFlexorDigitum-2"/>
+                <site site="LFlexorDigitum-2-1"/>
+                <site site="LFlexorDigitum-2-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="LFlexorDigitum-3"/>
+                <site site="LFlexorDigitum-3-1"/>
+                <site site="LFlexorDigitum-3-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="LFlexorDigitum-4"/>
+                <site site="LFlexorDigitum-4-1"/>
+                <site site="LFlexorDigitum-4-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" />
+                <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" />
+                <site site="LFlexorDigitum-5"/>
+                <site site="LFlexorDigitum-5-1"/>
+                <site site="LFlexorDigitum-5-3"/>
         </spatial>
+
         <spatial name="LFlexorDigitumsSuperficial_tendon" group="1">
-        <site site="LFlexorDigitumsSuperficial_origin" />
-        <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2" />
-        <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
-        <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
-        <site site="LFlexorDigitumsSuperficial_insertion" />
+            <site site="LFlexorDigitumsSuperficial_origin" />
+            <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P2" />
+            <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                <pulley divisor="4"/>
+                    <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="LFlexorDigitum-2"/>
+                    <site site="LFlexorDigitum-2-2"/>
+
+                    <pulley divisor="4"/>
+                    <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="LFlexorDigitum-3"/>
+                    <site site="LFlexorDigitum-3-2"/>
+
+                    <pulley divisor="4"/>
+                    <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="LFlexorDigitum-4"/>
+                    <site site="LFlexorDigitum-4-2"/>
+
+                    <pulley divisor="4"/>
+                    <site site="LFlexorDigitumsSuperficial_RFlexorDigitumsSuperficial-P3" />
+                    <geom geom="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial" sidesite="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" />
+                    <site site="LFlexorDigitum-5"/>
+                    <site site="LFlexorDigitum-5-2"/>
+
         </spatial>
+
         <spatial name="LExtensorCarpiRadialisLongus_tendon" group="1">
         <site site="LExtensorCarpiRadialisLongus_origin" />
         <site site="LExtensorCarpiRadialisLongus_insertion" />
         <site site="LExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3" />
-        <geom geom="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus" sidesite="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisLongus_3_sidesite" />
         <site site="LExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3_0" />
         </spatial>
         <spatial name="LExtensorCarpiRadialisBrevis_tendon" group="1">
@@ -5422,22 +5628,93 @@
         <geom geom="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis" sidesite="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite" />
         <site site="LExtensorCarpiRadialisBrevis_insertion" />
         </spatial>
+
         <spatial name="LExtensorDigitorumCommunis_tendon" group="1">
-        <site site="LExtensorDigitorumCommunis_origin" />
-        <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
-        <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
-        <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
-        <site site="LExtensorDigitorumCommunis_insertion" />
+            <site site="LExtensorDigitorumCommunis_origin" />
+            <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P2" />
+            <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <pulley divisor="4"/>
+                <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="LExtensorDigitum-2"/>
+                <site site="LExtensorDigitum-2-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-2-1"/>
+                    <site site="RExtensorDigitum-2-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-2-1"/>
+                    <site site="RExtensorDigitum-2-3"/>
+            
+                <pulley divisor="4"/>
+                <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="LExtensorDigitum-3"/>
+                <site site="LExtensorDigitum-3-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-3-1"/>
+                    <site site="RExtensorDigitum-3-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-3-1"/>
+                    <site site="RExtensorDigitum-3-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="LExtensorDigitum-4"/>
+                <site site="LExtensorDigitum-4-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-3"/>
+
+                <pulley divisor="4"/>
+                <site site="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" />
+                <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis" sidesite="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" />
+                <site site="LExtensorDigitum-5"/>
+                <site site="LExtensorDigitum-5-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-3"/>
+        
         </spatial>
+
         <spatial name="LExtensorDigitorumLateralis_tendon" group="1">
-        <site site="LExtensorDigitorumLateralis_origin" />
-        <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P2" />
-        <site site="LExtensorDigitorumLateralis_insertion" />
-        <geom geom="LPronator_cylinder" sidesite="LPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite" />
-        <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
-        <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
-        <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P3" />
+            <site site="LExtensorDigitorumLateralis_origin" />
+            <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P2" />
+            <site site="LExtensorDigitorumLateralis_insertion" />
+            <geom geom="LPronator_cylinder" sidesite="LPronator_cylinder_RExtensorDigitorumLateralis_3_sidesite" />
+            <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <pulley divisor="2"/>
+                <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="LExtensorDigitum-4"/>
+                <site site="LExtensorDigitum-4-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-4-1"/>
+                    <site site="RExtensorDigitum-4-3"/>
+            
+                <pulley divisor="2"/>
+                <site site="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" />
+                <geom geom="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis" sidesite="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" />
+                <site site="LExtensorDigitum-5"/>
+                <site site="LExtensorDigitum-5-1"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-2"/>
+                    <pulley divisor="2"/>
+                    <site site="RExtensorDigitum-5-1"/>
+                    <site site="RExtensorDigitum-5-3"/>
+
         </spatial>
+
         <spatial name="LExtensorCarpiUlnar_tendon" group="1">
         <site site="LExtensorCarpiUlnar_origin" />
         <geom geom="LWrist_Extensor_ellipsoid_RExtensorCarpiUlnar" sidesite="LWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite" />
@@ -5452,13 +5729,15 @@
         <site site="LSupinator_insertion" />
         </spatial>
         <spatial name="LAbductorPollicisLongus_tendon" group="1">
-        <site site="LAbductorPollicisLongus_origin" />
-        <geom geom="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus" sidesite="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" />
-        <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P2" />
-        <site site="LAbductorPollicisLongus_insertion" />
-        <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P4" />
-        <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P4_0" />
-        <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P3" />
+            <site site="LAbductorPollicisLongus_origin" />
+            <geom geom="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus" sidesite="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" />
+            <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P2" />
+            <site site="LAbductorPollicisLongus_insertion" />
+            <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P4" />
+            <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P4_0" />
+            <site site="LAbductorPollicisLongus_RAbductorPollicisLongus-P3" />
+            <site site="LAbductorPollicisLongus-1-1"/>
+            <site site="LAbductorPollicisLongus-1-3"/>
         </spatial>
         <spatial name="LPronatorQuadratus_tendon" group="1">
         <site site="LPronatorQuadratus_origin" />
