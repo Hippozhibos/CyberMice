@@ -359,9 +359,9 @@
             <site name="T2_LTransverseProcess" pos="0.0175 0.00175 -0.0085" size="0.0005" group="4"/>
             <site name="T1_LTransverseProcess" pos="0.0185 0.00175 -0.0085" size="0.0005" group="4"/> -->
 
-            <site name="T3_VentralSurface" pos="0.016 0 -0.0085" size="0.0005" group="4" rgba="1 1 0 1"/>
+            <!-- <site name="T3_VentralSurface" pos="0.016 0 -0.0085" size="0.0005" group="4" rgba="1 1 0 1"/>
             <site name="T2_VentralSurface" pos="0.017 0 -0.009" size="0.0005" group="4" rgba="1 1 0 1"/>
-            <site name="T1_VentralSurface" pos="0.018 0 -0.0095" size="0.0005" group="4" rgba="1 1 0 1"/>
+            <site name="T1_VentralSurface" pos="0.018 0 -0.0095" size="0.0005" group="4" rgba="1 1 0 1"/> -->
 
             <!-- <site name="T13_RRibAngle_1" pos="0.00125 -0.0035 0.0008" size="0.0005" group="4"/> -->
             <!-- <site name="T12_RRibAngle" pos="0.0025 -0.00425 0.0006" size="0.0005" group="4"/>
@@ -391,16 +391,16 @@
             <site name="T2_LRibAngle" pos="0.0175 0.00325 -0.0085" size="0.0005" group="4"/>
             <site name="T1_LRibAngle" pos="0.0185 0.003 -0.009" size="0.0005" group="4"/> -->
 
-            <site name="RLatissimusDorsi_2" pos="0.019 -0.0055 -0.00925" size="0.0005" group="5"/>
-            <site name="RLatissimusDorsi_3" pos="0.013 -0.00775 -0.0065" size="0.0005" group="5"/>
-            <site name="RLatissimusDorsi_4" pos="0.00725 -0.00725 -0.003" size="0.0005" group="5"/>
-            <site name="RLatissimusDorsi_4_1" pos="0.006 -0.005 0.001" size="0.0005" group="5"/>
-            <site name="RLatissimusDorsi_4_2" pos="0.0045 -0.005 0.001" size="0.0005" group="5"/>
-            <site name="RLatissimusDorsi_4_3" pos="0.003 -0.005 0.001" size="0.0005" group="5"/>
-            <site name="RLatissimusDorsi_4_4" pos="0.0015 -0.005 0.001" size="0.0005" group="5"/>
-            <site name="RLatissimusDorsi_4_5" pos="0.00 -0.005 0.001" size="0.0005" group="5"/>
+            <site name="RLatissimusDorsi_2" pos="0.019 -0.0055 -0.00925" size="0.0005" group="5" rgba="0.5 0.8 0.2 1" />
+            <site name="RLatissimusDorsi_3" pos="0.013 -0.00775 -0.0065" size="0.0005" group="5" rgba="0.5 0.8 0.2 1"/>
+            <site name="RLatissimusDorsi_4" pos="0.00725 -0.00725 -0.003" size="0.0005" group="5" rgba="0.5 0.8 0.2 1"/>
+            <site name="RLatissimusDorsi_4_1" pos="0.006 -0.005 0.001" size="0.0005" group="5" rgba="0.5 0.8 0.2 1"/>
+            <site name="RLatissimusDorsi_4_2" pos="0.0045 -0.005 0.001" size="0.0005" group="5" rgba="0.5 0.8 0.2 1"/>
+            <site name="RLatissimusDorsi_4_3" pos="0.003 -0.005 0.001" size="0.0005" group="5" rgba="0.5 0.8 0.2 1"/>
+            <site name="RLatissimusDorsi_4_4" pos="0.0015 -0.005 0.001" size="0.0005" group="5" rgba="0.5 0.8 0.2 1"/>
+            <site name="RLatissimusDorsi_4_5" pos="0.00 -0.005 0.001" size="0.0005" group="5" rgba="0.5 0.8 0.2 1"/>
 
-            <site name="RSerratusVentralisThoracis_7_1" pos="0.0045 -0.007 -0.0105" size="0.0005" rgba="1 0 0 1" group="5"/>
+            <!-- <site name="RSerratusVentralisThoracis_7_1" pos="0.0045 -0.007 -0.0105" size="0.0005" rgba="1 0 0 1" group="5"/>
             <site name="RSerratusVentralisThoracis_7_2" pos="0.00775 -0.00775 -0.008" size="0.0005" group="5"/>
             <site name="RSerratusVentralisThoracis_6_1" pos="0.00625 -0.0065 -0.0115" size="0.0005" group="5"/>
             <site name="RSerratusVentralisThoracis_6_2" pos="0.00875 -0.0075 -0.009" size="0.0005" group="5"/>
@@ -415,7 +415,7 @@
             <site name="RSerratusVentralisThoracis_1_1" pos="0.01775 -0.003 -0.012" size="0.0005" group="5"/>
             <site name="RSerratusVentralisThoracis_1_2" pos="0.016 -0.005 -0.009" size="0.0005" group="5"/>
 
-            <site name="RSerratusVentralisCervicis_1" pos="0.019 -0.004 -0.0065" size="0.0005" group="5"/>
+            <site name="RSerratusVentralisCervicis_1" pos="0.019 -0.004 -0.0065" size="0.0005" group="5"/> -->
 
             <site name="RPectoralisMajor_1" pos="0.022 -0.00375 -0.0125" size="0.0005" group="5"/>
             <site name="RPectoralisMajor_2" pos="0.021 0.00 -0.013" size="0.0005" group="5"/>
@@ -459,7 +459,7 @@
             <site name="LLatissimusDorsi_4_4" pos="0.0015 0.005 0.001" size="0.0005" group="5"/>
             <site name="LLatissimusDorsi_4_5" pos="0.00 0.005 0.001" size="0.0005" group="5"/>
 
-            <site name="LSerratusVentralisThoracis_7_1" pos="0.0045 0.007 -0.0105" size="0.0005" group="5"/>
+            <!-- <site name="LSerratusVentralisThoracis_7_1" pos="0.0045 0.007 -0.0105" size="0.0005" group="5"/>
             <site name="LSerratusVentralisThoracis_7_2" pos="0.00775 0.00775 -0.008" size="0.0005" group="5"/>
             <site name="LSerratusVentralisThoracis_6_1" pos="0.00625 0.0065 -0.0115" size="0.0005" group="5"/>
             <site name="LSerratusVentralisThoracis_6_2" pos="0.00875 0.0075 -0.009" size="0.0005" group="5"/>
@@ -474,7 +474,7 @@
             <site name="LSerratusVentralisThoracis_1_1" pos="0.01775 0.003 -0.012" size="0.0005" group="5"/>
             <site name="LSerratusVentralisThoracis_1_2" pos="0.016 0.005 -0.009" size="0.0005" group="5"/>
 
-            <site name="LSerratusVentralisCervicis_1" pos="0.019 0.004 -0.0065" size="0.0005" group="5"/>
+            <site name="LSerratusVentralisCervicis_1" pos="0.019 0.004 -0.0065" size="0.0005" group="5"/> -->
 
             <site name="LPectoralisMajor_1" pos="0.022 0.00375 -0.0125" size="0.0005" group="5"/>
             <site name="LPectoralisMajor_2" pos="0.021 0.00 -0.013" size="0.0005" group="5"/>
@@ -677,6 +677,11 @@
                                     <site name="T7_SpinousProcess" pos="0.00090 0 0.00250" rgba="1 1 0 1" size="0.0005" group="4"/>
                                     <site name="T7_RTransverseProcess" pos="0.00090 -0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
                                     <site name="T7_LTransverseProcess" pos="0.00090 0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                    
+                                    <site name="RSerratusVentralisThoracis_7_1" pos="-0.00580 -0.00700 -0.00700" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                    <site name="RSerratusVentralisThoracis_7_2" pos="-0.00255 -0.00775 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                    <site name="LSerratusVentralisThoracis_7_1" pos="-0.00580 0.00700 -0.00700" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                    <site name="LSerratusVentralisThoracis_7_2" pos="-0.00255 0.00775 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
 
                                     <body name="Rib_7R" pos="0.00225 -0.00125 0.00025" gravcomp="0">
                                         <geom name="Rib_7R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_7R" density="1908"/>
@@ -705,6 +710,11 @@
                                         <site name="T6_SpinousProcess" pos="0.00150 0 0.00250" rgba="1 1 0 1" size="0.0005" group="4"/>
                                         <site name="T6_RTransverseProcess" pos="0.00150 -0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
                                         <site name="T6_LTransverseProcess" pos="0.00150 0.00175 0.00100" rgba="1 1 0 1" size="0.0005" group="4"/>
+
+                                        <site name="RSerratusVentralisThoracis_6_1" pos="-0.00485 -0.00650 -0.00700" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                        <site name="RSerratusVentralisThoracis_6_2" pos="-0.00235 -0.00750 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                        <site name="LSerratusVentralisThoracis_6_1" pos="-0.00485 0.00650 -0.00700" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                        <site name="LSerratusVentralisThoracis_6_2" pos="-0.00235 0.00750 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
 
                                         <body name="Rib_6R" pos="0.002 -0.00125 -0.0005" gravcomp="0">
                                             <geom name="Rib_6R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_6R" density="1908"/>
@@ -735,6 +745,11 @@
                                             <site name="T5_SpinousProcess" pos="0.00165 0 0.00200" rgba="1 1 0 1" size="0.0005" group="4"/>
                                             <site name="T5_RTransverseProcess" pos="0.00165 -0.00175 0.00050" rgba="1 1 0 1" size="0.0005" group="4"/>
                                             <site name="T5_LTransverseProcess" pos="0.00165 0.00175 0.00050" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                            
+                                            <site name="RSerratusVentralisThoracis_5_1" pos="-0.00460 -0.00600 -0.00650" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                            <site name="RSerratusVentralisThoracis_5_2" pos="-0.00235 -0.00700 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                            <site name="LSerratusVentralisThoracis_5_1" pos="-0.00460 0.00600 -0.00650" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                            <site name="LSerratusVentralisThoracis_5_2" pos="-0.00235 0.00700 -0.00450" rgba="1 1 0 1" size="0.0005" group="5"/>
 
                                             <body name="Rib_5R" pos="0.002 -0.00125 -0.0006" gravcomp="0">
                                                 <geom name="Rib_5R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_5R" density="1908"/>
@@ -763,6 +778,11 @@
                                                 <site name="T4_SpinousProcess" pos="0.00165 0 0.00180" rgba="1 1 0 1" size="0.0005" group="4"/>
                                                 <site name="T4_RTransverseProcess" pos="0.00165 -0.00175 0.00030" rgba="1 1 0 1" size="0.0005" group="4"/>
                                                 <site name="T4_LTransverseProcess" pos="0.00165 0.00175 0.00030" rgba="1 1 0 1" size="0.0005" group="4"/>
+
+                                                <site name="RSerratusVentralisThoracis_4_1" pos="-0.00385 -0.00500 -0.00570" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                <site name="RSerratusVentralisThoracis_4_2" pos="-0.00260 -0.00625 -0.00420" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                <site name="LSerratusVentralisThoracis_4_1" pos="-0.00385 0.00500 -0.00570" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                <site name="LSerratusVentralisThoracis_4_2" pos="-0.00260 0.00625 -0.00420" rgba="1 1 0 1" size="0.0005" group="5"/>
 
                                                 <body name="Rib_4R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
                                                     <geom name="Rib_4R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_4R" density="1908"/>
@@ -958,44 +978,44 @@
                                                                     <site name="RExtensorCarpiUlnar_insertion" pos="-2.50265788e-04 -8.06297169e-05 -9.75047190e-04" size="0.0005" />
                                                                     <site name="RWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite" pos="5.23935970e-04  4.37852764e-04 -1.25804952e-04" size="0.0005" />
                                                                     
-                                                                    <site name="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" pos="2.42536184e-05  8.93121705e-04 -6.41884180e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" pos="2.76084522e-05  8.93456627e-04 -6.39212735e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" pos="4.91523042e-04  2.46820180e-04 -3.81801364e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" pos="-3.03306131e-04  6.73419446e-04 -3.61223373e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" pos="-3.22087024e-04  6.79525849e-04 -4.74444121e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" pos="7.39557126e-04  3.03938128e-04 -8.40713072e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" pos="2.72918971e-05  7.82249778e-04 -5.69821823e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" pos="2.41125861e-05  7.81508909e-04 -5.72959528e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" pos="-1.88427990e-04  4.23132420e-04 -9.00549463e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" pos="2.33044057e-04  5.02305239e-04 -2.42210363e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RFlexorDigitum-2" pos="0.00075 0.00025 -0.003" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="RFlexorDigitum-3" pos="0.0 0.00025 -0.00375" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="RFlexorDigitum-4" pos="-0.0007 0.00025 -0.00325" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="RFlexorDigitum-5" pos="-0.0014 0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="RFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" pos="2.42536184e-05  8.93121705e-04 -6.41884180e-04" size="0.0005" />
+                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" pos="2.76084522e-05  8.93456627e-04 -6.39212735e-04" size="0.0005" />
+                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" pos="4.91523042e-04  2.46820180e-04 -3.81801364e-04" size="0.0005" />
+                                                                    <site name="RFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" pos="-3.03306131e-04  6.73419446e-04 -3.61223373e-04" size="0.0005" />
+                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" pos="-3.22087024e-04  6.79525849e-04 -4.74444121e-04" size="0.0005" />
+                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" pos="7.39557126e-04  3.03938128e-04 -8.40713072e-04" size="0.0005" />
+                                                                    <site name="RFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" pos="2.72918971e-05  7.82249778e-04 -5.69821823e-04" size="0.0005" />
+                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" pos="2.41125861e-05  7.81508909e-04 -5.72959528e-04" size="0.0005"/>
+                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" pos="-1.88427990e-04  4.23132420e-04 -9.00549463e-04" size="0.0005"/>
+                                                                    <site name="RWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" pos="2.33044057e-04  5.02305239e-04 -2.42210363e-04" size="0.0005"/>
+                                                                    <site name="RFlexorDigitum-2" pos="0.00075 0.00025 -0.003" size="0.0005"/>
+                                                                    <site name="RFlexorDigitum-3" pos="0.0 0.00025 -0.00375" size="0.0005"/>
+                                                                    <site name="RFlexorDigitum-4" pos="-0.0007 0.00025 -0.00325" size="0.0005"/>
+                                                                    <site name="RFlexorDigitum-5" pos="-0.0014 0.00025 -0.002" size="0.0005"/>
                                                                     
-                                                                    <site name="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" pos="2.41397465e-04 -1.24380010e-04 -6.71755326e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" pos="-5.00910119e-04  4.02478920e-03 -6.46358132e-03" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" pos="-2.16625677e-04 -3.94783983e-04 -2.78842876e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" pos="-5.00910119e-04  4.02478920e-03 -6.46358132e-03" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  8.80950408e-04 -4.62098941e-04" size="0.0005" rgba="1 0 0 1" group="5"/>           
-                                                                    <site name="RExtensorDigitum-2" pos="0.00075 -0.00025 -0.003" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="RExtensorDigitum-3" pos="0.0 -0.00025 -0.00375" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="RExtensorDigitum-4" pos="-0.0007 -0.00025 -0.00325" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="RExtensorDigitum-5" pos="-0.0014 -0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="RExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" pos="2.41397465e-04 -1.24380010e-04 -6.71755326e-04" size="0.0005"/>
+                                                                    <site name="RWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" pos="-5.00910119e-04  4.02478920e-03 -6.46358132e-03" size="0.0005"/>
+                                                                    <site name="RExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" pos="-2.16625677e-04 -3.94783983e-04 -2.78842876e-04" size="0.0005"/>
+                                                                    <site name="RWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" pos="-5.00910119e-04  4.02478920e-03 -6.46358132e-03" size="0.0005"/>
+                                                                    <site name="RWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  8.80950408e-04 -4.62098941e-04" size="0.0005"/>           
+                                                                    <site name="RExtensorDigitum-2" pos="0.00075 -0.00025 -0.003" size="0.0005" />
+                                                                    <site name="RExtensorDigitum-3" pos="0.0 -0.00025 -0.00375" size="0.0005" />
+                                                                    <site name="RExtensorDigitum-4" pos="-0.0007 -0.00025 -0.00325" size="0.0005" />
+                                                                    <site name="RExtensorDigitum-5" pos="-0.0014 -0.00025 -0.002" size="0.0005" />
 
-                                                                    <site name="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  0.00075 -1.06153355e-03" size="0.0005" rgba="0 1 0 1" group="5"/>
+                                                                    <site name="RAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  0.00075 -1.06153355e-03" size="0.0005"/>
                                                                     
 
                                                                     <body name="RFPhalange1_1" pos="0.001 0.0005 -0.0015" gravcomp="0">
                                                                         <geom name="RFPhalange1_1" pos="0 0 0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="RFPhalange1_1" density="1908" group="0"/>
                                                                         <joint name="RFPhalange1_1_adduction" pos="0 0 0" axis="1 0 0" range="-0.1 0.1" group="1"/>
                                                                         <joint name="RFPhalange1_1_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 0.5" group="1" />
-                                                                        <site name="RAbductorPollicisLongus-1-1" pos="0.0005 0.0001 0.0" size="0.0005" rgba="0 1 0 1" group="5"/>
+                                                                        <site name="RAbductorPollicisLongus-1-1" pos="0.0005 0.0001 0.0" size="0.0005"/>
 
                                                                         <body name="RFPhalange1_3" pos="0.0005 -0.0001 -0.0003" gravcomp="0">
                                                                             <geom name="RFPhalange1_3" pos="0 0 0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="RFPhalange1_3" density="1908" group="0"/>
                                                                             <joint name="RFPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 0.5" group="1" />
-                                                                            <site name="RAbductorPollicisLongus-1-3" pos="0.0005 0.0002 -0.0001" size="0.0005" rgba="0 1 0 1" group="5"/>
+                                                                            <site name="RAbductorPollicisLongus-1-3" pos="0.0005 0.0002 -0.0001" size="0.0005"/>
                                                                         </body>
                                                                     </body>
 
@@ -1003,20 +1023,20 @@
                                                                         <geom name="RFPhalange2_1" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange2_1" density="1908" group="0"/>
                                                                         <joint name="RFPhalange2_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="1"/>
                                                                         <joint name="RFPhalange2_1_flexion" pos="0 0 0" axis="1 0 0" range="-0.5 1.57" group="1" />
-                                                                        <site name="RFlexorDigitum-2-1" pos="0 0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="RExtensorDigitum-2-1" pos="0 -0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="RFlexorDigitum-2-1" pos="0 0.00025 -0.0015" size="0.0005" />
+                                                                        <site name="RExtensorDigitum-2-1" pos="0 -0.00025 -0.0015" size="0.0005" />
                                                                         
                                                                         <body name="RFPhalange2_2" pos="0 0 -0.0015" gravcomp="0">
                                                                             <geom name="RFPhalange2_2" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange2_2" density="1908" group="0"/>
                                                                             <joint name="RFPhalange2_2_flexion" pos="0 0 0" axis="1 0 0" range="0 1.57" group="1" />
-                                                                            <site name="RFlexorDigitum-2-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="RExtensorDigitum-2-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="RFlexorDigitum-2-2" pos="0 0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="RExtensorDigitum-2-2" pos="0 -0.00025 -0.000625" size="0.0005" />
                                                                             
                                                                             <body name="RFPhalange2_3" pos="0 0 -0.00125" gravcomp="0">
                                                                                 <geom name="RFPhalange2_3" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange2_3" density="1908" group="0"/>
                                                                                 <joint name="RFPhalange2_3_flexion" pos="0 0 0" axis="1 0 0" range="0 1.57" group="1" />
-                                                                                <site name="RFlexorDigitum-2-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="RExtensorDigitum-2-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="RFlexorDigitum-2-3" pos="0 0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="RExtensorDigitum-2-3" pos="0 -0.00025 -0.00025" size="0.0005" />
                                                                             </body>
                                                                         </body>
                                                                     </body>
@@ -1025,20 +1045,20 @@
                                                                         <geom name="RFPhalange3_1" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange3_1" density="1908" group="0"/>
                                                                         <joint name="RFPhalange3_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="1"/>
                                                                         <joint name="RFPhalange3_1_flexion" pos="0 0 0" axis="1 0 0" range="-0.5 1.57" group="1" />
-                                                                        <site name="RFlexorDigitum-3-1" pos="0 0.00025 -0.0018" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="RExtensorDigitum-3-1" pos="0 -0.00025 -0.0018" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="RFlexorDigitum-3-1" pos="0 0.00025 -0.0018" size="0.0005" />
+                                                                        <site name="RExtensorDigitum-3-1" pos="0 -0.00025 -0.0018" size="0.0005" />
 
                                                                         <body name="RFPhalange3_2" pos="0 0 -0.0018" gravcomp="0">
                                                                             <geom name="RFPhalange3_2" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange3_2" density="1908" group="0"/>
                                                                             <joint name="RFPhalange3_2_flexion" pos="0 0 0" axis="1 0 0" range="0 1.57" group="1" />
-                                                                            <site name="RFlexorDigitum-3-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="RExtensorDigitum-3-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="RFlexorDigitum-3-2" pos="0 0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="RExtensorDigitum-3-2" pos="0 -0.00025 -0.000625" size="0.0005" />
                                                                             
                                                                             <body name="RFPhalange3_3" pos="0 0 -0.00125" gravcomp="0">
                                                                                 <geom name="RFPhalange3_3" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange3_3" density="1908" group="0"/>
                                                                                 <joint name="RFPhalange3_3_flexion" pos="0 0 0" axis="1 0 0" range="0 1.57" group="1" />
-                                                                                <site name="RFlexorDigitum-3-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="RExtensorDigitum-3-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="RFlexorDigitum-3-3" pos="0 0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="RExtensorDigitum-3-3" pos="0 -0.00025 -0.00025" size="0.0005" />
                                                                             </body>
                                                                         </body>
                                                                     </body>
@@ -1047,23 +1067,23 @@
                                                                         <geom name="RFPhalange4_1" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange4_1" density="1908" group="0"/>
                                                                         <joint name="RFPhalange4_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="1"/>
                                                                         <joint name="RFPhalange4_1_flexion" pos="0 0 0" axis="1 0 0" range="-0.5 1.57" group="1" />
-                                                                        <site name="RFlexorDigitum-4-1" pos="0 0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="RExtensorDigitum-4-1" pos="0 -0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="RExtensorDigitumLateralis-4-1" pos="-0.0002 -0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="RFlexorDigitum-4-1" pos="0 0.00025 -0.0015" size="0.0005" />
+                                                                        <site name="RExtensorDigitum-4-1" pos="0 -0.00025 -0.0015" size="0.0005" />
+                                                                        <site name="RExtensorDigitumLateralis-4-1" pos="-0.0002 -0.00025 -0.0015" size="0.0005" />
 
                                                                         <body name="RFPhalange4_2" pos="0 0 -0.0015" gravcomp="0">
                                                                             <geom name="RFPhalange4_2" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange4_2" density="1908" group="0"/>
                                                                             <joint name="RFPhalange4_2_flexion" pos="0 0 0" axis="1 0 0" range="0 1.57" group="1" />
-                                                                            <site name="RFlexorDigitum-4-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="RExtensorDigitum-4-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="RExtensorDigitumLateralis-4-2" pos="-0.0002 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />                                                                            
+                                                                            <site name="RFlexorDigitum-4-2" pos="0 0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="RExtensorDigitum-4-2" pos="0 -0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="RExtensorDigitumLateralis-4-2" pos="-0.0002 -0.00025 -0.000625" size="0.0005" />                                                                            
                                                                             
                                                                             <body name="RFPhalange4_3" pos="0 0 -0.00125" gravcomp="0">
                                                                                 <geom name="RFPhalange4_3" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange4_3" density="1908" group="0"/>
                                                                                 <joint name="RFPhalange4_3_flexion" pos="0 0 0" axis="1 0 0" range="0 1.57" group="1" />
-                                                                                <site name="RFlexorDigitum-4-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="RExtensorDigitum-4-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="RExtensorDigitumLateralis-4-3" pos="-0.0002 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="RFlexorDigitum-4-3" pos="0 0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="RExtensorDigitum-4-3" pos="0 -0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="RExtensorDigitumLateralis-4-3" pos="-0.0002 -0.00025 -0.00025" size="0.0005" />
                                                                             </body>
                                                                         </body>
                                                                     </body>
@@ -1072,23 +1092,23 @@
                                                                         <geom name="RFPhalange5_1" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange5_1" density="1908" group="0"/>
                                                                         <joint name="RFPhalange5_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="1"/>
                                                                         <joint name="RFPhalange5_1_flexion" pos="0 0 0" axis="1 0 0" range="-0.5 1.57" group="1" />
-                                                                        <site name="RFlexorDigitum-5-1" pos="0 0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="RExtensorDigitum-5-1" pos="0 -0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="RExtensorDigitumLateralis-5-1" pos="-0.0002 -0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="RFlexorDigitum-5-1" pos="0 0.00025 -0.002" size="0.0005" />
+                                                                        <site name="RExtensorDigitum-5-1" pos="0 -0.00025 -0.002" size="0.0005" />
+                                                                        <site name="RExtensorDigitumLateralis-5-1" pos="-0.0002 -0.00025 -0.002" size="0.0005" />
 
                                                                         <body name="RFPhalange5_2" pos="0 0 -0.002" gravcomp="0">
                                                                             <geom name="RFPhalange5_2" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange5_2" density="1908" group="0"/>
                                                                             <joint name="RFPhalange5_2_flexion" pos="0 0 0" axis="1 0 0" range="0 1.57" group="1" />
-                                                                            <site name="RFlexorDigitum-5-2" pos="0 0.00025 -0.00065" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="RExtensorDigitum-5-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="RExtensorDigitumLateralis-5-2" pos="-0.0002 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="RFlexorDigitum-5-2" pos="0 0.00025 -0.00065" size="0.0005" />
+                                                                            <site name="RExtensorDigitum-5-2" pos="0 -0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="RExtensorDigitumLateralis-5-2" pos="-0.0002 -0.00025 -0.000625" size="0.0005" />
                                                                             
                                                                             <body name="RFPhalange5_3" pos="0 0 -0.0013" gravcomp="0">
                                                                                 <geom name="RFPhalange5_3" pos="0 0 0" euler="1.57 0 -1.57" type="mesh" rgba="1 1 1 1" mesh="RFPhalange5_3" density="1908" group="0"/>
                                                                                 <joint name="RFPhalange5_3_flexion" pos="0 0 0" axis="1 0 0" range="0 1.57" group="1" />
-                                                                                <site name="RFlexorDigitum-5-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="RExtensorDigitum-5-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="RExtensorDigitumLateralis-5-3" pos="-0.0002 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="RFlexorDigitum-5-3" pos="0 0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="RExtensorDigitum-5-3" pos="0 -0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="RExtensorDigitumLateralis-5-3" pos="-0.0002 -0.00025 -0.00025" size="0.0005" />
                                                                             </body>
                                                                         </body>
                                                                     </body>
@@ -1251,8 +1271,6 @@
                                                                     
                                                                     <geom name="LFMetaphalange" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFMetaphalange" density="1908" />
                                                                     
-                                                                    <!-- <geom name="LWrist_Extensor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.865844 0.340819 -0.134156 0.340819" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/> -->
-                                                                    <!-- <geom name="LWrist_Flexor_ellipsoid" size="0.0004" pos="0.00024752  -0.00038863 -0.00061395" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/> -->
                                                                     <geom name="LWrist_Flexor_ellipsoid_RFlaxorCarpiUlnar" size="0.000449646" pos="0.00021952  -0.0004214  -0.00052225" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                                     <geom name="LWrist_Flexor_ellipsoid_RFlaxorCarpiRadialis" size="0.00045" pos="0.0003315   -0.00038212 -0.00061726" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                                     <geom name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus" size="0.000304547" pos="0.00020325  -0.00042665 -0.00056262" quat="0.930508 0 -0.366273 0" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
@@ -1274,47 +1292,47 @@
                                                                     <site name="LExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3" pos=" 1.30136364e-03  -4.71476600e-04 -2.33604342e-04" size="0.0005" />
                                                                     <site name="LExtensorCarpiRadialisLongus_RExtensorCarpiRadialisLongus-P3_0" pos="8.91305762e-04  -5.80372099e-04 -5.46536742e-04" size="0.0005" />
                                                                     <site name="LExtensorCarpiRadialisBrevis_insertion" pos=" 6.27286510e-04  -3.34967226e-04 -5.56064001e-04" size="0.0005" />
-                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite" pos="3.53170059e-04  -7.39460786e-04 -6.16293742e-04" size="0.0005" rgba="0 1 0 1"/>
+                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorCarpiRadialisBrevis_3_sidesite" pos="3.53170059e-04  -7.39460786e-04 -6.16293742e-04" size="0.0005"/>
                                                                     <site name="LExtensorCarpiUlnar_insertion" pos="-2.50265788e-04 8.06297169e-05 -9.75047190e-04" size="0.0005" />
                                                                     <site name="LWrist_Extensor_ellipsoid_RExtensorCarpiUlnar_1_sidesite" pos="5.23935970e-04  -4.37852764e-04 -1.25804952e-04" size="0.0005" />
                                                                     
-                                                                    <site name="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" pos="2.42536184e-05  -8.93121705e-04 -6.41884180e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" pos="2.76084522e-05  -8.93456627e-04 -6.39212735e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" pos="4.91523042e-04  -2.46820180e-04 -3.81801364e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" pos="-3.03306131e-04  -6.73419446e-04 -3.61223373e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" pos="-3.22087024e-04  -6.79525849e-04 -4.74444121e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" pos="7.39557126e-04  -3.03938128e-04 -8.40713072e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" pos="2.72918971e-05  -7.82249778e-04 -5.69821823e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" pos="2.41125861e-05  -7.81508909e-04 -5.72959528e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" pos="-1.88427990e-04  -4.23132420e-04 -9.00549463e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" pos="2.33044057e-04  -5.02305239e-04 -2.42210363e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LFlexorDigitum-2" pos="0.00075 -0.00025 -0.003" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="LFlexorDigitum-3" pos="0.0 -0.00025 -0.00375" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="LFlexorDigitum-4" pos="-0.0007 -0.00025 -0.00325" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="LFlexorDigitum-5" pos="-0.0014 -0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="LFlexorDigitumProfundusHumerus_RFlexorDigitumProfundusHumerus-P4" pos="2.42536184e-05  -8.93121705e-04 -6.41884180e-04" size="0.0005" />
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_4_sidesite" pos="2.76084522e-05  -8.93456627e-04 -6.39212735e-04" size="0.0005" />
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusHumerus_3_sidesite" pos="4.91523042e-04  -2.46820180e-04 -3.81801364e-04" size="0.0005" />
+                                                                    <site name="LFlexorDigitumProfundusUlnar_RFlexorDigitumProfundusUlnar-P3" pos="-3.03306131e-04  -6.73419446e-04 -3.61223373e-04" size="0.0005" />
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_3_sidesite" pos="-3.22087024e-04  -6.79525849e-04 -4.74444121e-04" size="0.0005" />
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusUlnar_2_sidesite" pos="7.39557126e-04  -3.03938128e-04 -8.40713072e-04" size="0.0005" />
+                                                                    <site name="LFlexorDigitumProfundusRadial_RFlexorDigitumProfundusRadial-P3" pos="2.72918971e-05  -7.82249778e-04 -5.69821823e-04" size="0.0005" />
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_3_sidesite" pos="2.41125861e-05  -7.81508909e-04 -5.72959528e-04" size="0.0005" />
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumProfundusRadial_2_sidesite" pos="-1.88427990e-04  -4.23132420e-04 -9.00549463e-04" size="0.0005" />
+                                                                    <site name="LWrist_Flexor_ellipsoid_RFlexorDigitumsSuperficial_3_sidesite" pos="2.33044057e-04  -5.02305239e-04 -2.42210363e-04" size="0.0005" />
+                                                                    <site name="LFlexorDigitum-2" pos="0.00075 -0.00025 -0.003" size="0.0005"/>
+                                                                    <site name="LFlexorDigitum-3" pos="0.0 -0.00025 -0.00375" size="0.0005"/>
+                                                                    <site name="LFlexorDigitum-4" pos="-0.0007 -0.00025 -0.00325" size="0.0005" />
+                                                                    <site name="LFlexorDigitum-5" pos="-0.0014 -0.00025 -0.002" size="0.0005" />
                                                                     
-                                                                    <site name="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" pos="2.41397465e-04 1.24380010e-04 -6.71755326e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" pos="-5.00910119e-04  -4.02478920e-03 -6.46358132e-03" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" pos="-2.16625677e-04 3.94783983e-04 -2.78842876e-04" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" pos="-5.00910119e-04  -4.02478920e-03 -6.46358132e-03" size="0.0005" rgba="1 0 0 1" group="5"/>
-                                                                    <site name="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  -8.80950408e-04 -4.62098941e-04" size="0.0005" rgba="1 0 0 1" group="5"/>           
-                                                                    <site name="LExtensorDigitum-2" pos="0.00075 0.00025 -0.003" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="LExtensorDigitum-3" pos="0.0 0.00025 -0.00375" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="LExtensorDigitum-4" pos="-0.0007 0.00025 -0.00325" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                    <site name="LExtensorDigitum-5" pos="-0.0014 0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                    <site name="LExtensorDigitorumCommunis_RExtensorDigitorumCommunis-P3" pos="2.41397465e-04 1.24380010e-04 -6.71755326e-04" size="0.0005" />
+                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorDigitorumCommunis_3_sidesite" pos="-5.00910119e-04  -4.02478920e-03 -6.46358132e-03" size="0.0005" />
+                                                                    <site name="LExtensorDigitorumLateralis_RExtensorDigitorumLateralis-P4" pos="-2.16625677e-04 3.94783983e-04 -2.78842876e-04" size="0.0005" />
+                                                                    <site name="LWrist_Extensor_ellipsoid_RExtensorDigitorumLateralis_4_sidesite" pos="-5.00910119e-04  -4.02478920e-03 -6.46358132e-03" size="0.0005" />
+                                                                    <site name="LWrist_Extensor_ellipsoid_RAbductorPollicisLongus_1_sidesite" pos="4.86215670e-04  -8.80950408e-04 -4.62098941e-04" size="0.0005"/>           
+                                                                    <site name="LExtensorDigitum-2" pos="0.00075 0.00025 -0.003" size="0.0005" />
+                                                                    <site name="LExtensorDigitum-3" pos="0.0 0.00025 -0.00375" size="0.0005" />
+                                                                    <site name="LExtensorDigitum-4" pos="-0.0007 0.00025 -0.00325" size="0.0005" />
+                                                                    <site name="LExtensorDigitum-5" pos="-0.0014 0.00025 -0.002" size="0.0005" />
 
-                                                                    <site name="LAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  -0.00075 -1.06153355e-03" size="0.0005" rgba="0 1 0 1" group="5"/>
+                                                                    <site name="LAbductorPollicisLongus_RAbductorPollicisLongus-P3" pos="9.22855147e-04  -0.00075 -1.06153355e-03" size="0.0005"/>
                                                                     
                                                                     <body name="LFPhalange1_1" pos="0.001 -0.0005 -0.0015" gravcomp="0">
                                                                         <geom name="LFPhalange1_1" pos="0 0 0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="LFPhalange1_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange1_1_adduction" pos="0 0 0" axis="1 0 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange1_1_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 0.5" group="2" />
-                                                                        <site name="LAbductorPollicisLongus-1-1" pos="0.0005 -0.0001 0.0" size="0.0005" rgba="0 1 0 1" group="5"/>
+                                                                        <site name="LAbductorPollicisLongus-1-1" pos="0.0005 -0.0001 0.0" size="0.0005"/>
 
                                                                         <body name="LFPhalange1_3" pos="0.0005 -0.0001 -0.0003" gravcomp="0">
                                                                             <geom name="LFPhalange1_3" pos="0 0 0" euler="0 0 0" type="mesh" rgba="1 1 1 1" mesh="LFPhalange1_3" density="1908" group="0"/>
                                                                             <joint name="LFPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="-0.5 0.5" group="2" />
-                                                                            <site name="LAbductorPollicisLongus-1-3" pos="0.0005 -0.0002 -0.0001" size="0.0005" rgba="0 1 0 1" group="5"/>
+                                                                            <site name="LAbductorPollicisLongus-1-3" pos="0.0005 -0.0002 -0.0001" size="0.0005"/>
 
                                                                         </body>
                                                                     </body>
@@ -1323,20 +1341,20 @@
                                                                         <geom name="LFPhalange2_1" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange2_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange2_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange2_1_flexion" pos="0 0 0" axis="-1 0 0" range="-0.5 1.57" group="2" />
-                                                                        <site name="LFlexorDigitum-2-1" pos="0 -0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="LExtensorDigitum-2-1" pos="0 0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LFlexorDigitum-2-1" pos="0 -0.00025 -0.0015" size="0.0005" />
+                                                                        <site name="LExtensorDigitum-2-1" pos="0 0.00025 -0.0015" size="0.0005" />
                                                                         
                                                                         <body name="LFPhalange2_2" pos="0 0 -0.0015" gravcomp="0">
                                                                             <geom name="LFPhalange2_2" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange2_2" density="1908" group="0"/>
                                                                             <joint name="LFPhalange2_2_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
-                                                                            <site name="LFlexorDigitum-2-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="LExtensorDigitum-2-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="LFlexorDigitum-2-2" pos="0 -0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="LExtensorDigitum-2-2" pos="0 0.00025 -0.000625" size="0.0005" />
                                                                             
                                                                             <body name="LFPhalange2_3" pos="0 0 -0.00125" gravcomp="0">
                                                                                 <geom name="LFPhalange2_3" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange2_3" density="1908" group="0"/>
                                                                                 <joint name="LFPhalange2_3_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
-                                                                                <site name="LFlexorDigitum-2-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="LExtensorDigitum-2-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LFlexorDigitum-2-3" pos="0 -0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="LExtensorDigitum-2-3" pos="0 0.00025 -0.00025" size="0.0005" />
                                                                             
                                                                             </body>
                                                                         </body>
@@ -1346,20 +1364,20 @@
                                                                         <geom name="LFPhalange3_1" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange3_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange3_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange3_1_flexion" pos="0 0 0" axis="-1 0 0" range="-0.5 1.57" group="2" />
-                                                                        <site name="LFlexorDigitum-3-1" pos="0 -0.00025 -0.0018" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="LExtensorDigitum-3-1" pos="0 0.00025 -0.0018" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LFlexorDigitum-3-1" pos="0 -0.00025 -0.0018" size="0.0005" />
+                                                                        <site name="LExtensorDigitum-3-1" pos="0 0.00025 -0.0018" size="0.0005" />
 
                                                                         <body name="LFPhalange3_2" pos="0 0 -0.0018" gravcomp="0">
                                                                             <geom name="LFPhalange3_2" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange3_2" density="1908" group="0"/>
                                                                             <joint name="LFPhalange3_2_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
-                                                                            <site name="LFlexorDigitum-3-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="LExtensorDigitum-3-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="LFlexorDigitum-3-2" pos="0 -0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="LExtensorDigitum-3-2" pos="0 0.00025 -0.000625" size="0.0005" />
                                                                             
                                                                             <body name="LFPhalange3_3" pos="0 0 -0.00125" gravcomp="0">
                                                                                 <geom name="LFPhalange3_3" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange3_3" density="1908" group="0"/>
                                                                                 <joint name="LFPhalange3_3_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
-                                                                                <site name="LFlexorDigitum-3-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="LExtensorDigitum-3-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LFlexorDigitum-3-3" pos="0 -0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="LExtensorDigitum-3-3" pos="0 0.00025 -0.00025" size="0.0005" />
                                                                             
                                                                             </body>
                                                                         </body>
@@ -1369,23 +1387,23 @@
                                                                         <geom name="LFPhalange4_1" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange4_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange4_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange4_1_flexion" pos="0 0 0" axis="-1 0 0" range="-0.5 1.57" group="2" />
-                                                                        <site name="LFlexorDigitum-4-1" pos="0 -0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="LExtensorDigitum-4-1" pos="0 0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="LExtensorDigitumLateralis-4-1" pos="-0.0002 0.00025 -0.0015" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LFlexorDigitum-4-1" pos="0 -0.00025 -0.0015" size="0.0005" />
+                                                                        <site name="LExtensorDigitum-4-1" pos="0 0.00025 -0.0015" size="0.0005" />
+                                                                        <site name="LExtensorDigitumLateralis-4-1" pos="-0.0002 0.00025 -0.0015" size="0.0005" />
 
                                                                         <body name="LFPhalange4_2" pos="0 0 -0.0015" gravcomp="0">
                                                                             <geom name="LFPhalange4_2" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange4_2" density="1908" group="0"/>
                                                                             <joint name="LFPhalange4_2_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
-                                                                            <site name="LFlexorDigitum-4-2" pos="0 -0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="LExtensorDigitum-4-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="LExtensorDigitumLateralis-4-2" pos="-0.0002 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />                                                                            
+                                                                            <site name="LFlexorDigitum-4-2" pos="0 -0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="LExtensorDigitum-4-2" pos="0 0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="LExtensorDigitumLateralis-4-2" pos="-0.0002 0.00025 -0.000625" size="0.0005" />                                                                            
                                                                             
                                                                             <body name="LFPhalange4_3" pos="0 0 -0.00125" gravcomp="0">
                                                                                 <geom name="LFPhalange4_3" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange4_3" density="1908" group="0"/>
                                                                                 <joint name="LFPhalange4_3_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
-                                                                                <site name="LFlexorDigitum-4-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="LExtensorDigitum-4-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="LExtensorDigitumLateralis-4-3" pos="-0.0002 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LFlexorDigitum-4-3" pos="0 -0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="LExtensorDigitum-4-3" pos="0 0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="LExtensorDigitumLateralis-4-3" pos="-0.0002 0.00025 -0.00025" size="0.0005" />
                                                                             
                                                                             </body>
                                                                         </body>
@@ -1395,23 +1413,23 @@
                                                                         <geom name="LFPhalange5_1" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange5_1" density="1908" group="0"/>
                                                                         <joint name="LFPhalange5_1_adduction" pos="0 0 0" axis="0 -1 0" range="-0.1 0.1" group="2"/>
                                                                         <joint name="LFPhalange5_1_flexion" pos="0 0 0" axis="-1 0 0" range="-0.5 1.57" group="2" />
-                                                                        <site name="LFlexorDigitum-5-1" pos="0 -0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="LExtensorDigitum-5-1" pos="0 0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                        <site name="LExtensorDigitumLateralis-5-1" pos="-0.0002 0.00025 -0.002" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                        <site name="LFlexorDigitum-5-1" pos="0 -0.00025 -0.002" size="0.0005" />
+                                                                        <site name="LExtensorDigitum-5-1" pos="0 0.00025 -0.002" size="0.0005" />
+                                                                        <site name="LExtensorDigitumLateralis-5-1" pos="-0.0002 0.00025 -0.002" size="0.0005" />
 
                                                                         <body name="LFPhalange5_2" pos="0 0 -0.002" gravcomp="0">
                                                                             <geom name="LFPhalange5_2" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange5_2" density="1908" group="0"/>
                                                                             <joint name="LFPhalange5_2_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
-                                                                            <site name="LFlexorDigitum-5-2" pos="0 -0.00025 -0.00065" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="LExtensorDigitum-5-2" pos="0 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                            <site name="LExtensorDigitumLateralis-5-2" pos="-0.0002 0.00025 -0.000625" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                            <site name="LFlexorDigitum-5-2" pos="0 -0.00025 -0.00065" size="0.0005" />
+                                                                            <site name="LExtensorDigitum-5-2" pos="0 0.00025 -0.000625" size="0.0005" />
+                                                                            <site name="LExtensorDigitumLateralis-5-2" pos="-0.0002 0.00025 -0.000625" size="0.0005" />
                                                                             
                                                                             <body name="LFPhalange5_3" pos="0 0 -0.0013" gravcomp="0">
                                                                                 <geom name="LFPhalange5_3" pos="0 0 0" euler="-1.57 0 1.57" type="mesh" rgba="1 1 1 1" mesh="LFPhalange5_3" density="1908" group="0"/>
                                                                                 <joint name="LFPhalange5_3_flexion" pos="0 0 0" axis="-1 0 0" range="0 1.57" group="2" />
-                                                                                <site name="LFlexorDigitum-5-3" pos="0 -0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="LExtensorDigitum-5-3" pos="0 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
-                                                                                <site name="LExtensorDigitumLateralis-5-3" pos="-0.0002 0.00025 -0.00025" size="0.0005" rgba="1 0 0 1" group="5" />
+                                                                                <site name="LFlexorDigitum-5-3" pos="0 -0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="LExtensorDigitum-5-3" pos="0 0.00025 -0.00025" size="0.0005" />
+                                                                                <site name="LExtensorDigitumLateralis-5-3" pos="-0.0002 0.00025 -0.00025" size="0.0005" />
                                                                             
                                                                             </body>
                                                                         </body>
@@ -1453,6 +1471,12 @@
                                                     <site name="T3_SpinousProcess" pos="0.00130 0 0.00155" rgba="1 1 0 1" size="0.0005" group="4"/>
                                                     <site name="T3_RTransverseProcess" pos="0.00130 -0.00175 0.00005" rgba="1 1 0 1" size="0.0005" group="4"/>
                                                     <site name="T3_LTransverseProcess" pos="0.00130 0.00175 0.00005" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                    <site name="T3_VentralSurface" pos="0.00080 0 -0.00095" size="0.0005" group="5" rgba="0 1 0 1"/>
+
+                                                    <site name="RSerratusVentralisThoracis_3_1" pos="-0.00320 -0.00400 -0.00495" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                    <site name="RSerratusVentralisThoracis_3_2" pos="-0.00270 -0.00600 -0.00345" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                    <site name="LSerratusVentralisThoracis_3_1" pos="-0.00320 0.00400 -0.00495" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                    <site name="LSerratusVentralisThoracis_3_2" pos="-0.00270 0.00600 -0.00345" rgba="1 1 0 1" size="0.0005" group="5"/>
 
                                                     <body name="Rib_3R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
                                                         <geom name="Rib_3R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_3R" density="1908"/>
@@ -1481,6 +1505,12 @@
                                                         <site name="T2_SpinousProcess" pos="0.00110 0 0.00280" rgba="1 1 0 1" size="0.0005" group="4"/>
                                                         <site name="T2_RTransverseProcess" pos="0.00110 -0.00175 -0.00020" rgba="1 1 0 1" size="0.0005" group="4"/>
                                                         <site name="T2_LTransverseProcess" pos="0.00110 0.00175 -0.00020" rgba="1 1 0 1" size="0.0005" group="4"/>
+                                                        <site name="T2_VentralSurface" pos="0.00060 0 -0.00070" size="0.0005" group="5" rgba="0 1 0 1"/>
+
+                                                        <site name="RSerratusVentralisThoracis_2_1" pos="-0.00165 -0.00350 -0.00370" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                        <site name="RSerratusVentralisThoracis_2_2" pos="-0.00165 -0.00500 -0.00170" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                        <site name="LSerratusVentralisThoracis_2_1" pos="-0.00165 0.00350 -0.00370" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                        <site name="LSerratusVentralisThoracis_2_2" pos="-0.00165 0.00500 -0.00170" rgba="1 1 0 1" size="0.0005" group="5"/>
 
                                                         <body name="Rib_2R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
                                                             <geom name="Rib_2R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_2R" density="1908"/>
@@ -1509,7 +1539,16 @@
                                                             <site name="T1_SpinousProcess" pos="0.00130 0 0.00205" rgba="1 1 0 1" size="0.0005" group="4"/>
                                                             <site name="T1_RTransverseProcess" pos="0.00130 -0.00175 0.00055" rgba="1 1 0 1" size="0.0005" group="4"/>
                                                             <site name="T1_LTransverseProcess" pos="0.00130 0.00175 0.00055" rgba="1 1 0 1" size="0.0005" group="4"/>
-                                                            
+                                                            <site name="T1_VentralSurface" pos="0.00080 0 -0.00045" size="0.0005" group="5" rgba="0 1 0 1"/>
+
+                                                            <site name="RSerratusVentralisThoracis_1_1" pos="0.00055 -0.00300 -0.00295" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                            <site name="RSerratusVentralisThoracis_1_2" pos="-0.00120 -0.00500 0.00005" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                            <site name="LSerratusVentralisThoracis_1_1" pos="0.00055 0.00300 -0.00295" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                            <site name="LSerratusVentralisThoracis_1_2" pos="-0.00120 0.00500 0.00005" rgba="1 1 0 1" size="0.0005" group="5"/>
+
+                                                            <site name="RSerratusVentralisCervicis_1" pos="0.00180 -0.00400 0.00255" rgba="1 1 0 1" size="0.0005" group="5"/>
+                                                            <site name="LSerratusVentralisCervicis_1" pos="0.00180 0.00400 0.00255" rgba="1 1 0 1" size="0.0005" group="5"/>
+
                                                             <body name="Rib_1R" pos="0.001 -0.00125 -0.0006" gravcomp="0">
                                                                 <geom name="Rib_1R" pos="0 0 0" euler="0 0.0 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_1R" density="1908"/>
                                                                 <joint name="Rib_1R_bucket" pos="0 0 0" axis="0.7 0 0.7" range="-0.1 0.1" group="5" />
@@ -2053,38 +2092,38 @@
                                                     <geom name="RTarsalMetatarsal" pos="0 -0.00075 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RTarsalMetatarsal" group="0" density="1908"/>
                                                     <geom name="RPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 -0.0009 -0.0003" euler="3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                     
-                                                    <site name="RPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03 -0.001" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RTA_TA-P6" pos="8.40000000e-04  6.40000000e-04  -0.002" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REDL_EDL-P4" pos="0.00134 -0.00025 -0.001" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REDL_EDL-P5" pos="0.0095 0 -0.0015" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REDL_EDL-P6" pos="0.01 -0.001 -0.00125" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REDL_EDL-P7" pos="0.01 -0.002 -0.0018" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REDL_EDL-P8" pos="0.0075 -0.00275 -0.0025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REHL_EHL-P5" pos="0.00113 0.0003 -0.0015" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="REHL_EHL-P6" pos="0.00725  0.00075 -0.003" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RMG_MG-P2" pos="-2.05000000e-03 -2.80000000e-04  3.00000000e-05" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RLG_LG-P2" pos="-2.00000000e-03 -6.90000000e-04  1.00000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RSOL_SOL-P2" pos="-1.83000000e-03 -4.70000000e-04  2.10000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPLANT_PLANT-P2" pos="-2.02000000e-03 -4.70000000e-04  1.50000000e-04" size="0.0005" rgba="1 0 0 1"/>                                                    
-                                                    <site name="RFDL_FDL-P3" pos="0.00075 -0.0005 -0.0025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P4" pos="0.00725  0.00075 -0.004" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P5" pos="0.0095 0 -0.0025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P6" pos="0.01 -0.001 -0.00225" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P7" pos="0.01 -0.002 -0.0028" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RFDL_FDL-P8" pos="0.0075 -0.00275 -0.0035" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RTP_TP-P4" pos="0.00065  0.0005 -0.00175" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPL_PL-P4" pos="8.10000000e-04 -9.40000000e-04 -9.10000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPL_PL-P5" pos="1.34000000e-03 -2.80000000e-04 -9.90000000e-04" size="0.0005" rgba="1 0 0 1"/> 
-                                                    <site name="RPT_PT-P3" pos="-1.10000000e-04 -8.90000000e-04  1.60000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPT_PT-P4" pos="6.00000000e-04 -9.50000000e-04 -1.70000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPB_PB-P2" pos="-7.00000000e-05 -0.001  0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPB_PB-P3" pos="0.0015 -0.002 -0.002" size="0.0005" rgba="1 0 0 1"/>       
-                                                    <site name="RPDQA_PDQA-P3" pos="0.00017 -0.00075  0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQA_PDQA-P4" pos="0.00323 -0.0015 -0.0015" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQA_PDQA-P5" pos="0.0095 -0.00225 -0.002" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQI_PDQI-P2" pos="0.00067 -0.00076 -0.00005" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQI_PDQI-P3" pos="0.003 -0.002 -0.002" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="RPDQI_PDQI-P4" pos="0.0075 -0.003 -0.0025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="RPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 -1.59400000e-03 -0.001" size="0.0005" />
+                                                    <site name="RTA_TA-P6" pos="8.40000000e-04  6.40000000e-04  -0.002" size="0.0005"/>
+                                                    <site name="REDL_EDL-P4" pos="0.00134 -0.00025 -0.001" size="0.0005" />
+                                                    <site name="REDL_EDL-P5" pos="0.0095 0 -0.0015" size="0.0005" />
+                                                    <site name="REDL_EDL-P6" pos="0.01 -0.001 -0.00125" size="0.0005"/>
+                                                    <site name="REDL_EDL-P7" pos="0.01 -0.002 -0.0018" size="0.0005" />
+                                                    <site name="REDL_EDL-P8" pos="0.0075 -0.00275 -0.0025" size="0.0005" />
+                                                    <site name="REHL_EHL-P5" pos="0.00113 0.0003 -0.0015" size="0.0005" />
+                                                    <site name="REHL_EHL-P6" pos="0.00725  0.00075 -0.003" size="0.0005" />
+                                                    <site name="RMG_MG-P2" pos="-2.05000000e-03 -2.80000000e-04  3.00000000e-05" size="0.0005" />
+                                                    <site name="RLG_LG-P2" pos="-2.00000000e-03 -6.90000000e-04  1.00000000e-04" size="0.0005" />
+                                                    <site name="RSOL_SOL-P2" pos="-1.83000000e-03 -4.70000000e-04  2.10000000e-04" size="0.0005" />
+                                                    <site name="RPLANT_PLANT-P2" pos="-2.02000000e-03 -4.70000000e-04  1.50000000e-04" size="0.0005" />                                                    
+                                                    <site name="RFDL_FDL-P3" pos="0.00075 -0.0005 -0.0025" size="0.0005" />
+                                                    <site name="RFDL_FDL-P4" pos="0.00725  0.00075 -0.004" size="0.0005" />
+                                                    <site name="RFDL_FDL-P5" pos="0.0095 0 -0.0025" size="0.0005" />
+                                                    <site name="RFDL_FDL-P6" pos="0.01 -0.001 -0.00225" size="0.0005" />
+                                                    <site name="RFDL_FDL-P7" pos="0.01 -0.002 -0.0028" size="0.0005" />
+                                                    <site name="RFDL_FDL-P8" pos="0.0075 -0.00275 -0.0035" size="0.0005" />
+                                                    <site name="RTP_TP-P4" pos="0.00065  0.0005 -0.00175" size="0.0005" />
+                                                    <site name="RPL_PL-P4" pos="8.10000000e-04 -9.40000000e-04 -9.10000000e-04" size="0.0005" />
+                                                    <site name="RPL_PL-P5" pos="1.34000000e-03 -2.80000000e-04 -9.90000000e-04" size="0.0005" /> 
+                                                    <site name="RPT_PT-P3" pos="-1.10000000e-04 -8.90000000e-04  1.60000000e-04" size="0.0005" />
+                                                    <site name="RPT_PT-P4" pos="6.00000000e-04 -9.50000000e-04 -1.70000000e-04" size="0.0005" />
+                                                    <site name="RPB_PB-P2" pos="-7.00000000e-05 -0.001  0.00025" size="0.0005" />
+                                                    <site name="RPB_PB-P3" pos="0.0015 -0.002 -0.002" size="0.0005" />       
+                                                    <site name="RPDQA_PDQA-P3" pos="0.00017 -0.00075  0.00025" size="0.0005" />
+                                                    <site name="RPDQA_PDQA-P4" pos="0.00323 -0.0015 -0.0015" size="0.0005" />
+                                                    <site name="RPDQA_PDQA-P5" pos="0.0095 -0.00225 -0.002" size="0.0005" />
+                                                    <site name="RPDQI_PDQI-P2" pos="0.00067 -0.00076 -0.00005" size="0.0005" />
+                                                    <site name="RPDQI_PDQI-P3" pos="0.003 -0.002 -0.002" size="0.0005" />
+                                                    <site name="RPDQI_PDQI-P4" pos="0.0075 -0.003 -0.0025" size="0.0005" />
                                                     
                                                     <body name="RPhalange1_1" pos="0.00725 0.0007 -0.00325" gravcomp="0">
                                                         <geom name="RPhalange1_1" pos="0.0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange1_1" density="1908" group="0"/>
@@ -2094,8 +2133,8 @@
                                                         <body name="RPhalange1_3" pos="0.0021 0.0001 0" gravcomp="0">
                                                             <geom name="RPhalange1_3" pos="0 0 0" euler="0.0 0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange1_3" density="1908" group="0"/>
                                                             <joint name="RPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                            <site name="REHL_EHL-P7" pos="0.0001 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="RFDL_FDL-P9" pos="0.0001 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="REHL_EHL-P7" pos="0.0001 0 0.0005" size="0.0005" />
+                                                            <site name="RFDL_FDL-P9" pos="0.0001 0 -0.0005" size="0.0005" />
                                                         </body>
                                                     </body>
 
@@ -2108,16 +2147,16 @@
                                                             <geom name="RPhalange2_2" pos="0 0.0001 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_2" density="1908" group="0"/>
                                                             <joint name="RPhalange2_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
                                                             
-                                                            <site name="REDL_EDL-P9" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="REDL_EDL-P9-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="RFDL_FDL-P10" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="RFDL_FDL-P10-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="REDL_EDL-P9" pos="0 0 0.0005" size="0.0005" />
+                                                            <site name="REDL_EDL-P9-1" pos="0.001 0 0.00025" size="0.0005" />
+                                                            <site name="RFDL_FDL-P10" pos="0 0 -0.0005" size="0.0005" />
+                                                            <site name="RFDL_FDL-P10-1" pos="0.001 0 -0.00025" size="0.0005" />
 
                                                             <body name="RPhalange2_3" pos="0.0017 0 0" gravcomp="0">
                                                                 <geom name="RPhalange2_3" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange2_3" density="1908" group="0"/>
                                                                 <joint name="RPhalange2_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                                <site name="REDL_EDL-P10" pos="0.0005 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                                <site name="RFDL_FDL-P11" pos="0.0005 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                                <site name="REDL_EDL-P10" pos="0.0005 0 0.0005" size="0.0005" />
+                                                                <site name="RFDL_FDL-P11" pos="0.0005 0 -0.0005" size="0.0005" />
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2131,16 +2170,16 @@
                                                             <geom name="RPhalange3_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange3_2" density="1908" group="0"/>
                                                             <joint name="RPhalange3_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
                                                             
-                                                            <site name="REDL_EDL-P11" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="REDL_EDL-P11-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="RFDL_FDL-P12" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="RFDL_FDL-P12-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="REDL_EDL-P11" pos="0 0 0.0005" size="0.0005" />
+                                                            <site name="REDL_EDL-P11-1" pos="0.001 0 0.00025" size="0.0005" />
+                                                            <site name="RFDL_FDL-P12" pos="0 0 -0.0005" size="0.0005" />
+                                                            <site name="RFDL_FDL-P12-1" pos="0.001 0 -0.00025" size="0.0005" />
 
                                                             <body name="RPhalange3_3" pos="0.0017 0 0" gravcomp="0">
                                                                 <geom name="RPhalange3_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange3_3" density="1908" group="0"/>
                                                                 <joint name="RPhalange3_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                                <site name="REDL_EDL-P12" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
-                                                                <site name="RFDL_FDL-P13" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                                <site name="REDL_EDL-P12" pos="0.00025 0 0.0005" size="0.0005" />                                                            
+                                                                <site name="RFDL_FDL-P13" pos="0.00025 0 -0.0005" size="0.0005" />
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2154,19 +2193,19 @@
                                                             <geom name="RPhalange4_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange4_2" density="1908" group="0"/>
                                                             <joint name="RPhalange4_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
                                                             
-                                                            <site name="REDL_EDL-P13" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="REDL_EDL-P13-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="RFDL_FDL-P14" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="RFDL_FDL-P14-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="RPDQA_PDQA-P6" pos="0 -0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="RPDQA_PDQA-P7" pos="0.001 -0.00025 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="REDL_EDL-P13" pos="0 0 0.0005" size="0.0005" />
+                                                            <site name="REDL_EDL-P13-1" pos="0.001 0 0.00025" size="0.0005" />
+                                                            <site name="RFDL_FDL-P14" pos="0 0 -0.0005" size="0.0005" />
+                                                            <site name="RFDL_FDL-P14-1" pos="0.001 0 -0.00025" size="0.0005" />
+                                                            <site name="RPDQA_PDQA-P6" pos="0 -0.00025 0.0005" size="0.0005" />
+                                                            <site name="RPDQA_PDQA-P7" pos="0.001 -0.00025 0.00025" size="0.0005" />
                                                             
                                                             <body name="RPhalange4_3" pos="0.00185 -0.0001 0" gravcomp="0">
                                                                 <geom name="RPhalange4_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange4_3" density="1908" group="0"/>
                                                                 <joint name="RPhalange4_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                                <site name="REDL_EDL-P14" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
-                                                                <site name="RFDL_FDL-P15" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                                <site name="RPDQA_PDQA-P8" pos="0.00025 -0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                                <site name="REDL_EDL-P14" pos="0.00025 0 0.0005" size="0.0005" />                                                            
+                                                                <site name="RFDL_FDL-P15" pos="0.00025 0 -0.0005" size="0.0005" />
+                                                                <site name="RPDQA_PDQA-P8" pos="0.00025 -0.00025 0.0005" size="0.0005" />
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2180,19 +2219,19 @@
                                                             <geom name="RPhalange5_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange5_2" density="1908" group="0"/>
                                                             <joint name="RPhalange5_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
                                                             
-                                                            <site name="REDL_EDL-P15" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="REDL_EDL-P15-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="RFDL_FDL-P16" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="RFDL_FDL-P16-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="RPDQI_PDQI-P5" pos="0 -0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="RPDQI_PDQI-P6" pos="0.001 -0.00025 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="REDL_EDL-P15" pos="0 0 0.0005" size="0.0005" />
+                                                            <site name="REDL_EDL-P15-1" pos="0.001 0 0.00025" size="0.0005" />
+                                                            <site name="RFDL_FDL-P16" pos="0 0 -0.0005" size="0.0005" />
+                                                            <site name="RFDL_FDL-P16-1" pos="0.001 0 -0.00025" size="0.0005" />
+                                                            <site name="RPDQI_PDQI-P5" pos="0 -0.00025 0.0005" size="0.0005" />
+                                                            <site name="RPDQI_PDQI-P6" pos="0.001 -0.00025 0.00025" size="0.0005" />
 
                                                             <body name="RPhalange5_3" pos="0.0015 -0.0001 0" gravcomp="0">
                                                                 <geom name="RPhalange5_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="RPhalange5_3" density="1908" group="0"/>
                                                                 <joint name="RPhalange5_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                                <site name="REDL_EDL-P16" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
-                                                                <site name="RFDL_FDL-P17" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                                <site name="RPDQI_PDQI-P7" pos="0.00025 -0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                                <site name="REDL_EDL-P16" pos="0.00025 0 0.0005" size="0.0005" />                                                            
+                                                                <site name="RFDL_FDL-P17" pos="0.00025 0 -0.0005" size="0.0005" />
+                                                                <site name="RPDQI_PDQI-P7" pos="0.00025 -0.00025 0.0005" size="0.0005" />
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2339,38 +2378,38 @@
                                                     <geom name="LTarsalMetatarsal" pos="0 0.00075 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LTarsalMetatarsal" group="0" density="1908" />
                                                     <geom name="LPL_at_Calcaneus_cylinder" size="0.0003 0.00105" pos="-0.0003 0.0009 -0.0003" euler="-3.9826842734183807 1.4199998794225865 -1.4030003725081617" type="cylinder" group="2" rgba="0.19 0.83 0.78 0.2" contype="0" conaffinity="0"/>
                                                     
-                                                    <site name="LPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 1.59400000e-03 -0.001" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LTA_TA-P6" pos="8.40000000e-04 -6.40000000e-04  -0.002" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LEDL_EDL-P4" pos="0.00134 0.00025 -0.001" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LEDL_EDL-P5" pos="0.0095 0 -0.0015" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LEDL_EDL-P6" pos="0.01 0.001 -0.00125" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LEDL_EDL-P7" pos="0.01 0.002 -0.0018" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LEDL_EDL-P8" pos="0.0075 0.00275 -0.0025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LEHL_EHL-P5" pos="0.00113 -0.0003 -0.0015" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LEHL_EHL-P6" pos="0.00725  -0.00075 -0.003" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LMG_MG-P2" pos="-2.05000000e-03 2.80000000e-04  3.00000000e-05" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LLG_LG-P2" pos="-2.00000000e-03 6.90000000e-04  1.00000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LSOL_SOL-P2" pos="-1.83000000e-03 4.70000000e-04  2.10000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPLANT_PLANT-P2" pos="-2.02000000e-03 4.70000000e-04  1.50000000e-04" size="0.0005" rgba="1 0 0 1"/>                                                    
-                                                    <site name="LFDL_FDL-P3" pos="0.00075 0.0005 -0.0025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LFDL_FDL-P4" pos="0.00725  -0.00075 -0.004" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LFDL_FDL-P5" pos="0.0095 0 -0.0025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LFDL_FDL-P6" pos="0.01 0.001 -0.00225" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LFDL_FDL-P7" pos="0.01 0.002 -0.0028" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LFDL_FDL-P8" pos="0.0075 0.00275 -0.0035" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LTP_TP-P4" pos="0.00065  -0.0005 -0.00175" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPL_PL-P4" pos="8.10000000e-04 9.40000000e-04 -9.10000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPL_PL-P5" pos="1.34000000e-03 2.80000000e-04 -9.90000000e-04" size="0.0005" rgba="1 0 0 1"/> 
-                                                    <site name="LPT_PT-P3" pos="-1.10000000e-04 8.90000000e-04  1.60000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPT_PT-P4" pos="6.00000000e-04 9.50000000e-04 -1.70000000e-04" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPB_PB-P2" pos="-7.00000000e-05 0.001  0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPB_PB-P3" pos="0.0015 0.002 -0.002" size="0.0005" rgba="1 0 0 1"/>       
-                                                    <site name="LPDQA_PDQA-P3" pos="0.00017 0.00075  0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPDQA_PDQA-P4" pos="0.00323 0.0015 -0.0015" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPDQA_PDQA-P5" pos="0.0095 0.00225 -0.002" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPDQI_PDQI-P2" pos="0.00067 0.00076 -0.00005" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPDQI_PDQI-P3" pos="0.003 0.002 -0.002" size="0.0005" rgba="1 0 0 1"/>
-                                                    <site name="LPDQI_PDQI-P4" pos="0.0075 0.003 -0.0025" size="0.0005" rgba="1 0 0 1"/>
+                                                    <site name="LPL_at_Calcaneus_sidesite" pos="-1.54600000e-04 1.59400000e-03 -0.001" size="0.0005" />
+                                                    <site name="LTA_TA-P6" pos="8.40000000e-04 -6.40000000e-04  -0.002" size="0.0005" />
+                                                    <site name="LEDL_EDL-P4" pos="0.00134 0.00025 -0.001" size="0.0005" />
+                                                    <site name="LEDL_EDL-P5" pos="0.0095 0 -0.0015" size="0.0005" />
+                                                    <site name="LEDL_EDL-P6" pos="0.01 0.001 -0.00125" size="0.0005" />
+                                                    <site name="LEDL_EDL-P7" pos="0.01 0.002 -0.0018" size="0.0005" />
+                                                    <site name="LEDL_EDL-P8" pos="0.0075 0.00275 -0.0025" size="0.0005" />
+                                                    <site name="LEHL_EHL-P5" pos="0.00113 -0.0003 -0.0015" size="0.0005" />
+                                                    <site name="LEHL_EHL-P6" pos="0.00725  -0.00075 -0.003" size="0.0005" />
+                                                    <site name="LMG_MG-P2" pos="-2.05000000e-03 2.80000000e-04  3.00000000e-05" size="0.0005" />
+                                                    <site name="LLG_LG-P2" pos="-2.00000000e-03 6.90000000e-04  1.00000000e-04" size="0.0005" />
+                                                    <site name="LSOL_SOL-P2" pos="-1.83000000e-03 4.70000000e-04  2.10000000e-04" size="0.0005" />
+                                                    <site name="LPLANT_PLANT-P2" pos="-2.02000000e-03 4.70000000e-04  1.50000000e-04" size="0.0005" />                                                    
+                                                    <site name="LFDL_FDL-P3" pos="0.00075 0.0005 -0.0025" size="0.0005" />
+                                                    <site name="LFDL_FDL-P4" pos="0.00725  -0.00075 -0.004" size="0.0005" />
+                                                    <site name="LFDL_FDL-P5" pos="0.0095 0 -0.0025" size="0.0005" />
+                                                    <site name="LFDL_FDL-P6" pos="0.01 0.001 -0.00225" size="0.0005" />
+                                                    <site name="LFDL_FDL-P7" pos="0.01 0.002 -0.0028" size="0.0005" />
+                                                    <site name="LFDL_FDL-P8" pos="0.0075 0.00275 -0.0035" size="0.0005" />
+                                                    <site name="LTP_TP-P4" pos="0.00065  -0.0005 -0.00175" size="0.0005" />
+                                                    <site name="LPL_PL-P4" pos="8.10000000e-04 9.40000000e-04 -9.10000000e-04" size="0.0005" />
+                                                    <site name="LPL_PL-P5" pos="1.34000000e-03 2.80000000e-04 -9.90000000e-04" size="0.0005" /> 
+                                                    <site name="LPT_PT-P3" pos="-1.10000000e-04 8.90000000e-04  1.60000000e-04" size="0.0005" />
+                                                    <site name="LPT_PT-P4" pos="6.00000000e-04 9.50000000e-04 -1.70000000e-04" size="0.0005" />
+                                                    <site name="LPB_PB-P2" pos="-7.00000000e-05 0.001  0.00025" size="0.0005" />
+                                                    <site name="LPB_PB-P3" pos="0.0015 0.002 -0.002" size="0.0005" />       
+                                                    <site name="LPDQA_PDQA-P3" pos="0.00017 0.00075  0.00025" size="0.0005" />
+                                                    <site name="LPDQA_PDQA-P4" pos="0.00323 0.0015 -0.0015" size="0.0005" />
+                                                    <site name="LPDQA_PDQA-P5" pos="0.0095 0.00225 -0.002" size="0.0005" />
+                                                    <site name="LPDQI_PDQI-P2" pos="0.00067 0.00076 -0.00005" size="0.0005" />
+                                                    <site name="LPDQI_PDQI-P3" pos="0.003 0.002 -0.002" size="0.0005" />
+                                                    <site name="LPDQI_PDQI-P4" pos="0.0075 0.003 -0.0025" size="0.0005" />
                                                     
                                                     <body name="LPhalange1_1" pos="0.00725 -0.0007 -0.00325" gravcomp="0">
                                                         <geom name="LPhalange1_1" pos="0.0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange1_1" density="1908" group="0"/>
@@ -2380,8 +2419,8 @@
                                                         <body name="LPhalange1_3" pos="0.0021 0.0001 0" gravcomp="0">
                                                             <geom name="LPhalange1_3" pos="0 0 0" euler="0.0 0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange1_3" density="1908" group="0"/>
                                                             <joint name="LPhalange1_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                            <site name="LEHL_EHL-P7" pos="0.0001 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LFDL_FDL-P9" pos="0.0001 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="LEHL_EHL-P7" pos="0.0001 0 0.0005" size="0.0005" />
+                                                            <site name="LFDL_FDL-P9" pos="0.0001 0 -0.0005" size="0.0005" />
                                                         </body>
                                                     </body>
 
@@ -2393,16 +2432,16 @@
                                                         <body name="LPhalange2_2" pos="0.00275 0 0" gravcomp="0">
                                                             <geom name="LPhalange2_2" pos="0 0.0001 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange2_2" density="1908" group="0"/>
                                                             <joint name="LPhalange2_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                            <site name="LEDL_EDL-P9" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LEDL_EDL-P9-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LFDL_FDL-P10" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="LFDL_FDL-P10-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="LEDL_EDL-P9" pos="0 0 0.0005" size="0.0005" />
+                                                            <site name="LEDL_EDL-P9-1" pos="0.001 0 0.00025" size="0.0005" />
+                                                            <site name="LFDL_FDL-P10" pos="0 0 -0.0005" size="0.0005"/>
+                                                            <site name="LFDL_FDL-P10-1" pos="0.001 0 -0.00025" size="0.0005" />
 
                                                             <body name="LPhalange2_3" pos="0.0017 0 0" gravcomp="0">
                                                                 <geom name="LPhalange2_3" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange2_3" density="1908" group="0"/>
                                                                 <joint name="LPhalange2_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                                <site name="LEDL_EDL-P10" pos="0.0005 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                                <site name="LFDL_FDL-P11" pos="0.0005 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                                <site name="LEDL_EDL-P10" pos="0.0005 0 0.0005" size="0.0005" />
+                                                                <site name="LFDL_FDL-P11" pos="0.0005 0 -0.0005" size="0.0005" />
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2415,16 +2454,16 @@
                                                         <body name="LPhalange3_2" pos="0.0031 0 0" gravcomp="0">
                                                             <geom name="LPhalange3_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange3_2" density="1908" group="0"/>
                                                             <joint name="LPhalange3_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                            <site name="LEDL_EDL-P11" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LEDL_EDL-P11-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LFDL_FDL-P12" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="LFDL_FDL-P12-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
+                                                            <site name="LEDL_EDL-P11" pos="0 0 0.0005" size="0.0005" />
+                                                            <site name="LEDL_EDL-P11-1" pos="0.001 0 0.00025" size="0.0005" />
+                                                            <site name="LFDL_FDL-P12" pos="0 0 -0.0005" size="0.0005" />
+                                                            <site name="LFDL_FDL-P12-1" pos="0.001 0 -0.00025" size="0.0005" />
 
                                                             <body name="LPhalange3_3" pos="0.0017 0 0" gravcomp="0">
                                                                 <geom name="LPhalange3_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange3_3" density="1908" group="0"/>
                                                                 <joint name="LPhalange3_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                                <site name="LEDL_EDL-P12" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
-                                                                <site name="LFDL_FDL-P13" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
+                                                                <site name="LEDL_EDL-P12" pos="0.00025 0 0.0005" size="0.0005" />                                                            
+                                                                <site name="LFDL_FDL-P13" pos="0.00025 0 -0.0005" size="0.0005" />
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2437,19 +2476,19 @@
                                                         <body name="LPhalange4_2" pos="0.003 0 -0.0002" gravcomp="0">
                                                             <geom name="LPhalange4_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange4_2" density="1908" group="0"/>
                                                             <joint name="LPhalange4_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                            <site name="LEDL_EDL-P13" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LEDL_EDL-P13-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LFDL_FDL-P14" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="LFDL_FDL-P14-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="LPDQA_PDQA-P6" pos="0 0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LPDQA_PDQA-P7" pos="0.001 0.00025 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LEDL_EDL-P13" pos="0 0 0.0005" size="0.0005" />
+                                                            <site name="LEDL_EDL-P13-1" pos="0.001 0 0.00025" size="0.0005" />
+                                                            <site name="LFDL_FDL-P14" pos="0 0 -0.0005" size="0.0005" />
+                                                            <site name="LFDL_FDL-P14-1" pos="0.001 0 -0.00025" size="0.0005" />
+                                                            <site name="LPDQA_PDQA-P6" pos="0 0.00025 0.0005" size="0.0005" />
+                                                            <site name="LPDQA_PDQA-P7" pos="0.001 0.00025 0.00025" size="0.0005" />
 
                                                             <body name="LPhalange4_3" pos="0.00185 -0.0001 0" gravcomp="0">
                                                                 <geom name="LPhalange4_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange4_3" density="1908" group="0"/>
                                                                 <joint name="LPhalange4_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                                <site name="LEDL_EDL-P14" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
-                                                                <site name="LFDL_FDL-P15" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                                <site name="LPDQA_PDQA-P8" pos="0.00025 0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                                <site name="LEDL_EDL-P14" pos="0.00025 0 0.0005" size="0.0005" />                                                            
+                                                                <site name="LFDL_FDL-P15" pos="0.00025 0 -0.0005" size="0.0005" />
+                                                                <site name="LPDQA_PDQA-P8" pos="0.00025 0.00025 0.0005" size="0.0005" />
                                                             </body>
                                                         </body>
                                                     </body>
@@ -2462,19 +2501,19 @@
                                                         <body name="LPhalange5_2" pos="0.0025 0 0" gravcomp="0">
                                                             <geom name="LPhalange5_2" pos="0 0 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange5_2" density="1908" group="0"/>
                                                             <joint name="LPhalange5_2_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                            <site name="LEDL_EDL-P15" pos="0 0 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LEDL_EDL-P15-1" pos="0.001 0 0.00025" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LFDL_FDL-P16" pos="0 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="LFDL_FDL-P16-1" pos="0.001 0 -0.00025" size="0.0005" rgba="0 1 0 1"/>
-                                                            <site name="LPDQI_PDQI-P5" pos="0 0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
-                                                            <site name="LPDQI_PDQI-P6" pos="0.001 0.00025 0.00025" size="0.0005" rgba="1 0 0 1"/>
+                                                            <site name="LEDL_EDL-P15" pos="0 0 0.0005" size="0.0005" />
+                                                            <site name="LEDL_EDL-P15-1" pos="0.001 0 0.00025" size="0.0005" />
+                                                            <site name="LFDL_FDL-P16" pos="0 0 -0.0005" size="0.0005" />
+                                                            <site name="LFDL_FDL-P16-1" pos="0.001 0 -0.00025" size="0.0005" />
+                                                            <site name="LPDQI_PDQI-P5" pos="0 0.00025 0.0005" size="0.0005" />
+                                                            <site name="LPDQI_PDQI-P6" pos="0.001 0.00025 0.00025" size="0.0005" />
 
                                                             <body name="LPhalange5_3" pos="0.0015 -0.0001 0" gravcomp="0">
                                                                 <geom name="LPhalange5_3" pos="0 0.00012 0" euler="0.0 0.0 0.0" type="mesh" rgba="1 1 1 1" mesh="LPhalange5_3" density="1908" group="0"/>
                                                                 <joint name="LPhalange5_3_flexion" pos="0 0 0" axis="0 1 0" range="0 1.57" group="3" />
-                                                                <site name="LEDL_EDL-P16" pos="0.00025 0 0.0005" size="0.0005" rgba="1 0 0 1"/>                                                            
-                                                                <site name="LFDL_FDL-P17" pos="0.00025 0 -0.0005" size="0.0005" rgba="0 1 0 1"/>
-                                                                <site name="LPDQI_PDQI-P7" pos="0.00025 0.00025 0.0005" size="0.0005" rgba="1 0 0 1"/>
+                                                                <site name="LEDL_EDL-P16" pos="0.00025 0 0.0005" size="0.0005" />                                                            
+                                                                <site name="LFDL_FDL-P17" pos="0.00025 0 -0.0005" size="0.0005" />
+                                                                <site name="LPDQI_PDQI-P7" pos="0.00025 0.00025 0.0005" size="0.0005" />
                                                             </body>
                                                         </body>
                                                     </body>
