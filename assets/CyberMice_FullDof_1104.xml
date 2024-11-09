@@ -418,11 +418,8 @@
 
             <site name="RSerratusVentralisCervicis_1" pos="0.019 -0.004 -0.0065" size="0.0005" group="5"/> -->
 
-            <site name="RPectoralisMajor_1" pos="0.022 -0.00375 -0.0125" size="0.0005" group="1"/>
-            <site name="RPectoralisMajor_2" pos="0.021 0.00 -0.013" size="0.0005" group="1"/>
-            <site name="RPectoralisMajor_3" pos="0.019 0.00 -0.0145" size="0.0005" group="1"/>
-            <site name="RPectoralisMajor_4" pos="0.016 0.00 -0.015" size="0.0005" group="1"/>
-            <site name="RPectoralisMajor_5" pos="0.013 0.00 -0.015" size="0.0005" group="1"/>
+            <!-- <site name="RPectoralisMajor_1_1" pos="0.022 -0.00375 -0.0125" size="0.0005" group="1"/> -->
+            
 
             <site name="RPectoralisMinor_1" pos="0.022 -0.0035 -0.011" size="0.0005" group="5"/>
             <site name="RPectoralisMinor_2" pos="0.019 -0.00175 -0.013" size="0.0005" group="5"/>
@@ -477,11 +474,8 @@
 
             <site name="LSerratusVentralisCervicis_1" pos="0.019 0.004 -0.0065" size="0.0005" group="5"/> -->
 
-            <site name="LPectoralisMajor_1" pos="0.022 0.00375 -0.0125" size="0.0005" group="5"/>
-            <site name="LPectoralisMajor_2" pos="0.021 0.00 -0.013" size="0.0005" group="5"/>
-            <site name="LPectoralisMajor_3" pos="0.019 0.00 -0.0145" size="0.0005" group="5"/>
-            <site name="LPectoralisMajor_4" pos="0.016 0.00 -0.015" size="0.0005" group="5"/>
-            <site name="LPectoralisMajor_5" pos="0.013 0.00 -0.015" size="0.0005" group="5"/>
+            <!-- <site name="LPectoralisMajor_1" pos="0.022 0.00375 -0.0125" size="0.0005" group="5"/> -->
+            
 
             <site name="LPectoralisMinor_1" pos="0.022 0.0035 -0.011" size="0.0005" group="5"/>
             <site name="LPectoralisMinor_2" pos="0.019 0.00175 -0.013" size="0.0005" group="5"/>
@@ -898,6 +892,7 @@
                                                         <site name="RLatissimusDorsi_1" pos="0.0011 0.0 -0.0025" size="0.0005" group="5"/>
                                                         <site name="RLatissimusDorsi_HumerusSide" pos="0.0005 0.001 -0.0025" size="0.0005" group="5"/>
                                                         <site name="RPectoralisMajor_Humerus_1" pos="2.34171008e-03 -1.69247522e-03 -3.73872983e-03" size="0.0005" group="5"/>
+                                                        <site name="RPectoralisMajor_1" pos="0.001 0.0005 -0.0038" size="0.0005" group="1"/>
                                                         <site name="RPectoralisMinimus_Humerus_1" pos="0.0015 0.0 -0.00275" size="0.0005" group="5"/>
                                                         
                                                         <body name="RUlna" pos="0.001 -0.001 -0.01" euler="0 0 0" gravcomp="0">
@@ -1217,6 +1212,7 @@
                                                         <site name="LLatissimusDorsi_1" pos="0.0011 0.0 -0.0025" size="0.0005" group="5"/>
                                                         <site name="LLatissimusDorsi_HumerusSide" pos="0.0005 -0.001 -0.0025" size="0.0005" group="5"/>
                                                         <site name="LPectoralisMajor_Humerus_1" pos="2.34171008e-03 1.69247522e-03 -3.73872983e-03" size="0.0005" group="5"/>
+                                                        <site name="LPectoralisMajor_1" pos="0.001 -0.0005 -0.0038" size="0.0005" group="1"/>
                                                         <site name="LPectoralisMinimus_Humerus_1" pos="0.0015 0.0 -0.00275" size="0.0005" group="5"/>
                                                         
                                                         <body name="LUlna" pos="0.001 0.001 -0.01" euler="0 0 0" gravcomp="0">
@@ -1569,6 +1565,17 @@
                                                             
                                                                 <body name="Sternum" pos="0.003 0.00125 -0.002" gravcomp="0">
                                                                     <geom name="Sternum" pos="0 0 0" euler="0.0 -0.1 0.05" type="mesh" rgba="1 1 1 1" mesh="Sternum" density="1908"/>
+
+                                                                    <site name="RPectoralisMajor_2" pos="0.0 0.00 -0.001" size="0.0005" group="1"/>
+                                                                    <site name="RPectoralisMajor_3" pos="-0.002 0.0 -0.0025" size="0.0005" group="1"/>
+                                                                    <site name="RPectoralisMajor_4" pos="-0.005 0.0 -0.003" size="0.0005" group="1"/>
+                                                                    <site name="RPectoralisMajor_5" pos="-0.008 0.0 -0.0035" size="0.0005" group="1"/>
+
+                                                                    <site name="LPectoralisMajor_2" pos="0.0 0.00 -0.001" size="0.0005" group="5"/>
+                                                                    <site name="LPectoralisMajor_3" pos="-0.002 0.0 -0.0025" size="0.0005" group="5"/>
+                                                                    <site name="LPectoralisMajor_4" pos="-0.005 0.0 -0.003" size="0.0005" group="5"/>
+                                                                    <site name="LPectoralisMajor_5" pos="-0.008 0.0 -0.0035" size="0.0005" group="5"/>
+
                                                                 </body>
                                                             
                                                             </body>
@@ -6801,7 +6808,6 @@
         <weld name="SternumRib_8L" active="true" body1="Sternum" body2="Rib_8L" torquescale="1" />
         <weld name="SternumRClavicle" active="true" body1="Sternum" body2="RClavicle" torquescale="1" />
         <weld name="SternumLClavicle" active="true" body1="Sternum" body2="LClavicle" torquescale="1" />
-
     </equality>
 
     <contact>  
