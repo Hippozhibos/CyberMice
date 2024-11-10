@@ -440,13 +440,13 @@
             <!-- <site name="RScalenusPosterior_1_1" pos="0.01125 -0.00625 -0.011" size="0.0005" group="1" rgba="0 1 0 1"/> -->
             <!-- <site name="RScalenusPosterior_2_1" pos="0.01475 -0.005 -0.01" size="0.0005" group="1" rgba="0 1 0 1"/> -->
 
-            <site name="RSemispinalisCapitisMedial_2" pos="0.02 -0.00225 -0.0045" size="0.0005" group="5" />
+            <!-- <site name="RSemispinalisCapitisMedial_2_1" pos="0.02 -0.00225 -0.0045" size="0.0005" group="1" /> -->
 
-            <site name="RSternomastoideus_2" pos="0.022 -0.001 -0.012" size="0.0005" group="5" />
+            <!-- <site name="RSternomastoideus_2_1" pos="0.022 -0.001 -0.012" size="0.0005" group="1" rgba="0 1 0 1"/> -->
 
-            <site name="RSpleniusCapitis_3" pos="0.02 -0.0025 -0.004" size="0.0005" group="5" />
+            <!-- <site name="RSpleniusCapitis_3" pos="0.02 -0.0025 -0.004" size="0.0005" group="1" /> -->
 
-            <site name="RSubclavius_2" pos="0.0189 -0.0019 -0.0125" size="0.0005" group="5"/>
+            <!-- <site name="RSubclavius_2_1" pos="0.0189 -0.0019 -0.0125" size="0.0005" group="1" rgba="0 1 0 1"/> -->
            
             <!-- <site name="LLatissimusDorsi_2" pos="0.019 0.0055 -0.00925" size="0.0005" group="5"/> -->
             <!-- <site name="LLatissimusDorsi_3" pos="0.013 0.00775 -0.0065" size="0.0005" group="5"/> -->
@@ -496,13 +496,13 @@
             <!-- <site name="LScalenusPosterior_1" pos="0.01125 0.00625 -0.011" size="0.0005" group="5" /> -->
             <!-- <site name="LScalenusPosterior_2" pos="0.01475 0.005 -0.01" size="0.0005" group="5" /> -->
 
-            <site name="LSemispinalisCapitisMedial_2" pos="0.02 0.00225 -0.0045" size="0.0005" group="5" />
+            <!-- <site name="LSemispinalisCapitisMedial_2" pos="0.02 0.00225 -0.0045" size="0.0005" group="5" /> -->
 
-            <site name="LSternomastoideus_2" pos="0.022 0.001 -0.012" size="0.0005" group="5" />
+            <!-- <site name="LSternomastoideus_2" pos="0.022 0.001 -0.012" size="0.0005" group="5" /> -->
 
-            <site name="LSpleniusCapitis_3" pos="0.02 0.0025 -0.004" size="0.0005" group="5" />
+            <!-- <site name="LSpleniusCapitis_3" pos="0.02 0.0025 -0.004" size="0.0005" group="5" /> -->
 
-            <site name="LSubclavius_2" pos="0.0189 0.0019 -0.0125" size="0.0005" group="5"/>
+            <!-- <site name="LSubclavius_2" pos="0.0189 0.0019 -0.0125" size="0.0005" group="5"/> -->
 
             <body name="Rib_13R" pos="0.002 -0.0015 0" gravcomp="0">
                 <geom name="Rib_13R" pos="0 0 0" euler="0 -0.175 0.075" type="mesh" rgba="1 1 1 1" mesh="Rib_13R" density="1908"/>
@@ -1584,6 +1584,7 @@
 
                                                                 <site name="RScalenusAnterior_1" pos="0.0003 -0.00175 -0.00225" size="0.0005" group="5" />
                                                                 <site name="RScalenusAnterior_2" pos="0.0008 -0.002 -0.00175" size="0.0005" group="5" />
+                                                                <site name="RSubclavius_2" pos="0.0007 -0.00065 -0.00285" size="0.0005" group="5"/>
                                                             
                                                                 <body name="Sternum" pos="0.003 0.00125 -0.002" gravcomp="0">
                                                                     <geom name="Sternum" pos="0 0 0" euler="0.0 -0.1 0.05" type="mesh" rgba="1 1 1 1" mesh="Sternum" density="1908"/>
@@ -1610,6 +1611,9 @@
                                                                     <site name="LPectoralisMinimus_3" pos="-0.01125 0.001 -0.00435" size="0.0005" group="5"/>
                                                                     <site name="LPectoralisMinimus_4" pos="-0.01675 0.00 -0.005355" size="0.0005" group="5"/>
 
+                                                                    <site name="RSternomastoideus_2" pos="0.0008 -0.001 -0.00035" size="0.0005" group="5" />
+                                                                    <site name="LSternomastoideus_2" pos="0.0008 0.001 -0.00035" size="0.0005" group="5" />
+
                                                                 </body>
                                                             
                                                             </body>
@@ -1625,6 +1629,7 @@
 
                                                                 <site name="LScalenusAnterior_1" pos="0.0003 0.00175 -0.00225" size="0.0005" group="5" />
                                                                 <site name="LScalenusAnterior_2" pos="0.0008 0.002 -0.00175" size="0.0005" group="5" />
+                                                                <site name="LSubclavius_2" pos="0.0007 0.00065 -0.00285" size="0.0005" group="5"/>
                                                             </body>
 
                                                             <body name="C7" pos="0.0015 0 0.0008" gravcomp="0">
@@ -1747,6 +1752,7 @@
                                                                                             <site name="RObliquusCapitisSuperior" pos="0.0015 -0.004 0.001" size="0.0005" group="5" />
                                                                                             
                                                                                             <site name="RSemispinalisCapitisMedial_1" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
+                                                                                            <site name="RSemispinalisCapitisMedial_2" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
                                                                                             
                                                                                             <site name="RSemispinalisCapitisLateral_1" pos="0.0017 -0.0035 0.00175" size="0.0005" group="5" />
                                                                                             <site name="RSemispinalisCapitisLateral_2" pos="0.00075 -0.00325 0.00125" size="0.0005" group="5" />
@@ -1759,6 +1765,7 @@
                                                                                             <site name="RSpleniusCapitis_1" pos="0.001 -0.0045 -0.0" size="0.0005" group="5" />
                                                                                             <site name="RSpleniusCapitis_2_1" pos="0.003 -0.0015 0.0035" size="0.0005" group="5" />
                                                                                             <site name="RSpleniusCapitis_2_2" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
+                                                                                            <site name="RSpleniusCapitis_3" pos="0.00225 -0.0015 0.0035" size="0.0005" group="5" />
 
                                                                                             <site name="RTrapezius_head_1" pos="0.0025 -0.0005 0.00375" size="0.0005" group="5" />
                                                                                             <site name="RTrapezius_head_2" pos="0.0015 -0.0005 0.00375" size="0.0005" group="5" />
@@ -1772,7 +1779,8 @@
                                                                                             <site name="LObliquusCapitisSuperior" pos="0.0015 0.004 0.001" size="0.0005" group="5" />
                                                                                             
                                                                                             <site name="LSemispinalisCapitisMedial_1" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
-                                                                                            
+                                                                                            <site name="LSemispinalisCapitisMedial_2" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
+
                                                                                             <site name="LSemispinalisCapitisLateral_1" pos="0.0017 0.0035 0.00175" size="0.0005" group="5" />
                                                                                             <site name="LSemispinalisCapitisLateral_2" pos="0.00075 0.00325 0.00125" size="0.0005" group="5" />
                                                                                         
@@ -1784,6 +1792,7 @@
                                                                                             <site name="LSpleniusCapitis_1" pos="0.001 0.0045 -0.0" size="0.0005" group="5" />
                                                                                             <site name="LSpleniusCapitis_2_1" pos="0.003 0.0015 0.0035" size="0.0005" group="5" />
                                                                                             <site name="LSpleniusCapitis_2_2" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
+                                                                                            <site name="LSpleniusCapitis_3" pos="0.00225 0.0015 0.0035" size="0.0005" group="5" />
 
                                                                                             <site name="LTrapezius_head_1" pos="0.0025 0.0005 0.00375" size="0.0005" group="5" />
                                                                                             <site name="LTrapezius_head_2" pos="0.0015 0.0005 0.00375" size="0.0005" group="5" />
