@@ -3153,6 +3153,9 @@
             <site site="LIliacCrest" /> 
         </spatial>
 
+
+
+
         <spatial name="RLatissimusDorsi_tendon" group="4">
             <site site="RLatissimusDorsi_1" />
             <site site="RLatissimusDorsi_3" />
@@ -3990,7 +3993,7 @@
             <site site="CA27_RSCDorsalLateral"/>
         </spatial>
 
-        <spatial name="RIntertransversariiDorsalesCaudae" group="4">
+        <spatial name="RIntertransversariiDorsalesCaudae_tendon" group="4">
             <site site="S3_RLateralSurface"/>
             <site site="S4_RLateralSurface"/>
             <site site="CA1_RLateralSurface"/>
@@ -4001,7 +4004,7 @@
             <site site="CA6_RSCDorsalLateral"/>
         </spatial>
 
-        <spatial name="RIntertransversariiVentralesCaudae" group="4">
+        <spatial name="RIntertransversariiVentralesCaudae_tendon" group="4">
             <site site="S4_RLateralSurface"/>
             <site site="CA1_RSCVentralLateral"/>
             <site site="CA2_RSCVentralLateral"/>
@@ -4032,7 +4035,7 @@
             <site site="CA27_RSCVentralLateral"/>
         </spatial>
 
-        <spatial name="RCoccygeus" group="4">
+        <spatial name="RCoccygeus_tendon" group="4">
             <site site="RIschiaticSpine"/>
             <site site="CA1_RSCVentralLateral"/>
             <site site="CA2_RSCVentralLateral"/>
@@ -4882,7 +4885,7 @@
             <site site="CA27_LSCDorsalLateral"/>
         </spatial>
 
-        <spatial name="LIntertransversariiDorsalesCaudae" group="5">
+        <spatial name="LIntertransversariiDorsalesCaudae_tendon" group="5">
             <site site="S3_LLateralSurface"/>
             <site site="S4_LLateralSurface"/>
             <site site="CA1_LLateralSurface"/>
@@ -4893,7 +4896,7 @@
             <site site="CA6_LSCDorsalLateral"/>
         </spatial>
 
-        <spatial name="LIntertransversariiVentralesCaudae" group="5">
+        <spatial name="LIntertransversariiVentralesCaudae_tendon" group="5">
             <site site="S4_LLateralSurface"/>
             <site site="CA1_LSCVentralLateral"/>
             <site site="CA2_LSCVentralLateral"/>
@@ -4924,7 +4927,7 @@
             <site site="CA27_LSCVentralLateral"/>
         </spatial>
 
-        <spatial name="LCoccygeus" group="5">
+        <spatial name="LCoccygeus_tendon" group="5">
             <site site="LIschiaticSpine"/>
             <site site="CA1_LSCVentralLateral"/>
             <site site="CA2_LSCVentralLateral"/>
@@ -6414,6 +6417,21 @@
     
     <actuator>
 
+        <general group="4" name="Rintercostal" class="muscle" tendon="Rintercostal_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="Lintercostal" class="muscle" tendon="Lintercostal_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+        <general group="4" name="Rrectusabdominis" class="muscle" tendon="Rrectusabdominis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="Lrectusabdominis" class="muscle" tendon="Lrectusabdominis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+        <general group="4" name="Rexternaloblique" class="muscle" tendon="Rexternaloblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="Lexternaloblique" class="muscle" tendon="Lexternaloblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+        <general group="4" name="Rinternaloblique" class="muscle" tendon="Rinternaloblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="Linternaloblique" class="muscle" tendon="Linternaloblique_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+        <general group="4" name="Rtransversusabdominis" class="muscle" tendon="Rtransversusabdominis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="5" name="Ltransversusabdominis" class="muscle" tendon="Ltransversusabdominis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
         <general group="4" name="RLatissimusDorsi" class="muscle" tendon="RLatissimusDorsi_tendon" ctrlrange="0.01 1" lengthrange="0.00880 0.03309" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="4" name="RSerratusVentralisThoracis" class="muscle" tendon="RSerratusVentralisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="4" name="RSerratusVentralisCervicis" class="muscle" tendon="RSerratusVentralisCervicis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
@@ -6452,6 +6470,15 @@
         <general group="4" name="RMultifidusLumborum" class="muscle" tendon="RMultifidusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="4" name="RIliocostalisThoracis" class="muscle" tendon="RIliocostalisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="4" name="RQuadratusLumborum" class="muscle" tendon="RQuadratusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+        <general group="4" name="RSCVentralMedial" class="muscle" tendon="RSCVentralMedial_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSCVentralLateral" class="muscle" tendon="RSCVentralLateral_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSCDorsalMedial" class="muscle" tendon="RSCDorsalMedial_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RSCDorsalLateral" class="muscle" tendon="RSCDorsalLateral_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RIntertransversariiDorsalesCaudae" class="muscle" tendon="RIntertransversariiDorsalesCaudae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RIntertransversariiVentralesCaudae" class="muscle" tendon="RIntertransversariiVentralesCaudae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="RCoccygeus" class="muscle" tendon="RCoccygeus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
 
 
         <general group="5" name="LLatissimusDorsi" class="muscle" tendon="LLatissimusDorsi_tendon" ctrlrange="0.01 1" lengthrange="0.00880 0.03309" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
@@ -6492,6 +6519,14 @@
         <general group="5" name="LMultifidusLumborum" class="muscle" tendon="LMultifidusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="5" name="LIliocostalisThoracis" class="muscle" tendon="LIliocostalisThoracis_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
         <general group="5" name="LQuadratusLumborum" class="muscle" tendon="LQuadratusLumborum_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+
+        <general group="4" name="LSCVentralMedial" class="muscle" tendon="LSCVentralMedial_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="LSCVentralLateral" class="muscle" tendon="LSCVentralLateral_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="LSCDorsalMedial" class="muscle" tendon="LSCDorsalMedial_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="LSCDorsalLateral" class="muscle" tendon="LSCDorsalLateral_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="LIntertransversariiDorsalesCaudae" class="muscle" tendon="LIntertransversariiDorsalesCaudae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="LIntertransversariiVentralesCaudae" class="muscle" tendon="LIntertransversariiVentralesCaudae_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
+        <general group="4" name="LCoccygeus" class="muscle" tendon="LCoccygeus_tendon" ctrlrange="0.01 1" lengthrange="0.01 1" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
 
 
         <general group="0" name="RBicepsLongus" class="muscle" tendon="RBicepsLongus_tendon" ctrlrange="0.01 1" lengthrange="0.00784 0.01419" actdim="1" dyntype="muscle" gaintype="muscle" gainprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" biastype="muscle" biasprm="0.75 1.05 -1 200 0.5 1.6 1.5 1.3 1.2 0" />
