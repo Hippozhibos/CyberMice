@@ -417,11 +417,11 @@
 
             <site name="RSerratusVentralisCervicis_1" pos="0.019 -0.004 -0.0065" size="0.0005" group="5"/> -->
 
-            <site name="RPectoralisMajor_1" pos="0.022 -0.00375 -0.0125" size="0.0005" group="5"/>
-            <site name="RPectoralisMajor_2" pos="0.021 0.00 -0.013" size="0.0005" group="5"/>
-            <site name="RPectoralisMajor_3" pos="0.019 0.00 -0.0145" size="0.0005" group="5"/>
-            <site name="RPectoralisMajor_4" pos="0.016 0.00 -0.015" size="0.0005" group="5"/>
-            <site name="RPectoralisMajor_5" pos="0.013 0.00 -0.015" size="0.0005" group="5"/>
+            <site name="RPectoralisMajor_1" pos="0.022 -0.00375 -0.0125" size="0.0005" rgba="1 0 0 1" group="1"/>
+            <site name="RPectoralisMajor_2" pos="0.021 0.00 -0.013" size="0.0005" group="1"/>
+            <site name="RPectoralisMajor_3" pos="0.019 0.00 -0.0145" size="0.0005" group="1"/>
+            <site name="RPectoralisMajor_4" pos="0.016 0.00 -0.015" size="0.0005" group="1"/>
+            <site name="RPectoralisMajor_5" pos="0.013 0.00 -0.015" size="0.0005" group="1"/>
 
             <site name="RPectoralisMinor_1" pos="0.022 -0.0035 -0.011" size="0.0005" group="5"/>
             <site name="RPectoralisMinor_2" pos="0.019 -0.00175 -0.013" size="0.0005" group="5"/>
